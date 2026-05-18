@@ -1,0 +1,54 @@
+site_name: "JT Lab Notebook"
+site_description: "Personal Bioinformatics Lab Notebook"
+site_url: https://tns-schrauwen.github.io/JT-labnotebook/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+nav:
+  - Home: index.md
+  - Dashboard: dashboard.md
+  - Notes: notes/index.md

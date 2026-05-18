@@ -14,31 +14,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 
+          fetch-depth: 0
 
       - name: Configure Git
         run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-
-      - name: Cache
-        uses: actions/cache@v4
-        with:
-          key: mkdocs-${{ hashFiles('pyproject.toml') }}
-          path: ~/.cache
-          restore-keys: mkdocs-
+          python-version: '3.12'
 
       - name: Install dependencies
         run: |
-          pip install -e ".[docs]"
+          pip install mkdocs-material
+          pip install pymdown-extensions
+          pip install mkdocs-git-revision-date-localized-plugin
 
-      - name: Build pages from database
+      - name: Verify mkdocs.yml exists
         run: |
-          biolab build site 2>/dev/null || true
+          ls -la
+          cat mkdocs.yml
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
