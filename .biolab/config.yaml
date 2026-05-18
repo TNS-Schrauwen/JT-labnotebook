@@ -1,0 +1,6 @@
+version: "1.0"
+name: "JT Lab Notebook"
+author: "JT"
+institution: ""
+database_path: ".biolab/biolab.db"
+retention_days: 90

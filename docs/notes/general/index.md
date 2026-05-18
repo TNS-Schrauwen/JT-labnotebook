@@ -1,0 +1,3 @@
+# General
+
+*No entries yet.*

@@ -1,0 +1,3 @@
+# Observations
+
+*No entries yet.*
