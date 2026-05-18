@@ -1,0 +1,44 @@
+name: Deploy Lab Notebook
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 
+
+      - name: Configure Git
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache
+        uses: actions/cache@v4
+        with:
+          key: mkdocs-${{ hashFiles('pyproject.toml') }}
+          path: ~/.cache
+          restore-keys: mkdocs-
+
+      - name: Install dependencies
+        run: |
+          pip install -e ".[docs]"
+
+      - name: Build pages from database
+        run: |
+          biolab build site 2>/dev/null || true
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
