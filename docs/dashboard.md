@@ -1,32 +1,50 @@
-# Dashboard
+---
+title: "Dashboard"
+date: 2026-05-19 00:34
+---
 
-**Last Updated:** 2026-05-18 23:10
+# Project Intelligence Dashboard
 
-## Quick Stats
+**Last Updated:** 2026-05-19 00:34
 
-| Metric | Count |
+---
+
+## Watched Projects
+
+| Project | Path | Tracked Files | New | Modified | Status |
+|---------|------|---------------|-----|----------|--------|
+
+---
+
+## Summary
+
+| Metric | Value |
 |--------|-------|
-| Projects | 2 |
-| Experiments | 0 |
-| Nextflow Runs | 0 |
-| SLURM Jobs | 1 |
-| Datasets | 0 |
-| Total Notes | 1 |
-| Debugging | 1 |
-| Ideas | 0 |
-| TODOs | 0 |
-| Observations | 0 |
+| Total Tracked Files | 0 |
+| New Files (this scan) | 0 |
+| Modified Files (this scan) | 0 |
+| Deleted Files (this scan) | 0 |
+| Projects | 0 |
 
-## Sections
+---
 
-| Section | Link |
-|---------|------|
-| Projects | [View all projects](projects/index.md) |
-| Experiments | [View all experiments](experiments/index.md) |
-| Pipeline Runs | [View all runs](runs/index.md) |
-| Datasets | [View all datasets](datasets/index.md) |
-| Debugging Notes | [View debugging](notes/debugging/index.md) |
-| Ideas | [View ideas](notes/ideas/index.md) |
-| TODOs | [View TODOs](notes/todo/index.md) |
-| Observations | [View observations](notes/observations/index.md) |
+## Quick Navigation
+
+| Section | Description |
+|---------|-------------|
+| [File Registry](registry/) | All tracked files with metadata and annotations |
+| [Pipeline Runs](runs/) | Nextflow runs, SLURM jobs, log files |
+| [Notes](notes/) | Manual notes, debugging entries, observations |
+| [Annotations](annotations.md) | File tags and context annotations |
+
+---
+
+## How to Add Context
+
+To annotate files detected by the scanner, use:
+
+biolab annotate <relative-file-path> --tags "tag1,tag2" --context "description"
+
+Or edit `docs/annotations.md` directly on GitHub to add tags and context
+to any tracked file.
 

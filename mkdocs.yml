@@ -1,29 +1,40 @@
 site_name: "JT Lab Notebook"
-site_description: "Personal Bioinformatics Lab Notebook"
+site_description: "Automated Project Intelligence Tracker"
 site_url: https://tns-schrauwen.github.io/JT-labnotebook/
+
+# These three lines enable the edit button
+repo_url: https://github.com/TNS-Schrauwen/JT-labnotebook
+repo_name: JT-labnotebook
+edit_uri: edit/main/docs/
 
 theme:
   name: material
+  features:
+    - content.action.edit
+    - content.action.view
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
   palette:
     - scheme: default
-      primary: teal
-      accent: cyan
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Dark mode
     - scheme: slate
-      primary: teal
-      accent: cyan
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Light mode
-  features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - search.suggest
-    - search.highlight
-    - content.code.copy
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - search:
@@ -42,13 +53,18 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - attr_list
+  - md_in_html
   - tables
   - toc:
       permalink: true
   - pymdownx.highlight:
       anchor_linenums: true
+  - pymdownx.inlinehilite
 
 nav:
   - Home: index.md
   - Dashboard: dashboard.md
-  - Notes: notes/index.md
+  - File Registry: registry/
+  - Pipeline Runs: runs/
+  - Annotations: annotations.md
+  - Notes: notes/

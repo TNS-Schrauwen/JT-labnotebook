@@ -1,4 +1,4 @@
-"""CLI interface for JT-labnotebook."""
+"""CLI interface for JT-labnotebook -- Professional Project Intelligence Tracker."""
 import typer
 from pathlib import Path
 from typing import Optional
@@ -6,1352 +6,1307 @@ from datetime import datetime
 import subprocess
 import os
 import re
+import json
+import hashlib
+import time
 
 app = typer.Typer(
     name="biolab",
-    help="JT Lab Notebook — Bioinformatics Project Intelligence System",
+    help="JT Lab Notebook -- Bioinformatics Project Intelligence Tracker",
     no_args_is_help=True,
 )
 
-@app.command()
-def init(
-    name: str = typer.Option("JT Lab Notebook", help="Notebook name"),
-    author: str = typer.Option("", help="Your name"),
-):
-    """Initialize a new lab notebook in the current directory."""
-    # Create directories
-    dirs = [
-        ".biolab",
-        "docs", "docs/experiments", "docs/runs/nextflow", "docs/runs/slurm",
-        "docs/notes/debugging", "docs/notes/ideas",
-        "docs/notes/observations", "docs/notes/todo",
-        "docs/notes/general", "docs/projects", "docs/datasets",
-        "docs/scripts",
-    ]
-    for d in dirs:
-        Path(d).mkdir(parents=True, exist_ok=True)
 
-    # Create config
-    config_content = f"""version: "1.0"
-name: "{name}"
-author: "{author}"
-institution: ""
-database_path: ".biolab/biolab.db"
-retention_days: 90
-"""
-    Path(".biolab/config.yaml").write_text(config_content)
+# ===================================================================
+# FILE TRACKING ENGINE
+# ===================================================================
 
-    # Create docs/index.md
-    now = datetime.now()
-    index_content = f"""# {name}
+class FileTracker:
+    """
+    Tracks all files in project directories using content hashing.
+    Detects new files, modified files, and deleted files.
+    Similar to git's approach of hashing file contents to detect changes.
+    """
 
-**Author:** {author}  
-**Last Updated:** {now.strftime('%Y-%m-%d')}
+    TRACKED_EXTENSIONS = {
+        # Scripts
+        ".py", ".R", ".r", ".sh", ".bash", ".nf", ".config", ".pl", ".rb",
+        # Config
+        ".yaml", ".yml", ".json", ".toml", ".ini", ".cfg", ".conf",
+        # Data/metadata
+        ".csv", ".tsv", ".txt", ".md", ".rst",
+        # Bioinformatics
+        ".bed", ".gff", ".gtf", ".vcf", ".fasta", ".fa",
+        # Logs and outputs
+        ".log", ".out", ".err", ".stderr", ".stdout",
+        # Reports
+        ".html", ".pdf", ".png", ".svg",
+        # Job scripts
+        ".slurm", ".sbatch", ".pbs", ".sge",
+        # Nextflow specific
+        ".nf", ".config",
+        # Snakemake
+        "Snakefile",
+        # Make
+        "Makefile",
+    }
+
+    SKIP_DIRS = {
+        ".git", "__pycache__", ".nextflow", "work",
+        ".snakemake", "node_modules", ".conda", ".cache",
+        ".biolab", "site", ".venv", "venv",
+    }
+
+    # Large binary files to skip content hashing (track existence only)
+    LARGE_BINARY_EXTENSIONS = {
+        ".fastq", ".fastq.gz", ".fq", ".fq.gz",
+        ".bam", ".sam", ".cram", ".bai",
+        ".bcf", ".sra", ".h5", ".hdf5",
+        ".tar", ".tar.gz", ".zip", ".gz", ".bz2",
+    }
+
+    def __init__(self, project_path: Path):
+        self.project_path = project_path
+        self.state_dir = Path(".biolab/state")
+        self.state_dir.mkdir(parents=True, exist_ok=True)
+        self.annotations_file = Path(".biolab/annotations.json")
+
+    def _get_state_file(self, project_name: str) -> Path:
+        return self.state_dir / f"{project_name}_state.json"
+
+    def _load_state(self, project_name: str) -> dict:
+        state_file = self._get_state_file(project_name)
+        if state_file.exists():
+            return json.loads(state_file.read_text())
+        return {"files": {}, "last_scan": None}
+
+    def _save_state(self, project_name: str, state: dict):
+        state_file = self._get_state_file(project_name)
+        state_file.write_text(json.dumps(state, indent=2, default=str))
+
+    def _load_annotations(self) -> dict:
+        if self.annotations_file.exists():
+            return json.loads(self.annotations_file.read_text())
+        return {}
+
+    def _save_annotations(self, annotations: dict):
+        self.annotations_file.parent.mkdir(parents=True, exist_ok=True)
+        self.annotations_file.write_text(json.dumps(annotations, indent=2, default=str))
+
+    def _should_track(self, path: Path) -> bool:
+        """Determine if file should be tracked."""
+        # Skip hidden files
+        for part in path.parts:
+            if part.startswith(".") and part not in (".nextflow.log",):
+                if any(skip in str(path) for skip in self.SKIP_DIRS):
+                    return False
+
+        # Check directory exclusions
+        for skip in self.SKIP_DIRS:
+            if f"/{skip}/" in str(path) or str(path).endswith(f"/{skip}"):
+                return False
+
+        # Check if extension is tracked
+        suffix = path.suffix.lower()
+        name = path.name
+
+        # Special filenames
+        if name in ("Snakefile", "Makefile", "Dockerfile", "nextflow.config",
+                    ".nextflow.log", "samplesheet.csv"):
+            return True
+
+        if suffix in self.TRACKED_EXTENSIONS:
+            return True
+
+        # Track any file in specific directories
+        rel_path = str(path)
+        if any(d in rel_path for d in ["/log/", "/logs/", "/results/",
+                                        "/output/", "/reports/", "/pipeline_info/"]):
+            return True
+
+        return False
+
+    def _is_large_binary(self, path: Path) -> bool:
+        """Check if file is a large binary that should only be tracked by metadata."""
+        name = path.name.lower()
+        for ext in self.LARGE_BINARY_EXTENSIONS:
+            if name.endswith(ext):
+                return True
+        return False
+
+    def _compute_hash(self, path: Path) -> Optional[str]:
+        """Compute MD5 hash for file content detection."""
+        try:
+            if not path.exists() or path.is_dir():
+                return None
+            if self._is_large_binary(path):
+                return f"size:{path.stat().st_size}"
+            if path.stat().st_size > 100 * 1024 * 1024:  # Skip >100MB
+                return f"size:{path.stat().st_size}"
+            h = hashlib.md5()
+            with open(path, "rb") as f:
+                while chunk := f.read(8192):
+                    h.update(chunk)
+            return h.hexdigest()
+        except (OSError, PermissionError):
+            return None
+
+    def _get_file_metadata(self, path: Path) -> dict:
+        """Collect file metadata."""
+        try:
+            stat = path.stat()
+            return {
+                "size": stat.st_size,
+                "modified": datetime.fromtimestamp(stat.st_mtime).isoformat(),
+                "extension": path.suffix,
+                "name": path.name,
+                "relative_path": str(path.relative_to(self.project_path)),
+                "absolute_path": str(path),
+                "is_binary": self._is_large_binary(path),
+            }
+        except (OSError, PermissionError):
+            return {}
+
+    def scan(self, project_name: str) -> dict:
+        """
+        Full scan of project directory.
+        Returns dict with new, modified, deleted files.
+        """
+        old_state = self._load_state(project_name)
+        old_files = old_state.get("files", {})
+
+        current_files = {}
+        new_files = []
+        modified_files = []
+
+        # Walk the project directory
+        for path in self.project_path.rglob("*"):
+            if path.is_dir():
+                continue
+            if not self._should_track(path):
+                continue
+
+            rel_path = str(path.relative_to(self.project_path))
+            file_hash = self._compute_hash(path)
+            metadata = self._get_file_metadata(path)
+
+            current_files[rel_path] = {
+                "hash": file_hash,
+                "metadata": metadata,
+                "first_seen": old_files.get(rel_path, {}).get(
+                    "first_seen", datetime.now().isoformat()
+                ),
+                "last_seen": datetime.now().isoformat(),
+            }
+
+            if rel_path not in old_files:
+                new_files.append(rel_path)
+            elif old_files[rel_path].get("hash") != file_hash:
+                modified_files.append(rel_path)
+
+        # Detect deleted files
+        deleted_files = [f for f in old_files if f not in current_files]
+
+        # Save new state
+        new_state = {
+            "files": current_files,
+            "last_scan": datetime.now().isoformat(),
+        }
+        self._save_state(project_name, new_state)
+
+        return {
+            "new": new_files,
+            "modified": modified_files,
+            "deleted": deleted_files,
+            "total_tracked": len(current_files),
+            "current_files": current_files,
+        }
+
+
+# ===================================================================
+# LOG AND RUN DETECTOR
+# ===================================================================
+
+class RunDetector:
+    """
+    Detects pipeline runs from log files, output files, and directory structures.
+    Parses Nextflow logs, SLURM outputs, and generic log files.
+    """
+
+    def __init__(self, project_path: Path):
+        self.project_path = project_path
+
+    def detect_nextflow_runs(self) -> list:
+        """Detect Nextflow runs from .nextflow.log files."""
+        runs = []
+        for log_file in self.project_path.rglob(".nextflow.log"):
+            run_data = self._parse_nextflow_log(log_file)
+            if run_data:
+                runs.append(run_data)
+        return runs
+
+    def detect_slurm_outputs(self) -> list:
+        """Detect SLURM job outputs from slurm-*.out files."""
+        jobs = []
+        for out_file in self.project_path.rglob("slurm-*.out"):
+            job_data = self._parse_slurm_output(out_file)
+            if job_data:
+                jobs.append(job_data)
+        # Also check .err files
+        for err_file in self.project_path.rglob("slurm-*.err"):
+            if err_file not in [j.get("_source") for j in jobs]:
+                job_data = self._parse_slurm_err(err_file)
+                if job_data:
+                    jobs.append(job_data)
+        return jobs
+
+    def detect_log_files(self) -> list:
+        """Detect any .log, .out, .err files."""
+        logs = []
+        patterns = ["*.log", "*.out", "*.err", "*.stderr", "*.stdout"]
+        for pattern in patterns:
+            for log_file in self.project_path.rglob(pattern):
+                # Skip work directories
+                if "work/" in str(log_file) or "/.nextflow/" in str(log_file):
+                    continue
+                logs.append(self._parse_generic_log(log_file))
+        return logs
+
+    def _parse_nextflow_log(self, log_path: Path) -> dict:
+        """Parse .nextflow.log for run metadata."""
+        try:
+            content = log_path.read_text(errors="ignore")
+        except (OSError, PermissionError):
+            return {}
+
+        data = {
+            "type": "nextflow",
+            "log_file": str(log_path),
+            "run_dir": str(log_path.parent),
+            "detected_at": datetime.now().isoformat(),
+        }
+
+        # Run name
+        match = re.search(r"\[([a-z]+_[a-z]+)\]", content)
+        if match:
+            data["run_name"] = match.group(1)
+
+        # Pipeline
+        match = re.search(r"Launching `(.+?)`", content)
+        if match:
+            data["pipeline"] = match.group(1)
+
+        # Command
+        match = re.search(r"Command line: (.+?)$", content, re.MULTILINE)
+        if match:
+            data["command"] = match.group(1).strip()
+
+        # Nextflow version
+        match = re.search(r"nextflow version (\S+)", content, re.IGNORECASE)
+        if match:
+            data["nextflow_version"] = match.group(1)
+
+        # Work directory
+        match = re.search(r"work-dir\s*[:=]\s*(.+)", content)
+        if match:
+            data["work_dir"] = match.group(1).strip()
+
+        # Config files
+        data["config_files"] = re.findall(r"User config file: (.+)", content)
+
+        # Status
+        if "Execution complete" in content or "pipeline completed" in content.lower():
+            data["status"] = "completed"
+        elif "ERROR" in content or "execution failed" in content.lower():
+            data["status"] = "failed"
+            error_lines = [l for l in content.split("\n") if "ERROR" in l]
+            if error_lines:
+                data["error"] = error_lines[-1][:500]
+        else:
+            data["status"] = "running"
+
+        # Duration
+        match = re.search(r"Duration\s*:\s*(.+?)$", content, re.MULTILINE)
+        if match:
+            data["duration"] = match.group(1).strip()
+
+        # Timestamps
+        timestamps = re.findall(r"(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})", content)
+        if timestamps:
+            data["started_at"] = timestamps[0]
+            data["last_activity"] = timestamps[-1]
+
+        # Parse trace if available
+        trace_path = self._find_trace(log_path.parent)
+        if trace_path:
+            data["trace"] = self._parse_trace(trace_path)
+
+        return data
+
+    def _find_trace(self, run_dir: Path) -> Optional[Path]:
+        """Find trace file."""
+        candidates = list(run_dir.rglob("trace*.txt"))
+        candidates = [c for c in candidates if "work/" not in str(c)]
+        return candidates[0] if candidates else None
+
+    def _parse_trace(self, trace_path: Path) -> dict:
+        """Parse trace file for resource stats."""
+        import csv
+        stats = {"total_tasks": 0, "completed": 0, "failed": 0,
+                 "cpu_hours": 0.0, "peak_memory_gb": 0.0, "processes": {}}
+        try:
+            with open(trace_path) as f:
+                first_line = f.readline()
+                f.seek(0)
+                delimiter = "\t" if "\t" in first_line else ","
+                reader = csv.DictReader(f, delimiter=delimiter)
+                for row in reader:
+                    stats["total_tasks"] += 1
+                    status = row.get("status", "").upper()
+                    if status == "COMPLETED":
+                        stats["completed"] += 1
+                    elif status == "FAILED":
+                        stats["failed"] += 1
+
+                    process = row.get("name", row.get("process", "unknown"))
+                    base = process.split("(")[0].strip()
+                    if base not in stats["processes"]:
+                        stats["processes"][base] = 0
+                    stats["processes"][base] += 1
+
+                    # CPU
+                    realtime = row.get("realtime", "")
+                    cpus = int(row.get("cpus", 1) or 1)
+                    if realtime:
+                        ms = self._duration_ms(str(realtime))
+                        stats["cpu_hours"] += (ms / 3_600_000) * cpus
+
+                    # Memory
+                    peak = row.get("peak_rss", "")
+                    if peak:
+                        gb = self._mem_gb(str(peak))
+                        stats["peak_memory_gb"] = max(stats["peak_memory_gb"], gb)
+        except Exception:
+            pass
+        return stats
+
+    def _parse_slurm_output(self, path: Path) -> dict:
+        """Parse slurm output file."""
+        match = re.search(r"slurm-(\d+)", path.name)
+        if not match:
+            return {}
+
+        job_id = match.group(1)
+        data = {
+            "type": "slurm",
+            "job_id": job_id,
+            "output_file": str(path),
+            "detected_at": datetime.now().isoformat(),
+        }
+
+        # Try sacct
+        try:
+            result = subprocess.run(
+                ["sacct", "-j", job_id,
+                 "--format=JobName%60,State,Elapsed,MaxRSS,NCPUS,Partition,ExitCode,Start,End",
+                 "--parsable2", "--noheader", "-X"],
+                capture_output=True, text=True, timeout=10,
+            )
+            if result.returncode == 0 and result.stdout.strip():
+                fields = result.stdout.strip().split("\n")[0].split("|")
+                if len(fields) >= 9:
+                    data["job_name"] = fields[0].strip()
+                    data["status"] = fields[1].split()[0].lower()
+                    data["elapsed"] = fields[2]
+                    data["max_rss"] = fields[3]
+                    data["cpus"] = fields[4]
+                    data["partition"] = fields[5]
+                    data["exit_code"] = fields[6]
+                    data["start_time"] = fields[7]
+                    data["end_time"] = fields[8]
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            # Parse from file content
+            try:
+                content = path.read_text(errors="ignore")[:2000]
+                if "error" in content.lower() or "FAILED" in content:
+                    data["status"] = "failed"
+                else:
+                    data["status"] = "unknown"
+            except Exception:
+                data["status"] = "unknown"
+
+        data["_source"] = path
+        return data
+
+    def _parse_slurm_err(self, path: Path) -> dict:
+        match = re.search(r"slurm-(\d+)", path.name)
+        if not match:
+            return {}
+        return {
+            "type": "slurm_error",
+            "job_id": match.group(1),
+            "error_file": str(path),
+            "detected_at": datetime.now().isoformat(),
+        }
+
+    def _parse_generic_log(self, path: Path) -> dict:
+        """Parse any log/out/err file for basic metadata."""
+        try:
+            stat = path.stat()
+            return {
+                "type": "log",
+                "path": str(path),
+                "relative_path": str(path.relative_to(self.project_path))
+                    if str(path).startswith(str(self.project_path)) else str(path),
+                "name": path.name,
+                "extension": path.suffix,
+                "size": stat.st_size,
+                "modified": datetime.fromtimestamp(stat.st_mtime).isoformat(),
+            }
+        except (OSError, PermissionError):
+            return {"type": "log", "path": str(path)}
+
+    @staticmethod
+    def _duration_ms(s: str) -> float:
+        total = 0.0
+        for m in re.finditer(r"(\d+\.?\d*)\s*(d|h|m|s|ms)", str(s)):
+            val = float(m.group(1))
+            unit = m.group(2)
+            mult = {"d": 86_400_000, "h": 3_600_000, "m": 60_000, "s": 1000, "ms": 1}
+            total += val * mult.get(unit, 0)
+        return total or 0.0
+
+    @staticmethod
+    def _mem_gb(s: str) -> float:
+        s = str(s).strip().upper()
+        for suffix, mult in [("TB", 1000), ("GB", 1), ("MB", 0.001), ("KB", 1e-6), ("B", 1e-9)]:
+            if s.endswith(suffix):
+                try:
+                    return float(s[:-len(suffix)].strip()) * mult
+                except ValueError:
+                    return 0.0
+        try:
+            return float(s) / (1024**3)
+        except ValueError:
+            return 0.0
+
+
+# ===================================================================
+# MARKDOWN GENERATOR -- PROFESSIONAL DASHBOARD
+# ===================================================================
+
+class DashboardGenerator:
+    """Generate professional, detailed, interactive MkDocs pages."""
+
+    def __init__(self, docs_dir: Path = Path("docs")):
+        self.docs_dir = docs_dir
+
+    def generate_file_registry(self, project_name: str, scan_result: dict,
+                               annotations: dict) -> Path:
+        """Generate the file registry page with all tracked files."""
+        reg_dir = self.docs_dir / "registry"
+        reg_dir.mkdir(parents=True, exist_ok=True)
+
+        files = scan_result.get("current_files", {})
+        new = scan_result.get("new", [])
+        modified = scan_result.get("modified", [])
+        deleted = scan_result.get("deleted", [])
+
+        now = datetime.now()
+        content = f"""---
+title: "File Registry -- {project_name}"
+date: {now.strftime('%Y-%m-%d %H:%M')}
+tags:
+  - registry
+  - {project_name}
+---
+
+# File Registry: {project_name}
+
+**Scan Date:** {now.strftime('%Y-%m-%d %H:%M')}
+**Total Tracked Files:** {len(files)}
+**New Since Last Scan:** {len(new)}
+**Modified Since Last Scan:** {len(modified)}
+**Deleted Since Last Scan:** {len(deleted)}
 
 ---
 
-## Navigation
+"""
+        # Changes summary
+        if new or modified or deleted:
+            content += "## Changes Detected\n\n"
+
+            if new:
+                content += "### New Files\n\n"
+                content += "| File | Type | Size | Modified |\n"
+                content += "|------|------|------|----------|\n"
+                for f in sorted(new):
+                    meta = files.get(f, {}).get("metadata", {})
+                    size = self._format_size(meta.get("size", 0))
+                    mod = meta.get("modified", "")[:16]
+                    ext = meta.get("extension", "")
+                    ann = annotations.get(f, {})
+                    tags_str = ", ".join(ann.get("tags", []))
+                    content += f"| `{f}` | {ext} | {size} | {mod} |\n"
+                content += "\n"
+
+            if modified:
+                content += "### Modified Files\n\n"
+                content += "| File | Type | Size | Modified |\n"
+                content += "|------|------|------|----------|\n"
+                for f in sorted(modified):
+                    meta = files.get(f, {}).get("metadata", {})
+                    size = self._format_size(meta.get("size", 0))
+                    mod = meta.get("modified", "")[:16]
+                    ext = meta.get("extension", "")
+                    content += f"| `{f}` | {ext} | {size} | {mod} |\n"
+                content += "\n"
+
+            if deleted:
+                content += "### Deleted Files\n\n"
+                content += "| File |\n|------|\n"
+                for f in sorted(deleted):
+                    content += f"| `{f}` |\n"
+                content += "\n"
+
+        # Full file inventory grouped by directory
+        content += "---\n\n## Complete File Inventory\n\n"
+        dirs = {}
+        for f, data in sorted(files.items()):
+            parts = f.split("/")
+            dir_name = "/".join(parts[:-1]) if len(parts) > 1 else "."
+            dirs.setdefault(dir_name, []).append((f, data))
+
+        for dir_name in sorted(dirs.keys()):
+            dir_files = dirs[dir_name]
+            content += f"### `{dir_name}/`\n\n"
+            content += "| File | Extension | Size | Hash | First Seen | Tags | Context |\n"
+            content += "|------|-----------|------|------|------------|------|--------|\n"
+            for f, data in sorted(dir_files, key=lambda x: x[0]):
+                meta = data.get("metadata", {})
+                name = meta.get("name", f.split("/")[-1])
+                ext = meta.get("extension", "")
+                size = self._format_size(meta.get("size", 0))
+                h = (data.get("hash", "") or "")[:8]
+                first = data.get("first_seen", "")[:10]
+                ann = annotations.get(f, {})
+                tags = ", ".join(ann.get("tags", []))
+                context = ann.get("context", "")[:40]
+                content += f"| `{name}` | {ext} | {size} | {h} | {first} | {tags} | {context} |\n"
+            content += "\n"
+
+        filepath = reg_dir / f"{self._slugify(project_name)}.md"
+        filepath.write_text(content)
+        return filepath
+
+    def generate_runs_page(self, project_name: str, nf_runs: list,
+                           slurm_jobs: list, log_files: list) -> Path:
+        """Generate pipeline runs and jobs page."""
+        runs_dir = self.docs_dir / "runs"
+        runs_dir.mkdir(parents=True, exist_ok=True)
+
+        now = datetime.now()
+        content = f"""---
+title: "Pipeline Runs -- {project_name}"
+date: {now.strftime('%Y-%m-%d %H:%M')}
+tags:
+  - runs
+  - {project_name}
+---
+
+# Pipeline Runs: {project_name}
+
+**Last Scanned:** {now.strftime('%Y-%m-%d %H:%M')}
+
+---
+
+"""
+        # Nextflow runs
+        if nf_runs:
+            content += "## Nextflow Runs\n\n"
+            for run in nf_runs:
+                status = run.get("status", "unknown")
+                name = run.get("run_name", "unnamed")
+                pipeline = run.get("pipeline", "unknown")
+                duration = run.get("duration", "N/A")
+                started = run.get("started_at", "N/A")
+
+                content += f"### {name}\n\n"
+                content += "| Field | Value |\n|-------|-------|\n"
+                content += f"| Pipeline | `{pipeline}` |\n"
+                content += f"| Status | {status} |\n"
+                content += f"| Started | {started} |\n"
+                content += f"| Duration | {duration} |\n"
+
+                if run.get("command"):
+                    content += f"| Command | `{run['command'][:80]}` |\n"
+                if run.get("work_dir"):
+                    content += f"| Work Dir | `{run['work_dir']}` |\n"
+                if run.get("nextflow_version"):
+                    content += f"| NF Version | {run['nextflow_version']} |\n"
+
+                # Trace stats
+                trace = run.get("trace", {})
+                if trace:
+                    content += f"| Total Tasks | {trace.get('total_tasks', 0)} |\n"
+                    content += f"| Completed | {trace.get('completed', 0)} |\n"
+                    content += f"| Failed | {trace.get('failed', 0)} |\n"
+                    content += f"| CPU Hours | {trace.get('cpu_hours', 0):.2f} |\n"
+                    content += f"| Peak Memory | {trace.get('peak_memory_gb', 0):.2f} GB |\n"
+
+                    if trace.get("processes"):
+                        content += "\n**Processes:**\n\n"
+                        content += "| Process | Tasks |\n|---------|-------|\n"
+                        for proc, count in sorted(trace["processes"].items()):
+                            content += f"| {proc} | {count} |\n"
+
+                if run.get("error"):
+                    content += f"\n**Error:**\n```\n{run['error'][:300]}\n```\n"
+
+                content += "\n---\n\n"
+
+        # SLURM jobs
+        if slurm_jobs:
+            content += "## SLURM Jobs\n\n"
+            content += "| Job ID | Name | Status | Elapsed | CPUs | Partition | Exit |\n"
+            content += "|--------|------|--------|---------|------|-----------|------|\n"
+            for job in slurm_jobs:
+                if job.get("type") == "slurm_error":
+                    continue
+                content += (
+                    f"| {job.get('job_id', '')} "
+                    f"| {job.get('job_name', '')[:30]} "
+                    f"| {job.get('status', '')} "
+                    f"| {job.get('elapsed', '')} "
+                    f"| {job.get('cpus', '')} "
+                    f"| {job.get('partition', '')} "
+                    f"| {job.get('exit_code', '')} |\n"
+                )
+            content += "\n"
+
+        # Log files
+        if log_files:
+            content += "## Log Files\n\n"
+            content += "| File | Size | Modified |\n"
+            content += "|------|------|----------|\n"
+            seen = set()
+            for log in sorted(log_files, key=lambda x: x.get("modified", ""), reverse=True):
+                path = log.get("relative_path", log.get("path", ""))
+                if path in seen:
+                    continue
+                seen.add(path)
+                size = self._format_size(log.get("size", 0))
+                mod = log.get("modified", "")[:16]
+                content += f"| `{path}` | {size} | {mod} |\n"
+            content += "\n"
+
+        filepath = runs_dir / f"{self._slugify(project_name)}.md"
+        filepath.write_text(content)
+        return filepath
+
+    def generate_dashboard(self, config: dict, scan_results: dict) -> Path:
+        """Generate the main dashboard with comprehensive statistics."""
+        now = datetime.now()
+        projects = config.get("projects", {})
+
+        content = f"""---
+title: "Dashboard"
+date: {now.strftime('%Y-%m-%d %H:%M')}
+---
+
+# Project Intelligence Dashboard
+
+**Last Updated:** {now.strftime('%Y-%m-%d %H:%M')}
+
+---
+
+## Watched Projects
+
+| Project | Path | Tracked Files | New | Modified | Status |
+|---------|------|---------------|-----|----------|--------|
+"""
+        for name, info in projects.items():
+            path = info.get("path", "")
+            result = scan_results.get(name, {})
+            total = result.get("total_tracked", 0)
+            new = len(result.get("new", []))
+            modified = len(result.get("modified", []))
+            exists = "Active" if Path(path).exists() else "Unreachable"
+            content += f"| [{name}](registry/{self._slugify(name)}.md) | `{path}` | {total} | {new} | {modified} | {exists} |\n"
+
+        content += "\n---\n\n"
+
+        # Aggregate stats
+        total_files = sum(r.get("total_tracked", 0) for r in scan_results.values())
+        total_new = sum(len(r.get("new", [])) for r in scan_results.values())
+        total_mod = sum(len(r.get("modified", [])) for r in scan_results.values())
+        total_del = sum(len(r.get("deleted", [])) for r in scan_results.values())
+
+        content += f"""## Summary
+
+| Metric | Value |
+|--------|-------|
+| Total Tracked Files | {total_files} |
+| New Files (this scan) | {total_new} |
+| Modified Files (this scan) | {total_mod} |
+| Deleted Files (this scan) | {total_del} |
+| Projects | {len(projects)} |
+
+---
+
+## Quick Navigation
 
 | Section | Description |
 |---------|-------------|
-| [Dashboard](dashboard.md) | Overview of all activity |
-| [Projects](projects/index.md) | Registered project directories |
-| [Experiments](experiments/index.md) | Tracked experiments |
-| [Runs](runs/index.md) | Pipeline execution history |
-| [Notes](notes/index.md) | All notes by category |
-| [Datasets](datasets/index.md) | Dataset registry |
-
-## Quick Links
-
-- [Active TODOs](notes/todo/index.md)
-- [Ideas](notes/ideas/index.md)
-- [Debugging Journal](notes/debugging/index.md)
+| [File Registry](registry/) | All tracked files with metadata and annotations |
+| [Pipeline Runs](runs/) | Nextflow runs, SLURM jobs, log files |
+| [Notes](notes/) | Manual notes, debugging entries, observations |
+| [Annotations](annotations.md) | File tags and context annotations |
 
 ---
-*Initialized: {now.strftime('%Y-%m-%d %H:%M')}*
+
+## How to Add Context
+
+To annotate files detected by the scanner, use:
+
+biolab annotate <relative-file-path> --tags "tag1,tag2" --context "description"
+
+Or edit `docs/annotations.md` directly on GitHub to add tags and context
+to any tracked file.
+
 """
-    Path("docs/index.md").write_text(index_content)
-    Path("docs/dashboard.md").write_text("# Dashboard\n\n*Run `biolab build` to generate.*\n")
 
-    # Create index files for each section
-    Path("docs/notes/index.md").write_text("# Notes\n\n## Categories\n\n- [General](general/index.md)\n- [Debugging](debugging/index.md)\n- [Ideas](ideas/index.md)\n- [TODOs](todo/index.md)\n- [Observations](observations/index.md)\n")
-    Path("docs/notes/general/index.md").write_text("# General Notes\n\n*No notes yet.*\n")
-    Path("docs/notes/debugging/index.md").write_text("# Debugging Notes\n\n*No notes yet.*\n")
-    Path("docs/notes/ideas/index.md").write_text("# Ideas\n\n*No ideas yet.*\n")
-    Path("docs/notes/todo/index.md").write_text("# TODOs\n\n## Active\n\n*No TODOs yet.*\n\n## Completed\n\n*None.*\n")
-    Path("docs/notes/observations/index.md").write_text("# Observations\n\n*No observations yet.*\n")
-    Path("docs/experiments/index.md").write_text("# Experiments\n\n*No experiments yet.*\n")
-    Path("docs/runs/index.md").write_text("# Pipeline Runs\n\n- [Nextflow Runs](nextflow/index.md)\n- [SLURM Jobs](slurm/index.md)\n")
-    Path("docs/runs/nextflow/index.md").write_text("jects\n\n*No projects registered yet.*\n")
-    Path("docs/datasets/index.md").write_text("# Datasets\n\n*No datasets registered yet.*\n")
+        filepath = self.docs_dir / "dashboard.md"
+        filepath.write_text(content)
+        return filepath
 
-    # Create mkdocs.yml if it doesn't exist
-    if not Path("mkdocs.yml").exists():
-        _create_mkdocs_yml(name)
+    def generate_annotations_page(self, annotations: dict) -> Path:
+        """Generate the annotations page showing all tagged files."""
+        content = """---
+title: "File Annotations"
+tags:
+  - annotations
+---
 
-    typer.echo(f"Notebook initialized: {name}")
-    typer.echo(f"   Author: {author}")
-    typer.echo(f"   Config: .biolab/config.yaml")
-    typer.echo(f"   Docs:   docs/")
-    typer.echo("")
-    typer.echo("Next steps:")
-    typer.echo("  biolab status")
-    typer.echo("  biolab project <name> <path>")
-    typer.echo("  biolab note 'My first note'")
-    typer.echo("  biolab build")
+# File Annotations
 
+This page lists all files that have been annotated with tags and context.
+Use `biolab annotate` to add annotations, or edit this data in `.biolab/annotations.json`.
 
-# ═══════════════════════════════════════════════════════════════════════
-# STATUS COMMAND
-# ═══════════════════════════════════════════════════════════════════════
+---
 
-@app.command()
-def status():
-    """Show notebook status overview."""
-    config_path = Path(".biolab/config.yaml")
-    if not config_path.exists():
-        typer.echo("Error: No notebook found here. Run: biolab init")
-        raise typer.Exit(1)
+"""
+        if not annotations:
+            content += "*No annotations yet. Use `biolab annotate <path> --tags ... --context ...` to add context to tracked files.*\n"
+        else:
+            # Group by tag
+            tags_index = {}
+            for filepath, ann in annotations.items():
+                for tag in ann.get("tags", []):
+                    tags_index.setdefault(tag, []).append((filepath, ann))
 
-    import yaml
-    config = yaml.safe_load(config_path.read_text())
+            content += "## By Tag\n\n"
+            for tag in sorted(tags_index.keys()):
+                content += f"### {tag}\n\n"
+                content += "| File | Context | Annotated |\n"
+                content += "|------|---------|----------|\n"
+                for fp, ann in tags_index[tag]:
+                    ctx = ann.get("context", "")[:60]
+                    dt = ann.get("annotated_at", "")[:10]
+                    content += f"| `{fp}` | {ctx} | {dt} |\n"
+                content += "\n"
 
-    typer.echo(f"\n {config.get('name', 'Lab Notebook')}")
-    typer.echo(f"   Author: {config.get('author', 'Unknown')}")
-    typer.echo("")
+            content += "---\n\n## All Annotations\n\n"
+            content += "| File | Tags | Context | Date |\n"
+            content += "|------|------|---------|------|\n"
+            for fp, ann in sorted(annotations.items()):
+                tags = ", ".join(ann.get("tags", []))
+                ctx = ann.get("context", "")[:60]
+                dt = ann.get("annotated_at", "")[:10]
+                content += f"| `{fp}` | {tags} | {ctx} | {dt} |\n"
 
-    # Count files
-    projects = _count_md_files("docs/projects")
-    notes_debug = _count_md_files("docs/notes/debugging")
-    notes_ideas = _count_md_files("docs/notes/ideas")
-    notes_todo = _count_md_files("docs/notes/todo")
-    notes_general = _count_md_files("docs/notes/general")
-    notes_obs = _count_md_files("docs/notes/observations")
-    experiments = _count_md_files("docs/experiments")
-    runs_nf = _count_md_files("docs/runs/nextflow")
-    runs_slurm = _count_md_files("docs/runs/slurm")
-    datasets = _count_md_files("docs/datasets")
+        filepath = self.docs_dir / "annotations.md"
+        filepath.write_text(content)
+        return filepath
 
-    total_notes = notes_debug + notes_ideas + notes_todo + notes_general + notes_obs
-
-    typer.echo(f"  Projects:     {projects}")
-    typer.echo(f"  Datasets:     {datasets}")
-    typer.echo(f"  Experiments:  {experiments}")
-    typer.echo(f"  Nextflow Runs: {runs_nf}")
-    typer.echo(f"  SLURM Jobs:   {runs_slurm}")
-    typer.echo(f"  Notes:        {total_notes}")
-    typer.echo(f"  Debugging: {notes_debug}")
-    typer.echo(f"  Ideas:     {notes_ideas}")
-    typer.echo(f"  TODOs:     {notes_todo}")
-    typer.echo(f"  Observations: {notes_obs}")
-    typer.echo(f"  General:   {notes_general}")
-    typer.echo("")
-
-@app.command()
-def project(
-    name: str = typer.Argument(..., help="Project name"),
-    path: str = typer.Argument(..., help="Path to project directory"),
-    description: str = typer.Option("", "--desc", "-d", help="Project description"),
-    tags: str = typer.Option("", "--tags", "-t", help="Comma-separated tags"),
-    organism: str = typer.Option("", "--organism", "-o", help="Organism (e.g., Homo sapiens)"),
-    pipeline: str = typer.Option("", "--pipeline", help="Pipeline tool (e.g., nextflow, snakemake)"),
-):
-    """Register a project directory for tracking."""
-    project_path = Path(path).resolve()
-
-    # Check if path exists
-    if not project_path.exists():
-        typer.echo(f" Warning: Path does not exist: {project_path}")
-        create = typer.confirm("Register anyway?")
-        if not create:
-            raise typer.Exit()
-
-    # Create project page
-    projects_dir = Path("docs/projects")
-    projects_dir.mkdir(parents=True, exist_ok=True)
-
-    slug = _slugify(name)
-    tag_list = [t.strip() for t in tags.split(",") if t.strip()]
-    now = datetime.now()
-
-    content = f"""---
-title: "{name}"
-path: "{project_path}"
-created: {now.strftime('%Y-%m-%d')}
-tags: {tag_list}
-status: active
-organism: "{organism}"
-pipeline: "{pipeline}"
+    def generate_index(self, config: dict) -> Path:
+        """Generate the home page."""
+        name = config.get("name", "Lab Notebook")
+        author = config.get("author", "")
+        content = f"""---
+title: "Home"
 ---
 
 # {name}
 
-| Field | Value |
-|-------|-------|
-| **Path** | `{project_path}` |
-| **Created** | {now.strftime('%Y-%m-%d')} |
-| **Status** | Active |
-| **Description** | {description if description else 'N/A'} |
-| **Organism** | {organism if organism else 'N/A'} |
-| **Pipeline** | {pipeline if pipeline else 'N/A'} |
-| **Tags** | {', '.join(tag_list) if tag_list else 'None'} |
-
-## Description
-
-{description if description else '*Add project description here.*'}
-
-## Directory Structure
-
-```
-{project_path}/
-├── (update with actual structure)
-```
-
-## Pipeline Configuration
-
-*Add key parameters, config files, and pipeline details here.*
-
-## Runs
-
-| Date | Run Name | Status | Duration | Notes |
-|------|----------|--------|----------|-------|
-| | | | | |
-
-## Datasets
-
-| Name | Path | Format | Samples | Size |
-|------|------|--------|---------|------|
-| | | | | |
-
-## Related Notes
-
-- 
+**Author:** {author}
+**System:** Automated Project Intelligence Tracker
 
 ---
-*Registered: {now.strftime('%Y-%m-%d %H:%M')}*
+
+## Overview
+
+This system automatically monitors registered project directories and tracks:
+
+- All new, modified, and deleted files
+- Nextflow pipeline runs (parsed from `.nextflow.log` and trace files)
+- SLURM job outputs (parsed from `slurm-*.out` and `sacct`)
+- Log files (`.log`, `.out`, `.err`)
+- Configuration files and scripts
+- File content hashes for change detection
+
+## Navigation
+
+| Page | Purpose |
+|------|---------|
+| [Dashboard](dashboard.md) | Statistics and project overview |
+| [File Registry](registry/) | Complete file inventory per project |
+| [Pipeline Runs](runs/) | Detected runs with resource usage |
+| [Annotations](annotations.md) | File tags and context |
+| [Notes](notes/) | Manual notes and observations |
+
+## Usage
+biolab scan -- Scan all projects, detect changes
+biolab annotate -- Add tags and context to files
+biolab sync -- Scan + commit + push
+biolab note -- Add a manual note
+
 """
+        filepath = self.docs_dir / "index.md"
+        filepath.write_text(content)
+        return filepath
 
-    filepath = projects_dir / f"{slug}.md"
-    filepath.write_text(content)
+    @staticmethod
+    def _format_size(size_bytes: int) -> str:
+        if size_bytes < 1024:
+            return f"{size_bytes} B"
+        elif size_bytes < 1024 * 1024:
+            return f"{size_bytes / 1024:.1f} KB"
+        elif size_bytes < 1024 * 1024 * 1024:
+            return f"{size_bytes / (1024*1024):.1f} MB"
+        else:
+            return f"{size_bytes / (1024**3):.2f} GB"
 
-    # Update projects index
-    _rebuild_projects_index()
+    @staticmethod
+    def _slugify(text: str) -> str:
+        text = text.lower().strip()
+        text = re.sub(r"[^\w\s-]", "", text)
+        text = re.sub(r"[-\s]+", "-", text)
+        return text[:50].rstrip("-")
 
-    typer.echo(f"Project registered: {name}")
-    typer.echo(f"   Path: {project_path}")
-    typer.echo(f"   Page: {filepath}")
 
+# ===================================================================
+# CLI COMMANDS
+# ===================================================================
+
+@app.command()
+def init(
+    name: str = typer.Option("JT Lab Notebook", help="Notebook name"),
+    author: str = typer.Option("", help="Author name"),
+):
+    """Initialize the project intelligence tracker."""
+    dirs = [
+        ".biolab", ".biolab/state",
+        "docs", "docs/registry", "docs/runs", "docs/notes",
+        "docs/notes/debugging", "docs/notes/general",
+    ]
+    for d in dirs:
+        Path(d).mkdir(parents=True, exist_ok=True)
+
+    config = {
+        "name": name, "author": author,
+        "projects": {}, "last_scan": None,
+    }
+    Path(".biolab/config.json").write_text(json.dumps(config, indent=2))
+    Path(".biolab/annotations.json").write_text("{}")
+    Path(".biolab/scan_state.json").write_text("{}")
+
+    # Create mkdocs.yml
+    _create_mkdocs_config(name)
+
+    # Generate initial pages
+    gen = DashboardGenerator()
+    gen.generate_index(config)
+    gen.generate_dashboard(config, {})
+    gen.generate_annotations_page({})
+
+    typer.echo(f"Initialized: {name}")
+    typer.echo("Next: biolab watch /path/to/project --name my-project")
 
 
 @app.command()
-def projects():
-    """List all registered projects."""
-    projects_dir = Path("docs/projects")
-    project_files = sorted(projects_dir.glob("*.md"))
-    project_files = [f for f in project_files if f.name != "index.md"]
+def watch(
+    path: str = typer.Argument(..., help="Project directory to track"),
+    name: str = typer.Option("", "--name", "-n", help="Project name"),
+):
+    """Register a project directory for tracking."""
+    project_path = Path(path).resolve()
+    project_name = name if name else project_path.name
 
-    if not project_files:
-        typer.echo(" No projects registered yet.")
-        typer.echo("  Add one with: biolab project <name> <path>")
-        return
+    config = _load_config()
+    config["projects"][project_name] = {
+        "path": str(project_path),
+        "registered_at": datetime.now().isoformat(),
+    }
+    _save_config(config)
 
-    typer.echo("\n Registered Projects:\n")
-    for pf in project_files:
-        content = pf.read_text()
-        title_match = re.search(r'title:\s*"(.+?)"', content)
-        path_match = re.search(r'path:\s*"(.+?)"', content)
-        status_match = re.search(r'status:\s*(\S+)', content)
-
-        title = title_match.group(1) if title_match else pf.stem
-        path = path_match.group(1) if path_match else "unknown"
-        status = status_match.group(1) if status_match else "active"
-
-        typer.echo(f"  [{status}] {title}")
-        typer.echo(f"    {path}")
-        typer.echo("")
+    typer.echo(f"Watching: {project_name} at {project_path}")
+    typer.echo("Run 'biolab scan' to detect files.")
 
 
-# ═══════════════════════════════════════════════════════════════════════
-# NOTE COMMAND
-# ═══════════════════════════════════════════════════════════════════════
+@app.command()
+def scan(
+    project_name: Optional[str] = typer.Argument(None, help="Specific project (all if empty)"),
+    verbose: bool = typer.Option(False, "--verbose", "-v"),
+):
+    """Scan all project directories. Detect new files, runs, changes."""
+    config = _load_config()
+    projects = config.get("projects", {})
+
+    if not projects:
+        typer.echo("No projects registered. Use: biolab watch /path --name myproject")
+        raise typer.Exit(1)
+
+    scan_targets = (
+        {project_name: projects[project_name]}
+        if project_name and project_name in projects
+        else projects
+    )
+
+    gen = DashboardGenerator()
+    all_results = {}
+
+    for proj_name, proj_info in scan_targets.items():
+        proj_path = Path(proj_info["path"])
+        if not proj_path.exists():
+            typer.echo(f"  [skip] {proj_name} -- path not found")
+            continue
+
+        typer.echo(f"  Scanning: {proj_name}")
+
+        # File tracking
+        tracker = FileTracker(proj_path)
+        result = tracker.scan(proj_name)
+        all_results[proj_name] = result
+
+        typer.echo(f"    Tracked: {result['total_tracked']} files")
+        typer.echo(f"    New: {len(result['new'])}")
+        typer.echo(f"    Modified: {len(result['modified'])}")
+        typer.echo(f"    Deleted: {len(result['deleted'])}")
+
+        if verbose:
+            for f in result["new"][:10]:
+                typer.echo(f"      + {f}")
+            for f in result["modified"][:10]:
+                typer.echo(f"      ~ {f}")
+
+        # Run detection
+        detector = RunDetector(proj_path)
+        nf_runs = detector.detect_nextflow_runs()
+        slurm_jobs = detector.detect_slurm_outputs()
+        log_files = detector.detect_log_files()
+
+        typer.echo(f"    Nextflow runs: {len(nf_runs)}")
+        typer.echo(f"    SLURM jobs: {len(slurm_jobs)}")
+        typer.echo(f"    Log files: {len(log_files)}")
+
+        # Generate pages
+        annotations = json.loads(Path(".biolab/annotations.json").read_text())
+        gen.generate_file_registry(proj_name, result, annotations)
+        gen.generate_runs_page(proj_name, nf_runs, slurm_jobs, log_files)
+
+    # Generate dashboard and index
+    gen.generate_dashboard(config, all_results)
+    gen.generate_annotations_page(
+        json.loads(Path(".biolab/annotations.json").read_text())
+    )
+
+    # Update config
+    config["last_scan"] = datetime.now().isoformat()
+    _save_config(config)
+
+    typer.echo("")
+    typer.echo("Scan complete. Run 'biolab build' to compile the site.")
+
+
+@app.command()
+def annotate(
+    filepath: str = typer.Argument(..., help="Relative file path to annotate"),
+    tags: str = typer.Option("", "--tags", "-t", help="Comma-separated tags"),
+    context: str = typer.Option("", "--context", "-c", help="Context description"),
+):
+    """Add tags and context to a tracked file."""
+    annotations = json.loads(Path(".biolab/annotations.json").read_text())
+
+    tag_list = [t.strip() for t in tags.split(",") if t.strip()]
+
+    if filepath in annotations:
+        # Merge tags
+        existing_tags = annotations[filepath].get("tags", [])
+        merged = list(set(existing_tags + tag_list))
+        annotations[filepath]["tags"] = merged
+        if context:
+            old_ctx = annotations[filepath].get("context", "")
+            if old_ctx:
+                annotations[filepath]["context"] = old_ctx + " | " + context
+            else:
+                annotations[filepath]["context"] = context
+        annotations[filepath]["updated_at"] = datetime.now().isoformat()
+    else:
+        annotations[filepath] = {
+            "tags": tag_list,
+            "context": context,
+            "annotated_at": datetime.now().isoformat(),
+        }
+
+    Path(".biolab/annotations.json").write_text(json.dumps(annotations, indent=2))
+
+    # Regenerate annotations page
+    gen = DashboardGenerator()
+    gen.generate_annotations_page(annotations)
+
+    typer.echo(f"Annotated: {filepath}")
+    typer.echo(f"  Tags: {tag_list}")
+    if context:
+        typer.echo(f"  Context: {context}")
+
+
+@app.command()
+def sync(
+    verbose: bool = typer.Option(False, "--verbose", "-v"),
+):
+    """Scan all projects, rebuild site, and git commit."""
+    # Scan
+    config = _load_config()
+    projects = config.get("projects", {})
+    gen = DashboardGenerator()
+    all_results = {}
+
+    for proj_name, proj_info in projects.items():
+        proj_path = Path(proj_info["path"])
+        if not proj_path.exists():
+            continue
+
+        tracker = FileTracker(proj_path)
+        result = tracker.scan(proj_name)
+        all_results[proj_name] = result
+
+        detector = RunDetector(proj_path)
+        nf_runs = detector.detect_nextflow_runs()
+        slurm_jobs = detector.detect_slurm_outputs()
+        log_files = detector.detect_log_files()
+
+        annotations = json.loads(Path(".biolab/annotations.json").read_text())
+        gen.generate_file_registry(proj_name, result, annotations)
+        gen.generate_runs_page(proj_name, nf_runs, slurm_jobs, log_files)
+
+    gen.generate_dashboard(config, all_results)
+    gen.generate_annotations_page(
+        json.loads(Path(".biolab/annotations.json").read_text())
+    )
+    gen.generate_index(config)
+
+    config["last_scan"] = datetime.now().isoformat()
+    _save_config(config)
+
+    # Git commit
+    try:
+        result = subprocess.run(["git", "status", "--porcelain"],
+                               capture_output=True, text=True)
+        if result.stdout.strip():
+            subprocess.run(["git", "add", "-A"])
+            msg = f"sync: {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+            subprocess.run(["git", "commit", "-m", msg])
+            typer.echo(f"Committed: {msg}")
+        else:
+            typer.echo("No changes to commit.")
+    except Exception as e:
+        typer.echo(f"Git error: {e}")
+
 
 @app.command()
 def note(
     message: str = typer.Argument(..., help="Note content"),
     category: str = typer.Option("general", "--cat", "-c",
-        help="Category: general, debugging, ideas, todo, observations"),
-    title: Optional[str] = typer.Option(None, "--title", help="Link to project"),
-    tags: str = typer.Option("", "--tags", help="Comma-separated tags"),
-    editor: bool = typer.Option(False, "--edit", "-e", help="Open in $EDITOR"),
+                                 help="Category: general, debugging, observation"),
+    title: Optional[str] = typer.Option(None, "--title", "-t"),
+    project_name: Optional[str] = typer.Option(None, "--project", "-p"),
+    tags: str = typer.Option("", "--tags"),
 ):
-    """Add a note to the notebook."""
+    """Add a manual note."""
     now = datetime.now()
     note_title = title if title else message[:60]
-    tag_list = [t.strip() for t in tags.split(",") if t.strip()]
-
-    # Get content
-    if editor:
-        content_body = _open_editor(f"{message}\n\n")
-    else:
-        content_body = message
-
-    # Category icon
-    icons = {
-        "debugging": "🐛", "ideas": "💡", "todo": "✅",
-        "observations": "👁️", "general": "📝",
-    }
-    # Build markdown
-    slug = _slugify(note_title)
+    slug = re.sub(r"[^\w-]", "", note_title.lower().replace(" ", "-"))[:40]
     filename = f"{now.strftime('%Y-%m-%d')}_{slug}.md"
+    tag_list = [t.strip() for t in tags.split(",") if t.strip()]
 
     cat_dir = Path(f"docs/notes/{category}")
     cat_dir.mkdir(parents=True, exist_ok=True)
 
+    tag_yaml = "\n".join(f"  - {t}" for t in tag_list) if tag_list else ""
     content = f"""---
 title: "{note_title}"
 date: {now.strftime('%Y-%m-%d %H:%M')}
 category: {category}
-tags: {tag_list}
-status: active
-project: "{project_name or ''}"
+{"tags:" if tag_list else ""}
+{tag_yaml}
 ---
 
 # {note_title}
 
-{content_body}
+{message}
 
 """
     if project_name:
-        content += f"\n**Project:** {project_name}\n"
-
-    content += f"""
----
-*Created: {now.strftime('%Y-%m-%d %H:%M')}*
-"""
+        content += f"**Project:** {project_name}\n"
+    content += f"\n---\n*{now.strftime('%Y-%m-%d %H:%M')}*\n"
 
     filepath = cat_dir / filename
     filepath.write_text(content)
-
-    # Rebuild category index
-    _rebuild_notes_index(category)
-
     typer.echo(f"Note saved: {filepath}")
 
 
-# ═══════════════════════════════════════════════════════════════════════
-# IDEA COMMAND (shortcut)
-# ═══════════════════════════════════════════════════════════════════════
+@app.command()
+def status():
+    """Show tracker status."""
+    config = _load_config()
+    typer.echo(f"\n{config.get('name', 'Lab Notebook')}")
+    typer.echo(f"Author: {config.get('author', '')}")
+    typer.echo(f"Last Scan: {config.get('last_scan', 'Never')}")
+    typer.echo("")
+
+    projects = config.get("projects", {})
+    typer.echo(f"Watched Projects: {len(projects)}")
+    for name, info in projects.items():
+        exists = "OK" if Path(info["path"]).exists() else "NOT FOUND"
+        typer.echo(f"  {name}: {info['path']} [{exists}]")
+
+    annotations = json.loads(Path(".biolab/annotations.json").read_text())
+    typer.echo(f"\nAnnotated Files: {len(annotations)}")
+
 
 @app.command()
-def idea(
-    message: str = typer.Argument(..., help="Idea description"),
-    project_name: Optional[str] = typer.Option(None, "--project", "-p", help="Link to project"),
-    tags: str = typer.Option("", "--tags", "-t", help="Comma-separated tags"),
-):
-    """Quick shortcut to add an idea."""
-    now = datetime.now()
-    slug = _slugify(message[:40])
-    filename = f"{now.strftime('%Y-%m-%d')}_{slug}.md"
-    tag_list = [t.strip() for t in tags.split(",") if t.strip()]
-
-    idea_dir = Path("docs/notes/ideas")
-    idea_dir.mkdir(parents=True, exist_ok=True)
-
-    content = f"""---
-title: "{message[:60]}"
-date: {now.strftime('%Y-%m-%d %H:%M')}
-category: idea
-status: active
-tags: {tag_list}
-project: "{project_name or ''}"
----
-
-# {message[:60]}
-
-{message}
-
-## Why
-
-*Explain rationale here.*
-
-## Plan
-
-*How would you implement this?*
-
-## Priority
-
-*Low / Medium / High*
-
----
-*Created: {now.strftime('%Y-%m-%d %H:%M')}*
-"""
-    filepath = idea_dir / filename
-    filepath.write_text(content)
-    _rebuild_notes_index("ideas")
-
-    typer.echo(f"Idea saved: {filepath}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# TODO COMMAND (shortcut)
-# ═══════════════════════════════════════════════════════════════════════
-
-@app.command()
-def todo(
-    message: str = typer.Argument(..., help="TODO item"),
-    project_name: Optional[str] = typer.Option(None, "--project", "-p", help="Link to project"),
-    priority: str = typer.Option("medium", "--priority", help="Priority: low, medium, high"),
-):
-    """Quick shortcut to add a TODO."""
-    now = datetime.now()
-    slug = _slugify(message[:40])
-    filename = f"{now.strftime('%Y-%m-%d')}_{slug}.md"
-
-    todo_dir = Path("docs/notes/todo")
-    todo_dir.mkdir(parents=True, exist_ok=True)
-
-    content = f"""---
-title: "{message[:60]}"
-date: {now.strftime('%Y-%m-%d %H:%M')}
-category: todo
-status: active
-priority: {priority}
-project: "{project_name or ''}"
----
-
-# {message[:60]}
-
-- [ ] {message}
-
-**Priority:** {priority}
-"""
-    if project_name:
-        content += f"**Project:** {project_name}\n"
-
-    content += f"""
----
-*Created: {now.strftime('%Y-%m-%d %H:%M')}*
-"""
-    filepath = todo_dir / filename
-    filepath.write_text(content)
-    _rebuild_notes_index("todo")
-
-    typer.echo(f"TODO saved: {filepath}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# DEBUG COMMAND (shortcut)
-# ═══════════════════════════════════════════════════════════════════════
-
-@app.command()
-def debug(
-    message: str = typer.Argument(..., help="Debugging note"),
-    project_name: Optional[str] = typer.Option(None, "--project", "-p", help="Link to project"),
-    error: str = typer.Option("", "--error", help="Error message"),
-    fix: str = typer.Option("", "--fix", help="The fix/solution"),
-    tags: str = typer.Option("", "--tags", "-t", help="Comma-separated tags"),
-):
-    """Add a debugging note with optional error and fix."""
-    now = datetime.now()
-    slug = _slugify(message[:40])
-    filename = f"{now.strftime('%Y-%m-%d')}_{slug}.md"
-    tag_list = [t.strip() for t in tags.split(",") if t.strip()]
-
-    debug_dir = Path("docs/notes/debugging")
-    debug_dir.mkdir(parents=True, exist_ok=True)
-
-    content = f"""---
-title: "{message[:60]}"
-date: {now.strftime('%Y-%m-%d %H:%M')}
-category: debugging
-status: {"resolved" if fix else "investigating"}
-tags: {tag_list}
-project: "{project_name or ''}"
----
-
-# {message[:60]}
-
-**Status:** {"Resolved" if fix else "Investigating"}
-"""
-    if project_name:
-        content += f"**Project:** {project_name}\n"
-
-    content += f"\n## Problem\n\n{message}\n"
-
-    if error:
-        content += f"\n## Error\n\n```\n{error}\n```\n"
-
-    if fix:
-        content += f"\n## Solution\n\n{fix}\n"
+def build():
+    """Build the MkDocs site."""
+    result = subprocess.run(["mkdocs", "build"], capture_output=True, text=True)
+    if result.returncode == 0:
+        typer.echo("Site built: ./site/")
     else:
-        content += "\n## Solution\n\n*Pending...*\n"
+        typer.echo(f"Build error: {result.stderr[:300]}")
 
-    content += f"""
----
-*Created: {now.strftime('%Y-%m-%d %H:%M')}*
-"""
-    filepath = debug_dir / filename
-    filepath.write_text(content)
-    _rebuild_notes_index("debugging")
-
-    typer.echo(f"Debug note saved: {filepath}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# OBSERVE COMMAND
-# ═══════════════════════════════════════════════════════════════════════
 
 @app.command()
-def observe(
-    message: str = typer.Argument(..., help="Observation"),
-    project_name: Optional[str] = typer.Option(None, "--project", "-p", help="Link to project"),
-):
-    """Add an observation note."""
-    now = datetime.now()
-    slug = _slugify(message[:40])
-    filename = f"{now.strftime('%Y-%m-%d')}_{slug}.md"
+def serve(port: int = typer.Option(8000)):
+    """Serve the site locally."""
+    typer.echo(f"http://localhost:{port}")
+    subprocess.run(["mkdocs", "serve", "--dev-addr", f"localhost:{port}"])
 
-    obs_dir = Path("docs/notes/observations")
-    obs_dir.mkdir(parents=True, exist_ok=True)
-
-    content = f"""---
-title: "{message[:60]}"
-date: {now.strftime('%Y-%m-%d %H:%M')}
-category: observation
-status: active
-project: "{project_name or ''}"
----
-
-# {message[:60]}
-
-{message}
-
----
-*Created: {now.strftime('%Y-%m-%d %H:%M')}*
-"""
-    filepath = obs_dir / filename
-    filepath.write_text(content)
-    _rebuild_notes_index("observations")
-
-    typer.echo(f"Observation saved: {filepath}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# EXPERIMENT COMMAND
-# ═══════════════════════════════════════════════════════════════════════
 
 @app.command()
-def experiment(
-    name: str = typer.Argument(..., help="Experiment name"),
-    project_name: str = typer.Option(..., "--project", "-p", help="Project name"),
-    hypothesis: str = typer.Option("", "--hyp", "-h", help="Hypothesis"),
-    description: str = typer.Option("", "--desc", "-d", help="Description"),
-    tags: str = typer.Option("", "--tags", "-t", help="Comma-separated tags"),
-):
-    """Create a new experiment."""
-    now = datetime.now()
-    slug = _slugify(name)
-    filename = f"{now.strftime('%Y-%m-%d')}_{slug}.md"
-    tag_list = [t.strip() for t in tags.split(",") if t.strip()]
-
-    exp_dir = Path("docs/experiments")
-    exp_dir.mkdir(parents=True, exist_ok=True)
-
-    content = f"""---
-title: "{name}"
-date: {now.strftime('%Y-%m-%d')}
-project: "{project_name}"
-status: active
-tags: {tag_list}
----
-
-# {name}
-
-| Field | Value |
-|-------|-------|
-| **Date** | {now.strftime('%Y-%m-%d')} |
-| **Project** | {project_name} |
-| **Status** | In Progress |
-
-## Hypothesis
-
-{hypothesis if hypothesis else '*State your hypothesis here.*'}
-
-## Description
-
-{description if description else '*Describe the experimental setup.*'}
-
-## Parameters
-
-| Parameter | Value |
-|-----------|-------|
-| | |
-
-## Methods
-
-*Describe the methods used.*
-
-## Results
-
-*Pending...*
-
-## Conclusion
-
-*Pending...*
-
----
-*Created: {now.strftime('%Y-%m-%d %H:%M')}*
-"""
-    filepath = exp_dir / filename
-    filepath.write_text(content)
-    _rebuild_experiments_index()
-
-    typer.echo(f"Experiment created: {filepath}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# RUN COMMAND (Nextflow tracking)
-# ═══════════════════════════════════════════════════════════════════════
-
-@app.command()
-def run(
-    name: str = typer.Argument(..., help="Run name or identifier"),
-    project_name: str = typer.Option(..., "--project", "-p", help="Project name"),
-    pipeline: str = typer.Option("", "--pipeline", help="Pipeline file or name"),
-    status_val: str = typer.Option("completed", "--status", "-s", help="Status: completed, failed, running"),
-    duration: str = typer.Option("", "--duration", help="Duration (e.g., '23m', '2h 15m')"),
-    command: str = typer.Option("", "--cmd", help="Command that was run"),
-    work_dir: str = typer.Option("", "--workdir", "-w", help="Working directory"),
-    output_dir: str = typer.Option("", "--outdir", "-o", help="Output directory"),
-    error_msg: str = typer.Option("", "--error", help="Error message if failed"),
-    notes: str = typer.Option("", "--notes", "-n", help="Additional notes"),
-    cpu_hours: float = typer.Option(0.0, "--cpu", help="CPU hours used"),
-    memory_gb: float = typer.Option(0.0, "--mem", help="Peak memory in GB"),
-):
-    """Track a pipeline run (Nextflow, Snakemake, etc.)."""
-    now = datetime.now()
-    slug = _slugify(name)
-    filename = f"{now.strftime('%Y-%m-%d')}_{slug}.md"
-
-    run_dir = Path("docs/runs/nextflow")
-    run_dir.mkdir(parents=True, exist_ok=True)
-
-    content = f"""---
-title: "{name}"
-date: {now.strftime('%Y-%m-%d %H:%M')}
-project: "{project_name}"
-pipeline: "{pipeline}"
-status: {status_val}
----
-
-# Run: {name}
-
-| Field | Value |
-|-------|-------|
-| **Run Name** | {name} |
-| **Project** | {project_name} |
-| **Pipeline** | `{pipeline}` |
-| **Status** | {status_val} |
-| **Date** | {now.strftime('%Y-%m-%d %H:%M')} |
-| **Duration** | {duration if duration else 'N/A'} |
-| **CPU Hours** | {cpu_hours if cpu_hours else 'N/A'} |
-| **Peak Memory** | {f'{memory_gb} GB' if memory_gb else 'N/A'} |
-| **Work Dir** | `{work_dir}` |
-| **Output Dir** | `{output_dir}` |
-"""
-
-    if command:
-        content += f"""
-## Command
-
-```bash
-{command}
-```
-"""
-
-    if error_msg:
-        content += f"""
-## Error
-
-```
-{error_msg}
-```
-"""
-
-    if notes:
-        content += f"""
-## Notes
-
-{notes}
-"""
-
-    content += f"""
----
-*Tracked: {now.strftime('%Y-%m-%d %H:%M')}*
-"""
-
-    filepath = run_dir / filename
-    filepath.write_text(content)
-    _rebuild_runs_index()
-
-    typer.echo(f"Run tracked: {filepath}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# SLURM COMMAND
-# ═══════════════════════════════════════════════════════════════════════
-
-@app.command()
-def slurm(
-    job_id: str = typer.Argument(..., help="SLURM Job ID"),
-    project_name: str = typer.Option("", "--project", "-p", help="Project name"),
-    job_name: str = typer.Option("", "--name", "-n", help="Job name"),
-    status_val: str = typer.Option("completed", "--status", "-s", help="Status"),
-    partition: str = typer.Option("", "--partition", help="SLURM partition"),
-    cpus: int = typer.Option(0, "--cpus", help="CPUs requested"),
-    memory: str = typer.Option("", "--mem", help="Memory requested"),
-    duration: str = typer.Option("", "--duration", help="Wall time"),
-    notes: str = typer.Option("", "--notes", help="Notes"),
-):
-    """Track a SLURM job."""
-    now = datetime.now()
-    filename = f"{now.strftime('%Y-%m-%d')}_job-{job_id}.md"
-
-    slurm_dir = Path("docs/runs/slurm")
-    slurm_dir.mkdir(parents=True, exist_ok=True)
-
-    content = f"""---
-title: "SLURM Job {job_id}"
-date: {now.strftime('%Y-%m-%d %H:%M')}
-job_id: "{job_id}"
-project: "{project_name}"
-status: {status_val}
----
-
-# SLURM Job: {job_id}
-
-| Field | Value |
-|-------|-------|
-| **Job ID** | {job_id} |
-| **Job Name** | {job_name if job_name else 'N/A'} |
-| **Project** | {project_name if project_name else 'N/A'} |
-| **Status** | {status_val} |
-| **Partition** | {partition if partition else 'N/A'} |
-| **CPUs** | {cpus if cpus else 'N/A'} |
-| **Memory** | {memory if memory else 'N/A'} |
-| **Duration** | {duration if duration else 'N/A'} |
-"""
-
-    if notes:
-        content += f"\n## Notes\n\n{notes}\n"
-
-    content += f"""
----
-*Tracked: {now.strftime('%Y-%m-%d %H:%M')}*
-"""
-
-    filepath = slurm_dir / filename
-    filepath.write_text(content)
-
-    _rebuild_runs_index()
-
-    typer.echo(f"SLURM job tracked: {filepath}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# DATASET COMMAND
-# ═══════════════════════════════════════════════════════════════════════
-
-@app.command()
-def dataset(
-    name: str = typer.Argument(..., help="Dataset name"),
-    path: str = typer.Argument(..., help="Path to dataset"),
-    project_name: str = typer.Option(..., "--project", "-p", help="Project name"),
-    description: str = typer.Option("", "--desc", "-d", help="Description"),
-    organism: str = typer.Option("", "--organism", "-o", help="Organism"),
-    fmt: str = typer.Option("", "--format", "-f", help="Format (FASTQ, BAM, VCF, etc.)"),
-    samples: int = typer.Option(0, "--samples", "-n", help="Number of samples"),
-    accession: str = typer.Option("", "--accession", help="Accession number (GEO, SRA, etc.)"),
-):
-    """Register a dataset (metadata only - not the actual files)."""
-    now = datetime.now()
-    slug = _slugify(name)
-    filename = f"{slug}.md"
-
-    ds_dir = Path("docs/datasets")
-    ds_dir.mkdir(parents=True, exist_ok=True)
-
-    dataset_path = Path(path).resolve()
-
-    content = f"""---
-title: "{name}"
-date: {now.strftime('%Y-%m-%d')}
-project: "{project_name}"
-path: "{dataset_path}"
-organism: "{organism}"
-format: "{fmt}"
-accession: "{accession}"
-samples: {samples}
----
-
-# Dataset: {name}
-
-| Field | Value |
-|-------|-------|
-| **Path** | `{dataset_path}` |
-| **Project** | {project_name} |
-| **Format** | {fmt if fmt else 'N/A'} |
-| **Organism** | {organism if organism else 'N/A'} |
-| **Samples** | {samples if samples else 'N/A'} |
-| **Accession** | {accession if accession else 'N/A'} |
-| **Registered** | {now.strftime('%Y-%m-%d')} |
-
-## Description
-
-{description if description else '*Add description.*'}
-
-## Files
-
-*List key files here.*
-
-## Provenance
-
-*How was this dataset obtained? QC status?*
-
----
-*Registered: {now.strftime('%Y-%m-%d %H:%M')}*
-"""
-
-    filepath = ds_dir / filename
-    filepath.write_text(content)
-
-    _rebuild_datasets_index()
-
-    typer.echo(f"Dataset registered: {filepath}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# CANCEL COMMAND
-# ═══════════════════════════════════════════════════════════════════════
-
-@app.command()
-def cancel(
-    filepath: str = typer.Argument(..., help="Path to the note/idea/todo file to cancel"),
-    reason: str = typer.Option("", "--reason", "-r", help="Reason for cancellation"),
-):
-    """Cancel/archive a note, idea, or TODO."""
-    path = Path(filepath)
-    if not path.exists():
-        # Try to find it in docs/notes
-        possible = list(Path("docs/notes").rglob(f"*{filepath}*"))
-        if possible:
-            path = possible[0]
-            typer.echo(f"Found: {path}")
-        else:
-            typer.echo(f"Error: File not found: {filepath}")
-            raise typer.Exit(1)
-
-    content = path.read_text()
-
-    # Update status in frontmatter
-    content = content.replace("status: active", "status: cancelled")
-
-    # Add cancellation notice
-    now = datetime.now()
-    cancel_notice = f"\n\n---\n\n!!! warning \"Cancelled ({now.strftime('%Y-%m-%d')})\"\n"
-    if reason:
-        cancel_notice += f"    **Reason:** {reason}\n"
+def deploy():
+    """Scan, build, and deploy to GitHub Pages."""
+    # Run sync first
+    config = _load_config()
+    projects = config.get("projects", {})
+    gen = DashboardGenerator()
+    all_results = {}
+
+    for proj_name, proj_info in projects.items():
+        proj_path = Path(proj_info["path"])
+        if not proj_path.exists():
+            continue
+        tracker = FileTracker(proj_path)
+        result = tracker.scan(proj_name)
+        all_results[proj_name] = result
+        detector = RunDetector(proj_path)
+        annotations = json.loads(Path(".biolab/annotations.json").read_text())
+        gen.generate_file_registry(proj_name, result, annotations)
+        gen.generate_runs_page(proj_name, detector.detect_nextflow_runs(),
+                               detector.detect_slurm_outputs(),
+                               detector.detect_log_files())
+
+    gen.generate_dashboard(config, all_results)
+    gen.generate_annotations_page(
+        json.loads(Path(".biolab/annotations.json").read_text())
+    )
+    gen.generate_index(config)
+
+    result = subprocess.run(["mkdocs", "gh-deploy", "--force"],
+                           capture_output=True, text=True)
+    if result.returncode == 0:
+        typer.echo("Deployed to GitHub Pages.")
     else:
-        cancel_notice += "    This item has been cancelled.\n"
+        typer.echo(f"Deploy error: {result.stderr[:300]}")
 
-    content += cancel_notice
-    path.write_text(content)
-
-    # Determine category and rebuild index
-    category = path.parent.name
-    _rebuild_notes_index(category)
-
-    typer.echo(f"Cancelled: {path}")
-    if reason:
-        typer.echo(f"   Reason: {reason}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# DONE COMMAND (mark TODO as done)
-# ═══════════════════════════════════════════════════════════════════════
 
 @app.command()
-def done(
-    filepath: str = typer.Argument(..., help="Path to the TODO file to mark as done"),
-    result: str = typer.Option("", "--result", "-r", help="Result or outcome"),
-):
-    """Mark a TODO as completed."""
-    path = Path(filepath)
-    if not path.exists():
-        possible = list(Path("docs/notes/todo").rglob(f"*{filepath}*"))
-        if possible:
-            path = possible[0]
-            typer.echo(f"Found: {path}")
-        else:
-            typer.echo(f"Error: File not found: {filepath}")
-            raise typer.Exit(1)
-
-    content = path.read_text()
-    now = datetime.now()
-
-    # Update status
-    content = content.replace("status: active", "status: completed")
-    content = content.replace("- [ ]", "- [x]")
-
-    # Add completion notice
-    done_notice = f"\n\n---\n\n!!! success \"Completed ({now.strftime('%Y-%m-%d')})\"\n"
-    if result:
-        done_notice += f"    **Result:** {result}\n"
-
-    content += done_notice
-    path.write_text(content)
-    _rebuild_notes_index("todo")
-
-    typer.echo(f"Marked as done: {path}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# UPDATE COMMAND
-# ═══════════════════════════════════════════════════════════════════════
-
-@app.command()
-def update(
-    filepath: str = typer.Argument(..., help="Path to the file to update"),
-    message: str = typer.Option("", "--msg", "-m", help="Update message to append"),
-    editor: bool = typer.Option(False, "--edit", "-e", help="Open in $EDITOR"),
-    new_status: str = typer.Option("", "--status", "-s", help="New status"),
-):
-    """Update an existing note, experiment, or run."""
-    path = Path(filepath)
-    if not path.exists():
-        # Search for it
-        possible = list(Path("docs").rglob(f"*{filepath}*"))
-        if possible:
-            path = possible[0]
-            typer.echo(f"Found: {path}")
-        else:
-            typer.echo(f"Error: File not found: {filepath}")
-            raise typer.Exit(1)
-
-    content = path.read_text()
-    now = datetime.now()
-
-    # Update status if provided
-    if new_status:
-        content = re.sub(r'status:\s*\S+', f'status: {new_status}', content)
-
-    # Append update
-    if message:
-        update_text = f"\n\n---\n\n**Update ({now.strftime('%Y-%m-%d %H:%M')}):**\n\n{message}\n"
-        content += update_text
-
-    if editor:
-        content = _open_editor(content)
-
-    path.write_text(content)
-    typer.echo(f"Updated: {path}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# SEARCH COMMAND
-# ═══════════════════════════════════════════════════════════════════════
-
-@app.command()
-def search(
-    query: str = typer.Argument(..., help="Search term"),
-    limit: int = typer.Option(20, "--limit", "-n", help="Max results"),
-):
-    """Search across all notebook content."""
+def search(query: str = typer.Argument(...), limit: int = typer.Option(20, "-n")):
+    """Search across all tracked content."""
     query_lower = query.lower()
     results = []
-
-    # Search all markdown files
     for md_file in Path("docs").rglob("*.md"):
         if md_file.name == "index.md":
             continue
         try:
             content = md_file.read_text()
             if query_lower in content.lower():
-                # Extract title
-                title_match = re.search(r'^#\s+(.+)', content, re.MULTILINE)
-                title = title_match.group(1) if title_match else md_file.stem
-
-                # Find matching line for context
+                title_m = re.search(r'^#\s+(.+)', content, re.MULTILINE)
+                title = title_m.group(1) if title_m else md_file.stem
                 for line in content.split('\n'):
                     if query_lower in line.lower():
-                        context = line.strip()[:80]
+                        ctx = line.strip()[:80]
                         break
                 else:
-                    context = ""
-
-                results.append((str(md_file), title, context))
+                    ctx = ""
+                results.append((str(md_file), title, ctx))
         except Exception:
             continue
 
     if not results:
         typer.echo(f"No results for: '{query}'")
         return
-
     typer.echo(f"\nResults for '{query}' ({len(results)} found):\n")
-    for filepath, title, context in results[:limit]:
+    for fp, title, ctx in results[:limit]:
         typer.echo(f"  {title}")
-        typer.echo(f"     {filepath}")
-        if context:
-            typer.echo(f"     → {context}")
+        typer.echo(f"    {fp}")
+        if ctx:
+            typer.echo(f"    > {ctx}")
         typer.echo("")
 
 
-# ═══════════════════════════════════════════════════════════════════════
-# BUILD COMMAND
-# ═══════════════════════════════════════════════════════════════════════
+# ===================================================================
+# HELPERS
+# ===================================================================
 
-@app.command()
-def build():
-    """Build the MkDocs documentation site."""
-    mkdocs_yml = Path("mkdocs.yml")
-    if not mkdocs_yml.exists():
-        typer.echo("Error: mkdocs.yml not found. Run: biolab init")
-        raise typer.Exit(1)
+def _load_config() -> dict:
+    p = Path(".biolab/config.json")
+    if p.exists():
+        return json.loads(p.read_text())
+    typer.echo("No notebook found. Run: biolab init")
+    raise typer.Exit(1)
 
-    # Rebuild all indexes first
-    _rebuild_projects_index()
-    _rebuild_experiments_index()
-    _rebuild_runs_index()
-    _rebuild_datasets_index()
-    for cat in ["general", "debugging", "ideas", "todo", "observations"]:
-        _rebuild_notes_index(cat)
-    _rebuild_dashboard()
 
-    # Run mkdocs build
-    result = subprocess.run(["mkdocs", "build"], capture_output=True, text=True)
-    if result.returncode == 0:
-        typer.echo("Site built → ./site/")
-    else:
-        typer.echo(f"Build error: {result.stderr[:300]}")
+def _save_config(config: dict):
+    Path(".biolab/config.json").write_text(json.dumps(config, indent=2, default=str))
 
 
-# ═══════════════════════════════════════════════════════════════════════
-# SERVE COMMAND
-# ═══════════════════════════════════════════════════════════════════════
-
-@app.command()
-def serve(
-    port: int = typer.Option(8000, help="Port number"),
-):
-    """Serve docs locally for preview."""
-    _rebuild_dashboard()
-    typer.echo(f"Serving at http://localhost:{port} (Ctrl+C to stop)")
-    subprocess.run(["mkdocs", "serve", "--dev-addr", f"localhost:{port}"])
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# DEPLOY COMMAND
-# ═══════════════════════════════════════════════════════════════════════
-
-@app.command()
-def deploy():
-    """Deploy to GitHub Pages."""
-    # Rebuild everything first
-    _rebuild_projects_index()
-    _rebuild_experiments_index()
-    _rebuild_runs_index()
-    _rebuild_datasets_index()
-    for cat in ["general", "debugging", "ideas", "todo", "observations"]:
-        _rebuild_notes_index(cat)
-    _rebuild_dashboard()
-
-    result = subprocess.run(
-        ["mkdocs", "gh-deploy", "--force"],
-        capture_output=True, text=True,
-    )
-    if result.returncode == 0:
-        typer.echo("Deployed to GitHub Pages!")
-    else:
-        typer.echo(f"Deploy failed: {result.stderr[:300]}")
-
-
-# ═══════════════════════════════════════════════════════════════════════
-# HELPER FUNCTIONS
-# ═══════════════════════════════════════════════════════════════════════
-
-def _slugify(text: str) -> str:
-    """Convert text to URL-friendly slug."""
-    text = text.lower().strip()
-    text = re.sub(r"[^\w\s-]", "", text)
-    text = re.sub(r"[-\s]+", "-", text)
-    return text[:50].rstrip("-")
-
-
-def _count_md_files(directory: str) -> int:
-    """Count markdown files in a directory (excluding index.md)."""
-    d = Path(directory)
-    if not d.exists():
-        return 0
-    return len([f for f in d.glob("*.md") if f.name != "index.md"])
-
-
-def _open_editor(initial_content: str = "") -> str:
-    """Open $EDITOR and return content."""
-    import tempfile
-    editor = os.environ.get("EDITOR", "nano")
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".md", delete=False) as f:
-        f.write(initial_content)
-        tmppath = f.name
-    subprocess.call([editor, tmppath])
-    with open(tmppath) as f:
-        content = f.read()
-    os.unlink(tmppath)
-    return content
-
-
-def _rebuild_projects_index():
-    """Rebuild docs/projects/index.md from project files."""
-    projects_dir = Path("docs/projects")
-    if not projects_dir.exists():
-        return
-
-    project_files = sorted(projects_dir.glob("*.md"))
-    project_files = [f for f in project_files if f.name != "index.md"]
-
-    lines = ["# Projects\n\n"]
-
-    if not project_files:
-        lines.append("*No projects registered yet.*\n\n")
-        lines.append("Add one with:\n```bash\nbiolab project <name> <path>\n```\n")
-    else:
-        lines.append("| Project | Path | Status | Created |\n")
-        lines.append("|---------|------|--------|--------|\n")
-
-        for pf in project_files:
-            content = pf.read_text()
-            title_match = re.search(r'title:\s*"(.+?)"', content)
-            path_match = re.search(r'path:\s*"(.+?)"', content)
-            created_match = re.search(r'created:\s*(\S+)', content)
-            status_match = re.search(r'status:\s*(\S+)', content)
-
-            title = title_match.group(1) if title_match else pf.stem
-            path = path_match.group(1) if path_match else ""
-            created = created_match.group(1) if created_match else ""
-            status = status_match.group(1) if status_match else "active"
-
-            # Truncate long paths
-            display_path = path if len(path) < 50 else "..." + path[-47:]
-            lines.append(f"| {title} | `{display_path}` | {status} | {created} |\n")
-
-    (projects_dir / "index.md").write_text("".join(lines))
-
-
-def _rebuild_notes_index(category: str):
-    """Rebuild index for a specific notes category."""
-    cat_dir = Path(f"docs/notes/{category}")
-    if not cat_dir.exists():
-        return
-
-    note_files = sorted(cat_dir.glob("*.md"), reverse=True)
-    note_files = [f for f in note_files if f.name != "index.md"]
-
-    lines = [f"# {category.title()}\n\n"]
-
-    if not note_files:
-        lines.append("*No entries yet.*\n")
-    else:
-        lines.append("| Date | Title | Status |\n")
-        lines.append("|------|-------|--------|\n")
-
-        for nf in note_files:
-            content = nf.read_text()
-            title_match = re.search(r'title:\s*"(.+?)"', content)
-            date_match = re.search(r'date:\s*(\S+)', content)
-            status_match = re.search(r'status:\s*(\S+)', content)
-
-            title = title_match.group(1) if title_match else nf.stem
-            date = date_match.group(1) if date_match else ""
-            status = status_match.group(1) if status_match else "active"
-
-            lines.append(f"| {date} | [{title[:50]}]({nf.name}) | {status} |\n")
-
-    (cat_dir / "index.md").write_text("".join(lines))
-
-
-def _rebuild_experiments_index():
-    """Rebuild docs/experiments/index.md."""
-    exp_dir = Path("docs/experiments")
-    if not exp_dir.exists():
-        return
-
-    exp_files = sorted(exp_dir.glob("*.md"), reverse=True)
-    exp_files = [f for f in exp_files if f.name != "index.md"]
-
-    lines = ["# Experiments\n\n"]
-
-    if not exp_files:
-        lines.append("*No experiments yet.*\n")
-    else:
-        lines.append("| Date | Experiment | Project | Status |\n")
-        lines.append("|------|-----------|---------|--------|\n")
-
-        for ef in exp_files:
-            content = ef.read_text()
-            title_match = re.search(r'title:\s*"(.+?)"', content)
-            date_match = re.search(r'date:\s*(\S+)', content)
-            project_match = re.search(r'project:\s*"(.+?)"', content)
-            status_match = re.search(r'status:\s*(\S+)', content)
-
-            title = title_match.group(1) if title_match else ef.stem
-            date = date_match.group(1) if date_match else ""
-            proj = project_match.group(1) if project_match else ""
-            status = status_match.group(1) if status_match else "active"
-
-            lines.append(f"| {date} | [{title[:40]}]({ef.name}) | {proj} | {status} |\n")
-
-    (exp_dir / "index.md").write_text("".join(lines))
-
-
-def _rebuild_runs_index():
-    """Rebuild docs/runs/index.md and sub-indexes."""
-    # Nextflow runs
-    nf_dir = Path("docs/runs/nextflow")
-    if nf_dir.exists():
-        nf_files = sorted(nf_dir.glob("*.md"), reverse=True)
-        nf_files = [f for f in nf_files if f.name != "index.md"]
-
-        lines = ["# Nextflow Runs\n\n"]
-        if not nf_files:
-            lines.append("*No runs tracked yet.*\n")
-        else:
-            lines.append("| Date | Run | Pipeline | Status |\n")
-            lines.append("|------|-----|----------|--------|\n")
-            for rf in nf_files:
-                content = rf.read_text()
-                title_match = re.search(r'title:\s*"(.+?)"', content)
-                date_match = re.search(r'date:\s*(\S+)', content)
-                pipeline_match = re.search(r'pipeline:\s*"(.+?)"', content)
-                status_match = re.search(r'status:\s*(\S+)', content)
-
-                title = title_match.group(1) if title_match else rf.stem
-                date = date_match.group(1) if date_match else ""
-                pipeline = pipeline_match.group(1) if pipeline_match else ""
-                status = status_match.group(1) if status_match else ""
-
-                lines.append(f"| {date} | [{title[:30]}]({rf.name}) | {pipeline[:20]} | {status} |\n")
-
-        (nf_dir / "index.md").write_text("".join(lines))
-
-    # SLURM Jobs
-    slurm_dir = Path("docs/runs/slurm")
-    if slurm_dir.exists():
-        slurm_files = sorted(slurm_dir.glob("*.md"), reverse=True)
-        slurm_files = [f for f in slurm_files if f.name != "index.md"]
-
-        lines = ["# SLURM Jobs\n\n"]
-        if not slurm_files:
-            lines.append("*No jobs tracked yet.*\n")
-        else:
-            lines.append("| Date | Job ID | Project | Status |\n")
-            lines.append("|------|--------|---------|--------|\n")
-            for sf in slurm_files:
-                content = sf.read_text()
-                id_match = re.search(r'job_id:\s*"(.+?)"', content)
-                date_match = re.search(r'date:\s*(\S+)', content)
-                proj_match = re.search(r'project:\s*"(.+?)"', content)
-                status_match = re.search(r'status:\s*(\S+)', content)
-
-                job_id = id_match.group(1) if id_match else sf.stem
-                date = date_match.group(1) if date_match else ""
-                proj = proj_match.group(1) if proj_match else ""
-                status = status_match.group(1) if status_match else ""
-
-                lines.append(f"| {date} | {job_id} | {proj[:20]} | {status} |\n")
-
-        (slurm_dir / "index.md").write_text("".join(lines))
-
-    # Main runs index
-    runs_dir = Path("docs/runs")
-    if runs_dir.exists():
-        nf_count = _count_md_files("docs/runs/nextflow")
-        slurm_count = _count_md_files("docs/runs/slurm")
-        main_lines = [
-            "# Pipeline Runs\n\n",
-            f"- [Nextflow Runs](nextflow/index.md) ({nf_count} tracked)\n",
-            f"- [SLURM Jobs](slurm/index.md) ({slurm_count} tracked)\n",
-        ]
-        (runs_dir / "index.md").write_text("".join(main_lines))
-
-
-def _rebuild_dashboard():
-    """Rebuild the main dashboard with current stats."""
-    now = datetime.now()
-
-    projects_count = _count_md_files("docs/projects")
-    experiments_count = _count_md_files("docs/experiments")
-    nf_runs_count = _count_md_files("docs/runs/nextflow")
-    slurm_count = _count_md_files("docs/runs/slurm")
-    datasets_count = _count_md_files("docs/datasets")
-    notes_debug = _count_md_files("docs/notes/debugging")
-    notes_ideas = _count_md_files("docs/notes/ideas")
-    notes_todo = _count_md_files("docs/notes/todo")
-    notes_obs = _count_md_files("docs/notes/observations")
-    notes_general = _count_md_files("docs/notes/general")
-    total_notes = notes_debug + notes_ideas + notes_todo + notes_general + notes_obs
-
-    content = f"""# Dashboard
-
-**Last Updated:** {now.strftime('%Y-%m-%d %H:%M')}
-
-## Quick Stats
-
-| Metric | Count |
-|--------|-------|
-| Projects | {projects_count} |
-| Experiments | {experiments_count} |
-| Nextflow Runs | {nf_runs_count} |
-| SLURM Jobs | {slurm_count} |
-| Datasets | {datasets_count} |
-| Total Notes | {total_notes} |
-| Debugging | {notes_debug} |
-| Ideas | {notes_ideas} |
-| TODOs | {notes_todo} |
-| Observations | {notes_obs} |
-
-## Sections
-
-| Section | Link |
-|---------|------|
-| Projects | [View all projects](projects/index.md) |
-| Experiments | [View all experiments](experiments/index.md) |
-| Pipeline Runs | [View all runs](runs/index.md) |
-| Datasets | [View all datasets](datasets/index.md) |
-| Debugging Notes | [View debugging](notes/debugging/index.md) |
-| Ideas | [View ideas](notes/ideas/index.md) |
-| TODOs | [View TODOs](notes/todo/index.md) |
-| Observations | [View observations](notes/observations/index.md) |
-
-"""
-    Path("docs/dashboard.md").write_text(content)
-
-
-def _create_mkdocs_yml(name: str):
-    """Create mkdocs.yml configuration."""
+def _create_mkdocs_config(name: str):
+    """Create mkdocs.yml with tags support and professional styling."""
     content = f"""site_name: "{name}"
-site_description: "Personal Bioinformatics Lab Notebook"
+site_description: "Automated Project Intelligence Tracker"
 
 theme:
   name: material
   palette:
     - scheme: default
-      primary: teal
-      accent: cyan
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Dark mode
     - scheme: slate
-      primary: teal
-      accent: cyan
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Light mode
@@ -1364,10 +1319,16 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tabs.link
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - search:
       separator: '[\\s\\-\\.]+'
+  - tags:
+      tags_file: tags.md
 
 markdown_extensions:
   - admonition
@@ -1393,56 +1354,25 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Dashboard: dashboard.md
-  - Projects: projects/index.md
-  - Experiments: experiments/index.md
-  - Runs: runs/index.md
-  - Notes:
-    - All Notes: notes/index.md
-    - General: notes/general/index.md
-    - Debugging: notes/debugging/index.md
-    - Ideas: notes/ideas/index.md
-    - TODOs: notes/todo/index.md
-    - Observations: notes/observations/index.md
-  - Datasets: datasets/index.md
+  - File Registry: registry/
+  - Pipeline Runs: runs/
+  - Annotations: annotations.md
+  - Notes: notes/
+  - Tags: tags.md
 """
     Path("mkdocs.yml").write_text(content)
 
+    # Create tags page
+    Path("docs/tags.md").write_text("""---
+title: Tags
+---
 
-def _rebuild_datasets_index():
-    """Rebuild docs/datasets/index.md."""
-    ds_dir = Path("docs/datasets")
-    if not ds_dir.exists():
-        return
+# Tags Index
 
-    ds_files = sorted(ds_dir.glob("*.md"), reverse=True)
-    ds_files = [f for f in ds_files if f.name != "index.md"]
-
-    lines = ["# Datasets\n\n"]
-
-    if not ds_files:
-        lines.append("*No datasets registered yet.*\n")
-    else:
-        lines.append("| Date | Dataset | Project | Format | Samples |\n")
-        lines.append("|------|---------|---------|--------|---------|\n")
-
-        for df in ds_files:
-            content = df.read_text()
-            title_match = re.search(r'title:\s*"(.+?)"', content)
-            date_match = re.search(r'date:\s*(\S+)', content)
-            proj_match = re.search(r'project:\s*"(.+?)"', content)
-            fmt_match = re.search(r'format:\s*"(.+?)"', content)
-            samples_match = re.search(r'samples:\s*(\d+)', content)
-
-            title = title_match.group(1) if title_match else df.stem
-            date = date_match.group(1) if date_match else ""
-            proj = proj_match.group(1) if proj_match else ""
-            fmt = fmt_match.group(1) if fmt_match else ""
-            samples = samples_match.group(1) if samples_match else "N/A"
-
-            lines.append(f"| {date} | [{title[:40]}]({df.name}) | {proj[:20]} | {fmt} | {samples} |\n")
-
-    (ds_dir / "index.md").write_text("".join(lines))
+<!-- material/tags -->
+""")
 
 
 if __name__ == "__main__":
     app()
+

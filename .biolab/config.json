@@ -1,0 +1,23 @@
+{
+  "name": "JT Lab Notebook",
+  "author": "Jash Trivedi",
+  "projects": {
+    "5mc_outlier": {
+      "path": "/home/jtrivedi@BLUECAT.arizona.edu/projects/5mc",
+      "registered_at": "2026-05-19T00:35:27.321549"
+    },
+    "DROP_pipeline": {
+      "path": "/home/jtrivedi@BLUECAT.arizona.edu/projects/tgen_rnaseq/DROP",
+      "registered_at": "2026-05-19T00:36:04.899763"
+    },
+    "TGen_RNASeq": {
+      "path": "/icebox/schrauwenLab/jtrivedi/projects/tgen_rnaseq",
+      "registered_at": "2026-05-19T00:36:31.634620"
+    },
+    "5mc_simulator": {
+      "path": "/home/jtrivedi@BLUECAT.arizona.edu/projects/5mc/test_data",
+      "registered_at": "2026-05-19T00:37:26.138387"
+    }
+  },
+  "last_scan": null
+}
