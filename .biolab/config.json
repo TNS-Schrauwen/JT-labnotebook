@@ -17,7 +17,11 @@
     "5mc_simulator": {
       "path": "/home/jtrivedi@BLUECAT.arizona.edu/projects/5mc/test_data",
       "registered_at": "2026-05-19T00:37:26.138387"
+    },
+    "popqc": {
+      "path": "/home/jtrivedi@BLUECAT.arizona.edu/projects/popqc",
+      "registered_at": "2026-05-19T01:36:50.917897"
     }
   },
-  "last_scan": "2026-05-19T01:28:56.101865"
+  "last_scan": "2026-05-19T02:08:19.779075"
 }

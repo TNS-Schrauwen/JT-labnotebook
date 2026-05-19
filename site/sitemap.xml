@@ -81,6 +81,10 @@
          <lastmod>2026-05-19</lastmod>
     </url>
     <url>
+         <loc>https://tns-schrauwen.github.io/JT-labnotebook/registry/popqc/</loc>
+         <lastmod>2026-05-19</lastmod>
+    </url>
+    <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/registry/tgen_rnaseq/</loc>
          <lastmod>2026-05-19</lastmod>
     </url>
@@ -98,6 +102,10 @@
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/drop_pipeline/</loc>
+         <lastmod>2026-05-19</lastmod>
+    </url>
+    <url>
+         <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/popqc/</loc>
          <lastmod>2026-05-19</lastmod>
     </url>
     <url>

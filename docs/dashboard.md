@@ -1,11 +1,11 @@
 ---
 title: "Dashboard"
-date: 2026-05-19 01:28
+date: 2026-05-19 02:08
 ---
 
 # Project Intelligence Dashboard
 
-**Last Updated:** 2026-05-19 01:28
+**Last Updated:** 2026-05-19 02:08
 
 ---
 
@@ -13,10 +13,11 @@ date: 2026-05-19 01:28
 
 | Project | Path | Tracked Files | New | Modified | Status |
 |---------|------|---------------|-----|----------|--------|
-| [5mc_outlier](registry/5mc_outlier.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/5mc` | 1978 | 1978 | 0 | Active |
-| [DROP_pipeline](registry/drop_pipeline.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/tgen_rnaseq/DROP` | 683 | 683 | 0 | Active |
-| [TGen_RNASeq](registry/tgen_rnaseq.md) | `/icebox/schrauwenLab/jtrivedi/projects/tgen_rnaseq` | 43252 | 43252 | 0 | Active |
-| [5mc_simulator](registry/5mc_simulator.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/5mc/test_data` | 568 | 568 | 0 | Active |
+| [5mc_outlier](registry/5mc_outlier.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/5mc` | 1581 | 0 | 0 | Active |
+| [DROP_pipeline](registry/drop_pipeline.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/tgen_rnaseq/DROP` | 302 | 0 | 0 | Active |
+| [TGen_RNASeq](registry/tgen_rnaseq.md) | `/icebox/schrauwenLab/jtrivedi/projects/tgen_rnaseq` | 29525 | 0 | 0 | Active |
+| [5mc_simulator](registry/5mc_simulator.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/5mc/test_data` | 171 | 0 | 0 | Active |
+| [popqc](registry/popqc.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/popqc` | 30 | 0 | 0 | Active |
 
 ---
 
@@ -24,11 +25,11 @@ date: 2026-05-19 01:28
 
 | Metric | Value |
 |--------|-------|
-| Total Tracked Files | 46481 |
-| New Files (this scan) | 46481 |
+| Total Tracked Files | 31609 |
+| New Files (this scan) | 0 |
 | Modified Files (this scan) | 0 |
 | Deleted Files (this scan) | 0 |
-| Projects | 4 |
+| Projects | 5 |
 
 ---
 

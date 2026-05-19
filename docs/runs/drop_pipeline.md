@@ -1,6 +1,6 @@
 ---
 title: "Pipeline Runs -- DROP_pipeline"
-date: 2026-05-19 00:39
+date: 2026-05-19 02:07
 tags:
   - runs
   - DROP_pipeline
@@ -8,7 +8,7 @@ tags:
 
 # Pipeline Runs: DROP_pipeline
 
-**Last Scanned:** 2026-05-19 00:39
+**Last Scanned:** 2026-05-19 02:07
 
 ---
 
@@ -22,7 +22,7 @@ tags:
 
 | File | Size | Modified |
 |------|------|----------|
-| `logs/slurm/tgen_drop_36200.out` | 1.8 MB | 2026-05-19T00:10 |
+| `logs/slurm/tgen_drop_36200.out` | 1.8 MB | 2026-05-19T01:42 |
 | `results/reports/aberrant_splicing/splicecounts/blood/multiqc_data/multiqc.log` | 12.4 KB | 2026-05-18T23:57 |
 | `logs/slurm/tgen_drop_36200.err` | 87 B | 2026-05-18T02:56 |
 | `logs/slurm/tgen_drop_35150.out` | 2.8 MB | 2026-05-16T22:22 |

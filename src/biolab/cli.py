@@ -9,6 +9,7 @@ import re
 import json
 import hashlib
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 app = typer.Typer(
     name="biolab",
@@ -23,53 +24,34 @@ app = typer.Typer(
 
 class FileTracker:
     """
-    Tracks all files in project directories using content hashing.
-    Detects new files, modified files, and deleted files.
-    Similar to git's approach of hashing file contents to detect changes.
+    Optimized file tracker using incremental mtime-based change detection.
     """
 
     TRACKED_EXTENSIONS = {
-        # Scripts
-        ".py", ".R", ".r", ".sh", ".bash", ".nf", ".config", ".pl", ".rb",
-        # Config
+        ".py", ".R", ".r", ".sh", ".bash", ".nf", ".config", ".pl",
         ".yaml", ".yml", ".json", ".toml", ".ini", ".cfg", ".conf",
-        # Data/metadata
         ".csv", ".tsv", ".txt", ".md", ".rst",
-        # Bioinformatics
-        ".bed", ".gff", ".gtf", ".vcf", ".fasta", ".fa",
-        # Logs and outputs
+        ".bed", ".gff", ".gtf", ".vcf",
         ".log", ".out", ".err", ".stderr", ".stdout",
-        # Reports
         ".html", ".pdf", ".png", ".svg",
-        # Job scripts
-        ".slurm", ".sbatch", ".pbs", ".sge",
-        # Nextflow specific
-        ".nf", ".config",
-        # Snakemake
-        "Snakefile",
-        # Make
-        "Makefile",
+        ".slurm", ".sbatch",
     }
 
-    SKIP_DIRS = {
+    SKIP_DIRS = frozenset({
         ".git", "__pycache__", ".nextflow", "work",
         ".snakemake", "node_modules", ".conda", ".cache",
-        ".biolab", "site", ".venv", "venv",
-    }
+        ".biolab", "site", ".venv", "venv", ".singularity",
+        ".apptainer", "conda-bld", "pkgs",
+    })
 
-    # Large binary files to skip content hashing (track existence only)
-    LARGE_BINARY_EXTENSIONS = {
-        ".fastq", ".fastq.gz", ".fq", ".fq.gz",
-        ".bam", ".sam", ".cram", ".bai",
-        ".bcf", ".sra", ".h5", ".hdf5",
-        ".tar", ".tar.gz", ".zip", ".gz", ".bz2",
-    }
+    HASH_SIZE_LIMIT = 500 * 1024 * 1024  
+
+    HASH_WORKERS = 8
 
     def __init__(self, project_path: Path):
         self.project_path = project_path
         self.state_dir = Path(".biolab/state")
         self.state_dir.mkdir(parents=True, exist_ok=True)
-        self.annotations_file = Path(".biolab/annotations.json")
 
     def _get_state_file(self, project_name: str) -> Path:
         return self.state_dir / f"{project_name}_state.json"
@@ -77,137 +59,170 @@ class FileTracker:
     def _load_state(self, project_name: str) -> dict:
         state_file = self._get_state_file(project_name)
         if state_file.exists():
-            return json.loads(state_file.read_text())
+            try:
+                return json.loads(state_file.read_text())
+            except (json.JSONDecodeError, OSError):
+                return {"files": {}, "last_scan": None}
         return {"files": {}, "last_scan": None}
 
     def _save_state(self, project_name: str, state: dict):
         state_file = self._get_state_file(project_name)
         state_file.write_text(json.dumps(state, indent=2, default=str))
 
-    def _load_annotations(self) -> dict:
-        if self.annotations_file.exists():
-            return json.loads(self.annotations_file.read_text())
-        return {}
+    def _should_skip_dir(self, dir_name: str) -> bool:
+        """Fast check if directory should be skipped entirely."""
+        return (
+            dir_name in self.SKIP_DIRS
+            or dir_name.startswith(".")
+        )
 
-    def _save_annotations(self, annotations: dict):
-        self.annotations_file.parent.mkdir(parents=True, exist_ok=True)
-        self.annotations_file.write_text(json.dumps(annotations, indent=2, default=str))
+    def _should_track_file(self, entry: os.DirEntry) -> bool:
+        """
+        Determine if file should be tracked.
+        """
+        name = entry.name
 
-    def _should_track(self, path: Path) -> bool:
-        """Determine if file should be tracked."""
-        # Skip hidden files
-        for part in path.parts:
-            if part.startswith(".") and part not in (".nextflow.log",):
-                if any(skip in str(path) for skip in self.SKIP_DIRS):
-                    return False
+        if name.startswith(".") and name != ".nextflow.log":
+            return False
 
-        # Check directory exclusions
-        for skip in self.SKIP_DIRS:
-            if f"/{skip}/" in str(path) or str(path).endswith(f"/{skip}"):
-                return False
-
-        # Check if extension is tracked
-        suffix = path.suffix.lower()
-        name = path.name
-
-        # Special filenames
-        if name in ("Snakefile", "Makefile", "Dockerfile", "nextflow.config",
-                    ".nextflow.log", "samplesheet.csv"):
+        _, ext = os.path.splitext(name)
+        if ext.lower() in self.TRACKED_EXTENSIONS:
             return True
 
-        if suffix in self.TRACKED_EXTENSIONS:
-            return True
-
-        # Track any file in specific directories
-        rel_path = str(path)
-        if any(d in rel_path for d in ["/log/", "/logs/", "/results/",
-                                        "/output/", "/reports/", "/pipeline_info/"]):
+        if name in ("Snakefile", "Makefile", "Dockerfile",
+                    "nextflow.config", ".nextflow.log",
+                    "samplesheet.csv"):
             return True
 
         return False
 
-    def _is_large_binary(self, path: Path) -> bool:
-        """Check if file is a large binary that should only be tracked by metadata."""
-        name = path.name.lower()
-        for ext in self.LARGE_BINARY_EXTENSIONS:
-            if name.endswith(ext):
-                return True
-        return False
+    def _fast_walk(self) -> list:
+        """
+        Walk directory tree using os.scandir().
+        """
+        tracked = []
+        stack = [str(self.project_path)]
 
-    def _compute_hash(self, path: Path) -> Optional[str]:
-        """Compute MD5 hash for file content detection."""
+        while stack:
+            current_dir = stack.pop()
+            try:
+                with os.scandir(current_dir) as it:
+                    for entry in it:
+                        try:
+                            if entry.is_dir(follow_symlinks=False):
+                                if not self._should_skip_dir(entry.name):
+                                    stack.append(entry.path)
+                            elif entry.is_file(follow_symlinks=False):
+                                if self._should_track_file(entry):
+                                    stat = entry.stat(follow_symlinks=False)
+                                    tracked.append((
+                                        entry.path,
+                                        stat.st_size,
+                                        stat.st_mtime,
+                                    ))
+                        except (OSError, PermissionError):
+                            continue
+            except (OSError, PermissionError):
+                continue
+
+        return tracked
+
+    def _compute_hash(self, filepath: str, size: int) -> Optional[str]:
+        """
+        Compute MD5 hash for change detection.
+        """
+        if size > self.HASH_SIZE_LIMIT:
+            return f"size:{size}"
         try:
-            if not path.exists() or path.is_dir():
-                return None
-            if self._is_large_binary(path):
-                return f"size:{path.stat().st_size}"
-            if path.stat().st_size > 100 * 1024 * 1024:  # Skip >100MB
-                return f"size:{path.stat().st_size}"
             h = hashlib.md5()
-            with open(path, "rb") as f:
-                while chunk := f.read(8192):
+            with open(filepath, "rb") as f:
+                while chunk := f.read(65536):
                     h.update(chunk)
             return h.hexdigest()
         except (OSError, PermissionError):
             return None
 
-    def _get_file_metadata(self, path: Path) -> dict:
-        """Collect file metadata."""
-        try:
-            stat = path.stat()
-            return {
-                "size": stat.st_size,
-                "modified": datetime.fromtimestamp(stat.st_mtime).isoformat(),
-                "extension": path.suffix,
-                "name": path.name,
-                "relative_path": str(path.relative_to(self.project_path)),
-                "absolute_path": str(path),
-                "is_binary": self._is_large_binary(path),
+    def _parallel_hash(self, files_to_hash: list) -> dict:
+        """
+        Hash multiple files in parallel using a thread pool.        
+        """
+        results = {}
+        if not files_to_hash:
+            return results
+
+        with ThreadPoolExecutor(max_workers=self.HASH_WORKERS) as executor:
+            future_to_path = {
+                executor.submit(self._compute_hash, path, size): path
+                for path, size in files_to_hash
             }
-        except (OSError, PermissionError):
-            return {}
+            for future in as_completed(future_to_path):
+                path = future_to_path[future]
+                try:
+                    results[path] = future.result()
+                except Exception:
+                    results[path] = None
+
+        return results
 
     def scan(self, project_name: str) -> dict:
         """
-        Full scan of project directory.
-        Returns dict with new, modified, deleted files.
+        Incremental scan using mtime-based change detection.
         """
         old_state = self._load_state(project_name)
         old_files = old_state.get("files", {})
 
+        current_entries = self._fast_walk()
         current_files = {}
         new_files = []
         modified_files = []
+        files_to_hash = []
 
-        # Walk the project directory
-        for path in self.project_path.rglob("*"):
-            if path.is_dir():
-                continue
-            if not self._should_track(path):
-                continue
+        project_str = str(self.project_path)
 
-            rel_path = str(path.relative_to(self.project_path))
-            file_hash = self._compute_hash(path)
-            metadata = self._get_file_metadata(path)
+        for abs_path, size, mtime in current_entries:
+            rel_path = abs_path[len(project_str) + 1:]
+            old_entry = old_files.get(rel_path)
 
-            current_files[rel_path] = {
-                "hash": file_hash,
-                "metadata": metadata,
-                "first_seen": old_files.get(rel_path, {}).get(
-                    "first_seen", datetime.now().isoformat()
-                ),
-                "last_seen": datetime.now().isoformat(),
-            }
-
-            if rel_path not in old_files:
+            if old_entry is None:
                 new_files.append(rel_path)
-            elif old_files[rel_path].get("hash") != file_hash:
+                files_to_hash.append((abs_path, size))
+                current_files[rel_path] = {
+                    "size": size,
+                    "mtime": mtime,
+                    "hash": None,
+                    "first_seen": datetime.now().isoformat(),
+                    "last_seen": datetime.now().isoformat(),
+                }
+            elif old_entry.get("mtime") != mtime or old_entry.get("size") != size:
                 modified_files.append(rel_path)
+                files_to_hash.append((abs_path, size))
+                current_files[rel_path] = {
+                    "size": size,
+                    "mtime": mtime,
+                    "hash": None,
+                    "first_seen": old_entry.get("first_seen", datetime.now().isoformat()),
+                    "last_seen": datetime.now().isoformat(),
+                }
+            else:
+                current_files[rel_path] = {
+                    "size": size,
+                    "mtime": mtime,
+                    "hash": old_entry.get("hash"),
+                    "first_seen": old_entry.get("first_seen", datetime.now().isoformat()),
+                    "last_seen": datetime.now().isoformat(),
+                }
 
-        # Detect deleted files
-        deleted_files = [f for f in old_files if f not in current_files]
+        if files_to_hash:
+            hash_results = self._parallel_hash(files_to_hash)
+            for abs_path, _ in files_to_hash:
+                rel_path = abs_path[len(project_str) + 1:]
+                if rel_path in current_files:
+                    current_files[rel_path]["hash"] = hash_results.get(abs_path)
 
-        # Save new state
+        current_rel_paths = set(current_files.keys())
+        old_rel_paths = set(old_files.keys())
+        deleted_files = list(old_rel_paths - current_rel_paths)
+
         new_state = {
             "files": current_files,
             "last_scan": datetime.now().isoformat(),
@@ -220,6 +235,11 @@ class FileTracker:
             "deleted": deleted_files,
             "total_tracked": len(current_files),
             "current_files": current_files,
+            "scan_stats": {
+                "total_walked": len(current_entries),
+                "files_hashed": len(files_to_hash),
+                "files_skipped": len(current_entries) - len(files_to_hash),
+            },
         }
 
 
