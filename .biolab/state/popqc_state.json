@@ -5,211 +5,211 @@
       "mtime": 1778698027.5872653,
       "hash": "11fd93ab4263f00ccd06db6d6c22de9d",
       "first_seen": "2026-05-19T02:03:22.205130",
-      "last_seen": "2026-05-19T02:08:15.931668"
+      "last_seen": "2026-05-20T02:03:57.144532"
     },
     "Cargo.toml": {
       "size": 1502,
       "mtime": 1778693573.1392963,
       "hash": "4abe2386f8f0ce8c7abafd3dfe015cf8",
       "first_seen": "2026-05-19T02:03:22.205190",
-      "last_seen": "2026-05-19T02:08:15.931683"
+      "last_seen": "2026-05-20T02:03:57.144545"
     },
     "Dockerfile": {
       "size": 355,
       "mtime": 1778618713.437419,
       "hash": "205e7d4088c791fbac850462e352b1c5",
       "first_seen": "2026-05-19T02:03:22.205201",
-      "last_seen": "2026-05-19T02:08:15.931693"
+      "last_seen": "2026-05-20T02:03:57.144554"
     },
     "docs/user_guide.md": {
       "size": 15201,
       "mtime": 1778618568.8763177,
       "hash": "f98f11ee1a0f468848f49b0e39686999",
       "first_seen": "2026-05-19T02:03:22.205211",
-      "last_seen": "2026-05-19T02:08:15.931702"
+      "last_seen": "2026-05-20T02:03:57.144562"
     },
     "docs/contribution.md": {
       "size": 968,
       "mtime": 1778014913.680386,
       "hash": "97b2cba675d00ce2649401b7cdb4c94b",
       "first_seen": "2026-05-19T02:03:22.205220",
-      "last_seen": "2026-05-19T02:08:15.931711"
+      "last_seen": "2026-05-20T02:03:57.144569"
     },
     "docs/sample_report/test_popqc_report.html": {
       "size": 2122487,
       "mtime": 1778195251.826835,
       "hash": "9963a6aacce94f27d65a73e26ac33c70",
       "first_seen": "2026-05-19T02:03:22.205230",
-      "last_seen": "2026-05-19T02:08:15.931720"
+      "last_seen": "2026-05-20T02:03:57.144577"
     },
     "tests/fixtures/test_data/metadata.tsv": {
       "size": 21225,
       "mtime": 1778021418.1244516,
       "hash": "16cc22d22e4a48cf6878de1e6826e651",
       "first_seen": "2026-05-19T02:03:22.205239",
-      "last_seen": "2026-05-19T02:08:15.931730"
+      "last_seen": "2026-05-20T02:03:57.144586"
     },
     "tests/fixtures/test_data/multiqc_data/multiqc_star.txt": {
       "size": 75123,
       "mtime": 1778021417.9434514,
       "hash": "5859aba7820bc75ff90f3e67ef142b48",
       "first_seen": "2026-05-19T02:03:22.205247",
-      "last_seen": "2026-05-19T02:08:15.931739"
+      "last_seen": "2026-05-20T02:03:57.144593"
     },
     "tests/fixtures/test_data/multiqc_data/multiqc_picard_dups.txt": {
       "size": 45160,
       "mtime": 1778021418.0574515,
       "hash": "f395003e52bd56eafa373b869a3bca2d",
       "first_seen": "2026-05-19T02:03:22.205256",
-      "last_seen": "2026-05-19T02:08:15.931748"
+      "last_seen": "2026-05-20T02:03:57.144600"
     },
     "tests/fixtures/test_data/multiqc_data/multiqc_samtools_flagstat.txt": {
       "size": 75665,
       "mtime": 1778021418.0364516,
       "hash": "117826d246712bca482bc79d36b39323",
       "first_seen": "2026-05-19T02:03:22.205264",
-      "last_seen": "2026-05-19T02:08:15.931757"
+      "last_seen": "2026-05-20T02:03:57.144609"
     },
     "tests/fixtures/test_data/multiqc_data/multiqc_general_stats.txt": {
       "size": 41652,
       "mtime": 1778021418.0064516,
       "hash": "9982abb2000238921659a59bb7839ad6",
       "first_seen": "2026-05-19T02:03:22.205271",
-      "last_seen": "2026-05-19T02:08:15.931766"
+      "last_seen": "2026-05-20T02:03:57.144616"
     },
     "tests/fixtures/test_data/multiqc_data/multiqc_fastqc.txt": {
       "size": 65212,
       "mtime": 1778021417.9644513,
       "hash": "97c6a89813b3a679e713c3d2664865b3",
       "first_seen": "2026-05-19T02:03:22.205282",
-      "last_seen": "2026-05-19T02:08:15.931776"
+      "last_seen": "2026-05-20T02:03:57.144625"
     },
     "tests/fixtures/test_data/multiqc_data/multiqc_rseqc_tin.txt": {
       "size": 27941,
       "mtime": 1778021417.9824514,
       "hash": "7889eccc05eb54f390f6ec52a1fd5ec0",
       "first_seen": "2026-05-19T02:03:22.205290",
-      "last_seen": "2026-05-19T02:08:15.931785"
+      "last_seen": "2026-05-20T02:03:57.144633"
     },
     "tests/fixtures/test_data/multiqc_data/multiqc_rseqc_infer_experiment.txt": {
       "size": 18167,
       "mtime": 1778021418.0784516,
       "hash": "a2e5e5b3581c0c9577a3db91901f05a9",
       "first_seen": "2026-05-19T02:03:22.205298",
-      "last_seen": "2026-05-19T02:08:15.931794"
+      "last_seen": "2026-05-20T02:03:57.144640"
     },
     "tests/fixtures/test_data/multiqc_data/multiqc_rseqc_read_distribution.txt": {
       "size": 49705,
       "mtime": 1778021418.1044517,
       "hash": "600cb4dc9c2243ba0604b69a13ce4055",
       "first_seen": "2026-05-19T02:03:22.205306",
-      "last_seen": "2026-05-19T02:08:15.931803"
+      "last_seen": "2026-05-20T02:03:57.144647"
     },
     "crates/popqc-core/Cargo.toml": {
       "size": 440,
       "mtime": 1778007514.044103,
       "hash": "e32b380d7867f7bdeebf2dbc5652c738",
       "first_seen": "2026-05-19T02:03:22.205313",
-      "last_seen": "2026-05-19T02:08:15.931812"
+      "last_seen": "2026-05-20T02:03:57.144655"
     },
     "crates/popqc-discovery/Cargo.toml": {
       "size": 433,
       "mtime": 1778008080.196007,
       "hash": "576f74af8bdf13be367e480290321523",
       "first_seen": "2026-05-19T02:03:22.205321",
-      "last_seen": "2026-05-19T02:08:15.931822"
+      "last_seen": "2026-05-20T02:03:57.144663"
     },
     "crates/popqc-parsers/Cargo.toml": {
       "size": 416,
       "mtime": 1778007870.1716716,
       "hash": "ac123fa303846e4905da9569dd08988e",
       "first_seen": "2026-05-19T02:03:22.205329",
-      "last_seen": "2026-05-19T02:08:15.931830"
+      "last_seen": "2026-05-20T02:03:57.144671"
     },
     "crates/popqc-cli/Cargo.toml": {
       "size": 652,
       "mtime": 1778093301.1373374,
       "hash": "ef5f7bb594749aecfb61030052e8a643",
       "first_seen": "2026-05-19T02:03:22.205337",
-      "last_seen": "2026-05-19T02:08:15.931839"
+      "last_seen": "2026-05-20T02:03:57.144679"
     },
     "crates/popqc-cli/tests/fixtures/test_data/metadata.tsv": {
       "size": 21225,
       "mtime": 1778198180.3626878,
       "hash": "16cc22d22e4a48cf6878de1e6826e651",
       "first_seen": "2026-05-19T02:03:22.205344",
-      "last_seen": "2026-05-19T02:08:15.931848"
+      "last_seen": "2026-05-20T02:03:57.144686"
     },
     "crates/popqc-cli/tests/fixtures/test_data/multiqc_data/multiqc_star.txt": {
       "size": 75123,
       "mtime": 1778198180.3336878,
       "hash": "5859aba7820bc75ff90f3e67ef142b48",
       "first_seen": "2026-05-19T02:03:22.205352",
-      "last_seen": "2026-05-19T02:08:15.931856"
+      "last_seen": "2026-05-20T02:03:57.144694"
     },
     "crates/popqc-cli/tests/fixtures/test_data/multiqc_data/multiqc_picard_dups.txt": {
       "size": 45160,
       "mtime": 1778198180.351688,
       "hash": "f395003e52bd56eafa373b869a3bca2d",
       "first_seen": "2026-05-19T02:03:22.205359",
-      "last_seen": "2026-05-19T02:08:15.931864"
+      "last_seen": "2026-05-20T02:03:57.144701"
     },
     "crates/popqc-cli/tests/fixtures/test_data/multiqc_data/multiqc_samtools_flagstat.txt": {
       "size": 75665,
       "mtime": 1778198180.3466878,
       "hash": "117826d246712bca482bc79d36b39323",
       "first_seen": "2026-05-19T02:03:22.205369",
-      "last_seen": "2026-05-19T02:08:15.931875"
+      "last_seen": "2026-05-20T02:03:57.144711"
     },
     "crates/popqc-cli/tests/fixtures/test_data/multiqc_data/multiqc_general_stats.txt": {
       "size": 41652,
       "mtime": 1778198180.3426878,
       "hash": "9982abb2000238921659a59bb7839ad6",
       "first_seen": "2026-05-19T02:03:22.205378",
-      "last_seen": "2026-05-19T02:08:15.931884"
+      "last_seen": "2026-05-20T02:03:57.144718"
     },
     "crates/popqc-cli/tests/fixtures/test_data/multiqc_data/multiqc_fastqc.txt": {
       "size": 65212,
       "mtime": 1778198180.3376877,
       "hash": "97c6a89813b3a679e713c3d2664865b3",
       "first_seen": "2026-05-19T02:03:22.205386",
-      "last_seen": "2026-05-19T02:08:15.931892"
+      "last_seen": "2026-05-20T02:03:57.144726"
     },
     "crates/popqc-cli/tests/fixtures/test_data/multiqc_data/multiqc_rseqc_tin.txt": {
       "size": 27941,
       "mtime": 1778198180.3396878,
       "hash": "7889eccc05eb54f390f6ec52a1fd5ec0",
       "first_seen": "2026-05-19T02:03:22.205393",
-      "last_seen": "2026-05-19T02:08:15.931901"
+      "last_seen": "2026-05-20T02:03:57.144733"
     },
     "crates/popqc-cli/tests/fixtures/test_data/multiqc_data/multiqc_rseqc_infer_experiment.txt": {
       "size": 18167,
       "mtime": 1778198180.3556879,
       "hash": "a2e5e5b3581c0c9577a3db91901f05a9",
       "first_seen": "2026-05-19T02:03:22.205401",
-      "last_seen": "2026-05-19T02:08:15.931909"
+      "last_seen": "2026-05-20T02:03:57.144741"
     },
     "crates/popqc-cli/tests/fixtures/test_data/multiqc_data/multiqc_rseqc_read_distribution.txt": {
       "size": 49705,
       "mtime": 1778198180.3596878,
       "hash": "600cb4dc9c2243ba0604b69a13ce4055",
       "first_seen": "2026-05-19T02:03:22.205410",
-      "last_seen": "2026-05-19T02:08:15.931918"
+      "last_seen": "2026-05-20T02:03:57.144749"
     },
     "crates/popqc-report/Cargo.toml": {
       "size": 398,
       "mtime": 1778008133.9110925,
       "hash": "a2efd4a65d982193d455ed587d7d3243",
       "first_seen": "2026-05-19T02:03:22.205417",
-      "last_seen": "2026-05-19T02:08:15.931926"
+      "last_seen": "2026-05-20T02:03:57.144756"
     },
     "img/popqc_logo.png": {
       "size": 3507033,
       "mtime": 1778014975.3604789,
       "hash": "92dfd414794db2561e43fb9d2bc5d434",
       "first_seen": "2026-05-19T02:03:22.205424",
-      "last_seen": "2026-05-19T02:08:15.931934"
+      "last_seen": "2026-05-20T02:03:57.144764"
     }
   },
-  "last_scan": "2026-05-19T02:08:15.931966"
+  "last_scan": "2026-05-20T02:03:57.144795"
 }

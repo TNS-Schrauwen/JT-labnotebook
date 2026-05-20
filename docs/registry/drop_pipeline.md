@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- DROP_pipeline"
-date: 2026-05-19 02:07
+date: 2026-05-20 02:00
 tags:
   - registry
   - DROP_pipeline
@@ -8,13 +8,251 @@ tags:
 
 # File Registry: DROP_pipeline
 
-**Scan Date:** 2026-05-19 02:07
-**Total Tracked Files:** 302
-**New Since Last Scan:** 0
-**Modified Since Last Scan:** 0
-**Deleted Since Last Scan:** 0
+**Scan Date:** 2026-05-20 02:00
+**Total Tracked Files:** 509
+**New Since Last Scan:** 208
+**Modified Since Last Scan:** 12
+**Deleted Since Last Scan:** 1
 
 ---
+
+## Changes Detected
+
+### New Files
+
+| File | Type | Size | Modified |
+|------|------|------|----------|
+| `logs/slurm/mini_bam_37086.err` |  | 0 B |  |
+| `logs/slurm/mini_bam_37086.out` |  | 0 B |  |
+| `logs/slurm/slurm-29519.out` |  | 0 B |  |
+| `results/mini_bams/bed_files/F216P003-100m_524015526.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F230P002-100m_524015514.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F233P001-100m_524015540.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F233P002-100m_524015517.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F233P003-100m_524015543.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F234P002-100m_524015524.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F234P003-100m_524015555.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F241P001-100m_524015497.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F241P003-100m_524015550.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F244P001-100m_524015508.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F244P002-100m_524015520.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F244P003-100m_524015525.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F255P001-100m_524015558.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F255P002-100m_524015560.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F255P003-100m_524015505.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F256P001-100m_524015528.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F256P002-100m_524015518.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F256P003-100m_524015557.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F256P004-100m_524015562.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F264P001-100m_524015539.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F264P002-100m_524015507.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F264P003-100m_524026513.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F269P001-100m_524015536.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F269P002-100m_524015541.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F269P003-100m_524015511.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F274P003-100m_524015556.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F277P001-100m_524026522.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F277P002-100m_524015495.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F277P003-100m_524015544.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F282P001-100m_524015522.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F282P004-100m_524015548.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F291P001-100m_524015533.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F291P002-100m_524026517.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F291P003-100m_524026511.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F295P001-100m_524026503.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F316P001-100m_524015502.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F316P002-100m_524015559.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F321P001-100m_524015494.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F323P001-100m_524015546.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F323P002-100m_524015552.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F323P003-100m_524015554.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F324P001-100m_524026520.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F324P002-100m_524015512.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F325P004-100m_524026512.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F325P005-100m_524026521.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F325P006-100m_524015499.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F329P003-100m_524015532.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F331P001-100m_524015513.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F334P001-100m_524015547.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F334P002-100m_524015530.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F335P001-100m_524026509.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F335P002-100m_524026505.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F335P003-100m_524015498.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F345P001-100m_524015519.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F350P002-100m_524015516.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F350P003-100m_524015551.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F351P001-100m_524026506.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F351P002-100m_524015500.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F353P001-100m_524015515.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F353P002-100m_524026507.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F364P002-100m_524026516.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F364P003-100m_524026510.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F369P001-100m_524026514.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F369P002-100m_524026508.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F369P003-100m_524015527.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F371P003-100m_524015523.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F371P004-100m_524026518.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F371P005-100m_524015529.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F371P007-100m_524015553.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F371P008-100m_524015534.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F379P001-100m_524026504.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F385P001-100m_538108582.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F385P002-100m_538108585.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F387P002-100m_538108584.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F387P003-100m_538108623.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F390P001-100m_538108617.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F392P003-100m_538108618.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F393P002-100m_538108619.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F393P004-100m_538108609.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F393P005-100m_538108601.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F394P001-100m_538108590.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F394P002-100m_538108586.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F396P001-100m_538108580.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F399P001-100m_538108606.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F399P002-100m_538108599.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F402P001-100m_538108620.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F407P002-100m_538108612.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F407P003-100m_538108613.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F410P002-R1-100m_538108596.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F415P002-100m_538108574.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F420P002-100m_538108572.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F490P002-100m_538108608.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F563P001-100m_538108598.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F567P003-100m_538108624.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F569P001-100m_538108588.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F569P003-100m_538108577.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F569P004-100m_538108626.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F573P003-100m_538108614.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F576P001-100m_538108607.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F576P002-100m_538108634.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F578P002-100m_538108592.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F578P003-100m_538108573.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F587P001-100m_538108602.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F587P003-100m_538108630.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F590P001-100m_538108628.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F590P002-100m_538108583.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F590P003-100m_538108621.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F594P001-100m_538108587.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F601P001-100m_538108594.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F601P002-100m_538108589.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F613P003-100m_538108604.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F622P002-100m_538108581.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F622P003-100m_538108631.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F631P001-100m_538108611.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F631P002-100m_538108625.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F633P001-100m_535946415.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F635P002-100m_535946422.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F635P003-100m_535946411.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F649P001-100m_535946414.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F649P002-100m_535946417.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F649P003-100m_535946416.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F650P001-100m_535946421.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F650P003-100m_535946424.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F656P001-100m_535946413.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F671P001-100m_535946412.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F671P002-100m_535946418.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F671P003-100m_535946423.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F696-P001-100m_535945412.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F696-P002-100m_535945433.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F699-P001-100m_535945428.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F699-P002-100m_535945429.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F699-P003-100m_535945431.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F700-P001-100m_535945434.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F700-P003-100m_535945444.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F701-P001-100m_535945419.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F701-P002-100m_535945439.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F701-P003-100m_535945447.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F703-P001-100m_535945411.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F703-P002-100m_535945421.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F703-P003-100m_535945446.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F706-P002-100m_535945420.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F706-P003-100m_535945410.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F708-P001-100m_535945443.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F708-P003-100m_535945432.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F711-P001-100m_535945414.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F711-P002-100m_535945427.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F711-P003-100m_535945438.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F715-P001-100m_535945423.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F715-P003-100m_535945441.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F728-P001-100m_535945416.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F728-P002-100m_535945445.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F728-P003-100m_535945418.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F730-P001-100m_535945437.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F730-P002-100m_535945442.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F737-P001-100m_535945430.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F737-P003-100m_535945435.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F745-P001-100m_535945425.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F745-P002-100m_535945440.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/bed_files/F745-P003-100m_535945413.outlier_regions.bed` |  | 0 B |  |
+| `results/mini_bams/create_mini_bams.log` |  | 0 B |  |
+| `results/outlier/databases/clinvar_gene_specific_summary.txt` |  | 0 B |  |
+| `results/outlier/databases/genes_to_disease.txt` |  | 0 B |  |
+| `results/outlier/fraser_HIGH_PRIORITY.tsv` |  | 0 B |  |
+| `results/outlier/fraser_full_annotated.tsv` |  | 0 B |  |
+| `results/outlier/fraser_probands_significant.tsv` |  | 0 B |  |
+| `results/outlier/outrider_HIGH_PRIORITY.tsv` |  | 0 B |  |
+| `results/outlier/outrider_full_annotated.tsv` |  | 0 B |  |
+| `results/outlier/outrider_probands_significant.tsv` |  | 0 B |  |
+| `results/pipeline_info/pipeline_dag.html` |  | 0 B |  |
+| `results/processed_results/aberrant_expression/v44/outrider/blood/OUTRIDER_results.tsv` |  | 0 B |  |
+| `results/processed_results/aberrant_splicing/results/v44/fraser/blood/results.tsv` |  | 0 B |  |
+| `results/processed_results/aberrant_splicing/results/v44/fraser/blood/results_gene_all.tsv` |  | 0 B |  |
+| `results/processed_results/aberrant_splicing/results/v44/fraser/blood/results_per_junction.tsv` |  | 0 B |  |
+| `results/reports/aberrant_expression/genecounts/v44__blood/multiqc_data/llms-full.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/genecounts/v44__blood/multiqc_data/multiqc.log` |  | 0 B |  |
+| `results/reports/aberrant_expression/genecounts/v44__blood/multiqc_data/multiqc_citations.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/genecounts/v44__blood/multiqc_data/multiqc_data.json` |  | 0 B |  |
+| `results/reports/aberrant_expression/genecounts/v44__blood/multiqc_data/multiqc_expressed_genes.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/genecounts/v44__blood/multiqc_data/multiqc_reads_statistics.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/genecounts/v44__blood/multiqc_data/multiqc_sample_count.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/genecounts/v44__blood/multiqc_data/multiqc_sources.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/genecounts/v44__blood/multiqc_report.html` |  | 0 B |  |
+| `results/reports/aberrant_expression/outrider/v44__blood/multiqc_data/llms-full.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/outrider/v44__blood/multiqc_data/multiqc.log` |  | 0 B |  |
+| `results/reports/aberrant_expression/outrider/v44__blood/multiqc_data/multiqc_aberrant_samples.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/outrider/v44__blood/multiqc_data/multiqc_citations.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/outrider/v44__blood/multiqc_data/multiqc_data.json` |  | 0 B |  |
+| `results/reports/aberrant_expression/outrider/v44__blood/multiqc_data/multiqc_outrider_overview.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/outrider/v44__blood/multiqc_data/multiqc_outrider_result_overview.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/outrider/v44__blood/multiqc_data/multiqc_significant_results.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/outrider/v44__blood/multiqc_data/multiqc_sources.txt` |  | 0 B |  |
+| `results/reports/aberrant_expression/outrider/v44__blood/multiqc_report.html` |  | 0 B |  |
+| `results/reports/aberrant_splicing/fraser/blood.v44/multiqc_data/llms-full.txt` |  | 0 B |  |
+| `results/reports/aberrant_splicing/fraser/blood.v44/multiqc_data/multiqc.log` |  | 0 B |  |
+| `results/reports/aberrant_splicing/fraser/blood.v44/multiqc_data/multiqc_citations.txt` |  | 0 B |  |
+| `results/reports/aberrant_splicing/fraser/blood.v44/multiqc_data/multiqc_data.json` |  | 0 B |  |
+| `results/reports/aberrant_splicing/fraser/blood.v44/multiqc_data/multiqc_fraser_overview.txt` |  | 0 B |  |
+| `results/reports/aberrant_splicing/fraser/blood.v44/multiqc_data/multiqc_results.txt` |  | 0 B |  |
+| `results/reports/aberrant_splicing/fraser/blood.v44/multiqc_data/multiqc_sources.txt` |  | 0 B |  |
+| `results/reports/aberrant_splicing/fraser/blood.v44/multiqc_data/multiqc_total_outliers.txt` |  | 0 B |  |
+| `results/reports/aberrant_splicing/fraser/blood.v44/multiqc_report.html` |  | 0 B |  |
+| `samplesheets/sample_metadata.tsv` |  | 0 B |  |
+| `scripts/extract_minibam.sh` |  | 0 B |  |
+| `scripts/merge_metadata_with_drop.py` |  | 0 B |  |
+| `scripts/merge_omim.py` |  | 0 B |  |
+
+### Modified Files
+
+| File | Type | Size | Modified |
+|------|------|------|----------|
+| `logs/slurm/tgen_drop_36200.out` |  | 0 B |  |
+| `results/multiqc/TGen-RNA-seq-DROP-Analysis_multiqc_report.html` |  | 0 B |  |
+| `results/multiqc/TGen-RNA-seq-DROP-Analysis_multiqc_report_data/llms-full.txt` |  | 0 B |  |
+| `results/multiqc/TGen-RNA-seq-DROP-Analysis_multiqc_report_data/multiqc.log` |  | 0 B |  |
+| `results/multiqc/TGen-RNA-seq-DROP-Analysis_multiqc_report_data/multiqc_citations.txt` |  | 0 B |  |
+| `results/multiqc/TGen-RNA-seq-DROP-Analysis_multiqc_report_data/multiqc_data.json` |  | 0 B |  |
+| `results/multiqc/TGen-RNA-seq-DROP-Analysis_multiqc_report_data/multiqc_software_versions.txt` |  | 0 B |  |
+| `results/multiqc/TGen-RNA-seq-DROP-Analysis_multiqc_report_data/multiqc_sources.txt` |  | 0 B |  |
+| `results/pipeline_info/execution_report.html` |  | 0 B |  |
+| `results/pipeline_info/nf_core_drop_software_mqc_versions.yml` |  | 0 B |  |
+| `results/pipeline_info/timeline.html` |  | 0 B |  |
+| `results/pipeline_info/trace.txt` |  | 0 B |  |
+
+### Deleted Files
+
+| File |
+|------|
+| `scripts/slurm-29519.out` |
 
 ---
 
@@ -31,42 +269,233 @@ tags:
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
+| `mini_bam_37086.err` |  | 0 B | d41d8cd9 | 2026-05-20 |  |  |
+| `mini_bam_37086.out` |  | 0 B | 9f2394f8 | 2026-05-20 |  |  |
+| `slurm-29519.out` |  | 0 B | 424180d6 | 2026-05-20 |  |  |
 | `tgen_drop_33287.err` |  | 0 B | ea2075e5 | 2026-05-19 |  |  |
 | `tgen_drop_33287.out` |  | 0 B | 30c33d7e | 2026-05-19 |  |  |
 | `tgen_drop_35150.err` |  | 0 B | ea2075e5 | 2026-05-19 |  |  |
 | `tgen_drop_35150.out` |  | 0 B | f1731a4e | 2026-05-19 |  |  |
 | `tgen_drop_36200.err` |  | 0 B | ea2075e5 | 2026-05-19 |  |  |
-| `tgen_drop_36200.out` |  | 0 B | 7deb70d5 | 2026-05-19 |  |  |
+| `tgen_drop_36200.out` |  | 0 B | 8c89f148 | 2026-05-19 |  |  |
+
+### `results/mini_bams/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `create_mini_bams.log` |  | 0 B | 20c511c0 | 2026-05-20 |  |  |
+
+### `results/mini_bams/bed_files/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `F216P003-100m_524015526.outlier_regions.bed` |  | 0 B | f9208835 | 2026-05-20 |  |  |
+| `F230P002-100m_524015514.outlier_regions.bed` |  | 0 B | 15ad60a2 | 2026-05-20 |  |  |
+| `F233P001-100m_524015540.outlier_regions.bed` |  | 0 B | 03cacc86 | 2026-05-20 |  |  |
+| `F233P002-100m_524015517.outlier_regions.bed` |  | 0 B | 036274eb | 2026-05-20 |  |  |
+| `F233P003-100m_524015543.outlier_regions.bed` |  | 0 B | 7dd982e8 | 2026-05-20 |  |  |
+| `F234P002-100m_524015524.outlier_regions.bed` |  | 0 B | 244f1f6e | 2026-05-20 |  |  |
+| `F234P003-100m_524015555.outlier_regions.bed` |  | 0 B | ee896f39 | 2026-05-20 |  |  |
+| `F241P001-100m_524015497.outlier_regions.bed` |  | 0 B | 3bfa43bd | 2026-05-20 |  |  |
+| `F241P003-100m_524015550.outlier_regions.bed` |  | 0 B | bf1e32c4 | 2026-05-20 |  |  |
+| `F244P001-100m_524015508.outlier_regions.bed` |  | 0 B | e36b7e7f | 2026-05-20 |  |  |
+| `F244P002-100m_524015520.outlier_regions.bed` |  | 0 B | 582bb524 | 2026-05-20 |  |  |
+| `F244P003-100m_524015525.outlier_regions.bed` |  | 0 B | 50444e6d | 2026-05-20 |  |  |
+| `F255P001-100m_524015558.outlier_regions.bed` |  | 0 B | 9a96f250 | 2026-05-20 |  |  |
+| `F255P002-100m_524015560.outlier_regions.bed` |  | 0 B | e1611059 | 2026-05-20 |  |  |
+| `F255P003-100m_524015505.outlier_regions.bed` |  | 0 B | 5f10a442 | 2026-05-20 |  |  |
+| `F256P001-100m_524015528.outlier_regions.bed` |  | 0 B | a6f493b1 | 2026-05-20 |  |  |
+| `F256P002-100m_524015518.outlier_regions.bed` |  | 0 B | c8923360 | 2026-05-20 |  |  |
+| `F256P003-100m_524015557.outlier_regions.bed` |  | 0 B | f8068f12 | 2026-05-20 |  |  |
+| `F256P004-100m_524015562.outlier_regions.bed` |  | 0 B | 1e099705 | 2026-05-20 |  |  |
+| `F264P001-100m_524015539.outlier_regions.bed` |  | 0 B | 66670760 | 2026-05-20 |  |  |
+| `F264P002-100m_524015507.outlier_regions.bed` |  | 0 B | 833d6899 | 2026-05-20 |  |  |
+| `F264P003-100m_524026513.outlier_regions.bed` |  | 0 B | 9adb74b3 | 2026-05-20 |  |  |
+| `F269P001-100m_524015536.outlier_regions.bed` |  | 0 B | d4ac0cc9 | 2026-05-20 |  |  |
+| `F269P002-100m_524015541.outlier_regions.bed` |  | 0 B | f86247d8 | 2026-05-20 |  |  |
+| `F269P003-100m_524015511.outlier_regions.bed` |  | 0 B | a74ae89c | 2026-05-20 |  |  |
+| `F274P003-100m_524015556.outlier_regions.bed` |  | 0 B | f9ffe6f1 | 2026-05-20 |  |  |
+| `F277P001-100m_524026522.outlier_regions.bed` |  | 0 B | 3105115a | 2026-05-20 |  |  |
+| `F277P002-100m_524015495.outlier_regions.bed` |  | 0 B | 9c48b824 | 2026-05-20 |  |  |
+| `F277P003-100m_524015544.outlier_regions.bed` |  | 0 B | 533518f0 | 2026-05-20 |  |  |
+| `F282P001-100m_524015522.outlier_regions.bed` |  | 0 B | 8f8e1faf | 2026-05-20 |  |  |
+| `F282P004-100m_524015548.outlier_regions.bed` |  | 0 B | 944852c7 | 2026-05-20 |  |  |
+| `F291P001-100m_524015533.outlier_regions.bed` |  | 0 B | ad88af17 | 2026-05-20 |  |  |
+| `F291P002-100m_524026517.outlier_regions.bed` |  | 0 B | 81b77c52 | 2026-05-20 |  |  |
+| `F291P003-100m_524026511.outlier_regions.bed` |  | 0 B | 17e8ecc1 | 2026-05-20 |  |  |
+| `F295P001-100m_524026503.outlier_regions.bed` |  | 0 B | 45e2e1ed | 2026-05-20 |  |  |
+| `F316P001-100m_524015502.outlier_regions.bed` |  | 0 B | 4a99b930 | 2026-05-20 |  |  |
+| `F316P002-100m_524015559.outlier_regions.bed` |  | 0 B | 48867111 | 2026-05-20 |  |  |
+| `F321P001-100m_524015494.outlier_regions.bed` |  | 0 B | 1905b64b | 2026-05-20 |  |  |
+| `F323P001-100m_524015546.outlier_regions.bed` |  | 0 B | 521a1e9b | 2026-05-20 |  |  |
+| `F323P002-100m_524015552.outlier_regions.bed` |  | 0 B | fb4300b3 | 2026-05-20 |  |  |
+| `F323P003-100m_524015554.outlier_regions.bed` |  | 0 B | 32c877d1 | 2026-05-20 |  |  |
+| `F324P001-100m_524026520.outlier_regions.bed` |  | 0 B | 12387dc8 | 2026-05-20 |  |  |
+| `F324P002-100m_524015512.outlier_regions.bed` |  | 0 B | 4100becc | 2026-05-20 |  |  |
+| `F325P004-100m_524026512.outlier_regions.bed` |  | 0 B | 2255ba45 | 2026-05-20 |  |  |
+| `F325P005-100m_524026521.outlier_regions.bed` |  | 0 B | 7c185a2d | 2026-05-20 |  |  |
+| `F325P006-100m_524015499.outlier_regions.bed` |  | 0 B | d0b4072c | 2026-05-20 |  |  |
+| `F329P003-100m_524015532.outlier_regions.bed` |  | 0 B | c96cf992 | 2026-05-20 |  |  |
+| `F331P001-100m_524015513.outlier_regions.bed` |  | 0 B | 10840c41 | 2026-05-20 |  |  |
+| `F334P001-100m_524015547.outlier_regions.bed` |  | 0 B | bc08b2a5 | 2026-05-20 |  |  |
+| `F334P002-100m_524015530.outlier_regions.bed` |  | 0 B | a7a20f19 | 2026-05-20 |  |  |
+| `F335P001-100m_524026509.outlier_regions.bed` |  | 0 B | 40651ab6 | 2026-05-20 |  |  |
+| `F335P002-100m_524026505.outlier_regions.bed` |  | 0 B | 3d8c0c19 | 2026-05-20 |  |  |
+| `F335P003-100m_524015498.outlier_regions.bed` |  | 0 B | a82ab7e5 | 2026-05-20 |  |  |
+| `F345P001-100m_524015519.outlier_regions.bed` |  | 0 B | 39390573 | 2026-05-20 |  |  |
+| `F350P002-100m_524015516.outlier_regions.bed` |  | 0 B | 695febe9 | 2026-05-20 |  |  |
+| `F350P003-100m_524015551.outlier_regions.bed` |  | 0 B | 7a16d2ce | 2026-05-20 |  |  |
+| `F351P001-100m_524026506.outlier_regions.bed` |  | 0 B | a96541f2 | 2026-05-20 |  |  |
+| `F351P002-100m_524015500.outlier_regions.bed` |  | 0 B | 838f6dc5 | 2026-05-20 |  |  |
+| `F353P001-100m_524015515.outlier_regions.bed` |  | 0 B | 8f644542 | 2026-05-20 |  |  |
+| `F353P002-100m_524026507.outlier_regions.bed` |  | 0 B | e7deeaad | 2026-05-20 |  |  |
+| `F364P002-100m_524026516.outlier_regions.bed` |  | 0 B | b9fcbc74 | 2026-05-20 |  |  |
+| `F364P003-100m_524026510.outlier_regions.bed` |  | 0 B | c4b6c73a | 2026-05-20 |  |  |
+| `F369P001-100m_524026514.outlier_regions.bed` |  | 0 B | beb53c73 | 2026-05-20 |  |  |
+| `F369P002-100m_524026508.outlier_regions.bed` |  | 0 B | 39da1537 | 2026-05-20 |  |  |
+| `F369P003-100m_524015527.outlier_regions.bed` |  | 0 B | 53050297 | 2026-05-20 |  |  |
+| `F371P003-100m_524015523.outlier_regions.bed` |  | 0 B | 425cd4bf | 2026-05-20 |  |  |
+| `F371P004-100m_524026518.outlier_regions.bed` |  | 0 B | 1e69e0b5 | 2026-05-20 |  |  |
+| `F371P005-100m_524015529.outlier_regions.bed` |  | 0 B | 196e3d63 | 2026-05-20 |  |  |
+| `F371P007-100m_524015553.outlier_regions.bed` |  | 0 B | b15e7a24 | 2026-05-20 |  |  |
+| `F371P008-100m_524015534.outlier_regions.bed` |  | 0 B | 6ef743f1 | 2026-05-20 |  |  |
+| `F379P001-100m_524026504.outlier_regions.bed` |  | 0 B | 52aadb26 | 2026-05-20 |  |  |
+| `F385P001-100m_538108582.outlier_regions.bed` |  | 0 B | 3eef5f8b | 2026-05-20 |  |  |
+| `F385P002-100m_538108585.outlier_regions.bed` |  | 0 B | 6eda20f9 | 2026-05-20 |  |  |
+| `F387P002-100m_538108584.outlier_regions.bed` |  | 0 B | cf59fc10 | 2026-05-20 |  |  |
+| `F387P003-100m_538108623.outlier_regions.bed` |  | 0 B | 3f8132ad | 2026-05-20 |  |  |
+| `F390P001-100m_538108617.outlier_regions.bed` |  | 0 B | 9b560658 | 2026-05-20 |  |  |
+| `F392P003-100m_538108618.outlier_regions.bed` |  | 0 B | f44e853c | 2026-05-20 |  |  |
+| `F393P002-100m_538108619.outlier_regions.bed` |  | 0 B | b00b77e7 | 2026-05-20 |  |  |
+| `F393P004-100m_538108609.outlier_regions.bed` |  | 0 B | 8e76c6e0 | 2026-05-20 |  |  |
+| `F393P005-100m_538108601.outlier_regions.bed` |  | 0 B | 034d70ec | 2026-05-20 |  |  |
+| `F394P001-100m_538108590.outlier_regions.bed` |  | 0 B | 0d46c69d | 2026-05-20 |  |  |
+| `F394P002-100m_538108586.outlier_regions.bed` |  | 0 B | 43119aca | 2026-05-20 |  |  |
+| `F396P001-100m_538108580.outlier_regions.bed` |  | 0 B | 09de8764 | 2026-05-20 |  |  |
+| `F399P001-100m_538108606.outlier_regions.bed` |  | 0 B | 51faf1e7 | 2026-05-20 |  |  |
+| `F399P002-100m_538108599.outlier_regions.bed` |  | 0 B | 0f3efb30 | 2026-05-20 |  |  |
+| `F402P001-100m_538108620.outlier_regions.bed` |  | 0 B | 2c12cd05 | 2026-05-20 |  |  |
+| `F407P002-100m_538108612.outlier_regions.bed` |  | 0 B | 9fa07da4 | 2026-05-20 |  |  |
+| `F407P003-100m_538108613.outlier_regions.bed` |  | 0 B | 98e3f279 | 2026-05-20 |  |  |
+| `F410P002-R1-100m_538108596.outlier_regions.bed` |  | 0 B | dfe9a541 | 2026-05-20 |  |  |
+| `F415P002-100m_538108574.outlier_regions.bed` |  | 0 B | 18370563 | 2026-05-20 |  |  |
+| `F420P002-100m_538108572.outlier_regions.bed` |  | 0 B | 159263f7 | 2026-05-20 |  |  |
+| `F490P002-100m_538108608.outlier_regions.bed` |  | 0 B | 65615f50 | 2026-05-20 |  |  |
+| `F563P001-100m_538108598.outlier_regions.bed` |  | 0 B | 882efd78 | 2026-05-20 |  |  |
+| `F567P003-100m_538108624.outlier_regions.bed` |  | 0 B | dbfb4a59 | 2026-05-20 |  |  |
+| `F569P001-100m_538108588.outlier_regions.bed` |  | 0 B | 5dd2b383 | 2026-05-20 |  |  |
+| `F569P003-100m_538108577.outlier_regions.bed` |  | 0 B | a8ebabe1 | 2026-05-20 |  |  |
+| `F569P004-100m_538108626.outlier_regions.bed` |  | 0 B | 34c04637 | 2026-05-20 |  |  |
+| `F573P003-100m_538108614.outlier_regions.bed` |  | 0 B | bc18eb64 | 2026-05-20 |  |  |
+| `F576P001-100m_538108607.outlier_regions.bed` |  | 0 B | fa091941 | 2026-05-20 |  |  |
+| `F576P002-100m_538108634.outlier_regions.bed` |  | 0 B | 22957733 | 2026-05-20 |  |  |
+| `F578P002-100m_538108592.outlier_regions.bed` |  | 0 B | f1577631 | 2026-05-20 |  |  |
+| `F578P003-100m_538108573.outlier_regions.bed` |  | 0 B | 83b90de8 | 2026-05-20 |  |  |
+| `F587P001-100m_538108602.outlier_regions.bed` |  | 0 B | 9c31e250 | 2026-05-20 |  |  |
+| `F587P003-100m_538108630.outlier_regions.bed` |  | 0 B | 40b65d9e | 2026-05-20 |  |  |
+| `F590P001-100m_538108628.outlier_regions.bed` |  | 0 B | a22c64ec | 2026-05-20 |  |  |
+| `F590P002-100m_538108583.outlier_regions.bed` |  | 0 B | 783a109d | 2026-05-20 |  |  |
+| `F590P003-100m_538108621.outlier_regions.bed` |  | 0 B | 620dae4c | 2026-05-20 |  |  |
+| `F594P001-100m_538108587.outlier_regions.bed` |  | 0 B | e38ef6b0 | 2026-05-20 |  |  |
+| `F601P001-100m_538108594.outlier_regions.bed` |  | 0 B | c7e50f5c | 2026-05-20 |  |  |
+| `F601P002-100m_538108589.outlier_regions.bed` |  | 0 B | 31f58803 | 2026-05-20 |  |  |
+| `F613P003-100m_538108604.outlier_regions.bed` |  | 0 B | 028f7a0f | 2026-05-20 |  |  |
+| `F622P002-100m_538108581.outlier_regions.bed` |  | 0 B | 0af374ed | 2026-05-20 |  |  |
+| `F622P003-100m_538108631.outlier_regions.bed` |  | 0 B | c68ae7a8 | 2026-05-20 |  |  |
+| `F631P001-100m_538108611.outlier_regions.bed` |  | 0 B | 06734598 | 2026-05-20 |  |  |
+| `F631P002-100m_538108625.outlier_regions.bed` |  | 0 B | 33da74b8 | 2026-05-20 |  |  |
+| `F633P001-100m_535946415.outlier_regions.bed` |  | 0 B | e7677adc | 2026-05-20 |  |  |
+| `F635P002-100m_535946422.outlier_regions.bed` |  | 0 B | aae1808b | 2026-05-20 |  |  |
+| `F635P003-100m_535946411.outlier_regions.bed` |  | 0 B | e9b053b2 | 2026-05-20 |  |  |
+| `F649P001-100m_535946414.outlier_regions.bed` |  | 0 B | ea882c47 | 2026-05-20 |  |  |
+| `F649P002-100m_535946417.outlier_regions.bed` |  | 0 B | d80bbae0 | 2026-05-20 |  |  |
+| `F649P003-100m_535946416.outlier_regions.bed` |  | 0 B | d4045943 | 2026-05-20 |  |  |
+| `F650P001-100m_535946421.outlier_regions.bed` |  | 0 B | dd2e4220 | 2026-05-20 |  |  |
+| `F650P003-100m_535946424.outlier_regions.bed` |  | 0 B | 844ba756 | 2026-05-20 |  |  |
+| `F656P001-100m_535946413.outlier_regions.bed` |  | 0 B | c4fad7dc | 2026-05-20 |  |  |
+| `F671P001-100m_535946412.outlier_regions.bed` |  | 0 B | fdb91921 | 2026-05-20 |  |  |
+| `F671P002-100m_535946418.outlier_regions.bed` |  | 0 B | 2405794e | 2026-05-20 |  |  |
+| `F671P003-100m_535946423.outlier_regions.bed` |  | 0 B | 71bf8bcf | 2026-05-20 |  |  |
+| `F696-P001-100m_535945412.outlier_regions.bed` |  | 0 B | c1875c46 | 2026-05-20 |  |  |
+| `F696-P002-100m_535945433.outlier_regions.bed` |  | 0 B | 115da41e | 2026-05-20 |  |  |
+| `F699-P001-100m_535945428.outlier_regions.bed` |  | 0 B | d7b4cb26 | 2026-05-20 |  |  |
+| `F699-P002-100m_535945429.outlier_regions.bed` |  | 0 B | 137fbca1 | 2026-05-20 |  |  |
+| `F699-P003-100m_535945431.outlier_regions.bed` |  | 0 B | 73d4c5b9 | 2026-05-20 |  |  |
+| `F700-P001-100m_535945434.outlier_regions.bed` |  | 0 B | c8586952 | 2026-05-20 |  |  |
+| `F700-P003-100m_535945444.outlier_regions.bed` |  | 0 B | 6be734ec | 2026-05-20 |  |  |
+| `F701-P001-100m_535945419.outlier_regions.bed` |  | 0 B | f24995e7 | 2026-05-20 |  |  |
+| `F701-P002-100m_535945439.outlier_regions.bed` |  | 0 B | 28997721 | 2026-05-20 |  |  |
+| `F701-P003-100m_535945447.outlier_regions.bed` |  | 0 B | 3aa063a3 | 2026-05-20 |  |  |
+| `F703-P001-100m_535945411.outlier_regions.bed` |  | 0 B | cee8e5aa | 2026-05-20 |  |  |
+| `F703-P002-100m_535945421.outlier_regions.bed` |  | 0 B | 685cf0be | 2026-05-20 |  |  |
+| `F703-P003-100m_535945446.outlier_regions.bed` |  | 0 B | 2b2aa105 | 2026-05-20 |  |  |
+| `F706-P002-100m_535945420.outlier_regions.bed` |  | 0 B | fe16cebf | 2026-05-20 |  |  |
+| `F706-P003-100m_535945410.outlier_regions.bed` |  | 0 B | 8e04a538 | 2026-05-20 |  |  |
+| `F708-P001-100m_535945443.outlier_regions.bed` |  | 0 B | 17bbf091 | 2026-05-20 |  |  |
+| `F708-P003-100m_535945432.outlier_regions.bed` |  | 0 B | e0505b5b | 2026-05-20 |  |  |
+| `F711-P001-100m_535945414.outlier_regions.bed` |  | 0 B | 26eea335 | 2026-05-20 |  |  |
+| `F711-P002-100m_535945427.outlier_regions.bed` |  | 0 B | e90553f3 | 2026-05-20 |  |  |
+| `F711-P003-100m_535945438.outlier_regions.bed` |  | 0 B | ee84d908 | 2026-05-20 |  |  |
+| `F715-P001-100m_535945423.outlier_regions.bed` |  | 0 B | 3b027dbf | 2026-05-20 |  |  |
+| `F715-P003-100m_535945441.outlier_regions.bed` |  | 0 B | 6a3407be | 2026-05-20 |  |  |
+| `F728-P001-100m_535945416.outlier_regions.bed` |  | 0 B | d3203187 | 2026-05-20 |  |  |
+| `F728-P002-100m_535945445.outlier_regions.bed` |  | 0 B | 4b3bfdf4 | 2026-05-20 |  |  |
+| `F728-P003-100m_535945418.outlier_regions.bed` |  | 0 B | d2644c35 | 2026-05-20 |  |  |
+| `F730-P001-100m_535945437.outlier_regions.bed` |  | 0 B | 4aec64be | 2026-05-20 |  |  |
+| `F730-P002-100m_535945442.outlier_regions.bed` |  | 0 B | cd853778 | 2026-05-20 |  |  |
+| `F737-P001-100m_535945430.outlier_regions.bed` |  | 0 B | 00c25834 | 2026-05-20 |  |  |
+| `F737-P003-100m_535945435.outlier_regions.bed` |  | 0 B | 0aa11a2c | 2026-05-20 |  |  |
+| `F745-P001-100m_535945425.outlier_regions.bed` |  | 0 B | be7ab19b | 2026-05-20 |  |  |
+| `F745-P002-100m_535945440.outlier_regions.bed` |  | 0 B | a7174936 | 2026-05-20 |  |  |
+| `F745-P003-100m_535945413.outlier_regions.bed` |  | 0 B | afaa513f | 2026-05-20 |  |  |
 
 ### `results/multiqc/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `TGen-RNA-seq-DROP-Analysis_multiqc_report.html` |  | 0 B | 36eb9402 | 2026-05-19 |  |  |
+| `TGen-RNA-seq-DROP-Analysis_multiqc_report.html` |  | 0 B | a04a32ee | 2026-05-19 |  |  |
 
 ### `results/multiqc/TGen-RNA-seq-DROP-Analysis_multiqc_report_data/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `llms-full.txt` |  | 0 B | 202f2fdf | 2026-05-19 |  |  |
-| `multiqc.log` |  | 0 B | d091b1b6 | 2026-05-19 |  |  |
+| `llms-full.txt` |  | 0 B | 847decd3 | 2026-05-19 |  |  |
+| `multiqc.log` |  | 0 B | af82d8f7 | 2026-05-19 |  |  |
 | `multiqc_citations.txt` |  | 0 B | 4c806e63 | 2026-05-19 |  |  |
-| `multiqc_data.json` |  | 0 B | 73316c2c | 2026-05-19 |  |  |
-| `multiqc_software_versions.txt` |  | 0 B | e219ee5b | 2026-05-19 |  |  |
+| `multiqc_data.json` |  | 0 B | 6307cb75 | 2026-05-19 |  |  |
+| `multiqc_software_versions.txt` |  | 0 B | 4ac6663d | 2026-05-19 |  |  |
 | `multiqc_sources.txt` |  | 0 B | d2a044df | 2026-05-19 |  |  |
+
+### `results/outlier/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `fraser_HIGH_PRIORITY.tsv` |  | 0 B | 97689f6a | 2026-05-20 |  |  |
+| `fraser_full_annotated.tsv` |  | 0 B | 87e1d185 | 2026-05-20 |  |  |
+| `fraser_probands_significant.tsv` |  | 0 B | 966ab0c8 | 2026-05-20 |  |  |
+| `outrider_HIGH_PRIORITY.tsv` |  | 0 B | 4a5b4b72 | 2026-05-20 |  |  |
+| `outrider_full_annotated.tsv` |  | 0 B | 6322cf72 | 2026-05-20 |  |  |
+| `outrider_probands_significant.tsv` |  | 0 B | a8f111d5 | 2026-05-20 |  |  |
+
+### `results/outlier/databases/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `clinvar_gene_specific_summary.txt` |  | 0 B | 319309ae | 2026-05-20 |  |  |
+| `genes_to_disease.txt` |  | 0 B | c9fdf7a7 | 2026-05-20 |  |  |
 
 ### `results/pipeline_info/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `execution_report.html` |  | 0 B | 073e4779 | 2026-05-19 |  |  |
+| `execution_report.html` |  | 0 B | 773c81aa | 2026-05-19 |  |  |
 | `execution_report_2026-05-11_23-55-16.html` |  | 0 B | 19029136 | 2026-05-19 |  |  |
 | `execution_report_2026-05-12_00-18-38.html` |  | 0 B | 040ae3dd | 2026-05-19 |  |  |
 | `execution_timeline_2026-05-11_23-55-16.html` |  | 0 B | bc9111c1 | 2026-05-19 |  |  |
 | `execution_timeline_2026-05-12_00-18-38.html` |  | 0 B | 99459fda | 2026-05-19 |  |  |
 | `execution_trace_2026-05-11_23-55-16.txt` |  | 0 B | 03d0d26a | 2026-05-19 |  |  |
 | `execution_trace_2026-05-12_00-18-38.txt` |  | 0 B | 992d34d5 | 2026-05-19 |  |  |
-| `nf_core_drop_software_mqc_versions.yml` |  | 0 B | 39d57cd4 | 2026-05-19 |  |  |
+| `nf_core_drop_software_mqc_versions.yml` |  | 0 B | 4cfc805c | 2026-05-19 |  |  |
 | `params_2026-05-11_21-26-20.json` |  | 0 B | bb9f6a8d | 2026-05-19 |  |  |
 | `params_2026-05-11_23-29-27.json` |  | 0 B | 09a3658d | 2026-05-19 |  |  |
 | `params_2026-05-11_23-42-00.json` |  | 0 B | 582b9ce8 | 2026-05-19 |  |  |
@@ -85,10 +514,11 @@ tags:
 | `params_2026-05-15_17-38-30.json` |  | 0 B | 8d1d37de | 2026-05-19 |  |  |
 | `params_2026-05-15_17-46-39.json` |  | 0 B | 62d6a9d8 | 2026-05-19 |  |  |
 | `params_2026-05-18_02-56-59.json` |  | 0 B | a14dbfbb | 2026-05-19 |  |  |
+| `pipeline_dag.html` |  | 0 B | e0c14177 | 2026-05-20 |  |  |
 | `pipeline_dag_2026-05-11_23-55-16.html` |  | 0 B | 8ab663d0 | 2026-05-19 |  |  |
 | `pipeline_dag_2026-05-12_00-18-38.html` |  | 0 B | 8ab663d0 | 2026-05-19 |  |  |
-| `timeline.html` |  | 0 B | 0bdcf232 | 2026-05-19 |  |  |
-| `trace.txt` |  | 0 B | d2bbe66e | 2026-05-19 |  |  |
+| `timeline.html` |  | 0 B | 61f2ed37 | 2026-05-19 |  |  |
+| `trace.txt` |  | 0 B | 8c3aa1ea | 2026-05-19 |  |  |
 
 ### `results/processed_data/aberrant_expression/bam_stats/`
 
@@ -302,6 +732,20 @@ tags:
 | `fraser.tsv` |  | 0 B | 918fc6d1 | 2026-05-19 |  |  |
 | `outrider.tsv` |  | 0 B | 918fc6d1 | 2026-05-19 |  |  |
 
+### `results/processed_results/aberrant_expression/v44/outrider/blood/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `OUTRIDER_results.tsv` |  | 0 B | cdf58659 | 2026-05-20 |  |  |
+
+### `results/processed_results/aberrant_splicing/results/v44/fraser/blood/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `results.tsv` |  | 0 B | 4d6f56ad | 2026-05-20 |  |  |
+| `results_gene_all.tsv` |  | 0 B | size:719 | 2026-05-20 |  |  |
+| `results_per_junction.tsv` |  | 0 B | 8ecee50d | 2026-05-20 |  |  |
+
 ### `results/processed_results/aberrant_splicing/results/v44/fraser/fraser/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
@@ -317,6 +761,64 @@ tags:
 | `results.tsv` |  | 0 B | 4d6f56ad | 2026-05-19 |  |  |
 | `results_gene_all.tsv` |  | 0 B | size:719 | 2026-05-19 |  |  |
 | `results_per_junction.tsv` |  | 0 B | 8ecee50d | 2026-05-19 |  |  |
+
+### `results/reports/aberrant_expression/genecounts/v44__blood/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `multiqc_report.html` |  | 0 B | 92d99e1d | 2026-05-20 |  |  |
+
+### `results/reports/aberrant_expression/genecounts/v44__blood/multiqc_data/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `llms-full.txt` |  | 0 B | 2065170f | 2026-05-20 |  |  |
+| `multiqc.log` |  | 0 B | a4a63834 | 2026-05-20 |  |  |
+| `multiqc_citations.txt` |  | 0 B | 4c806e63 | 2026-05-20 |  |  |
+| `multiqc_data.json` |  | 0 B | f63e2a8d | 2026-05-20 |  |  |
+| `multiqc_expressed_genes.txt` |  | 0 B | d87cd368 | 2026-05-20 |  |  |
+| `multiqc_reads_statistics.txt` |  | 0 B | 0233d33e | 2026-05-20 |  |  |
+| `multiqc_sample_count.txt` |  | 0 B | 4cbe8962 | 2026-05-20 |  |  |
+| `multiqc_sources.txt` |  | 0 B | d2a044df | 2026-05-20 |  |  |
+
+### `results/reports/aberrant_expression/outrider/v44__blood/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `multiqc_report.html` |  | 0 B | 9d69e97d | 2026-05-20 |  |  |
+
+### `results/reports/aberrant_expression/outrider/v44__blood/multiqc_data/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `llms-full.txt` |  | 0 B | 96249081 | 2026-05-20 |  |  |
+| `multiqc.log` |  | 0 B | be7425e0 | 2026-05-20 |  |  |
+| `multiqc_aberrant_samples.txt` |  | 0 B | 314d3121 | 2026-05-20 |  |  |
+| `multiqc_citations.txt` |  | 0 B | 4c806e63 | 2026-05-20 |  |  |
+| `multiqc_data.json` |  | 0 B | e5979b3e | 2026-05-20 |  |  |
+| `multiqc_outrider_overview.txt` |  | 0 B | 8844fdff | 2026-05-20 |  |  |
+| `multiqc_outrider_result_overview.txt` |  | 0 B | 14f3a599 | 2026-05-20 |  |  |
+| `multiqc_significant_results.txt` |  | 0 B | da78ea23 | 2026-05-20 |  |  |
+| `multiqc_sources.txt` |  | 0 B | d2a044df | 2026-05-20 |  |  |
+
+### `results/reports/aberrant_splicing/fraser/blood.v44/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `multiqc_report.html` |  | 0 B | 6540b7cb | 2026-05-20 |  |  |
+
+### `results/reports/aberrant_splicing/fraser/blood.v44/multiqc_data/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `llms-full.txt` |  | 0 B | eeb9c7b5 | 2026-05-20 |  |  |
+| `multiqc.log` |  | 0 B | 8e53c954 | 2026-05-20 |  |  |
+| `multiqc_citations.txt` |  | 0 B | 4c806e63 | 2026-05-20 |  |  |
+| `multiqc_data.json` |  | 0 B | c9e23a9a | 2026-05-20 |  |  |
+| `multiqc_fraser_overview.txt` |  | 0 B | 28dedfc0 | 2026-05-20 |  |  |
+| `multiqc_results.txt` |  | 0 B | d21f387b | 2026-05-20 |  |  |
+| `multiqc_sources.txt` |  | 0 B | d2a044df | 2026-05-20 |  |  |
+| `multiqc_total_outliers.txt` |  | 0 B | d7c52132 | 2026-05-20 |  |  |
 
 ### `results/reports/aberrant_splicing/fraser/fraser.v44/`
 
@@ -417,6 +919,7 @@ tags:
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
+| `sample_metadata.tsv` |  | 0 B | 95d670df | 2026-05-20 |  |  |
 | `samplesheet.tsv` |  | 0 B | d44dd5bc | 2026-05-19 |  |  |
 
 ### `scripts/`
@@ -424,6 +927,8 @@ tags:
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
 | `create_drop_samplesheet.sh` |  | 0 B | 02843bec | 2026-05-19 |  |  |
+| `extract_minibam.sh` |  | 0 B | e5be8e24 | 2026-05-20 |  |  |
+| `merge_metadata_with_drop.py` |  | 0 B | 173c7e07 | 2026-05-20 |  |  |
+| `merge_omim.py` |  | 0 B | 8cdb5a77 | 2026-05-20 |  |  |
 | `run_drop_tgen_rnaseq.sh` |  | 0 B | 96d31237 | 2026-05-19 |  |  |
-| `slurm-29519.out` |  | 0 B | 424180d6 | 2026-05-19 |  |  |
 
