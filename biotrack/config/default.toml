@@ -1,0 +1,32 @@
+# BioTrack default configuration
+
+[scan]
+ignore_patterns = [
+    ".git",
+    ".biotrack",
+    ".snakemake",
+    ".nextflow",
+    "work/",
+    ".nextflow.log*",
+    "node_modules",
+    "__pycache__",
+    "*.pyc",
+    ".conda",
+]
+
+max_depth = 0
+
+follow_symlinks = false
+
+include_hidden = false
+
+threads = 0
+
+max_entries_per_dir = 0
+
+[hash]
+max_file_size = 2147483648
+
+threads = 0
+
+buffer_size = 1048576
