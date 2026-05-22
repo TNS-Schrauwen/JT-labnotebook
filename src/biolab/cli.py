@@ -511,6 +511,364 @@ class RunDetector:
             return 0.0
 
 
+class DirectoryGraphGenerator:
+    """
+    Generate directory structure visualizations as:
+    1. Mermaid.js flowcharts for static rendering [3]
+    2. D3.js JSON hierarchy for interactive graphs [6]
+    """
+
+    MAX_DEPTH = 5
+    MAX_NODES_MERMAID = 150
+    MAX_NODES_D3 = 5000
+
+    SKIP_DIRS = frozenset({
+        ".git", "__pycache__", ".nextflow", "work",
+        ".snakemake", "node_modules", ".conda", ".cache",
+        ".venv", "venv", ".singularity", ".apptainer",
+    })
+
+    FILE_CATEGORIES = {
+        "script": {".py", ".R", ".r", ".sh", ".bash", ".nf", ".pl"},
+        "config": {".yaml", ".yml", ".json", ".toml", ".config", ".cfg"},
+        "data": {".csv", ".tsv", ".bed", ".gff", ".gtf", ".vcf"},
+        "log": {".log", ".out", ".err", ".stderr", ".stdout"},
+        "report": {".html", ".pdf", ".png", ".svg"},
+        "document": {".md", ".rst", ".txt"},
+    }
+
+    def __init__(self, project_path: Path, project_name: str):
+        self.project_path = project_path
+        self.project_name = project_name
+
+    def _classify_file(self, filename: str) -> str:
+        """Classify a file by its extension into a category."""
+        ext = Path(filename).suffix.lower()
+        for category, extensions in self.FILE_CATEGORIES.items():
+            if ext in extensions:
+                return category
+        return "other"
+
+    def _should_skip(self, name: str) -> bool:
+        return name in self.SKIP_DIRS or name.startswith(".")
+
+    def build_tree(self, max_depth: int = None) -> dict:
+        """
+        Walk the project directory and build a hierarchical tree structure.
+        Returns a nested dict suitable for both Mermaid and D3 rendering.
+        """
+        if max_depth is None:
+            max_depth = self.MAX_DEPTH
+
+        def walk(path: Path, depth: int) -> dict:
+            node = {
+                "name": path.name or self.project_name,
+                "type": "directory",
+                "path": str(path.relative_to(self.project_path)) if path != self.project_path else ".",
+                "children": [],
+            }
+
+            if depth >= max_depth:
+                return node
+
+            try:
+                entries = sorted(os.scandir(path), key=lambda e: (not e.is_dir(), e.name))
+            except (PermissionError, OSError):
+                return node
+
+            dir_count = 0
+            file_count = 0
+
+            for entry in entries:
+                if self._should_skip(entry.name):
+                    continue
+
+                if entry.is_dir(follow_symlinks=False):
+                    child = walk(Path(entry.path), depth + 1)
+                    # Only include directories that have content
+                    if child.get("children") or depth < 2:
+                        node["children"].append(child)
+                        dir_count += 1
+                elif entry.is_file(follow_symlinks=False):
+                    try:
+                        size = entry.stat(follow_symlinks=False).st_size
+                    except OSError:
+                        size = 0
+
+                    file_node = {
+                        "name": entry.name,
+                        "type": "file",
+                        "category": self._classify_file(entry.name),
+                        "size": size,
+                        "path": str(Path(entry.path).relative_to(self.project_path)),
+                    }
+                    node["children"].append(file_node)
+                    file_count += 1
+
+            node["dir_count"] = dir_count
+            node["file_count"] = file_count
+            return node
+
+        return walk(self.project_path, 0)
+
+    def generate_mermaid(self, tree: dict = None) -> str:
+        """
+        Generate a Mermaid.js flowchart from the directory tree.
+        Material for MkDocs renders these natively without configuration [3].
+        
+        Uses graph TD (top-down) for directory hierarchy.
+        Nodes are styled by type (directory vs file category).
+        """
+        if tree is None:
+            tree = self.build_tree(max_depth=3)
+
+        lines = ["graph TD"]
+        node_id = [0]
+
+        # Style classes for different file types
+        styles = []
+
+        def get_id():
+            node_id[0] += 1
+            return f"N{node_id[0]}"
+
+        def add_node(node: dict, parent_id: str = None):
+            current_id = get_id()
+
+            name = node["name"]
+            node_type = node.get("type", "file")
+
+            if node_type == "directory":
+                # Directory node: folder shape
+                dir_count = node.get("dir_count", 0)
+                file_count = node.get("file_count", 0)
+                label = f"{name}/ [{dir_count}d, {file_count}f]"
+                lines.append(f"    {current_id}[/{label}/]")
+                styles.append(f"class {current_id} dirStyle")
+            else:
+                # File node: rectangular with category info
+                category = node.get("category", "other")
+                size = node.get("size", 0)
+                size_str = self._format_size(size)
+                label = f"{name} ({size_str})"
+                lines.append(f"    {current_id}[{label}]")
+                styles.append(f"class {current_id} {category}Style")
+
+            if parent_id:
+                lines.append(f"    {parent_id} --> {current_id}")
+
+            # Only recurse into children if under node limit
+            if node_type == "directory" and node_id[0] < self.MAX_NODES_MERMAID:
+                for child in node.get("children", []):
+                    add_node(child, current_id)
+
+        add_node(tree)
+
+        # Add style definitions
+        lines.append("")
+        lines.append("    classDef dirStyle fill:#e1f5fe,stroke:#0277bd,stroke-width:2px")
+        lines.append("    classDef scriptStyle fill:#e8f5e9,stroke:#2e7d32")
+        lines.append("    classDef configStyle fill:#fff3e0,stroke:#e65100")
+        lines.append("    classDef dataStyle fill:#f3e5f5,stroke:#6a1b9a")
+        lines.append("    classDef logStyle fill:#fbe9e7,stroke:#bf360c")
+        lines.append("    classDef reportStyle fill:#e0f2f1,stroke:#00695c")
+        lines.append("    classDef documentStyle fill:#f1f8e9,stroke:#33691e")
+        lines.append("    classDef otherStyle fill:#fafafa,stroke:#616161")
+
+        for style in styles:
+            lines.append(f"    {style}")
+
+        return "\n".join(lines)
+
+    def generate_d3_json(self, tree: dict = None) -> str:
+        """
+        Generate JSON data for D3.js interactive tree visualization [6].
+        The D3 tree layout expects a hierarchical JSON structure with
+        'name' and 'children' fields.
+        """
+        if tree is None:
+            tree = self.build_tree(max_depth=self.MAX_DEPTH)
+
+        def prune(node: dict, max_children: int = 50) -> dict:
+            """Prune large directories to keep JSON manageable."""
+            pruned = {
+                "name": node["name"],
+                "type": node.get("type", "file"),
+                "category": node.get("category", "directory"),
+                "size": node.get("size", 0),
+                "path": node.get("path", ""),
+            }
+            children = node.get("children", [])
+            if len(children) > max_children:
+                # Keep directories and first N files
+                dirs = [c for c in children if c.get("type") == "directory"]
+                files = [c for c in children if c.get("type") == "file"][:max_children - len(dirs)]
+                children = dirs + files
+                pruned["truncated"] = True
+                pruned["total_children"] = len(node.get("children", []))
+
+            pruned["children"] = [prune(c) for c in children]
+            return pruned
+
+        pruned_tree = prune(tree)
+        return json.dumps(pruned_tree, indent=2)
+
+    @staticmethod
+    def _format_size(size_bytes: int) -> str:
+        if size_bytes < 1024:
+            return f"{size_bytes}B"
+        elif size_bytes < 1024 * 1024:
+            return f"{size_bytes // 1024}KB"
+        elif size_bytes < 1024 * 1024 * 1024:
+            return f"{size_bytes // (1024*1024)}MB"
+        else:
+            return f"{size_bytes // (1024**3)}GB"
+
+def generate_project_graph(project_name: str, project_path: Path, docs_dir: Path):
+    """Generate both Mermaid and D3 graph pages for a project."""
+    graph_gen = DirectoryGraphGenerator(project_path, project_name)
+    tree = graph_gen.build_tree()
+
+    # Generate Mermaid page
+    mermaid_code = graph_gen.generate_mermaid(tree)
+    graph_dir = docs_dir / "graphs"
+    graph_dir.mkdir(parents=True, exist_ok=True)
+
+    slug = re.sub(r"[^\w-]", "", project_name.lower().replace(" ", "-"))
+
+    mermaid_page = f"""---
+title: "Structure: {project_name}"
+tags:
+  - graph
+  - {project_name}
+
+---
+
+# Directory Structure: {project_name}
+
+**Path:** `{project_path}`
+**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M')}
+
+## Tree Overview
+
+```mermaid
+{mermaid_code}
+
+Legend
+COLOR
+MEANING
+Blue
+Directory
+Green
+Script (.py, .R, .sh, .nf)
+Orange
+Configuration (.yaml, .json, .config)
+Purple
+Data (.csv, .tsv, .bed, .vcf)
+Red
+Log (.log, .out, .err)
+Teal
+Report (.html, .pdf)
+
+
+Interactive View
+See the interactive graph for zoomable, filterable exploration.
+
+"""
+(graph_dir / f"{slug}.md").write_text(mermaid_page)
+
+# Generate D3 JSON data
+data_dir = docs_dir / "data"
+data_dir.mkdir(parents=True, exist_ok=True)
+d3_json = graph_gen.generate_d3_json(tree)
+(data_dir / f"tree_{slug}.json").write_text(d3_json)
+
+# Generate interactive HTML page
+interactive_html = _generate_interactive_page(project_name, slug)
+(graph_dir / f"interactive_{slug}.html").write_text(interactive_html)
+
+---
+
+def _generate_interactive_page(project_name: str, slug: str) -> str:
+
+    treeLayout(root);
+
+    const centerX = width / 2;
+    const centerY = height / 2;
+
+    g.selectAll('.link')
+        .data(root.links())
+        .join('path')
+        .attr('class', 'link')
+        .attr('fill', 'none')
+        .attr('stroke', '#bdbdbd')
+        .attr('stroke-width', 0.6)
+        .attr('d', d3.linkRadial()
+            .angle(d => d.x)
+            .radius(d => d.y));
+
+    g.attr('transform', `translate(${{centerX}},${{centerY}})`);
+
+    const nodes = g.selectAll('.node')
+        .data(root.descendants())
+        .join('g')
+        .attr('class', 'node')
+        .attr('transform', d => `rotate(${{d.x * 180 / Math.PI - 90}}) translate(${{d.y}},0)`)
+        .on('mouseover', showTooltip)
+        .on('mouseout', hideTooltip);
+
+    nodes.append('circle')
+        .attr('r', getRadius)
+        .attr('fill', getColor);
+
+    nodes.filter(d => d.depth < 3).append('text')
+        .attr('dy', '0.3em')
+        .attr('x', d => d.x < Math.PI === !d.children ? 8 : -8)
+        .attr('text-anchor', d => d.x < Math.PI === !d.children ? 'start' : 'end')
+        .attr('transform', d => d.x >= Math.PI ? 'rotate(180)' : null)
+        .attr('font-size', '9px')
+        .attr('fill', '#424242')
+        .text(d => d.data.name.length > 15 ? d.data.name.slice(0, 13) + '..' : d.data.name);
+}}
+
+// Initial render
+renderTree();
+
+// Event handlers
+document.getElementById('view-mode').addEventListener('change', (e) => {{
+    const mode = e.target.value;
+    if (mode === 'tree') renderTree();
+    else if (mode === 'force') renderForce();
+    else if (mode === 'radial') renderRadial();
+}});
+
+document.getElementById('color-by').addEventListener('change', () => {{
+    const mode = document.getElementById('view-mode').value;
+    if (mode === 'tree') renderTree();
+    else if (mode === 'force') renderForce();
+    else if (mode === 'radial') renderRadial();
+}});
+
+document.getElementById('reset-zoom').addEventListener('click', () => {{
+    svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+}});
+
+document.getElementById('search').addEventListener('input', (e) => {{
+    const query = e.target.value.toLowerCase();
+    g.selectAll('.node circle, .node')
+        .attr('opacity', d => {{
+            if (!query) return 1;
+            const name = (d.data || d).name || '';
+            const path = (d.data || d).path || '';
+            return (name.toLowerCase().includes(query) || path.toLowerCase().includes(query)) ? 1 : 0.1;
+        }});
+}});
+</script>
+</body>
+</html>"""
+
+generate_project_graph(proj_name, proj_path, Path("docs"))
+
 # ===================================================================
 # MARKDOWN GENERATOR -- PROFESSIONAL DASHBOARD
 # ===================================================================

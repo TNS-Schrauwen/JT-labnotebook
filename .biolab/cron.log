@@ -98,3 +98,49 @@ To github.com:TNS-Schrauwen/JT-labnotebook.git
    e45cede..28e2859  main -> main
 [2026-05-21 02:00:43] Push successful
 [2026-05-21 02:00:43] === Sync complete ===
+[2026-05-22 02:00:01] === Starting automated sync ===
+[2026-05-22 02:00:02] Running scan...
+[2026-05-22 02:00:03]     Scanning: 5mc_outlier
+[2026-05-22 02:00:03]       Tracked: 1581 files
+[2026-05-22 02:00:03]       New: 0
+[2026-05-22 02:00:03]       Modified: 0
+[2026-05-22 02:00:03]       Deleted: 0
+[2026-05-22 02:00:03]       Nextflow runs: 0
+[2026-05-22 02:00:03]       SLURM jobs: 0
+[2026-05-22 02:00:03]       Log files: 706
+[2026-05-22 02:00:03]     Scanning: DROP_pipeline
+[2026-05-22 02:00:03]       Tracked: 512 files
+[2026-05-22 02:00:03]       New: 0
+[2026-05-22 02:00:03]       Modified: 1
+[2026-05-22 02:00:03]       Deleted: 0
+[2026-05-22 02:00:06]       Nextflow runs: 0
+[2026-05-22 02:00:06]       SLURM jobs: 1
+[2026-05-22 02:00:06]       Log files: 19
+[2026-05-22 02:00:06]     Scanning: TGen_RNASeq
+[2026-05-22 02:00:21]       Tracked: 29525 files
+[2026-05-22 02:00:21]       New: 0
+[2026-05-22 02:00:21]       Modified: 0
+[2026-05-22 02:00:21]       Deleted: 0
+[2026-05-22 02:06:46]       Nextflow runs: 0
+[2026-05-22 02:06:46]       SLURM jobs: 0
+[2026-05-22 02:06:46]       Log files: 1863
+[2026-05-22 02:06:46]     Scanning: 5mc_simulator
+[2026-05-22 02:06:46]       Tracked: 171 files
+[2026-05-22 02:06:46]       New: 0
+[2026-05-22 02:06:46]       Modified: 0
+[2026-05-22 02:06:46]       Deleted: 0
+[2026-05-22 02:06:47]       Nextflow runs: 0
+[2026-05-22 02:06:47]       SLURM jobs: 0
+[2026-05-22 02:06:47]       Log files: 6
+[2026-05-22 02:06:47]     Scanning: popqc
+[2026-05-22 02:06:47]       Tracked: 30 files
+[2026-05-22 02:06:47]       New: 0
+[2026-05-22 02:06:47]       Modified: 0
+[2026-05-22 02:06:47]       Deleted: 0
+[2026-05-22 02:06:52]       Nextflow runs: 0
+[2026-05-22 02:06:52]       SLURM jobs: 0
+[2026-05-22 02:06:52]       Log files: 0
+[2026-05-22 02:06:52]   
+[2026-05-22 02:06:52]   Scan complete. Run 'biolab build' to compile the site.
+[2026-05-22 02:06:52] Scan completed in 410 seconds
+[2026-05-22 02:06:52] Changes detected, committing...
