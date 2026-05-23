@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- DROP_pipeline"
-date: 2026-05-22 02:00
+date: 2026-05-23 02:00
 tags:
   - registry
   - DROP_pipeline
@@ -8,25 +8,1714 @@ tags:
 
 # File Registry: DROP_pipeline
 
-**Scan Date:** 2026-05-22 02:00
-**Total Tracked Files:** 512
-**New Since Last Scan:** 0
-**Modified Since Last Scan:** 1
+**Scan Date:** 2026-05-23 02:00
+**Total Tracked Files:** 1354
+**New Since Last Scan:** 842
+**Modified Since Last Scan:** 0
 **Deleted Since Last Scan:** 0
 
 ---
 
 ## Changes Detected
 
-### Modified Files
+### New Files
 
 | File | Type | Size | Modified |
 |------|------|------|----------|
-| `scripts/outlier_report.py` |  | 0 B |  |
+| `analysis/genes.bed` |  | 0 B |  |
+| `analysis/mosdepth_output/F005P001-100m_515406902.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F005P001-100m_515406902.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F005P001-100m_515406902.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F005P002-100m_515387945.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F005P002-100m_515387945.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F005P002-100m_515387945.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F009P001-100m_515387885.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F009P001-100m_515387885.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F009P001-100m_515387885.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F022P001-100m_515387916.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F022P001-100m_515387916.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F022P001-100m_515387916.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F023P001-100m_515387932.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F023P001-100m_515387932.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F023P001-100m_515387932.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F024P001-100m_515387947.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F024P001-100m_515387947.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F024P001-100m_515387947.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P002-R1-100m_548709162.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P002-R1-100m_548709162.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P002-R1-100m_548709162.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P003-R1-100m_548709174.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P003-R1-100m_548709174.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P003-R1-100m_548709174.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P005-R1-100m_548709176.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P005-R1-100m_548709176.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P005-R1-100m_548709176.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P006-R1-100m_548709169.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P006-R1-100m_548709169.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F037-P006-R1-100m_548709169.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F041P001-100m_515406904.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F041P001-100m_515406904.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F041P001-100m_515406904.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F047-P001-100m_548709164.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F047-P001-100m_548709164.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F047-P001-100m_548709164.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F047-P002-100m_548709166.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F047-P002-100m_548709166.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F047-P002-100m_548709166.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F047-P003-100m_548709167.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F047-P003-100m_548709167.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F047-P003-100m_548709167.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F055-P001-100m_548709168.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F055-P001-100m_548709168.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F055-P001-100m_548709168.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F055-P002-100m_548709179.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F055-P002-100m_548709179.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F055-P002-100m_548709179.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F058P001-100m_515406910.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F058P001-100m_515406910.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F058P001-100m_515406910.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F059P001-100m_515387933.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F059P001-100m_515387933.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F059P001-100m_515387933.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F059P002-100m_515387892.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F059P002-100m_515387892.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F059P002-100m_515387892.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F096P001-100m_515387914.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F096P001-100m_515387914.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F096P001-100m_515387914.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F096P002-100m_515387925.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F096P002-100m_515387925.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F096P002-100m_515387925.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F096P003-100m_515387891.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F096P003-100m_515387891.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F096P003-100m_515387891.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F100P001-100m_515387902.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F100P001-100m_515387902.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F100P001-100m_515387902.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F100P002-100m_515387929.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F100P002-100m_515387929.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F100P002-100m_515387929.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F100P003-100m_515406912.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F100P003-100m_515406912.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F100P003-100m_515406912.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F105P001-100m_515387939.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F105P001-100m_515387939.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F105P001-100m_515387939.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F105P002-100m_515387940.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F105P002-100m_515387940.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F105P002-100m_515387940.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F105P003-100m_515387903.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F105P003-100m_515387903.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F105P003-100m_515387903.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P001-100m_515387894.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P001-100m_515387894.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P001-100m_515387894.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P002-100m_515387917.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P002-100m_515387917.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P002-100m_515387917.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P003-100m_515387900.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P003-100m_515387900.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P003-100m_515387900.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P004-100m_515387931.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P004-100m_515387931.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F109P004-100m_515387931.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F115P001-100m_515406915.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F115P001-100m_515406915.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F115P001-100m_515406915.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F115P002-100m_515387906.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F115P002-100m_515387906.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F115P002-100m_515387906.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F115P003-100m_515406916.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F115P003-100m_515406916.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F115P003-100m_515406916.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F118P001-100m_515387888.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F118P001-100m_515387888.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F118P001-100m_515387888.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F118P002-100m_515387920.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F118P002-100m_515387920.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F118P002-100m_515387920.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F118P003-100m_515387882.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F118P003-100m_515387882.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F118P003-100m_515387882.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F119P001-100m_515387923.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F119P001-100m_515387923.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F119P001-100m_515387923.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F119P002-100m_515406911.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F119P002-100m_515406911.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F119P002-100m_515406911.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F119P003-100m_515406909.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F119P003-100m_515406909.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F119P003-100m_515406909.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F120P001-100m_515387935.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F120P001-100m_515387935.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F120P001-100m_515387935.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F120P002-100m_515387943.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F120P002-100m_515387943.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F120P002-100m_515387943.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F120P003-100m_515406903.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F120P003-100m_515406903.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F120P003-100m_515406903.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F123P001-100m_515387913.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F123P001-100m_515387913.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F123P001-100m_515387913.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F123P002-100m_515387930.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F123P002-100m_515387930.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F123P002-100m_515387930.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F123P003-100m_515387921.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F123P003-100m_515387921.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F123P003-100m_515387921.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F124P001-100m_515387880.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F124P001-100m_515387880.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F124P001-100m_515387880.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F124P002-100m_515387918.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F124P002-100m_515387918.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F124P002-100m_515387918.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F124P003-100m_515387884.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F124P003-100m_515387884.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F124P003-100m_515387884.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F125P001-100m_515406907.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F125P001-100m_515406907.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F125P001-100m_515406907.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F125P002-100m_515406906.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F125P002-100m_515406906.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F125P002-100m_515406906.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F127P001-100m_515387937.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F127P001-100m_515387937.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F127P001-100m_515387937.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F127P002-100m_515387919.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F127P002-100m_515387919.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F127P002-100m_515387919.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F129P002-100m_515387928.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F129P002-100m_515387928.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F129P002-100m_515387928.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F129P003-100m_515387915.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F129P003-100m_515387915.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F129P003-100m_515387915.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F129P004-100m_515387941.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F129P004-100m_515387941.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F129P004-100m_515387941.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P001-100m_548709172.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P001-100m_548709172.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P001-100m_548709172.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P002-100m_548709175.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P002-100m_548709175.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P002-100m_548709175.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P003-100m_548709177.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P003-100m_548709177.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P003-100m_548709177.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P004-100m_548709165.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P004-100m_548709165.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P004-100m_548709165.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P005-100m_548709163.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P005-100m_548709163.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P005-100m_548709163.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P006-100m_548709178.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P006-100m_548709178.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F132-P006-100m_548709178.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F135P001-100m_515387881.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F135P001-100m_515387881.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F135P001-100m_515387881.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F135P002-100m_515387926.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F135P002-100m_515387926.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F135P002-100m_515387926.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P001-100m_515387898.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P001-100m_515387898.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P001-100m_515387898.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P002-100m_515387904.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P002-100m_515387904.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P002-100m_515387904.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P003-100m_515387889.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P003-100m_515387889.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P003-100m_515387889.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P004-100m_515406905.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P004-100m_515406905.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F136P004-100m_515406905.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P001-100m_515387936.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P001-100m_515387936.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P001-100m_515387936.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P002-100m_515387946.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P002-100m_515387946.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P002-100m_515387946.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P003-100m_515406914.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P003-100m_515406914.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P003-100m_515406914.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P004-100m_515387927.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P004-100m_515387927.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F149P004-100m_515387927.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F151P001-100m_515387938.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F151P001-100m_515387938.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F151P001-100m_515387938.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F151P002-100m_515387907.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F151P002-100m_515387907.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F151P002-100m_515387907.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F151P003-100m_515387942.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F151P003-100m_515387942.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F151P003-100m_515387942.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F156P001-100m_515387944.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F156P001-100m_515387944.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F156P001-100m_515387944.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F156P002-100m_515387896.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F156P002-100m_515387896.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F156P002-100m_515387896.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F156P003-100m_515387886.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F156P003-100m_515387886.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F156P003-100m_515387886.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F158P001-100m_515387934.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F158P001-100m_515387934.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F158P001-100m_515387934.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F158P002-100m_515387878.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F158P002-100m_515387878.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F158P002-100m_515387878.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F158P003-100m_515387893.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F158P003-100m_515387893.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F158P003-100m_515387893.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F165P001-100m_515387895.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F165P001-100m_515387895.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F165P001-100m_515387895.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F165P002-100m_515406908.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F165P002-100m_515406908.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F165P002-100m_515406908.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F165P003-100m_515387899.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F165P003-100m_515387899.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F165P003-100m_515387899.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F172P001-100m_515387879.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F172P001-100m_515387879.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F172P001-100m_515387879.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F172P002-100m_515387912.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F172P002-100m_515387912.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F172P002-100m_515387912.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F172P003-100m_515387905.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F172P003-100m_515387905.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F172P003-100m_515387905.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F174P001-100m_515406913.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F174P001-100m_515406913.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F174P001-100m_515406913.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F174P002-100m_515387901.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F174P002-100m_515387901.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F174P002-100m_515387901.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F174P003-100m_515387890.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F174P003-100m_515387890.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F174P003-100m_515387890.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F179P001-100m_515387924.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F179P001-100m_515387924.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F179P001-100m_515387924.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F184-P001-100m_548709161.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F184-P001-100m_548709161.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F184-P001-100m_548709161.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F187P001-100m_515387908.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F187P001-100m_515387908.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F187P001-100m_515387908.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F187P002-100m_515387911.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F187P002-100m_515387911.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F187P002-100m_515387911.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F187P003-100m_515387910.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F187P003-100m_515387910.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F187P003-100m_515387910.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F188P001-100m_515406917.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F188P001-100m_515406917.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F188P001-100m_515406917.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F196P001-100m_515387909.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F196P001-100m_515387909.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F196P001-100m_515387909.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F196P002-100m_515387897.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F196P002-100m_515387897.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F196P002-100m_515387897.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F196P003-100m_515387883.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F196P003-100m_515387883.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F196P003-100m_515387883.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P001-100m_548709173.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P001-100m_548709173.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P001-100m_548709173.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P002-100m_548709170.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P002-100m_548709170.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P002-100m_548709170.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P003-100m_548709171.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P003-100m_548709171.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P003-100m_548709171.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P004-100m_548687150.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P004-100m_548687150.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P004-100m_548687150.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P005-100m_548687156.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P005-100m_548687156.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F205-P005-100m_548687156.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F216P001-100m_515387887.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F216P001-100m_515387887.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F216P001-100m_515387887.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F216P002-100m_515387922.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F216P002-100m_515387922.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F216P002-100m_515387922.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F216P003-100m_524015526.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F216P003-100m_524015526.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F216P003-100m_524015526.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F230P001-100m_524015510.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F230P001-100m_524015510.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F230P001-100m_524015510.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F230P002-100m_524015514.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F230P002-100m_524015514.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F230P002-100m_524015514.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F233P001-100m_524015540.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F233P001-100m_524015540.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F233P001-100m_524015540.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F233P002-100m_524015517.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F233P002-100m_524015517.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F233P002-100m_524015517.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F233P003-100m_524015543.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F233P003-100m_524015543.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F233P003-100m_524015543.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P001-100m_524015537.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P001-100m_524015537.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P001-100m_524015537.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P002-100m_524015524.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P002-100m_524015524.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P002-100m_524015524.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P003-100m_524015555.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P003-100m_524015555.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P003-100m_524015555.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P004-100m_524015496.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P004-100m_524015496.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P004-100m_524015496.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P005-100m_524015535.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P005-100m_524015535.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F234P005-100m_524015535.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F241P001-100m_524015497.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F241P001-100m_524015497.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F241P001-100m_524015497.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F241P002-100m_524015563.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F241P002-100m_524015563.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F241P002-100m_524015563.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F241P003-100m_524015550.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F241P003-100m_524015550.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F241P003-100m_524015550.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F244P001-100m_524015508.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F244P001-100m_524015508.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F244P001-100m_524015508.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F244P002-100m_524015520.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F244P002-100m_524015520.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F244P002-100m_524015520.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F244P003-100m_524015525.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F244P003-100m_524015525.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F244P003-100m_524015525.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F249-P001-100m_548687154.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F249-P001-100m_548687154.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F249-P001-100m_548687154.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F249-P002-100m_548687158.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F249-P002-100m_548687158.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F249-P002-100m_548687158.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F249-P003-100m_548687145.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F249-P003-100m_548687145.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F249-P003-100m_548687145.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F255P001-100m_524015558.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F255P001-100m_524015558.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F255P001-100m_524015558.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F255P002-100m_524015560.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F255P002-100m_524015560.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F255P002-100m_524015560.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F255P003-100m_524015505.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F255P003-100m_524015505.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F255P003-100m_524015505.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P001-100m_524015528.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P001-100m_524015528.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P001-100m_524015528.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P002-100m_524015518.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P002-100m_524015518.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P002-100m_524015518.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P003-100m_524015557.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P003-100m_524015557.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P003-100m_524015557.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P004-100m_524015562.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P004-100m_524015562.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F256P004-100m_524015562.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F264P001-100m_524015539.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F264P001-100m_524015539.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F264P001-100m_524015539.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F264P002-100m_524015507.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F264P002-100m_524015507.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F264P002-100m_524015507.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F264P003-100m_524026513.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F264P003-100m_524026513.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F264P003-100m_524026513.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F269P001-100m_524015536.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F269P001-100m_524015536.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F269P001-100m_524015536.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F269P002-100m_524015541.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F269P002-100m_524015541.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F269P002-100m_524015541.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F269P003-100m_524015511.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F269P003-100m_524015511.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F269P003-100m_524015511.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F274P001-100m_524015542.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F274P001-100m_524015542.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F274P001-100m_524015542.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F274P002-100m_524026519.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F274P002-100m_524026519.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F274P002-100m_524026519.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F274P003-100m_524015556.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F274P003-100m_524015556.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F274P003-100m_524015556.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F277P001-100m_524026522.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F277P001-100m_524026522.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F277P001-100m_524026522.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F277P002-100m_524015495.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F277P002-100m_524015495.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F277P002-100m_524015495.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F277P003-100m_524015544.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F277P003-100m_524015544.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F277P003-100m_524015544.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F280P001-100m_524026515.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F280P001-100m_524026515.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F280P001-100m_524026515.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F282P001-100m_524015522.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F282P001-100m_524015522.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F282P001-100m_524015522.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F282P004-100m_524015548.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F282P004-100m_524015548.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F282P004-100m_524015548.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F291P001-100m_524015533.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F291P001-100m_524015533.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F291P001-100m_524015533.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F291P002-100m_524026517.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F291P002-100m_524026517.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F291P002-100m_524026517.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F291P003-100m_524026511.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F291P003-100m_524026511.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F291P003-100m_524026511.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F295P001-100m_524026503.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F295P001-100m_524026503.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F295P001-100m_524026503.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F316P001-100m_524015502.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F316P001-100m_524015502.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F316P001-100m_524015502.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F316P002-100m_524015559.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F316P002-100m_524015559.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F316P002-100m_524015559.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F321P001-100m_524015494.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F321P001-100m_524015494.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F321P001-100m_524015494.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F323P001-100m_524015546.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F323P001-100m_524015546.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F323P001-100m_524015546.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F323P002-100m_524015552.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F323P002-100m_524015552.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F323P002-100m_524015552.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F323P003-100m_524015554.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F323P003-100m_524015554.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F323P003-100m_524015554.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F324P001-100m_524026520.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F324P001-100m_524026520.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F324P001-100m_524026520.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F324P002-100m_524015512.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F324P002-100m_524015512.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F324P002-100m_524015512.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P001-100m_524015531.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P001-100m_524015531.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P001-100m_524015531.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P002-100m_524015561.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P002-100m_524015561.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P002-100m_524015561.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P004-100m_524026512.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P004-100m_524026512.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P004-100m_524026512.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P005-100m_524026521.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P005-100m_524026521.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P005-100m_524026521.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P006-100m_524015499.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P006-100m_524015499.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F325P006-100m_524015499.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F329P001-100m_524015549.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F329P001-100m_524015549.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F329P001-100m_524015549.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F329P002-100m_524015545.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F329P002-100m_524015545.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F329P002-100m_524015545.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F329P003-100m_524015532.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F329P003-100m_524015532.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F329P003-100m_524015532.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F331P001-100m_524015513.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F331P001-100m_524015513.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F331P001-100m_524015513.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F334P001-100m_524015547.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F334P001-100m_524015547.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F334P001-100m_524015547.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F334P002-100m_524015530.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F334P002-100m_524015530.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F334P002-100m_524015530.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F334P003-100m_524015521.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F334P003-100m_524015521.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F334P003-100m_524015521.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F335P001-100m_524026509.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F335P001-100m_524026509.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F335P001-100m_524026509.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F335P002-100m_524026505.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F335P002-100m_524026505.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F335P002-100m_524026505.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F335P003-100m_524015498.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F335P003-100m_524015498.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F335P003-100m_524015498.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F345P001-100m_524015519.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F345P001-100m_524015519.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F345P001-100m_524015519.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F350P001-100m_524015503.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F350P001-100m_524015503.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F350P001-100m_524015503.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F350P002-100m_524015516.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F350P002-100m_524015516.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F350P002-100m_524015516.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F350P003-100m_524015551.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F350P003-100m_524015551.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F350P003-100m_524015551.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F351P001-100m_524026506.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F351P001-100m_524026506.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F351P001-100m_524026506.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F351P002-100m_524015500.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F351P002-100m_524015500.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F351P002-100m_524015500.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F353P001-100m_524015515.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F353P001-100m_524015515.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F353P001-100m_524015515.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F353P002-100m_524026507.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F353P002-100m_524026507.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F353P002-100m_524026507.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P001-100m_524015501.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P001-100m_524015501.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P001-100m_524015501.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P002-100m_524026516.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P002-100m_524026516.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P002-100m_524026516.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P003-100m_524026510.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P003-100m_524026510.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P003-100m_524026510.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P004-100m_524015504.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P004-100m_524015504.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F364P004-100m_524015504.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F369P001-100m_524026514.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F369P001-100m_524026514.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F369P001-100m_524026514.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F369P002-100m_524026508.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F369P002-100m_524026508.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F369P002-100m_524026508.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F369P003-100m_524015527.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F369P003-100m_524015527.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F369P003-100m_524015527.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P001-100m_524015538.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P001-100m_524015538.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P001-100m_524015538.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P002-100m_524015506.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P002-100m_524015506.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P002-100m_524015506.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P003-100m_524015523.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P003-100m_524015523.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P003-100m_524015523.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P004-100m_524026518.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P004-100m_524026518.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P004-100m_524026518.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P005-100m_524015529.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P005-100m_524015529.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P005-100m_524015529.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P006-100m_524015509.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P006-100m_524015509.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P006-100m_524015509.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P007-100m_524015553.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P007-100m_524015553.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P007-100m_524015553.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P008-100m_524015534.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P008-100m_524015534.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F371P008-100m_524015534.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F379P001-100m_524026504.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F379P001-100m_524026504.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F379P001-100m_524026504.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F379P002-100m_538108633.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F379P002-100m_538108633.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F379P002-100m_538108633.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F381P001-100m_538108576.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F381P001-100m_538108576.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F381P001-100m_538108576.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F383P002-100m_538108571.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F383P002-100m_538108571.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F383P002-100m_538108571.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F385P001-100m_538108582.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F385P001-100m_538108582.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F385P001-100m_538108582.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F385P002-100m_538108585.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F385P002-100m_538108585.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F385P002-100m_538108585.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F387P002-100m_538108584.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F387P002-100m_538108584.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F387P002-100m_538108584.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F387P003-100m_538108623.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F387P003-100m_538108623.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F387P003-100m_538108623.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F390P001-100m_538108617.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F390P001-100m_538108617.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F390P001-100m_538108617.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F390P003-100m_538108597.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F390P003-100m_538108597.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F390P003-100m_538108597.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F392P001-100m_538108591.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F392P001-100m_538108591.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F392P001-100m_538108591.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F392P002-100m_538108615.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F392P002-100m_538108615.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F392P002-100m_538108615.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F392P003-100m_538108618.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F392P003-100m_538108618.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F392P003-100m_538108618.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F393P002-100m_538108619.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F393P002-100m_538108619.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F393P002-100m_538108619.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F393P004-100m_538108609.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F393P004-100m_538108609.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F393P004-100m_538108609.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F393P005-100m_538108601.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F393P005-100m_538108601.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F393P005-100m_538108601.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F394P001-100m_538108590.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F394P001-100m_538108590.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F394P001-100m_538108590.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F394P002-100m_538108586.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F394P002-100m_538108586.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F394P002-100m_538108586.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F396P001-100m_538108580.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F396P001-100m_538108580.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F396P001-100m_538108580.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F396P002-100m_538108575.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F396P002-100m_538108575.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F396P002-100m_538108575.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F399P001-100m_538108606.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F399P001-100m_538108606.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F399P001-100m_538108606.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F399P002-100m_538108599.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F399P002-100m_538108599.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F399P002-100m_538108599.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F401P001-100m_538108578.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F401P001-100m_538108578.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F401P001-100m_538108578.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F402P001-100m_538108620.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F402P001-100m_538108620.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F402P001-100m_538108620.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F407P002-100m_538108612.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F407P002-100m_538108612.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F407P002-100m_538108612.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F407P003-100m_538108613.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F407P003-100m_538108613.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F407P003-100m_538108613.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F410P001-R1-100m_538108622.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F410P001-R1-100m_538108622.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F410P001-R1-100m_538108622.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F410P002-R1-100m_538108596.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F410P002-R1-100m_538108596.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F410P002-R1-100m_538108596.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F410P003-R1-100m_538108603.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F410P003-R1-100m_538108603.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F410P003-R1-100m_538108603.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F415P001-100m_538108593.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F415P001-100m_538108593.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F415P001-100m_538108593.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F415P002-100m_538108574.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F415P002-100m_538108574.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F415P002-100m_538108574.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F418P002-100m_538108632.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F418P002-100m_538108632.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F418P002-100m_538108632.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F418P003-100m_538108616.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F418P003-100m_538108616.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F418P003-100m_538108616.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F420P002-100m_538108572.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F420P002-100m_538108572.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F420P002-100m_538108572.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F422P001-100m_538108605.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F422P001-100m_538108605.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F422P001-100m_538108605.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F422P003-100m_538108600.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F422P003-100m_538108600.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F422P003-100m_538108600.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F429-P001-100m_548687143.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F429-P001-100m_548687143.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F429-P001-100m_548687143.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F431-P002-100m_548687153.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F431-P002-100m_548687153.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F431-P002-100m_548687153.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F431-P003-100m_548687155.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F431-P003-100m_548687155.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F431-P003-100m_548687155.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F434-P001-100m_548687147.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F434-P001-100m_548687147.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F434-P001-100m_548687147.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F434-P002-100m_548687142.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F434-P002-100m_548687142.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F434-P002-100m_548687142.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F434-P003-100m_548687159.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F434-P003-100m_548687159.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F434-P003-100m_548687159.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F435-P001-100m_548687141.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F435-P001-100m_548687141.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F435-P001-100m_548687141.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F435-P002-100m_548687146.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F435-P002-100m_548687146.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F435-P002-100m_548687146.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F435-P003-100m_548687149.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F435-P003-100m_548687149.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F435-P003-100m_548687149.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F439-P001-100m_548687152.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F439-P001-100m_548687152.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F439-P001-100m_548687152.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F439-P002-100m_548687148.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F439-P002-100m_548687148.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F439-P002-100m_548687148.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F440-P002-100m_548687140.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F440-P002-100m_548687140.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F440-P002-100m_548687140.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F440-P003-100m_548687144.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F440-P003-100m_548687144.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F440-P003-100m_548687144.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F441-P001-100m_548687151.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F441-P001-100m_548687151.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F441-P001-100m_548687151.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F441-P002-100m_548687157.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F441-P002-100m_548687157.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F441-P002-100m_548687157.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F450-P001-100m_548702165.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F450-P001-100m_548702165.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F450-P001-100m_548702165.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F450-P002-100m_548702162.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F450-P002-100m_548702162.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F450-P002-100m_548702162.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F450-P003-100m_548702169.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F450-P003-100m_548702169.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F450-P003-100m_548702169.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F456-P001-100m_548702170.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F456-P001-100m_548702170.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F456-P001-100m_548702170.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F456-P002-100m_548702157.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F456-P002-100m_548702157.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F456-P002-100m_548702157.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F459-P001-100m_548702154.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F459-P001-100m_548702154.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F459-P001-100m_548702154.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F459-P002-100m_548702158.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F459-P002-100m_548702158.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F459-P002-100m_548702158.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F459-P003-100m_548702163.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F459-P003-100m_548702163.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F459-P003-100m_548702163.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F471-P001-100m_548702173.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F471-P001-100m_548702173.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F471-P001-100m_548702173.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F471-P002-100m_548702167.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F471-P002-100m_548702167.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F471-P002-100m_548702167.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F471-P003-100m_548702156.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F471-P003-100m_548702156.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F471-P003-100m_548702156.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F472-P001-100m_548702164.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F472-P001-100m_548702164.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F472-P001-100m_548702164.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F472-P002-100m_548702168.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F472-P002-100m_548702168.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F472-P002-100m_548702168.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F472-P003-100m_548702172.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F472-P003-100m_548702172.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F472-P003-100m_548702172.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F475-P001-100m_548702171.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F475-P001-100m_548702171.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F475-P001-100m_548702171.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F475-P002-100m_548702160.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F475-P002-100m_548702160.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F475-P002-100m_548702160.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F475-P003-100m_548702161.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F475-P003-100m_548702161.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F475-P003-100m_548702161.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F476-P003-100m_548702166.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F476-P003-100m_548702166.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F476-P003-100m_548702166.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F476-P004-100m_548702155.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F476-P004-100m_548702155.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F476-P004-100m_548702155.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F481-P001-100m_548702159.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F481-P001-100m_548702159.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F481-P001-100m_548702159.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F481-P002-100m_548706162.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F481-P002-100m_548706162.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F481-P002-100m_548706162.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F482-P001-100m_548706164.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F482-P001-100m_548706164.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F482-P001-100m_548706164.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F482-P002-100m_548706163.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F482-P002-100m_548706163.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F482-P002-100m_548706163.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F485-P001-100m_548706172.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F485-P001-100m_548706172.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F485-P001-100m_548706172.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F485-P002-100m_548706169.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F485-P002-100m_548706169.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F485-P002-100m_548706169.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F486-P003-100m_548706158.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F486-P003-100m_548706158.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F486-P003-100m_548706158.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F488-P001-100m_548706170.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F488-P001-100m_548706170.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F488-P001-100m_548706170.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F488-P002-100m_548706161.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F488-P002-100m_548706161.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F488-P002-100m_548706161.mosdepth.summary.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F488-P003-100m_548706173.mosdepth.global.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F488-P003-100m_548706173.mosdepth.region.dist.txt` |  | 0 B |  |
+| `analysis/mosdepth_output/F488-P003-100m_548706173.mosdepth.summary.txt` |  | 0 B |  |
+| `logs/slurm/coverage_37644.err` |  | 0 B |  |
+| `logs/slurm/coverage_37644.out` |  | 0 B |  |
+| `scripts/make_bed.sh` |  | 0 B |  |
+| `scripts/mosdepth.sh` |  | 0 B |  |
 
 ---
 
 ## Complete File Inventory
+
+### `analysis/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `genes.bed` |  | 0 B | 25ca0924 | 2026-05-23 |  |  |
+
+### `analysis/mosdepth_output/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `F005P001-100m_515406902.mosdepth.global.dist.txt` |  | 0 B | cbdc075c | 2026-05-23 |  |  |
+| `F005P001-100m_515406902.mosdepth.region.dist.txt` |  | 0 B | ddbbc1f5 | 2026-05-23 |  |  |
+| `F005P001-100m_515406902.mosdepth.summary.txt` |  | 0 B | efeb2638 | 2026-05-23 |  |  |
+| `F005P002-100m_515387945.mosdepth.global.dist.txt` |  | 0 B | 9cf73c48 | 2026-05-23 |  |  |
+| `F005P002-100m_515387945.mosdepth.region.dist.txt` |  | 0 B | cea756e5 | 2026-05-23 |  |  |
+| `F005P002-100m_515387945.mosdepth.summary.txt` |  | 0 B | ca7dd089 | 2026-05-23 |  |  |
+| `F009P001-100m_515387885.mosdepth.global.dist.txt` |  | 0 B | 6af27a19 | 2026-05-23 |  |  |
+| `F009P001-100m_515387885.mosdepth.region.dist.txt` |  | 0 B | a04b60ce | 2026-05-23 |  |  |
+| `F009P001-100m_515387885.mosdepth.summary.txt` |  | 0 B | 41388c62 | 2026-05-23 |  |  |
+| `F022P001-100m_515387916.mosdepth.global.dist.txt` |  | 0 B | 615de2fd | 2026-05-23 |  |  |
+| `F022P001-100m_515387916.mosdepth.region.dist.txt` |  | 0 B | a58f20b6 | 2026-05-23 |  |  |
+| `F022P001-100m_515387916.mosdepth.summary.txt` |  | 0 B | eb058d44 | 2026-05-23 |  |  |
+| `F023P001-100m_515387932.mosdepth.global.dist.txt` |  | 0 B | 528f45df | 2026-05-23 |  |  |
+| `F023P001-100m_515387932.mosdepth.region.dist.txt` |  | 0 B | dbdb85cb | 2026-05-23 |  |  |
+| `F023P001-100m_515387932.mosdepth.summary.txt` |  | 0 B | d4598d50 | 2026-05-23 |  |  |
+| `F024P001-100m_515387947.mosdepth.global.dist.txt` |  | 0 B | 7faf4ca2 | 2026-05-23 |  |  |
+| `F024P001-100m_515387947.mosdepth.region.dist.txt` |  | 0 B | f0c96a44 | 2026-05-23 |  |  |
+| `F024P001-100m_515387947.mosdepth.summary.txt` |  | 0 B | 907f09b3 | 2026-05-23 |  |  |
+| `F037-P002-R1-100m_548709162.mosdepth.global.dist.txt` |  | 0 B | 55ad2654 | 2026-05-23 |  |  |
+| `F037-P002-R1-100m_548709162.mosdepth.region.dist.txt` |  | 0 B | e8f7be43 | 2026-05-23 |  |  |
+| `F037-P002-R1-100m_548709162.mosdepth.summary.txt` |  | 0 B | 45425a28 | 2026-05-23 |  |  |
+| `F037-P003-R1-100m_548709174.mosdepth.global.dist.txt` |  | 0 B | edb845a0 | 2026-05-23 |  |  |
+| `F037-P003-R1-100m_548709174.mosdepth.region.dist.txt` |  | 0 B | 29b4f8ba | 2026-05-23 |  |  |
+| `F037-P003-R1-100m_548709174.mosdepth.summary.txt` |  | 0 B | 89f3d1f7 | 2026-05-23 |  |  |
+| `F037-P005-R1-100m_548709176.mosdepth.global.dist.txt` |  | 0 B | 984c9e50 | 2026-05-23 |  |  |
+| `F037-P005-R1-100m_548709176.mosdepth.region.dist.txt` |  | 0 B | 6684c613 | 2026-05-23 |  |  |
+| `F037-P005-R1-100m_548709176.mosdepth.summary.txt` |  | 0 B | f6097958 | 2026-05-23 |  |  |
+| `F037-P006-R1-100m_548709169.mosdepth.global.dist.txt` |  | 0 B | ac631364 | 2026-05-23 |  |  |
+| `F037-P006-R1-100m_548709169.mosdepth.region.dist.txt` |  | 0 B | 8ef6637a | 2026-05-23 |  |  |
+| `F037-P006-R1-100m_548709169.mosdepth.summary.txt` |  | 0 B | 96eeb38e | 2026-05-23 |  |  |
+| `F041P001-100m_515406904.mosdepth.global.dist.txt` |  | 0 B | 5a57e956 | 2026-05-23 |  |  |
+| `F041P001-100m_515406904.mosdepth.region.dist.txt` |  | 0 B | 59b95570 | 2026-05-23 |  |  |
+| `F041P001-100m_515406904.mosdepth.summary.txt` |  | 0 B | 2de4c2d8 | 2026-05-23 |  |  |
+| `F047-P001-100m_548709164.mosdepth.global.dist.txt` |  | 0 B | ea2d870a | 2026-05-23 |  |  |
+| `F047-P001-100m_548709164.mosdepth.region.dist.txt` |  | 0 B | 8395a42e | 2026-05-23 |  |  |
+| `F047-P001-100m_548709164.mosdepth.summary.txt` |  | 0 B | a07d5c39 | 2026-05-23 |  |  |
+| `F047-P002-100m_548709166.mosdepth.global.dist.txt` |  | 0 B | 5e8612a4 | 2026-05-23 |  |  |
+| `F047-P002-100m_548709166.mosdepth.region.dist.txt` |  | 0 B | 8cc9ffc5 | 2026-05-23 |  |  |
+| `F047-P002-100m_548709166.mosdepth.summary.txt` |  | 0 B | 32424011 | 2026-05-23 |  |  |
+| `F047-P003-100m_548709167.mosdepth.global.dist.txt` |  | 0 B | 13346c7b | 2026-05-23 |  |  |
+| `F047-P003-100m_548709167.mosdepth.region.dist.txt` |  | 0 B | 2a7c23d4 | 2026-05-23 |  |  |
+| `F047-P003-100m_548709167.mosdepth.summary.txt` |  | 0 B | d65376d4 | 2026-05-23 |  |  |
+| `F055-P001-100m_548709168.mosdepth.global.dist.txt` |  | 0 B | 1cad72d0 | 2026-05-23 |  |  |
+| `F055-P001-100m_548709168.mosdepth.region.dist.txt` |  | 0 B | b333afe1 | 2026-05-23 |  |  |
+| `F055-P001-100m_548709168.mosdepth.summary.txt` |  | 0 B | c057f431 | 2026-05-23 |  |  |
+| `F055-P002-100m_548709179.mosdepth.global.dist.txt` |  | 0 B | ea2de9dc | 2026-05-23 |  |  |
+| `F055-P002-100m_548709179.mosdepth.region.dist.txt` |  | 0 B | 9f23aa25 | 2026-05-23 |  |  |
+| `F055-P002-100m_548709179.mosdepth.summary.txt` |  | 0 B | a2e74e25 | 2026-05-23 |  |  |
+| `F058P001-100m_515406910.mosdepth.global.dist.txt` |  | 0 B | 63cebb64 | 2026-05-23 |  |  |
+| `F058P001-100m_515406910.mosdepth.region.dist.txt` |  | 0 B | f2ad7d53 | 2026-05-23 |  |  |
+| `F058P001-100m_515406910.mosdepth.summary.txt` |  | 0 B | 73f0bc39 | 2026-05-23 |  |  |
+| `F059P001-100m_515387933.mosdepth.global.dist.txt` |  | 0 B | 51d2e354 | 2026-05-23 |  |  |
+| `F059P001-100m_515387933.mosdepth.region.dist.txt` |  | 0 B | bcc845ab | 2026-05-23 |  |  |
+| `F059P001-100m_515387933.mosdepth.summary.txt` |  | 0 B | 4487c5d3 | 2026-05-23 |  |  |
+| `F059P002-100m_515387892.mosdepth.global.dist.txt` |  | 0 B | 90898504 | 2026-05-23 |  |  |
+| `F059P002-100m_515387892.mosdepth.region.dist.txt` |  | 0 B | 053e8b78 | 2026-05-23 |  |  |
+| `F059P002-100m_515387892.mosdepth.summary.txt` |  | 0 B | 08314e55 | 2026-05-23 |  |  |
+| `F096P001-100m_515387914.mosdepth.global.dist.txt` |  | 0 B | e86215ac | 2026-05-23 |  |  |
+| `F096P001-100m_515387914.mosdepth.region.dist.txt` |  | 0 B | 17a44fd1 | 2026-05-23 |  |  |
+| `F096P001-100m_515387914.mosdepth.summary.txt` |  | 0 B | c961b46e | 2026-05-23 |  |  |
+| `F096P002-100m_515387925.mosdepth.global.dist.txt` |  | 0 B | d6673b16 | 2026-05-23 |  |  |
+| `F096P002-100m_515387925.mosdepth.region.dist.txt` |  | 0 B | 4a3a55b9 | 2026-05-23 |  |  |
+| `F096P002-100m_515387925.mosdepth.summary.txt` |  | 0 B | 9bf46f95 | 2026-05-23 |  |  |
+| `F096P003-100m_515387891.mosdepth.global.dist.txt` |  | 0 B | c7f7db43 | 2026-05-23 |  |  |
+| `F096P003-100m_515387891.mosdepth.region.dist.txt` |  | 0 B | 63dcf7ab | 2026-05-23 |  |  |
+| `F096P003-100m_515387891.mosdepth.summary.txt` |  | 0 B | c3c392b2 | 2026-05-23 |  |  |
+| `F100P001-100m_515387902.mosdepth.global.dist.txt` |  | 0 B | d71e5b3a | 2026-05-23 |  |  |
+| `F100P001-100m_515387902.mosdepth.region.dist.txt` |  | 0 B | da587a36 | 2026-05-23 |  |  |
+| `F100P001-100m_515387902.mosdepth.summary.txt` |  | 0 B | 568925e0 | 2026-05-23 |  |  |
+| `F100P002-100m_515387929.mosdepth.global.dist.txt` |  | 0 B | d7f7f01f | 2026-05-23 |  |  |
+| `F100P002-100m_515387929.mosdepth.region.dist.txt` |  | 0 B | e993beb3 | 2026-05-23 |  |  |
+| `F100P002-100m_515387929.mosdepth.summary.txt` |  | 0 B | d6afde37 | 2026-05-23 |  |  |
+| `F100P003-100m_515406912.mosdepth.global.dist.txt` |  | 0 B | b5f2999f | 2026-05-23 |  |  |
+| `F100P003-100m_515406912.mosdepth.region.dist.txt` |  | 0 B | 4d6dfdf9 | 2026-05-23 |  |  |
+| `F100P003-100m_515406912.mosdepth.summary.txt` |  | 0 B | 0ff09f78 | 2026-05-23 |  |  |
+| `F105P001-100m_515387939.mosdepth.global.dist.txt` |  | 0 B | 034363e3 | 2026-05-23 |  |  |
+| `F105P001-100m_515387939.mosdepth.region.dist.txt` |  | 0 B | 6edce71c | 2026-05-23 |  |  |
+| `F105P001-100m_515387939.mosdepth.summary.txt` |  | 0 B | 6da9deeb | 2026-05-23 |  |  |
+| `F105P002-100m_515387940.mosdepth.global.dist.txt` |  | 0 B | b8dded43 | 2026-05-23 |  |  |
+| `F105P002-100m_515387940.mosdepth.region.dist.txt` |  | 0 B | e9439712 | 2026-05-23 |  |  |
+| `F105P002-100m_515387940.mosdepth.summary.txt` |  | 0 B | 74f38a13 | 2026-05-23 |  |  |
+| `F105P003-100m_515387903.mosdepth.global.dist.txt` |  | 0 B | 6b3c7e6d | 2026-05-23 |  |  |
+| `F105P003-100m_515387903.mosdepth.region.dist.txt` |  | 0 B | 0f10d526 | 2026-05-23 |  |  |
+| `F105P003-100m_515387903.mosdepth.summary.txt` |  | 0 B | 498aed96 | 2026-05-23 |  |  |
+| `F109P001-100m_515387894.mosdepth.global.dist.txt` |  | 0 B | d8259acd | 2026-05-23 |  |  |
+| `F109P001-100m_515387894.mosdepth.region.dist.txt` |  | 0 B | 0f22aac5 | 2026-05-23 |  |  |
+| `F109P001-100m_515387894.mosdepth.summary.txt` |  | 0 B | b2d4a432 | 2026-05-23 |  |  |
+| `F109P002-100m_515387917.mosdepth.global.dist.txt` |  | 0 B | dba0d722 | 2026-05-23 |  |  |
+| `F109P002-100m_515387917.mosdepth.region.dist.txt` |  | 0 B | 390a48dd | 2026-05-23 |  |  |
+| `F109P002-100m_515387917.mosdepth.summary.txt` |  | 0 B | 842e834d | 2026-05-23 |  |  |
+| `F109P003-100m_515387900.mosdepth.global.dist.txt` |  | 0 B | 3f41a3f1 | 2026-05-23 |  |  |
+| `F109P003-100m_515387900.mosdepth.region.dist.txt` |  | 0 B | 4cc7b0cd | 2026-05-23 |  |  |
+| `F109P003-100m_515387900.mosdepth.summary.txt` |  | 0 B | 78989340 | 2026-05-23 |  |  |
+| `F109P004-100m_515387931.mosdepth.global.dist.txt` |  | 0 B | 2746aedc | 2026-05-23 |  |  |
+| `F109P004-100m_515387931.mosdepth.region.dist.txt` |  | 0 B | c824ffc3 | 2026-05-23 |  |  |
+| `F109P004-100m_515387931.mosdepth.summary.txt` |  | 0 B | 915d04ba | 2026-05-23 |  |  |
+| `F115P001-100m_515406915.mosdepth.global.dist.txt` |  | 0 B | d91c54f6 | 2026-05-23 |  |  |
+| `F115P001-100m_515406915.mosdepth.region.dist.txt` |  | 0 B | 422a6655 | 2026-05-23 |  |  |
+| `F115P001-100m_515406915.mosdepth.summary.txt` |  | 0 B | 63bbd39f | 2026-05-23 |  |  |
+| `F115P002-100m_515387906.mosdepth.global.dist.txt` |  | 0 B | 897cc7c8 | 2026-05-23 |  |  |
+| `F115P002-100m_515387906.mosdepth.region.dist.txt` |  | 0 B | f2349aac | 2026-05-23 |  |  |
+| `F115P002-100m_515387906.mosdepth.summary.txt` |  | 0 B | 22e568ae | 2026-05-23 |  |  |
+| `F115P003-100m_515406916.mosdepth.global.dist.txt` |  | 0 B | a6a9cb17 | 2026-05-23 |  |  |
+| `F115P003-100m_515406916.mosdepth.region.dist.txt` |  | 0 B | 09357f99 | 2026-05-23 |  |  |
+| `F115P003-100m_515406916.mosdepth.summary.txt` |  | 0 B | 7c592f2a | 2026-05-23 |  |  |
+| `F118P001-100m_515387888.mosdepth.global.dist.txt` |  | 0 B | fe0965c1 | 2026-05-23 |  |  |
+| `F118P001-100m_515387888.mosdepth.region.dist.txt` |  | 0 B | a2e9e3fc | 2026-05-23 |  |  |
+| `F118P001-100m_515387888.mosdepth.summary.txt` |  | 0 B | 9e630bca | 2026-05-23 |  |  |
+| `F118P002-100m_515387920.mosdepth.global.dist.txt` |  | 0 B | 275b9bee | 2026-05-23 |  |  |
+| `F118P002-100m_515387920.mosdepth.region.dist.txt` |  | 0 B | 1e328283 | 2026-05-23 |  |  |
+| `F118P002-100m_515387920.mosdepth.summary.txt` |  | 0 B | e398a4fd | 2026-05-23 |  |  |
+| `F118P003-100m_515387882.mosdepth.global.dist.txt` |  | 0 B | 78db1d95 | 2026-05-23 |  |  |
+| `F118P003-100m_515387882.mosdepth.region.dist.txt` |  | 0 B | 5c2dec44 | 2026-05-23 |  |  |
+| `F118P003-100m_515387882.mosdepth.summary.txt` |  | 0 B | 34baf950 | 2026-05-23 |  |  |
+| `F119P001-100m_515387923.mosdepth.global.dist.txt` |  | 0 B | ef14c0d3 | 2026-05-23 |  |  |
+| `F119P001-100m_515387923.mosdepth.region.dist.txt` |  | 0 B | 79088674 | 2026-05-23 |  |  |
+| `F119P001-100m_515387923.mosdepth.summary.txt` |  | 0 B | 27b2c7fd | 2026-05-23 |  |  |
+| `F119P002-100m_515406911.mosdepth.global.dist.txt` |  | 0 B | ef0aaa54 | 2026-05-23 |  |  |
+| `F119P002-100m_515406911.mosdepth.region.dist.txt` |  | 0 B | 83db4f75 | 2026-05-23 |  |  |
+| `F119P002-100m_515406911.mosdepth.summary.txt` |  | 0 B | ff890515 | 2026-05-23 |  |  |
+| `F119P003-100m_515406909.mosdepth.global.dist.txt` |  | 0 B | 07e41814 | 2026-05-23 |  |  |
+| `F119P003-100m_515406909.mosdepth.region.dist.txt` |  | 0 B | 664acc3c | 2026-05-23 |  |  |
+| `F119P003-100m_515406909.mosdepth.summary.txt` |  | 0 B | 052c4812 | 2026-05-23 |  |  |
+| `F120P001-100m_515387935.mosdepth.global.dist.txt` |  | 0 B | 7a5c6dd8 | 2026-05-23 |  |  |
+| `F120P001-100m_515387935.mosdepth.region.dist.txt` |  | 0 B | fc6e353f | 2026-05-23 |  |  |
+| `F120P001-100m_515387935.mosdepth.summary.txt` |  | 0 B | 71b2947b | 2026-05-23 |  |  |
+| `F120P002-100m_515387943.mosdepth.global.dist.txt` |  | 0 B | a5196a1c | 2026-05-23 |  |  |
+| `F120P002-100m_515387943.mosdepth.region.dist.txt` |  | 0 B | 33cdcb8f | 2026-05-23 |  |  |
+| `F120P002-100m_515387943.mosdepth.summary.txt` |  | 0 B | 9956bbfb | 2026-05-23 |  |  |
+| `F120P003-100m_515406903.mosdepth.global.dist.txt` |  | 0 B | fa6f7388 | 2026-05-23 |  |  |
+| `F120P003-100m_515406903.mosdepth.region.dist.txt` |  | 0 B | aa58735a | 2026-05-23 |  |  |
+| `F120P003-100m_515406903.mosdepth.summary.txt` |  | 0 B | 19759b1e | 2026-05-23 |  |  |
+| `F123P001-100m_515387913.mosdepth.global.dist.txt` |  | 0 B | b5aeed30 | 2026-05-23 |  |  |
+| `F123P001-100m_515387913.mosdepth.region.dist.txt` |  | 0 B | 36be6917 | 2026-05-23 |  |  |
+| `F123P001-100m_515387913.mosdepth.summary.txt` |  | 0 B | 234034d5 | 2026-05-23 |  |  |
+| `F123P002-100m_515387930.mosdepth.global.dist.txt` |  | 0 B | 6f0eef71 | 2026-05-23 |  |  |
+| `F123P002-100m_515387930.mosdepth.region.dist.txt` |  | 0 B | 3040b25f | 2026-05-23 |  |  |
+| `F123P002-100m_515387930.mosdepth.summary.txt` |  | 0 B | e7fd17a7 | 2026-05-23 |  |  |
+| `F123P003-100m_515387921.mosdepth.global.dist.txt` |  | 0 B | 8dbce57d | 2026-05-23 |  |  |
+| `F123P003-100m_515387921.mosdepth.region.dist.txt` |  | 0 B | 7e2f84ba | 2026-05-23 |  |  |
+| `F123P003-100m_515387921.mosdepth.summary.txt` |  | 0 B | b893cafa | 2026-05-23 |  |  |
+| `F124P001-100m_515387880.mosdepth.global.dist.txt` |  | 0 B | f8d91afe | 2026-05-23 |  |  |
+| `F124P001-100m_515387880.mosdepth.region.dist.txt` |  | 0 B | d80b1939 | 2026-05-23 |  |  |
+| `F124P001-100m_515387880.mosdepth.summary.txt` |  | 0 B | a0ed17ab | 2026-05-23 |  |  |
+| `F124P002-100m_515387918.mosdepth.global.dist.txt` |  | 0 B | 8885dc12 | 2026-05-23 |  |  |
+| `F124P002-100m_515387918.mosdepth.region.dist.txt` |  | 0 B | ea15e22a | 2026-05-23 |  |  |
+| `F124P002-100m_515387918.mosdepth.summary.txt` |  | 0 B | ce5b3e8e | 2026-05-23 |  |  |
+| `F124P003-100m_515387884.mosdepth.global.dist.txt` |  | 0 B | 6e545759 | 2026-05-23 |  |  |
+| `F124P003-100m_515387884.mosdepth.region.dist.txt` |  | 0 B | 6ad7f2b7 | 2026-05-23 |  |  |
+| `F124P003-100m_515387884.mosdepth.summary.txt` |  | 0 B | c58ea8c8 | 2026-05-23 |  |  |
+| `F125P001-100m_515406907.mosdepth.global.dist.txt` |  | 0 B | 7c5e5932 | 2026-05-23 |  |  |
+| `F125P001-100m_515406907.mosdepth.region.dist.txt` |  | 0 B | 4f4e8f18 | 2026-05-23 |  |  |
+| `F125P001-100m_515406907.mosdepth.summary.txt` |  | 0 B | 626e28d0 | 2026-05-23 |  |  |
+| `F125P002-100m_515406906.mosdepth.global.dist.txt` |  | 0 B | d1279465 | 2026-05-23 |  |  |
+| `F125P002-100m_515406906.mosdepth.region.dist.txt` |  | 0 B | 1e7bb42b | 2026-05-23 |  |  |
+| `F125P002-100m_515406906.mosdepth.summary.txt` |  | 0 B | c7a187d9 | 2026-05-23 |  |  |
+| `F127P001-100m_515387937.mosdepth.global.dist.txt` |  | 0 B | 51b11afe | 2026-05-23 |  |  |
+| `F127P001-100m_515387937.mosdepth.region.dist.txt` |  | 0 B | ce600ea9 | 2026-05-23 |  |  |
+| `F127P001-100m_515387937.mosdepth.summary.txt` |  | 0 B | ab0be962 | 2026-05-23 |  |  |
+| `F127P002-100m_515387919.mosdepth.global.dist.txt` |  | 0 B | dfbe41f3 | 2026-05-23 |  |  |
+| `F127P002-100m_515387919.mosdepth.region.dist.txt` |  | 0 B | ac9d6570 | 2026-05-23 |  |  |
+| `F127P002-100m_515387919.mosdepth.summary.txt` |  | 0 B | d817332b | 2026-05-23 |  |  |
+| `F129P002-100m_515387928.mosdepth.global.dist.txt` |  | 0 B | d24eaacc | 2026-05-23 |  |  |
+| `F129P002-100m_515387928.mosdepth.region.dist.txt` |  | 0 B | 0885eba5 | 2026-05-23 |  |  |
+| `F129P002-100m_515387928.mosdepth.summary.txt` |  | 0 B | 5bb6b3d4 | 2026-05-23 |  |  |
+| `F129P003-100m_515387915.mosdepth.global.dist.txt` |  | 0 B | 5283daf2 | 2026-05-23 |  |  |
+| `F129P003-100m_515387915.mosdepth.region.dist.txt` |  | 0 B | 4f101b3e | 2026-05-23 |  |  |
+| `F129P003-100m_515387915.mosdepth.summary.txt` |  | 0 B | dfd5834f | 2026-05-23 |  |  |
+| `F129P004-100m_515387941.mosdepth.global.dist.txt` |  | 0 B | b3782b44 | 2026-05-23 |  |  |
+| `F129P004-100m_515387941.mosdepth.region.dist.txt` |  | 0 B | 84cc5eb3 | 2026-05-23 |  |  |
+| `F129P004-100m_515387941.mosdepth.summary.txt` |  | 0 B | 98fbb0b7 | 2026-05-23 |  |  |
+| `F132-P001-100m_548709172.mosdepth.global.dist.txt` |  | 0 B | f537bcd5 | 2026-05-23 |  |  |
+| `F132-P001-100m_548709172.mosdepth.region.dist.txt` |  | 0 B | 51156e9d | 2026-05-23 |  |  |
+| `F132-P001-100m_548709172.mosdepth.summary.txt` |  | 0 B | c9821b4d | 2026-05-23 |  |  |
+| `F132-P002-100m_548709175.mosdepth.global.dist.txt` |  | 0 B | fbf3716e | 2026-05-23 |  |  |
+| `F132-P002-100m_548709175.mosdepth.region.dist.txt` |  | 0 B | 22de18ea | 2026-05-23 |  |  |
+| `F132-P002-100m_548709175.mosdepth.summary.txt` |  | 0 B | 0280641a | 2026-05-23 |  |  |
+| `F132-P003-100m_548709177.mosdepth.global.dist.txt` |  | 0 B | ef9abd32 | 2026-05-23 |  |  |
+| `F132-P003-100m_548709177.mosdepth.region.dist.txt` |  | 0 B | 73c05c61 | 2026-05-23 |  |  |
+| `F132-P003-100m_548709177.mosdepth.summary.txt` |  | 0 B | df92038a | 2026-05-23 |  |  |
+| `F132-P004-100m_548709165.mosdepth.global.dist.txt` |  | 0 B | 26dde2e6 | 2026-05-23 |  |  |
+| `F132-P004-100m_548709165.mosdepth.region.dist.txt` |  | 0 B | b6b888dc | 2026-05-23 |  |  |
+| `F132-P004-100m_548709165.mosdepth.summary.txt` |  | 0 B | 97bafb52 | 2026-05-23 |  |  |
+| `F132-P005-100m_548709163.mosdepth.global.dist.txt` |  | 0 B | 9b42a9de | 2026-05-23 |  |  |
+| `F132-P005-100m_548709163.mosdepth.region.dist.txt` |  | 0 B | 3fbac958 | 2026-05-23 |  |  |
+| `F132-P005-100m_548709163.mosdepth.summary.txt` |  | 0 B | 5316aaad | 2026-05-23 |  |  |
+| `F132-P006-100m_548709178.mosdepth.global.dist.txt` |  | 0 B | e0322e8b | 2026-05-23 |  |  |
+| `F132-P006-100m_548709178.mosdepth.region.dist.txt` |  | 0 B | 3aebaf1b | 2026-05-23 |  |  |
+| `F132-P006-100m_548709178.mosdepth.summary.txt` |  | 0 B | e47b489e | 2026-05-23 |  |  |
+| `F135P001-100m_515387881.mosdepth.global.dist.txt` |  | 0 B | 9d0ec67c | 2026-05-23 |  |  |
+| `F135P001-100m_515387881.mosdepth.region.dist.txt` |  | 0 B | fdcab914 | 2026-05-23 |  |  |
+| `F135P001-100m_515387881.mosdepth.summary.txt` |  | 0 B | 66b0152b | 2026-05-23 |  |  |
+| `F135P002-100m_515387926.mosdepth.global.dist.txt` |  | 0 B | 793848d8 | 2026-05-23 |  |  |
+| `F135P002-100m_515387926.mosdepth.region.dist.txt` |  | 0 B | 999f4605 | 2026-05-23 |  |  |
+| `F135P002-100m_515387926.mosdepth.summary.txt` |  | 0 B | 466fd1d0 | 2026-05-23 |  |  |
+| `F136P001-100m_515387898.mosdepth.global.dist.txt` |  | 0 B | 7c3b7c0a | 2026-05-23 |  |  |
+| `F136P001-100m_515387898.mosdepth.region.dist.txt` |  | 0 B | 883f0e68 | 2026-05-23 |  |  |
+| `F136P001-100m_515387898.mosdepth.summary.txt` |  | 0 B | 23ffd597 | 2026-05-23 |  |  |
+| `F136P002-100m_515387904.mosdepth.global.dist.txt` |  | 0 B | 570f755f | 2026-05-23 |  |  |
+| `F136P002-100m_515387904.mosdepth.region.dist.txt` |  | 0 B | 3f053591 | 2026-05-23 |  |  |
+| `F136P002-100m_515387904.mosdepth.summary.txt` |  | 0 B | 55ecb04e | 2026-05-23 |  |  |
+| `F136P003-100m_515387889.mosdepth.global.dist.txt` |  | 0 B | a78f7c95 | 2026-05-23 |  |  |
+| `F136P003-100m_515387889.mosdepth.region.dist.txt` |  | 0 B | 83d8d3bb | 2026-05-23 |  |  |
+| `F136P003-100m_515387889.mosdepth.summary.txt` |  | 0 B | 438f342d | 2026-05-23 |  |  |
+| `F136P004-100m_515406905.mosdepth.global.dist.txt` |  | 0 B | 8a558249 | 2026-05-23 |  |  |
+| `F136P004-100m_515406905.mosdepth.region.dist.txt` |  | 0 B | 9e1de60f | 2026-05-23 |  |  |
+| `F136P004-100m_515406905.mosdepth.summary.txt` |  | 0 B | d1bcc152 | 2026-05-23 |  |  |
+| `F149P001-100m_515387936.mosdepth.global.dist.txt` |  | 0 B | 712174cf | 2026-05-23 |  |  |
+| `F149P001-100m_515387936.mosdepth.region.dist.txt` |  | 0 B | 11ed3d9b | 2026-05-23 |  |  |
+| `F149P001-100m_515387936.mosdepth.summary.txt` |  | 0 B | 41d75733 | 2026-05-23 |  |  |
+| `F149P002-100m_515387946.mosdepth.global.dist.txt` |  | 0 B | ed593deb | 2026-05-23 |  |  |
+| `F149P002-100m_515387946.mosdepth.region.dist.txt` |  | 0 B | 487eaaac | 2026-05-23 |  |  |
+| `F149P002-100m_515387946.mosdepth.summary.txt` |  | 0 B | 7a92c94d | 2026-05-23 |  |  |
+| `F149P003-100m_515406914.mosdepth.global.dist.txt` |  | 0 B | f57f505b | 2026-05-23 |  |  |
+| `F149P003-100m_515406914.mosdepth.region.dist.txt` |  | 0 B | a97546d6 | 2026-05-23 |  |  |
+| `F149P003-100m_515406914.mosdepth.summary.txt` |  | 0 B | 38ca3ec1 | 2026-05-23 |  |  |
+| `F149P004-100m_515387927.mosdepth.global.dist.txt` |  | 0 B | 20f0b34f | 2026-05-23 |  |  |
+| `F149P004-100m_515387927.mosdepth.region.dist.txt` |  | 0 B | 55c08646 | 2026-05-23 |  |  |
+| `F149P004-100m_515387927.mosdepth.summary.txt` |  | 0 B | dd41ed9c | 2026-05-23 |  |  |
+| `F151P001-100m_515387938.mosdepth.global.dist.txt` |  | 0 B | 88bff5c0 | 2026-05-23 |  |  |
+| `F151P001-100m_515387938.mosdepth.region.dist.txt` |  | 0 B | 43529888 | 2026-05-23 |  |  |
+| `F151P001-100m_515387938.mosdepth.summary.txt` |  | 0 B | a619733b | 2026-05-23 |  |  |
+| `F151P002-100m_515387907.mosdepth.global.dist.txt` |  | 0 B | c9c791eb | 2026-05-23 |  |  |
+| `F151P002-100m_515387907.mosdepth.region.dist.txt` |  | 0 B | c0c9c00e | 2026-05-23 |  |  |
+| `F151P002-100m_515387907.mosdepth.summary.txt` |  | 0 B | d39d3323 | 2026-05-23 |  |  |
+| `F151P003-100m_515387942.mosdepth.global.dist.txt` |  | 0 B | 267d80d6 | 2026-05-23 |  |  |
+| `F151P003-100m_515387942.mosdepth.region.dist.txt` |  | 0 B | 8c2d8e94 | 2026-05-23 |  |  |
+| `F151P003-100m_515387942.mosdepth.summary.txt` |  | 0 B | 6a808553 | 2026-05-23 |  |  |
+| `F156P001-100m_515387944.mosdepth.global.dist.txt` |  | 0 B | 5be0a74a | 2026-05-23 |  |  |
+| `F156P001-100m_515387944.mosdepth.region.dist.txt` |  | 0 B | 40f10d13 | 2026-05-23 |  |  |
+| `F156P001-100m_515387944.mosdepth.summary.txt` |  | 0 B | 19a7c6bf | 2026-05-23 |  |  |
+| `F156P002-100m_515387896.mosdepth.global.dist.txt` |  | 0 B | 7623c6e6 | 2026-05-23 |  |  |
+| `F156P002-100m_515387896.mosdepth.region.dist.txt` |  | 0 B | 6184cc3e | 2026-05-23 |  |  |
+| `F156P002-100m_515387896.mosdepth.summary.txt` |  | 0 B | ed498982 | 2026-05-23 |  |  |
+| `F156P003-100m_515387886.mosdepth.global.dist.txt` |  | 0 B | a5f8032b | 2026-05-23 |  |  |
+| `F156P003-100m_515387886.mosdepth.region.dist.txt` |  | 0 B | 94ca701c | 2026-05-23 |  |  |
+| `F156P003-100m_515387886.mosdepth.summary.txt` |  | 0 B | a4fc1058 | 2026-05-23 |  |  |
+| `F158P001-100m_515387934.mosdepth.global.dist.txt` |  | 0 B | 074a000a | 2026-05-23 |  |  |
+| `F158P001-100m_515387934.mosdepth.region.dist.txt` |  | 0 B | 5dfae152 | 2026-05-23 |  |  |
+| `F158P001-100m_515387934.mosdepth.summary.txt` |  | 0 B | ae4b769f | 2026-05-23 |  |  |
+| `F158P002-100m_515387878.mosdepth.global.dist.txt` |  | 0 B | 973fc428 | 2026-05-23 |  |  |
+| `F158P002-100m_515387878.mosdepth.region.dist.txt` |  | 0 B | 9b0203d7 | 2026-05-23 |  |  |
+| `F158P002-100m_515387878.mosdepth.summary.txt` |  | 0 B | a89c85dc | 2026-05-23 |  |  |
+| `F158P003-100m_515387893.mosdepth.global.dist.txt` |  | 0 B | 640956b5 | 2026-05-23 |  |  |
+| `F158P003-100m_515387893.mosdepth.region.dist.txt` |  | 0 B | f56ee045 | 2026-05-23 |  |  |
+| `F158P003-100m_515387893.mosdepth.summary.txt` |  | 0 B | 651646a7 | 2026-05-23 |  |  |
+| `F165P001-100m_515387895.mosdepth.global.dist.txt` |  | 0 B | c89298b2 | 2026-05-23 |  |  |
+| `F165P001-100m_515387895.mosdepth.region.dist.txt` |  | 0 B | b6d98f43 | 2026-05-23 |  |  |
+| `F165P001-100m_515387895.mosdepth.summary.txt` |  | 0 B | 73e6ebfb | 2026-05-23 |  |  |
+| `F165P002-100m_515406908.mosdepth.global.dist.txt` |  | 0 B | 1f5714a6 | 2026-05-23 |  |  |
+| `F165P002-100m_515406908.mosdepth.region.dist.txt` |  | 0 B | f5bac588 | 2026-05-23 |  |  |
+| `F165P002-100m_515406908.mosdepth.summary.txt` |  | 0 B | 3854559e | 2026-05-23 |  |  |
+| `F165P003-100m_515387899.mosdepth.global.dist.txt` |  | 0 B | d3b14fd4 | 2026-05-23 |  |  |
+| `F165P003-100m_515387899.mosdepth.region.dist.txt` |  | 0 B | 007d5024 | 2026-05-23 |  |  |
+| `F165P003-100m_515387899.mosdepth.summary.txt` |  | 0 B | 884897c0 | 2026-05-23 |  |  |
+| `F172P001-100m_515387879.mosdepth.global.dist.txt` |  | 0 B | 1b000f35 | 2026-05-23 |  |  |
+| `F172P001-100m_515387879.mosdepth.region.dist.txt` |  | 0 B | 50ecaea0 | 2026-05-23 |  |  |
+| `F172P001-100m_515387879.mosdepth.summary.txt` |  | 0 B | 66b4493f | 2026-05-23 |  |  |
+| `F172P002-100m_515387912.mosdepth.global.dist.txt` |  | 0 B | 0eb5dbf5 | 2026-05-23 |  |  |
+| `F172P002-100m_515387912.mosdepth.region.dist.txt` |  | 0 B | d02db66a | 2026-05-23 |  |  |
+| `F172P002-100m_515387912.mosdepth.summary.txt` |  | 0 B | 60b3a8b7 | 2026-05-23 |  |  |
+| `F172P003-100m_515387905.mosdepth.global.dist.txt` |  | 0 B | 7b068d68 | 2026-05-23 |  |  |
+| `F172P003-100m_515387905.mosdepth.region.dist.txt` |  | 0 B | 68594af7 | 2026-05-23 |  |  |
+| `F172P003-100m_515387905.mosdepth.summary.txt` |  | 0 B | f5df0148 | 2026-05-23 |  |  |
+| `F174P001-100m_515406913.mosdepth.global.dist.txt` |  | 0 B | 77a61fc7 | 2026-05-23 |  |  |
+| `F174P001-100m_515406913.mosdepth.region.dist.txt` |  | 0 B | e9ee9965 | 2026-05-23 |  |  |
+| `F174P001-100m_515406913.mosdepth.summary.txt` |  | 0 B | 9e4db677 | 2026-05-23 |  |  |
+| `F174P002-100m_515387901.mosdepth.global.dist.txt` |  | 0 B | 31662b36 | 2026-05-23 |  |  |
+| `F174P002-100m_515387901.mosdepth.region.dist.txt` |  | 0 B | 490bff3d | 2026-05-23 |  |  |
+| `F174P002-100m_515387901.mosdepth.summary.txt` |  | 0 B | bee0f681 | 2026-05-23 |  |  |
+| `F174P003-100m_515387890.mosdepth.global.dist.txt` |  | 0 B | 068f73ef | 2026-05-23 |  |  |
+| `F174P003-100m_515387890.mosdepth.region.dist.txt` |  | 0 B | 03a4b9f4 | 2026-05-23 |  |  |
+| `F174P003-100m_515387890.mosdepth.summary.txt` |  | 0 B | a82c87fe | 2026-05-23 |  |  |
+| `F179P001-100m_515387924.mosdepth.global.dist.txt` |  | 0 B | 7ad8abb0 | 2026-05-23 |  |  |
+| `F179P001-100m_515387924.mosdepth.region.dist.txt` |  | 0 B | b5cd0b3c | 2026-05-23 |  |  |
+| `F179P001-100m_515387924.mosdepth.summary.txt` |  | 0 B | be486b5c | 2026-05-23 |  |  |
+| `F184-P001-100m_548709161.mosdepth.global.dist.txt` |  | 0 B | 8ccc7c99 | 2026-05-23 |  |  |
+| `F184-P001-100m_548709161.mosdepth.region.dist.txt` |  | 0 B | 9d60c2bd | 2026-05-23 |  |  |
+| `F184-P001-100m_548709161.mosdepth.summary.txt` |  | 0 B | a52d2678 | 2026-05-23 |  |  |
+| `F187P001-100m_515387908.mosdepth.global.dist.txt` |  | 0 B | a9a2a9ca | 2026-05-23 |  |  |
+| `F187P001-100m_515387908.mosdepth.region.dist.txt` |  | 0 B | 8c2a759f | 2026-05-23 |  |  |
+| `F187P001-100m_515387908.mosdepth.summary.txt` |  | 0 B | b3a5535c | 2026-05-23 |  |  |
+| `F187P002-100m_515387911.mosdepth.global.dist.txt` |  | 0 B | 1efc6149 | 2026-05-23 |  |  |
+| `F187P002-100m_515387911.mosdepth.region.dist.txt` |  | 0 B | cee5cb77 | 2026-05-23 |  |  |
+| `F187P002-100m_515387911.mosdepth.summary.txt` |  | 0 B | 7ad1df63 | 2026-05-23 |  |  |
+| `F187P003-100m_515387910.mosdepth.global.dist.txt` |  | 0 B | c7c92387 | 2026-05-23 |  |  |
+| `F187P003-100m_515387910.mosdepth.region.dist.txt` |  | 0 B | e75f2f71 | 2026-05-23 |  |  |
+| `F187P003-100m_515387910.mosdepth.summary.txt` |  | 0 B | e1936b71 | 2026-05-23 |  |  |
+| `F188P001-100m_515406917.mosdepth.global.dist.txt` |  | 0 B | 854b0650 | 2026-05-23 |  |  |
+| `F188P001-100m_515406917.mosdepth.region.dist.txt` |  | 0 B | c40db9ed | 2026-05-23 |  |  |
+| `F188P001-100m_515406917.mosdepth.summary.txt` |  | 0 B | 712c3b17 | 2026-05-23 |  |  |
+| `F196P001-100m_515387909.mosdepth.global.dist.txt` |  | 0 B | 743e00ee | 2026-05-23 |  |  |
+| `F196P001-100m_515387909.mosdepth.region.dist.txt` |  | 0 B | aa2522bd | 2026-05-23 |  |  |
+| `F196P001-100m_515387909.mosdepth.summary.txt` |  | 0 B | 4d78ec29 | 2026-05-23 |  |  |
+| `F196P002-100m_515387897.mosdepth.global.dist.txt` |  | 0 B | 0ec131d3 | 2026-05-23 |  |  |
+| `F196P002-100m_515387897.mosdepth.region.dist.txt` |  | 0 B | 425176dd | 2026-05-23 |  |  |
+| `F196P002-100m_515387897.mosdepth.summary.txt` |  | 0 B | 58f3a6ca | 2026-05-23 |  |  |
+| `F196P003-100m_515387883.mosdepth.global.dist.txt` |  | 0 B | be607393 | 2026-05-23 |  |  |
+| `F196P003-100m_515387883.mosdepth.region.dist.txt` |  | 0 B | ed8791ad | 2026-05-23 |  |  |
+| `F196P003-100m_515387883.mosdepth.summary.txt` |  | 0 B | 76c4f19d | 2026-05-23 |  |  |
+| `F205-P001-100m_548709173.mosdepth.global.dist.txt` |  | 0 B | e136e96b | 2026-05-23 |  |  |
+| `F205-P001-100m_548709173.mosdepth.region.dist.txt` |  | 0 B | 6fe061f1 | 2026-05-23 |  |  |
+| `F205-P001-100m_548709173.mosdepth.summary.txt` |  | 0 B | 515dde7d | 2026-05-23 |  |  |
+| `F205-P002-100m_548709170.mosdepth.global.dist.txt` |  | 0 B | 0d6e4951 | 2026-05-23 |  |  |
+| `F205-P002-100m_548709170.mosdepth.region.dist.txt` |  | 0 B | 22e62ea1 | 2026-05-23 |  |  |
+| `F205-P002-100m_548709170.mosdepth.summary.txt` |  | 0 B | 44383602 | 2026-05-23 |  |  |
+| `F205-P003-100m_548709171.mosdepth.global.dist.txt` |  | 0 B | d9488165 | 2026-05-23 |  |  |
+| `F205-P003-100m_548709171.mosdepth.region.dist.txt` |  | 0 B | b18b937a | 2026-05-23 |  |  |
+| `F205-P003-100m_548709171.mosdepth.summary.txt` |  | 0 B | 9afa7a6c | 2026-05-23 |  |  |
+| `F205-P004-100m_548687150.mosdepth.global.dist.txt` |  | 0 B | dd5a2703 | 2026-05-23 |  |  |
+| `F205-P004-100m_548687150.mosdepth.region.dist.txt` |  | 0 B | 65a1abb7 | 2026-05-23 |  |  |
+| `F205-P004-100m_548687150.mosdepth.summary.txt` |  | 0 B | 8f4c70d7 | 2026-05-23 |  |  |
+| `F205-P005-100m_548687156.mosdepth.global.dist.txt` |  | 0 B | f4ac7f02 | 2026-05-23 |  |  |
+| `F205-P005-100m_548687156.mosdepth.region.dist.txt` |  | 0 B | 952c128b | 2026-05-23 |  |  |
+| `F205-P005-100m_548687156.mosdepth.summary.txt` |  | 0 B | 04a46fe6 | 2026-05-23 |  |  |
+| `F216P001-100m_515387887.mosdepth.global.dist.txt` |  | 0 B | cbcbc80b | 2026-05-23 |  |  |
+| `F216P001-100m_515387887.mosdepth.region.dist.txt` |  | 0 B | 9f0117bd | 2026-05-23 |  |  |
+| `F216P001-100m_515387887.mosdepth.summary.txt` |  | 0 B | b75e20b9 | 2026-05-23 |  |  |
+| `F216P002-100m_515387922.mosdepth.global.dist.txt` |  | 0 B | 907f54cf | 2026-05-23 |  |  |
+| `F216P002-100m_515387922.mosdepth.region.dist.txt` |  | 0 B | ea642df4 | 2026-05-23 |  |  |
+| `F216P002-100m_515387922.mosdepth.summary.txt` |  | 0 B | 33546b8c | 2026-05-23 |  |  |
+| `F216P003-100m_524015526.mosdepth.global.dist.txt` |  | 0 B | 906b1c88 | 2026-05-23 |  |  |
+| `F216P003-100m_524015526.mosdepth.region.dist.txt` |  | 0 B | d3d8039d | 2026-05-23 |  |  |
+| `F216P003-100m_524015526.mosdepth.summary.txt` |  | 0 B | 70799686 | 2026-05-23 |  |  |
+| `F230P001-100m_524015510.mosdepth.global.dist.txt` |  | 0 B | 3b70fd23 | 2026-05-23 |  |  |
+| `F230P001-100m_524015510.mosdepth.region.dist.txt` |  | 0 B | 5378de73 | 2026-05-23 |  |  |
+| `F230P001-100m_524015510.mosdepth.summary.txt` |  | 0 B | 1aba7e23 | 2026-05-23 |  |  |
+| `F230P002-100m_524015514.mosdepth.global.dist.txt` |  | 0 B | a3ae9533 | 2026-05-23 |  |  |
+| `F230P002-100m_524015514.mosdepth.region.dist.txt` |  | 0 B | 706bacab | 2026-05-23 |  |  |
+| `F230P002-100m_524015514.mosdepth.summary.txt` |  | 0 B | 1570d27c | 2026-05-23 |  |  |
+| `F233P001-100m_524015540.mosdepth.global.dist.txt` |  | 0 B | ec963bf3 | 2026-05-23 |  |  |
+| `F233P001-100m_524015540.mosdepth.region.dist.txt` |  | 0 B | 15450eff | 2026-05-23 |  |  |
+| `F233P001-100m_524015540.mosdepth.summary.txt` |  | 0 B | 009232d9 | 2026-05-23 |  |  |
+| `F233P002-100m_524015517.mosdepth.global.dist.txt` |  | 0 B | 7bed952a | 2026-05-23 |  |  |
+| `F233P002-100m_524015517.mosdepth.region.dist.txt` |  | 0 B | 5c3f55bb | 2026-05-23 |  |  |
+| `F233P002-100m_524015517.mosdepth.summary.txt` |  | 0 B | 50a386b4 | 2026-05-23 |  |  |
+| `F233P003-100m_524015543.mosdepth.global.dist.txt` |  | 0 B | b6fcba91 | 2026-05-23 |  |  |
+| `F233P003-100m_524015543.mosdepth.region.dist.txt` |  | 0 B | 1493ee42 | 2026-05-23 |  |  |
+| `F233P003-100m_524015543.mosdepth.summary.txt` |  | 0 B | a7fbcc90 | 2026-05-23 |  |  |
+| `F234P001-100m_524015537.mosdepth.global.dist.txt` |  | 0 B | 77ed6529 | 2026-05-23 |  |  |
+| `F234P001-100m_524015537.mosdepth.region.dist.txt` |  | 0 B | 7285457d | 2026-05-23 |  |  |
+| `F234P001-100m_524015537.mosdepth.summary.txt` |  | 0 B | a1c8a749 | 2026-05-23 |  |  |
+| `F234P002-100m_524015524.mosdepth.global.dist.txt` |  | 0 B | b9513b3a | 2026-05-23 |  |  |
+| `F234P002-100m_524015524.mosdepth.region.dist.txt` |  | 0 B | f80db405 | 2026-05-23 |  |  |
+| `F234P002-100m_524015524.mosdepth.summary.txt` |  | 0 B | 2fac2a27 | 2026-05-23 |  |  |
+| `F234P003-100m_524015555.mosdepth.global.dist.txt` |  | 0 B | 88c13dc5 | 2026-05-23 |  |  |
+| `F234P003-100m_524015555.mosdepth.region.dist.txt` |  | 0 B | b3aaa900 | 2026-05-23 |  |  |
+| `F234P003-100m_524015555.mosdepth.summary.txt` |  | 0 B | 127a19de | 2026-05-23 |  |  |
+| `F234P004-100m_524015496.mosdepth.global.dist.txt` |  | 0 B | 7a7e50ae | 2026-05-23 |  |  |
+| `F234P004-100m_524015496.mosdepth.region.dist.txt` |  | 0 B | 2be135b4 | 2026-05-23 |  |  |
+| `F234P004-100m_524015496.mosdepth.summary.txt` |  | 0 B | 05dc9185 | 2026-05-23 |  |  |
+| `F234P005-100m_524015535.mosdepth.global.dist.txt` |  | 0 B | 54e68b5c | 2026-05-23 |  |  |
+| `F234P005-100m_524015535.mosdepth.region.dist.txt` |  | 0 B | f10da245 | 2026-05-23 |  |  |
+| `F234P005-100m_524015535.mosdepth.summary.txt` |  | 0 B | 028113fe | 2026-05-23 |  |  |
+| `F241P001-100m_524015497.mosdepth.global.dist.txt` |  | 0 B | 8438a652 | 2026-05-23 |  |  |
+| `F241P001-100m_524015497.mosdepth.region.dist.txt` |  | 0 B | a090bcc5 | 2026-05-23 |  |  |
+| `F241P001-100m_524015497.mosdepth.summary.txt` |  | 0 B | bff2d6d8 | 2026-05-23 |  |  |
+| `F241P002-100m_524015563.mosdepth.global.dist.txt` |  | 0 B | 7e598a53 | 2026-05-23 |  |  |
+| `F241P002-100m_524015563.mosdepth.region.dist.txt` |  | 0 B | 4b1d2f63 | 2026-05-23 |  |  |
+| `F241P002-100m_524015563.mosdepth.summary.txt` |  | 0 B | 1dbe3fd3 | 2026-05-23 |  |  |
+| `F241P003-100m_524015550.mosdepth.global.dist.txt` |  | 0 B | 901cee27 | 2026-05-23 |  |  |
+| `F241P003-100m_524015550.mosdepth.region.dist.txt` |  | 0 B | 66641b6f | 2026-05-23 |  |  |
+| `F241P003-100m_524015550.mosdepth.summary.txt` |  | 0 B | f97e5617 | 2026-05-23 |  |  |
+| `F244P001-100m_524015508.mosdepth.global.dist.txt` |  | 0 B | 38f9e703 | 2026-05-23 |  |  |
+| `F244P001-100m_524015508.mosdepth.region.dist.txt` |  | 0 B | e0447f0d | 2026-05-23 |  |  |
+| `F244P001-100m_524015508.mosdepth.summary.txt` |  | 0 B | d9d165fa | 2026-05-23 |  |  |
+| `F244P002-100m_524015520.mosdepth.global.dist.txt` |  | 0 B | e4150371 | 2026-05-23 |  |  |
+| `F244P002-100m_524015520.mosdepth.region.dist.txt` |  | 0 B | 73fa0dce | 2026-05-23 |  |  |
+| `F244P002-100m_524015520.mosdepth.summary.txt` |  | 0 B | 51b3e899 | 2026-05-23 |  |  |
+| `F244P003-100m_524015525.mosdepth.global.dist.txt` |  | 0 B | 3aa2a171 | 2026-05-23 |  |  |
+| `F244P003-100m_524015525.mosdepth.region.dist.txt` |  | 0 B | 9c584323 | 2026-05-23 |  |  |
+| `F244P003-100m_524015525.mosdepth.summary.txt` |  | 0 B | 5c5979d5 | 2026-05-23 |  |  |
+| `F249-P001-100m_548687154.mosdepth.global.dist.txt` |  | 0 B | 0aef9370 | 2026-05-23 |  |  |
+| `F249-P001-100m_548687154.mosdepth.region.dist.txt` |  | 0 B | 8d61fcce | 2026-05-23 |  |  |
+| `F249-P001-100m_548687154.mosdepth.summary.txt` |  | 0 B | 387808c6 | 2026-05-23 |  |  |
+| `F249-P002-100m_548687158.mosdepth.global.dist.txt` |  | 0 B | ca0cb8e6 | 2026-05-23 |  |  |
+| `F249-P002-100m_548687158.mosdepth.region.dist.txt` |  | 0 B | b4cd997f | 2026-05-23 |  |  |
+| `F249-P002-100m_548687158.mosdepth.summary.txt` |  | 0 B | d35b0358 | 2026-05-23 |  |  |
+| `F249-P003-100m_548687145.mosdepth.global.dist.txt` |  | 0 B | d830ba97 | 2026-05-23 |  |  |
+| `F249-P003-100m_548687145.mosdepth.region.dist.txt` |  | 0 B | 32c9d371 | 2026-05-23 |  |  |
+| `F249-P003-100m_548687145.mosdepth.summary.txt` |  | 0 B | f8266bde | 2026-05-23 |  |  |
+| `F255P001-100m_524015558.mosdepth.global.dist.txt` |  | 0 B | e15015ce | 2026-05-23 |  |  |
+| `F255P001-100m_524015558.mosdepth.region.dist.txt` |  | 0 B | 60f4438a | 2026-05-23 |  |  |
+| `F255P001-100m_524015558.mosdepth.summary.txt` |  | 0 B | f7dddbec | 2026-05-23 |  |  |
+| `F255P002-100m_524015560.mosdepth.global.dist.txt` |  | 0 B | ca455e17 | 2026-05-23 |  |  |
+| `F255P002-100m_524015560.mosdepth.region.dist.txt` |  | 0 B | 54f0b11d | 2026-05-23 |  |  |
+| `F255P002-100m_524015560.mosdepth.summary.txt` |  | 0 B | fb0c985f | 2026-05-23 |  |  |
+| `F255P003-100m_524015505.mosdepth.global.dist.txt` |  | 0 B | c7bc6cbe | 2026-05-23 |  |  |
+| `F255P003-100m_524015505.mosdepth.region.dist.txt` |  | 0 B | f6734bb6 | 2026-05-23 |  |  |
+| `F255P003-100m_524015505.mosdepth.summary.txt` |  | 0 B | cd9d6a2f | 2026-05-23 |  |  |
+| `F256P001-100m_524015528.mosdepth.global.dist.txt` |  | 0 B | f077fd50 | 2026-05-23 |  |  |
+| `F256P001-100m_524015528.mosdepth.region.dist.txt` |  | 0 B | b6105d0e | 2026-05-23 |  |  |
+| `F256P001-100m_524015528.mosdepth.summary.txt` |  | 0 B | 2472668b | 2026-05-23 |  |  |
+| `F256P002-100m_524015518.mosdepth.global.dist.txt` |  | 0 B | 814c5d13 | 2026-05-23 |  |  |
+| `F256P002-100m_524015518.mosdepth.region.dist.txt` |  | 0 B | 3f71837f | 2026-05-23 |  |  |
+| `F256P002-100m_524015518.mosdepth.summary.txt` |  | 0 B | ed6f5b60 | 2026-05-23 |  |  |
+| `F256P003-100m_524015557.mosdepth.global.dist.txt` |  | 0 B | 276d30f9 | 2026-05-23 |  |  |
+| `F256P003-100m_524015557.mosdepth.region.dist.txt` |  | 0 B | dd4254f0 | 2026-05-23 |  |  |
+| `F256P003-100m_524015557.mosdepth.summary.txt` |  | 0 B | 95bec738 | 2026-05-23 |  |  |
+| `F256P004-100m_524015562.mosdepth.global.dist.txt` |  | 0 B | d3d9478d | 2026-05-23 |  |  |
+| `F256P004-100m_524015562.mosdepth.region.dist.txt` |  | 0 B | 9ba49c28 | 2026-05-23 |  |  |
+| `F256P004-100m_524015562.mosdepth.summary.txt` |  | 0 B | 82c34287 | 2026-05-23 |  |  |
+| `F264P001-100m_524015539.mosdepth.global.dist.txt` |  | 0 B | 41048994 | 2026-05-23 |  |  |
+| `F264P001-100m_524015539.mosdepth.region.dist.txt` |  | 0 B | 6c103630 | 2026-05-23 |  |  |
+| `F264P001-100m_524015539.mosdepth.summary.txt` |  | 0 B | ea419e78 | 2026-05-23 |  |  |
+| `F264P002-100m_524015507.mosdepth.global.dist.txt` |  | 0 B | 7d583322 | 2026-05-23 |  |  |
+| `F264P002-100m_524015507.mosdepth.region.dist.txt` |  | 0 B | 6850f1fd | 2026-05-23 |  |  |
+| `F264P002-100m_524015507.mosdepth.summary.txt` |  | 0 B | 7e4dd5eb | 2026-05-23 |  |  |
+| `F264P003-100m_524026513.mosdepth.global.dist.txt` |  | 0 B | 829e92ea | 2026-05-23 |  |  |
+| `F264P003-100m_524026513.mosdepth.region.dist.txt` |  | 0 B | f7cc576b | 2026-05-23 |  |  |
+| `F264P003-100m_524026513.mosdepth.summary.txt` |  | 0 B | 001add0b | 2026-05-23 |  |  |
+| `F269P001-100m_524015536.mosdepth.global.dist.txt` |  | 0 B | 57ecbfd8 | 2026-05-23 |  |  |
+| `F269P001-100m_524015536.mosdepth.region.dist.txt` |  | 0 B | d332a616 | 2026-05-23 |  |  |
+| `F269P001-100m_524015536.mosdepth.summary.txt` |  | 0 B | 85ea5ea3 | 2026-05-23 |  |  |
+| `F269P002-100m_524015541.mosdepth.global.dist.txt` |  | 0 B | 7d67e8d4 | 2026-05-23 |  |  |
+| `F269P002-100m_524015541.mosdepth.region.dist.txt` |  | 0 B | b9030375 | 2026-05-23 |  |  |
+| `F269P002-100m_524015541.mosdepth.summary.txt` |  | 0 B | 6697fe2c | 2026-05-23 |  |  |
+| `F269P003-100m_524015511.mosdepth.global.dist.txt` |  | 0 B | 52fb59cd | 2026-05-23 |  |  |
+| `F269P003-100m_524015511.mosdepth.region.dist.txt` |  | 0 B | fb66db1e | 2026-05-23 |  |  |
+| `F269P003-100m_524015511.mosdepth.summary.txt` |  | 0 B | e7f021f3 | 2026-05-23 |  |  |
+| `F274P001-100m_524015542.mosdepth.global.dist.txt` |  | 0 B | 48ef31b3 | 2026-05-23 |  |  |
+| `F274P001-100m_524015542.mosdepth.region.dist.txt` |  | 0 B | 8e3862f0 | 2026-05-23 |  |  |
+| `F274P001-100m_524015542.mosdepth.summary.txt` |  | 0 B | 17149aee | 2026-05-23 |  |  |
+| `F274P002-100m_524026519.mosdepth.global.dist.txt` |  | 0 B | 997dc770 | 2026-05-23 |  |  |
+| `F274P002-100m_524026519.mosdepth.region.dist.txt` |  | 0 B | 1bf55991 | 2026-05-23 |  |  |
+| `F274P002-100m_524026519.mosdepth.summary.txt` |  | 0 B | 07952d02 | 2026-05-23 |  |  |
+| `F274P003-100m_524015556.mosdepth.global.dist.txt` |  | 0 B | fbe78726 | 2026-05-23 |  |  |
+| `F274P003-100m_524015556.mosdepth.region.dist.txt` |  | 0 B | 6c7d2a9c | 2026-05-23 |  |  |
+| `F274P003-100m_524015556.mosdepth.summary.txt` |  | 0 B | 0f2e0a20 | 2026-05-23 |  |  |
+| `F277P001-100m_524026522.mosdepth.global.dist.txt` |  | 0 B | 5fc5cd91 | 2026-05-23 |  |  |
+| `F277P001-100m_524026522.mosdepth.region.dist.txt` |  | 0 B | f542f088 | 2026-05-23 |  |  |
+| `F277P001-100m_524026522.mosdepth.summary.txt` |  | 0 B | ce6c04f8 | 2026-05-23 |  |  |
+| `F277P002-100m_524015495.mosdepth.global.dist.txt` |  | 0 B | ddd3e7bb | 2026-05-23 |  |  |
+| `F277P002-100m_524015495.mosdepth.region.dist.txt` |  | 0 B | 796c9e37 | 2026-05-23 |  |  |
+| `F277P002-100m_524015495.mosdepth.summary.txt` |  | 0 B | 6dfdd1dd | 2026-05-23 |  |  |
+| `F277P003-100m_524015544.mosdepth.global.dist.txt` |  | 0 B | 74da1598 | 2026-05-23 |  |  |
+| `F277P003-100m_524015544.mosdepth.region.dist.txt` |  | 0 B | 073f620b | 2026-05-23 |  |  |
+| `F277P003-100m_524015544.mosdepth.summary.txt` |  | 0 B | e83c9486 | 2026-05-23 |  |  |
+| `F280P001-100m_524026515.mosdepth.global.dist.txt` |  | 0 B | 1fa5509f | 2026-05-23 |  |  |
+| `F280P001-100m_524026515.mosdepth.region.dist.txt` |  | 0 B | e57eec0f | 2026-05-23 |  |  |
+| `F280P001-100m_524026515.mosdepth.summary.txt` |  | 0 B | 14827b52 | 2026-05-23 |  |  |
+| `F282P001-100m_524015522.mosdepth.global.dist.txt` |  | 0 B | f90d78a6 | 2026-05-23 |  |  |
+| `F282P001-100m_524015522.mosdepth.region.dist.txt` |  | 0 B | 184673c6 | 2026-05-23 |  |  |
+| `F282P001-100m_524015522.mosdepth.summary.txt` |  | 0 B | 36ba5114 | 2026-05-23 |  |  |
+| `F282P004-100m_524015548.mosdepth.global.dist.txt` |  | 0 B | 8eb61c09 | 2026-05-23 |  |  |
+| `F282P004-100m_524015548.mosdepth.region.dist.txt` |  | 0 B | f6e54a7c | 2026-05-23 |  |  |
+| `F282P004-100m_524015548.mosdepth.summary.txt` |  | 0 B | 0f6716d9 | 2026-05-23 |  |  |
+| `F291P001-100m_524015533.mosdepth.global.dist.txt` |  | 0 B | a8d59b03 | 2026-05-23 |  |  |
+| `F291P001-100m_524015533.mosdepth.region.dist.txt` |  | 0 B | daf73e00 | 2026-05-23 |  |  |
+| `F291P001-100m_524015533.mosdepth.summary.txt` |  | 0 B | 66e76aae | 2026-05-23 |  |  |
+| `F291P002-100m_524026517.mosdepth.global.dist.txt` |  | 0 B | e2f4af9e | 2026-05-23 |  |  |
+| `F291P002-100m_524026517.mosdepth.region.dist.txt` |  | 0 B | 5a623bc5 | 2026-05-23 |  |  |
+| `F291P002-100m_524026517.mosdepth.summary.txt` |  | 0 B | e8f49286 | 2026-05-23 |  |  |
+| `F291P003-100m_524026511.mosdepth.global.dist.txt` |  | 0 B | 23bcaa7b | 2026-05-23 |  |  |
+| `F291P003-100m_524026511.mosdepth.region.dist.txt` |  | 0 B | 5e03f8b3 | 2026-05-23 |  |  |
+| `F291P003-100m_524026511.mosdepth.summary.txt` |  | 0 B | 035334c8 | 2026-05-23 |  |  |
+| `F295P001-100m_524026503.mosdepth.global.dist.txt` |  | 0 B | 728d3eba | 2026-05-23 |  |  |
+| `F295P001-100m_524026503.mosdepth.region.dist.txt` |  | 0 B | 6ed26bd9 | 2026-05-23 |  |  |
+| `F295P001-100m_524026503.mosdepth.summary.txt` |  | 0 B | b31f86d8 | 2026-05-23 |  |  |
+| `F316P001-100m_524015502.mosdepth.global.dist.txt` |  | 0 B | 6fdc78a5 | 2026-05-23 |  |  |
+| `F316P001-100m_524015502.mosdepth.region.dist.txt` |  | 0 B | ed5332dd | 2026-05-23 |  |  |
+| `F316P001-100m_524015502.mosdepth.summary.txt` |  | 0 B | 0cca2441 | 2026-05-23 |  |  |
+| `F316P002-100m_524015559.mosdepth.global.dist.txt` |  | 0 B | 38285587 | 2026-05-23 |  |  |
+| `F316P002-100m_524015559.mosdepth.region.dist.txt` |  | 0 B | 5b2d76af | 2026-05-23 |  |  |
+| `F316P002-100m_524015559.mosdepth.summary.txt` |  | 0 B | f64f50c3 | 2026-05-23 |  |  |
+| `F321P001-100m_524015494.mosdepth.global.dist.txt` |  | 0 B | 82c156e6 | 2026-05-23 |  |  |
+| `F321P001-100m_524015494.mosdepth.region.dist.txt` |  | 0 B | ea306016 | 2026-05-23 |  |  |
+| `F321P001-100m_524015494.mosdepth.summary.txt` |  | 0 B | a82663e6 | 2026-05-23 |  |  |
+| `F323P001-100m_524015546.mosdepth.global.dist.txt` |  | 0 B | 9feb6abb | 2026-05-23 |  |  |
+| `F323P001-100m_524015546.mosdepth.region.dist.txt` |  | 0 B | 3093a3a1 | 2026-05-23 |  |  |
+| `F323P001-100m_524015546.mosdepth.summary.txt` |  | 0 B | f3d62a0b | 2026-05-23 |  |  |
+| `F323P002-100m_524015552.mosdepth.global.dist.txt` |  | 0 B | 5e1b112d | 2026-05-23 |  |  |
+| `F323P002-100m_524015552.mosdepth.region.dist.txt` |  | 0 B | e83cff31 | 2026-05-23 |  |  |
+| `F323P002-100m_524015552.mosdepth.summary.txt` |  | 0 B | 1596b207 | 2026-05-23 |  |  |
+| `F323P003-100m_524015554.mosdepth.global.dist.txt` |  | 0 B | a9b7e6aa | 2026-05-23 |  |  |
+| `F323P003-100m_524015554.mosdepth.region.dist.txt` |  | 0 B | 2159c17a | 2026-05-23 |  |  |
+| `F323P003-100m_524015554.mosdepth.summary.txt` |  | 0 B | 7b21d7d8 | 2026-05-23 |  |  |
+| `F324P001-100m_524026520.mosdepth.global.dist.txt` |  | 0 B | ddce7941 | 2026-05-23 |  |  |
+| `F324P001-100m_524026520.mosdepth.region.dist.txt` |  | 0 B | 56e6afe7 | 2026-05-23 |  |  |
+| `F324P001-100m_524026520.mosdepth.summary.txt` |  | 0 B | 42c1acb2 | 2026-05-23 |  |  |
+| `F324P002-100m_524015512.mosdepth.global.dist.txt` |  | 0 B | dbc72e74 | 2026-05-23 |  |  |
+| `F324P002-100m_524015512.mosdepth.region.dist.txt` |  | 0 B | 44386bd9 | 2026-05-23 |  |  |
+| `F324P002-100m_524015512.mosdepth.summary.txt` |  | 0 B | 6156f5ec | 2026-05-23 |  |  |
+| `F325P001-100m_524015531.mosdepth.global.dist.txt` |  | 0 B | ea3a1649 | 2026-05-23 |  |  |
+| `F325P001-100m_524015531.mosdepth.region.dist.txt` |  | 0 B | 80bfea8b | 2026-05-23 |  |  |
+| `F325P001-100m_524015531.mosdepth.summary.txt` |  | 0 B | 276a013d | 2026-05-23 |  |  |
+| `F325P002-100m_524015561.mosdepth.global.dist.txt` |  | 0 B | df2b1051 | 2026-05-23 |  |  |
+| `F325P002-100m_524015561.mosdepth.region.dist.txt` |  | 0 B | f4580dd0 | 2026-05-23 |  |  |
+| `F325P002-100m_524015561.mosdepth.summary.txt` |  | 0 B | 06e86a44 | 2026-05-23 |  |  |
+| `F325P004-100m_524026512.mosdepth.global.dist.txt` |  | 0 B | 8c061af3 | 2026-05-23 |  |  |
+| `F325P004-100m_524026512.mosdepth.region.dist.txt` |  | 0 B | 67720d78 | 2026-05-23 |  |  |
+| `F325P004-100m_524026512.mosdepth.summary.txt` |  | 0 B | c2ec171f | 2026-05-23 |  |  |
+| `F325P005-100m_524026521.mosdepth.global.dist.txt` |  | 0 B | b9aa88b0 | 2026-05-23 |  |  |
+| `F325P005-100m_524026521.mosdepth.region.dist.txt` |  | 0 B | 4af4c9c5 | 2026-05-23 |  |  |
+| `F325P005-100m_524026521.mosdepth.summary.txt` |  | 0 B | 927d4d0c | 2026-05-23 |  |  |
+| `F325P006-100m_524015499.mosdepth.global.dist.txt` |  | 0 B | bccac5a1 | 2026-05-23 |  |  |
+| `F325P006-100m_524015499.mosdepth.region.dist.txt` |  | 0 B | 8145e17f | 2026-05-23 |  |  |
+| `F325P006-100m_524015499.mosdepth.summary.txt` |  | 0 B | 366a60c4 | 2026-05-23 |  |  |
+| `F329P001-100m_524015549.mosdepth.global.dist.txt` |  | 0 B | fe8b1e44 | 2026-05-23 |  |  |
+| `F329P001-100m_524015549.mosdepth.region.dist.txt` |  | 0 B | 546c6806 | 2026-05-23 |  |  |
+| `F329P001-100m_524015549.mosdepth.summary.txt` |  | 0 B | bcc5f402 | 2026-05-23 |  |  |
+| `F329P002-100m_524015545.mosdepth.global.dist.txt` |  | 0 B | e4627406 | 2026-05-23 |  |  |
+| `F329P002-100m_524015545.mosdepth.region.dist.txt` |  | 0 B | d6a1ca57 | 2026-05-23 |  |  |
+| `F329P002-100m_524015545.mosdepth.summary.txt` |  | 0 B | d5a1e928 | 2026-05-23 |  |  |
+| `F329P003-100m_524015532.mosdepth.global.dist.txt` |  | 0 B | 20f8f269 | 2026-05-23 |  |  |
+| `F329P003-100m_524015532.mosdepth.region.dist.txt` |  | 0 B | 0e07ed09 | 2026-05-23 |  |  |
+| `F329P003-100m_524015532.mosdepth.summary.txt` |  | 0 B | 7074a4ea | 2026-05-23 |  |  |
+| `F331P001-100m_524015513.mosdepth.global.dist.txt` |  | 0 B | 498257a1 | 2026-05-23 |  |  |
+| `F331P001-100m_524015513.mosdepth.region.dist.txt` |  | 0 B | 03a78391 | 2026-05-23 |  |  |
+| `F331P001-100m_524015513.mosdepth.summary.txt` |  | 0 B | 95f58a1b | 2026-05-23 |  |  |
+| `F334P001-100m_524015547.mosdepth.global.dist.txt` |  | 0 B | c0ca7c70 | 2026-05-23 |  |  |
+| `F334P001-100m_524015547.mosdepth.region.dist.txt` |  | 0 B | 0dd1bf68 | 2026-05-23 |  |  |
+| `F334P001-100m_524015547.mosdepth.summary.txt` |  | 0 B | 6d6ebdad | 2026-05-23 |  |  |
+| `F334P002-100m_524015530.mosdepth.global.dist.txt` |  | 0 B | 7b3e8256 | 2026-05-23 |  |  |
+| `F334P002-100m_524015530.mosdepth.region.dist.txt` |  | 0 B | 1f55a570 | 2026-05-23 |  |  |
+| `F334P002-100m_524015530.mosdepth.summary.txt` |  | 0 B | 192566f6 | 2026-05-23 |  |  |
+| `F334P003-100m_524015521.mosdepth.global.dist.txt` |  | 0 B | 5d1c27e8 | 2026-05-23 |  |  |
+| `F334P003-100m_524015521.mosdepth.region.dist.txt` |  | 0 B | e0c65028 | 2026-05-23 |  |  |
+| `F334P003-100m_524015521.mosdepth.summary.txt` |  | 0 B | 3d730c65 | 2026-05-23 |  |  |
+| `F335P001-100m_524026509.mosdepth.global.dist.txt` |  | 0 B | c9d617eb | 2026-05-23 |  |  |
+| `F335P001-100m_524026509.mosdepth.region.dist.txt` |  | 0 B | c3602d15 | 2026-05-23 |  |  |
+| `F335P001-100m_524026509.mosdepth.summary.txt` |  | 0 B | 6414f5d0 | 2026-05-23 |  |  |
+| `F335P002-100m_524026505.mosdepth.global.dist.txt` |  | 0 B | fb90dd83 | 2026-05-23 |  |  |
+| `F335P002-100m_524026505.mosdepth.region.dist.txt` |  | 0 B | 75b13893 | 2026-05-23 |  |  |
+| `F335P002-100m_524026505.mosdepth.summary.txt` |  | 0 B | e01af716 | 2026-05-23 |  |  |
+| `F335P003-100m_524015498.mosdepth.global.dist.txt` |  | 0 B | d315700e | 2026-05-23 |  |  |
+| `F335P003-100m_524015498.mosdepth.region.dist.txt` |  | 0 B | 3464d10a | 2026-05-23 |  |  |
+| `F335P003-100m_524015498.mosdepth.summary.txt` |  | 0 B | 4943b647 | 2026-05-23 |  |  |
+| `F345P001-100m_524015519.mosdepth.global.dist.txt` |  | 0 B | 53d32fe8 | 2026-05-23 |  |  |
+| `F345P001-100m_524015519.mosdepth.region.dist.txt` |  | 0 B | d073faab | 2026-05-23 |  |  |
+| `F345P001-100m_524015519.mosdepth.summary.txt` |  | 0 B | 32ec6983 | 2026-05-23 |  |  |
+| `F350P001-100m_524015503.mosdepth.global.dist.txt` |  | 0 B | 8ca15a37 | 2026-05-23 |  |  |
+| `F350P001-100m_524015503.mosdepth.region.dist.txt` |  | 0 B | 418b38d4 | 2026-05-23 |  |  |
+| `F350P001-100m_524015503.mosdepth.summary.txt` |  | 0 B | d67b622f | 2026-05-23 |  |  |
+| `F350P002-100m_524015516.mosdepth.global.dist.txt` |  | 0 B | 58175a44 | 2026-05-23 |  |  |
+| `F350P002-100m_524015516.mosdepth.region.dist.txt` |  | 0 B | a72637e8 | 2026-05-23 |  |  |
+| `F350P002-100m_524015516.mosdepth.summary.txt` |  | 0 B | 08405711 | 2026-05-23 |  |  |
+| `F350P003-100m_524015551.mosdepth.global.dist.txt` |  | 0 B | 0c0ea2d2 | 2026-05-23 |  |  |
+| `F350P003-100m_524015551.mosdepth.region.dist.txt` |  | 0 B | a5ce030e | 2026-05-23 |  |  |
+| `F350P003-100m_524015551.mosdepth.summary.txt` |  | 0 B | bf491a20 | 2026-05-23 |  |  |
+| `F351P001-100m_524026506.mosdepth.global.dist.txt` |  | 0 B | 1c1e8528 | 2026-05-23 |  |  |
+| `F351P001-100m_524026506.mosdepth.region.dist.txt` |  | 0 B | 79a0f386 | 2026-05-23 |  |  |
+| `F351P001-100m_524026506.mosdepth.summary.txt` |  | 0 B | 19d1da16 | 2026-05-23 |  |  |
+| `F351P002-100m_524015500.mosdepth.global.dist.txt` |  | 0 B | 3e63056e | 2026-05-23 |  |  |
+| `F351P002-100m_524015500.mosdepth.region.dist.txt` |  | 0 B | 192b30e4 | 2026-05-23 |  |  |
+| `F351P002-100m_524015500.mosdepth.summary.txt` |  | 0 B | 3869c852 | 2026-05-23 |  |  |
+| `F353P001-100m_524015515.mosdepth.global.dist.txt` |  | 0 B | e3922d47 | 2026-05-23 |  |  |
+| `F353P001-100m_524015515.mosdepth.region.dist.txt` |  | 0 B | cc4503d8 | 2026-05-23 |  |  |
+| `F353P001-100m_524015515.mosdepth.summary.txt` |  | 0 B | 4eafc383 | 2026-05-23 |  |  |
+| `F353P002-100m_524026507.mosdepth.global.dist.txt` |  | 0 B | aa90748f | 2026-05-23 |  |  |
+| `F353P002-100m_524026507.mosdepth.region.dist.txt` |  | 0 B | d3c85c1c | 2026-05-23 |  |  |
+| `F353P002-100m_524026507.mosdepth.summary.txt` |  | 0 B | 32ed92d1 | 2026-05-23 |  |  |
+| `F364P001-100m_524015501.mosdepth.global.dist.txt` |  | 0 B | a0ff9db1 | 2026-05-23 |  |  |
+| `F364P001-100m_524015501.mosdepth.region.dist.txt` |  | 0 B | c4ca97cc | 2026-05-23 |  |  |
+| `F364P001-100m_524015501.mosdepth.summary.txt` |  | 0 B | 8359858c | 2026-05-23 |  |  |
+| `F364P002-100m_524026516.mosdepth.global.dist.txt` |  | 0 B | bdb66f9e | 2026-05-23 |  |  |
+| `F364P002-100m_524026516.mosdepth.region.dist.txt` |  | 0 B | 07c43138 | 2026-05-23 |  |  |
+| `F364P002-100m_524026516.mosdepth.summary.txt` |  | 0 B | 7482a6f3 | 2026-05-23 |  |  |
+| `F364P003-100m_524026510.mosdepth.global.dist.txt` |  | 0 B | 920e3f82 | 2026-05-23 |  |  |
+| `F364P003-100m_524026510.mosdepth.region.dist.txt` |  | 0 B | 2b62e11d | 2026-05-23 |  |  |
+| `F364P003-100m_524026510.mosdepth.summary.txt` |  | 0 B | f2b1e038 | 2026-05-23 |  |  |
+| `F364P004-100m_524015504.mosdepth.global.dist.txt` |  | 0 B | 119550cc | 2026-05-23 |  |  |
+| `F364P004-100m_524015504.mosdepth.region.dist.txt` |  | 0 B | 0b4ffd93 | 2026-05-23 |  |  |
+| `F364P004-100m_524015504.mosdepth.summary.txt` |  | 0 B | f64b5c1f | 2026-05-23 |  |  |
+| `F369P001-100m_524026514.mosdepth.global.dist.txt` |  | 0 B | 9915a42c | 2026-05-23 |  |  |
+| `F369P001-100m_524026514.mosdepth.region.dist.txt` |  | 0 B | fb536cd0 | 2026-05-23 |  |  |
+| `F369P001-100m_524026514.mosdepth.summary.txt` |  | 0 B | 6232920a | 2026-05-23 |  |  |
+| `F369P002-100m_524026508.mosdepth.global.dist.txt` |  | 0 B | 087abc69 | 2026-05-23 |  |  |
+| `F369P002-100m_524026508.mosdepth.region.dist.txt` |  | 0 B | 7ea26b56 | 2026-05-23 |  |  |
+| `F369P002-100m_524026508.mosdepth.summary.txt` |  | 0 B | e44536ca | 2026-05-23 |  |  |
+| `F369P003-100m_524015527.mosdepth.global.dist.txt` |  | 0 B | 23e18df0 | 2026-05-23 |  |  |
+| `F369P003-100m_524015527.mosdepth.region.dist.txt` |  | 0 B | c0314dc4 | 2026-05-23 |  |  |
+| `F369P003-100m_524015527.mosdepth.summary.txt` |  | 0 B | 7adbe868 | 2026-05-23 |  |  |
+| `F371P001-100m_524015538.mosdepth.global.dist.txt` |  | 0 B | 5f268ba6 | 2026-05-23 |  |  |
+| `F371P001-100m_524015538.mosdepth.region.dist.txt` |  | 0 B | 7b9a36f5 | 2026-05-23 |  |  |
+| `F371P001-100m_524015538.mosdepth.summary.txt` |  | 0 B | 115a10e6 | 2026-05-23 |  |  |
+| `F371P002-100m_524015506.mosdepth.global.dist.txt` |  | 0 B | 5196f23c | 2026-05-23 |  |  |
+| `F371P002-100m_524015506.mosdepth.region.dist.txt` |  | 0 B | 5b6136e2 | 2026-05-23 |  |  |
+| `F371P002-100m_524015506.mosdepth.summary.txt` |  | 0 B | 8638905d | 2026-05-23 |  |  |
+| `F371P003-100m_524015523.mosdepth.global.dist.txt` |  | 0 B | 1b3bcd8e | 2026-05-23 |  |  |
+| `F371P003-100m_524015523.mosdepth.region.dist.txt` |  | 0 B | 1ec5566c | 2026-05-23 |  |  |
+| `F371P003-100m_524015523.mosdepth.summary.txt` |  | 0 B | b07bb885 | 2026-05-23 |  |  |
+| `F371P004-100m_524026518.mosdepth.global.dist.txt` |  | 0 B | a1173f00 | 2026-05-23 |  |  |
+| `F371P004-100m_524026518.mosdepth.region.dist.txt` |  | 0 B | a939e880 | 2026-05-23 |  |  |
+| `F371P004-100m_524026518.mosdepth.summary.txt` |  | 0 B | 89e6e22f | 2026-05-23 |  |  |
+| `F371P005-100m_524015529.mosdepth.global.dist.txt` |  | 0 B | 5fd23aac | 2026-05-23 |  |  |
+| `F371P005-100m_524015529.mosdepth.region.dist.txt` |  | 0 B | 89d32c3f | 2026-05-23 |  |  |
+| `F371P005-100m_524015529.mosdepth.summary.txt` |  | 0 B | 749ff5b2 | 2026-05-23 |  |  |
+| `F371P006-100m_524015509.mosdepth.global.dist.txt` |  | 0 B | 61a3f47e | 2026-05-23 |  |  |
+| `F371P006-100m_524015509.mosdepth.region.dist.txt` |  | 0 B | 2d09c479 | 2026-05-23 |  |  |
+| `F371P006-100m_524015509.mosdepth.summary.txt` |  | 0 B | 4362995d | 2026-05-23 |  |  |
+| `F371P007-100m_524015553.mosdepth.global.dist.txt` |  | 0 B | 7afb0415 | 2026-05-23 |  |  |
+| `F371P007-100m_524015553.mosdepth.region.dist.txt` |  | 0 B | 90b78946 | 2026-05-23 |  |  |
+| `F371P007-100m_524015553.mosdepth.summary.txt` |  | 0 B | dec56a1f | 2026-05-23 |  |  |
+| `F371P008-100m_524015534.mosdepth.global.dist.txt` |  | 0 B | be8e2d10 | 2026-05-23 |  |  |
+| `F371P008-100m_524015534.mosdepth.region.dist.txt` |  | 0 B | b5913c4f | 2026-05-23 |  |  |
+| `F371P008-100m_524015534.mosdepth.summary.txt` |  | 0 B | f0963d6c | 2026-05-23 |  |  |
+| `F379P001-100m_524026504.mosdepth.global.dist.txt` |  | 0 B | 40e0ffdd | 2026-05-23 |  |  |
+| `F379P001-100m_524026504.mosdepth.region.dist.txt` |  | 0 B | 461309f4 | 2026-05-23 |  |  |
+| `F379P001-100m_524026504.mosdepth.summary.txt` |  | 0 B | 3f8ec24e | 2026-05-23 |  |  |
+| `F379P002-100m_538108633.mosdepth.global.dist.txt` |  | 0 B | a1407872 | 2026-05-23 |  |  |
+| `F379P002-100m_538108633.mosdepth.region.dist.txt` |  | 0 B | c1acfe18 | 2026-05-23 |  |  |
+| `F379P002-100m_538108633.mosdepth.summary.txt` |  | 0 B | 4cc8d566 | 2026-05-23 |  |  |
+| `F381P001-100m_538108576.mosdepth.global.dist.txt` |  | 0 B | 56dac801 | 2026-05-23 |  |  |
+| `F381P001-100m_538108576.mosdepth.region.dist.txt` |  | 0 B | 96550d7e | 2026-05-23 |  |  |
+| `F381P001-100m_538108576.mosdepth.summary.txt` |  | 0 B | d21fddb2 | 2026-05-23 |  |  |
+| `F383P002-100m_538108571.mosdepth.global.dist.txt` |  | 0 B | ba9db782 | 2026-05-23 |  |  |
+| `F383P002-100m_538108571.mosdepth.region.dist.txt` |  | 0 B | 0cc0b602 | 2026-05-23 |  |  |
+| `F383P002-100m_538108571.mosdepth.summary.txt` |  | 0 B | a499ab42 | 2026-05-23 |  |  |
+| `F385P001-100m_538108582.mosdepth.global.dist.txt` |  | 0 B | d9569fed | 2026-05-23 |  |  |
+| `F385P001-100m_538108582.mosdepth.region.dist.txt` |  | 0 B | 371e2fa5 | 2026-05-23 |  |  |
+| `F385P001-100m_538108582.mosdepth.summary.txt` |  | 0 B | 2fb0edba | 2026-05-23 |  |  |
+| `F385P002-100m_538108585.mosdepth.global.dist.txt` |  | 0 B | 20732000 | 2026-05-23 |  |  |
+| `F385P002-100m_538108585.mosdepth.region.dist.txt` |  | 0 B | fc69be97 | 2026-05-23 |  |  |
+| `F385P002-100m_538108585.mosdepth.summary.txt` |  | 0 B | e3850e69 | 2026-05-23 |  |  |
+| `F387P002-100m_538108584.mosdepth.global.dist.txt` |  | 0 B | 11fdfa9f | 2026-05-23 |  |  |
+| `F387P002-100m_538108584.mosdepth.region.dist.txt` |  | 0 B | 4db3c6de | 2026-05-23 |  |  |
+| `F387P002-100m_538108584.mosdepth.summary.txt` |  | 0 B | f138c1fb | 2026-05-23 |  |  |
+| `F387P003-100m_538108623.mosdepth.global.dist.txt` |  | 0 B | 12a3c979 | 2026-05-23 |  |  |
+| `F387P003-100m_538108623.mosdepth.region.dist.txt` |  | 0 B | 83ed6505 | 2026-05-23 |  |  |
+| `F387P003-100m_538108623.mosdepth.summary.txt` |  | 0 B | 6b8e6cbe | 2026-05-23 |  |  |
+| `F390P001-100m_538108617.mosdepth.global.dist.txt` |  | 0 B | 944b1043 | 2026-05-23 |  |  |
+| `F390P001-100m_538108617.mosdepth.region.dist.txt` |  | 0 B | ba2b5ac5 | 2026-05-23 |  |  |
+| `F390P001-100m_538108617.mosdepth.summary.txt` |  | 0 B | f093c0c2 | 2026-05-23 |  |  |
+| `F390P003-100m_538108597.mosdepth.global.dist.txt` |  | 0 B | 085177f9 | 2026-05-23 |  |  |
+| `F390P003-100m_538108597.mosdepth.region.dist.txt` |  | 0 B | 85eb6ff0 | 2026-05-23 |  |  |
+| `F390P003-100m_538108597.mosdepth.summary.txt` |  | 0 B | b959d1fa | 2026-05-23 |  |  |
+| `F392P001-100m_538108591.mosdepth.global.dist.txt` |  | 0 B | b44c4278 | 2026-05-23 |  |  |
+| `F392P001-100m_538108591.mosdepth.region.dist.txt` |  | 0 B | c5e9acd0 | 2026-05-23 |  |  |
+| `F392P001-100m_538108591.mosdepth.summary.txt` |  | 0 B | 7284405c | 2026-05-23 |  |  |
+| `F392P002-100m_538108615.mosdepth.global.dist.txt` |  | 0 B | 38d16adf | 2026-05-23 |  |  |
+| `F392P002-100m_538108615.mosdepth.region.dist.txt` |  | 0 B | defeeb8b | 2026-05-23 |  |  |
+| `F392P002-100m_538108615.mosdepth.summary.txt` |  | 0 B | 3302cba2 | 2026-05-23 |  |  |
+| `F392P003-100m_538108618.mosdepth.global.dist.txt` |  | 0 B | 2bd7bfd6 | 2026-05-23 |  |  |
+| `F392P003-100m_538108618.mosdepth.region.dist.txt` |  | 0 B | 5e9ab57a | 2026-05-23 |  |  |
+| `F392P003-100m_538108618.mosdepth.summary.txt` |  | 0 B | 8bed8e0d | 2026-05-23 |  |  |
+| `F393P002-100m_538108619.mosdepth.global.dist.txt` |  | 0 B | 00d8d133 | 2026-05-23 |  |  |
+| `F393P002-100m_538108619.mosdepth.region.dist.txt` |  | 0 B | 0e8aa86e | 2026-05-23 |  |  |
+| `F393P002-100m_538108619.mosdepth.summary.txt` |  | 0 B | 7fa4893c | 2026-05-23 |  |  |
+| `F393P004-100m_538108609.mosdepth.global.dist.txt` |  | 0 B | a0661730 | 2026-05-23 |  |  |
+| `F393P004-100m_538108609.mosdepth.region.dist.txt` |  | 0 B | 228bc735 | 2026-05-23 |  |  |
+| `F393P004-100m_538108609.mosdepth.summary.txt` |  | 0 B | ab08a11b | 2026-05-23 |  |  |
+| `F393P005-100m_538108601.mosdepth.global.dist.txt` |  | 0 B | 50ed143b | 2026-05-23 |  |  |
+| `F393P005-100m_538108601.mosdepth.region.dist.txt` |  | 0 B | 2f9b3683 | 2026-05-23 |  |  |
+| `F393P005-100m_538108601.mosdepth.summary.txt` |  | 0 B | 8513acfa | 2026-05-23 |  |  |
+| `F394P001-100m_538108590.mosdepth.global.dist.txt` |  | 0 B | 790d854b | 2026-05-23 |  |  |
+| `F394P001-100m_538108590.mosdepth.region.dist.txt` |  | 0 B | b9911d4b | 2026-05-23 |  |  |
+| `F394P001-100m_538108590.mosdepth.summary.txt` |  | 0 B | 315c3b73 | 2026-05-23 |  |  |
+| `F394P002-100m_538108586.mosdepth.global.dist.txt` |  | 0 B | e0b94024 | 2026-05-23 |  |  |
+| `F394P002-100m_538108586.mosdepth.region.dist.txt` |  | 0 B | 5b5152da | 2026-05-23 |  |  |
+| `F394P002-100m_538108586.mosdepth.summary.txt` |  | 0 B | 4da0e47a | 2026-05-23 |  |  |
+| `F396P001-100m_538108580.mosdepth.global.dist.txt` |  | 0 B | 14ba6eb9 | 2026-05-23 |  |  |
+| `F396P001-100m_538108580.mosdepth.region.dist.txt` |  | 0 B | fd27e283 | 2026-05-23 |  |  |
+| `F396P001-100m_538108580.mosdepth.summary.txt` |  | 0 B | 02d75885 | 2026-05-23 |  |  |
+| `F396P002-100m_538108575.mosdepth.global.dist.txt` |  | 0 B | ef2fc606 | 2026-05-23 |  |  |
+| `F396P002-100m_538108575.mosdepth.region.dist.txt` |  | 0 B | bdf05764 | 2026-05-23 |  |  |
+| `F396P002-100m_538108575.mosdepth.summary.txt` |  | 0 B | d25b2035 | 2026-05-23 |  |  |
+| `F399P001-100m_538108606.mosdepth.global.dist.txt` |  | 0 B | 15d1053b | 2026-05-23 |  |  |
+| `F399P001-100m_538108606.mosdepth.region.dist.txt` |  | 0 B | df1ef910 | 2026-05-23 |  |  |
+| `F399P001-100m_538108606.mosdepth.summary.txt` |  | 0 B | 43cb9b93 | 2026-05-23 |  |  |
+| `F399P002-100m_538108599.mosdepth.global.dist.txt` |  | 0 B | 4c50c145 | 2026-05-23 |  |  |
+| `F399P002-100m_538108599.mosdepth.region.dist.txt` |  | 0 B | 39a3603b | 2026-05-23 |  |  |
+| `F399P002-100m_538108599.mosdepth.summary.txt` |  | 0 B | c6d0a060 | 2026-05-23 |  |  |
+| `F401P001-100m_538108578.mosdepth.global.dist.txt` |  | 0 B | f4607c0f | 2026-05-23 |  |  |
+| `F401P001-100m_538108578.mosdepth.region.dist.txt` |  | 0 B | a57b6850 | 2026-05-23 |  |  |
+| `F401P001-100m_538108578.mosdepth.summary.txt` |  | 0 B | f53902a8 | 2026-05-23 |  |  |
+| `F402P001-100m_538108620.mosdepth.global.dist.txt` |  | 0 B | bec8469d | 2026-05-23 |  |  |
+| `F402P001-100m_538108620.mosdepth.region.dist.txt` |  | 0 B | eb014e1c | 2026-05-23 |  |  |
+| `F402P001-100m_538108620.mosdepth.summary.txt` |  | 0 B | e1d2e9c0 | 2026-05-23 |  |  |
+| `F407P002-100m_538108612.mosdepth.global.dist.txt` |  | 0 B | f42c5542 | 2026-05-23 |  |  |
+| `F407P002-100m_538108612.mosdepth.region.dist.txt` |  | 0 B | 4bceef42 | 2026-05-23 |  |  |
+| `F407P002-100m_538108612.mosdepth.summary.txt` |  | 0 B | ed7ac4aa | 2026-05-23 |  |  |
+| `F407P003-100m_538108613.mosdepth.global.dist.txt` |  | 0 B | 7081957f | 2026-05-23 |  |  |
+| `F407P003-100m_538108613.mosdepth.region.dist.txt` |  | 0 B | 26c86c69 | 2026-05-23 |  |  |
+| `F407P003-100m_538108613.mosdepth.summary.txt` |  | 0 B | 225ed0af | 2026-05-23 |  |  |
+| `F410P001-R1-100m_538108622.mosdepth.global.dist.txt` |  | 0 B | e9afb561 | 2026-05-23 |  |  |
+| `F410P001-R1-100m_538108622.mosdepth.region.dist.txt` |  | 0 B | 218af795 | 2026-05-23 |  |  |
+| `F410P001-R1-100m_538108622.mosdepth.summary.txt` |  | 0 B | f07c79c0 | 2026-05-23 |  |  |
+| `F410P002-R1-100m_538108596.mosdepth.global.dist.txt` |  | 0 B | 2551d101 | 2026-05-23 |  |  |
+| `F410P002-R1-100m_538108596.mosdepth.region.dist.txt` |  | 0 B | 55ecd56c | 2026-05-23 |  |  |
+| `F410P002-R1-100m_538108596.mosdepth.summary.txt` |  | 0 B | a7e387ed | 2026-05-23 |  |  |
+| `F410P003-R1-100m_538108603.mosdepth.global.dist.txt` |  | 0 B | ba9f6069 | 2026-05-23 |  |  |
+| `F410P003-R1-100m_538108603.mosdepth.region.dist.txt` |  | 0 B | 0533cc7d | 2026-05-23 |  |  |
+| `F410P003-R1-100m_538108603.mosdepth.summary.txt` |  | 0 B | 70a28225 | 2026-05-23 |  |  |
+| `F415P001-100m_538108593.mosdepth.global.dist.txt` |  | 0 B | e1ffd47b | 2026-05-23 |  |  |
+| `F415P001-100m_538108593.mosdepth.region.dist.txt` |  | 0 B | 64e71a48 | 2026-05-23 |  |  |
+| `F415P001-100m_538108593.mosdepth.summary.txt` |  | 0 B | 78ff11f0 | 2026-05-23 |  |  |
+| `F415P002-100m_538108574.mosdepth.global.dist.txt` |  | 0 B | 2f08eab6 | 2026-05-23 |  |  |
+| `F415P002-100m_538108574.mosdepth.region.dist.txt` |  | 0 B | d36e0f8f | 2026-05-23 |  |  |
+| `F415P002-100m_538108574.mosdepth.summary.txt` |  | 0 B | 8ab8f6fa | 2026-05-23 |  |  |
+| `F418P002-100m_538108632.mosdepth.global.dist.txt` |  | 0 B | 8cd81ecc | 2026-05-23 |  |  |
+| `F418P002-100m_538108632.mosdepth.region.dist.txt` |  | 0 B | 1d6dd398 | 2026-05-23 |  |  |
+| `F418P002-100m_538108632.mosdepth.summary.txt` |  | 0 B | 201e75b4 | 2026-05-23 |  |  |
+| `F418P003-100m_538108616.mosdepth.global.dist.txt` |  | 0 B | 34458cc5 | 2026-05-23 |  |  |
+| `F418P003-100m_538108616.mosdepth.region.dist.txt` |  | 0 B | 8a29b437 | 2026-05-23 |  |  |
+| `F418P003-100m_538108616.mosdepth.summary.txt` |  | 0 B | 706148e2 | 2026-05-23 |  |  |
+| `F420P002-100m_538108572.mosdepth.global.dist.txt` |  | 0 B | 14523e20 | 2026-05-23 |  |  |
+| `F420P002-100m_538108572.mosdepth.region.dist.txt` |  | 0 B | 161ea11f | 2026-05-23 |  |  |
+| `F420P002-100m_538108572.mosdepth.summary.txt` |  | 0 B | 9eddd4e7 | 2026-05-23 |  |  |
+| `F422P001-100m_538108605.mosdepth.global.dist.txt` |  | 0 B | 68e76143 | 2026-05-23 |  |  |
+| `F422P001-100m_538108605.mosdepth.region.dist.txt` |  | 0 B | 76c7c902 | 2026-05-23 |  |  |
+| `F422P001-100m_538108605.mosdepth.summary.txt` |  | 0 B | 15d015cd | 2026-05-23 |  |  |
+| `F422P003-100m_538108600.mosdepth.global.dist.txt` |  | 0 B | 1935f239 | 2026-05-23 |  |  |
+| `F422P003-100m_538108600.mosdepth.region.dist.txt` |  | 0 B | 27a542ab | 2026-05-23 |  |  |
+| `F422P003-100m_538108600.mosdepth.summary.txt` |  | 0 B | 4b0eea2e | 2026-05-23 |  |  |
+| `F429-P001-100m_548687143.mosdepth.global.dist.txt` |  | 0 B | 0f97975c | 2026-05-23 |  |  |
+| `F429-P001-100m_548687143.mosdepth.region.dist.txt` |  | 0 B | 0e1875c6 | 2026-05-23 |  |  |
+| `F429-P001-100m_548687143.mosdepth.summary.txt` |  | 0 B | 3b46632e | 2026-05-23 |  |  |
+| `F431-P002-100m_548687153.mosdepth.global.dist.txt` |  | 0 B | 0c4fd82a | 2026-05-23 |  |  |
+| `F431-P002-100m_548687153.mosdepth.region.dist.txt` |  | 0 B | b8bc8726 | 2026-05-23 |  |  |
+| `F431-P002-100m_548687153.mosdepth.summary.txt` |  | 0 B | 2a921520 | 2026-05-23 |  |  |
+| `F431-P003-100m_548687155.mosdepth.global.dist.txt` |  | 0 B | 6ebca14c | 2026-05-23 |  |  |
+| `F431-P003-100m_548687155.mosdepth.region.dist.txt` |  | 0 B | 93efa704 | 2026-05-23 |  |  |
+| `F431-P003-100m_548687155.mosdepth.summary.txt` |  | 0 B | b93fc29d | 2026-05-23 |  |  |
+| `F434-P001-100m_548687147.mosdepth.global.dist.txt` |  | 0 B | bcf4fcd4 | 2026-05-23 |  |  |
+| `F434-P001-100m_548687147.mosdepth.region.dist.txt` |  | 0 B | c26ed902 | 2026-05-23 |  |  |
+| `F434-P001-100m_548687147.mosdepth.summary.txt` |  | 0 B | f06a4edf | 2026-05-23 |  |  |
+| `F434-P002-100m_548687142.mosdepth.global.dist.txt` |  | 0 B | 4e071ff6 | 2026-05-23 |  |  |
+| `F434-P002-100m_548687142.mosdepth.region.dist.txt` |  | 0 B | 478afe0b | 2026-05-23 |  |  |
+| `F434-P002-100m_548687142.mosdepth.summary.txt` |  | 0 B | 25fd7ca6 | 2026-05-23 |  |  |
+| `F434-P003-100m_548687159.mosdepth.global.dist.txt` |  | 0 B | bd208bf6 | 2026-05-23 |  |  |
+| `F434-P003-100m_548687159.mosdepth.region.dist.txt` |  | 0 B | 321c9248 | 2026-05-23 |  |  |
+| `F434-P003-100m_548687159.mosdepth.summary.txt` |  | 0 B | 6184cb60 | 2026-05-23 |  |  |
+| `F435-P001-100m_548687141.mosdepth.global.dist.txt` |  | 0 B | 5f0757e0 | 2026-05-23 |  |  |
+| `F435-P001-100m_548687141.mosdepth.region.dist.txt` |  | 0 B | 8d208cc8 | 2026-05-23 |  |  |
+| `F435-P001-100m_548687141.mosdepth.summary.txt` |  | 0 B | 0338d4bf | 2026-05-23 |  |  |
+| `F435-P002-100m_548687146.mosdepth.global.dist.txt` |  | 0 B | 5d8b181f | 2026-05-23 |  |  |
+| `F435-P002-100m_548687146.mosdepth.region.dist.txt` |  | 0 B | f00b3b8f | 2026-05-23 |  |  |
+| `F435-P002-100m_548687146.mosdepth.summary.txt` |  | 0 B | 873e55d1 | 2026-05-23 |  |  |
+| `F435-P003-100m_548687149.mosdepth.global.dist.txt` |  | 0 B | f0958fe3 | 2026-05-23 |  |  |
+| `F435-P003-100m_548687149.mosdepth.region.dist.txt` |  | 0 B | dc20b317 | 2026-05-23 |  |  |
+| `F435-P003-100m_548687149.mosdepth.summary.txt` |  | 0 B | 5288ce81 | 2026-05-23 |  |  |
+| `F439-P001-100m_548687152.mosdepth.global.dist.txt` |  | 0 B | cf9e7778 | 2026-05-23 |  |  |
+| `F439-P001-100m_548687152.mosdepth.region.dist.txt` |  | 0 B | 811eef1e | 2026-05-23 |  |  |
+| `F439-P001-100m_548687152.mosdepth.summary.txt` |  | 0 B | 3db56f63 | 2026-05-23 |  |  |
+| `F439-P002-100m_548687148.mosdepth.global.dist.txt` |  | 0 B | f4cf30f1 | 2026-05-23 |  |  |
+| `F439-P002-100m_548687148.mosdepth.region.dist.txt` |  | 0 B | 98b9e2c8 | 2026-05-23 |  |  |
+| `F439-P002-100m_548687148.mosdepth.summary.txt` |  | 0 B | 551c1d59 | 2026-05-23 |  |  |
+| `F440-P002-100m_548687140.mosdepth.global.dist.txt` |  | 0 B | 5d9f46ac | 2026-05-23 |  |  |
+| `F440-P002-100m_548687140.mosdepth.region.dist.txt` |  | 0 B | e5919b34 | 2026-05-23 |  |  |
+| `F440-P002-100m_548687140.mosdepth.summary.txt` |  | 0 B | 649b98d6 | 2026-05-23 |  |  |
+| `F440-P003-100m_548687144.mosdepth.global.dist.txt` |  | 0 B | 2c2cdd31 | 2026-05-23 |  |  |
+| `F440-P003-100m_548687144.mosdepth.region.dist.txt` |  | 0 B | d325cc6a | 2026-05-23 |  |  |
+| `F440-P003-100m_548687144.mosdepth.summary.txt` |  | 0 B | 32cd461d | 2026-05-23 |  |  |
+| `F441-P001-100m_548687151.mosdepth.global.dist.txt` |  | 0 B | 46424112 | 2026-05-23 |  |  |
+| `F441-P001-100m_548687151.mosdepth.region.dist.txt` |  | 0 B | 5e75a33c | 2026-05-23 |  |  |
+| `F441-P001-100m_548687151.mosdepth.summary.txt` |  | 0 B | ead43455 | 2026-05-23 |  |  |
+| `F441-P002-100m_548687157.mosdepth.global.dist.txt` |  | 0 B | 4d61bde4 | 2026-05-23 |  |  |
+| `F441-P002-100m_548687157.mosdepth.region.dist.txt` |  | 0 B | 48aadf22 | 2026-05-23 |  |  |
+| `F441-P002-100m_548687157.mosdepth.summary.txt` |  | 0 B | b4d07b80 | 2026-05-23 |  |  |
+| `F450-P001-100m_548702165.mosdepth.global.dist.txt` |  | 0 B | 95d4ae29 | 2026-05-23 |  |  |
+| `F450-P001-100m_548702165.mosdepth.region.dist.txt` |  | 0 B | 541455f0 | 2026-05-23 |  |  |
+| `F450-P001-100m_548702165.mosdepth.summary.txt` |  | 0 B | 4770e574 | 2026-05-23 |  |  |
+| `F450-P002-100m_548702162.mosdepth.global.dist.txt` |  | 0 B | 7f344215 | 2026-05-23 |  |  |
+| `F450-P002-100m_548702162.mosdepth.region.dist.txt` |  | 0 B | 27ba1bee | 2026-05-23 |  |  |
+| `F450-P002-100m_548702162.mosdepth.summary.txt` |  | 0 B | 812d1d13 | 2026-05-23 |  |  |
+| `F450-P003-100m_548702169.mosdepth.global.dist.txt` |  | 0 B | 4bc036fb | 2026-05-23 |  |  |
+| `F450-P003-100m_548702169.mosdepth.region.dist.txt` |  | 0 B | 533b6bf1 | 2026-05-23 |  |  |
+| `F450-P003-100m_548702169.mosdepth.summary.txt` |  | 0 B | 87fe487d | 2026-05-23 |  |  |
+| `F456-P001-100m_548702170.mosdepth.global.dist.txt` |  | 0 B | be0534de | 2026-05-23 |  |  |
+| `F456-P001-100m_548702170.mosdepth.region.dist.txt` |  | 0 B | 8b21d49f | 2026-05-23 |  |  |
+| `F456-P001-100m_548702170.mosdepth.summary.txt` |  | 0 B | f3b68ec3 | 2026-05-23 |  |  |
+| `F456-P002-100m_548702157.mosdepth.global.dist.txt` |  | 0 B | 8664a952 | 2026-05-23 |  |  |
+| `F456-P002-100m_548702157.mosdepth.region.dist.txt` |  | 0 B | e990ae41 | 2026-05-23 |  |  |
+| `F456-P002-100m_548702157.mosdepth.summary.txt` |  | 0 B | bad2d004 | 2026-05-23 |  |  |
+| `F459-P001-100m_548702154.mosdepth.global.dist.txt` |  | 0 B | 38520b58 | 2026-05-23 |  |  |
+| `F459-P001-100m_548702154.mosdepth.region.dist.txt` |  | 0 B | 2bf108ee | 2026-05-23 |  |  |
+| `F459-P001-100m_548702154.mosdepth.summary.txt` |  | 0 B | d4725c95 | 2026-05-23 |  |  |
+| `F459-P002-100m_548702158.mosdepth.global.dist.txt` |  | 0 B | 939026f3 | 2026-05-23 |  |  |
+| `F459-P002-100m_548702158.mosdepth.region.dist.txt` |  | 0 B | be92c324 | 2026-05-23 |  |  |
+| `F459-P002-100m_548702158.mosdepth.summary.txt` |  | 0 B | ae731bab | 2026-05-23 |  |  |
+| `F459-P003-100m_548702163.mosdepth.global.dist.txt` |  | 0 B | 9920ed7f | 2026-05-23 |  |  |
+| `F459-P003-100m_548702163.mosdepth.region.dist.txt` |  | 0 B | 4e131400 | 2026-05-23 |  |  |
+| `F459-P003-100m_548702163.mosdepth.summary.txt` |  | 0 B | cefd04dc | 2026-05-23 |  |  |
+| `F471-P001-100m_548702173.mosdepth.global.dist.txt` |  | 0 B | b754d8b1 | 2026-05-23 |  |  |
+| `F471-P001-100m_548702173.mosdepth.region.dist.txt` |  | 0 B | 72961b97 | 2026-05-23 |  |  |
+| `F471-P001-100m_548702173.mosdepth.summary.txt` |  | 0 B | 27678f2d | 2026-05-23 |  |  |
+| `F471-P002-100m_548702167.mosdepth.global.dist.txt` |  | 0 B | bfe3bab4 | 2026-05-23 |  |  |
+| `F471-P002-100m_548702167.mosdepth.region.dist.txt` |  | 0 B | 87057a7c | 2026-05-23 |  |  |
+| `F471-P002-100m_548702167.mosdepth.summary.txt` |  | 0 B | 49ccea4d | 2026-05-23 |  |  |
+| `F471-P003-100m_548702156.mosdepth.global.dist.txt` |  | 0 B | afa4cdc9 | 2026-05-23 |  |  |
+| `F471-P003-100m_548702156.mosdepth.region.dist.txt` |  | 0 B | bdd051ab | 2026-05-23 |  |  |
+| `F471-P003-100m_548702156.mosdepth.summary.txt` |  | 0 B | a6a5727e | 2026-05-23 |  |  |
+| `F472-P001-100m_548702164.mosdepth.global.dist.txt` |  | 0 B | 20721919 | 2026-05-23 |  |  |
+| `F472-P001-100m_548702164.mosdepth.region.dist.txt` |  | 0 B | 1f9074be | 2026-05-23 |  |  |
+| `F472-P001-100m_548702164.mosdepth.summary.txt` |  | 0 B | 89904fbc | 2026-05-23 |  |  |
+| `F472-P002-100m_548702168.mosdepth.global.dist.txt` |  | 0 B | fc1715bf | 2026-05-23 |  |  |
+| `F472-P002-100m_548702168.mosdepth.region.dist.txt` |  | 0 B | 348f8af0 | 2026-05-23 |  |  |
+| `F472-P002-100m_548702168.mosdepth.summary.txt` |  | 0 B | c96ccbbe | 2026-05-23 |  |  |
+| `F472-P003-100m_548702172.mosdepth.global.dist.txt` |  | 0 B | 271a418b | 2026-05-23 |  |  |
+| `F472-P003-100m_548702172.mosdepth.region.dist.txt` |  | 0 B | 4974ec12 | 2026-05-23 |  |  |
+| `F472-P003-100m_548702172.mosdepth.summary.txt` |  | 0 B | 5281ba7e | 2026-05-23 |  |  |
+| `F475-P001-100m_548702171.mosdepth.global.dist.txt` |  | 0 B | fba63fdb | 2026-05-23 |  |  |
+| `F475-P001-100m_548702171.mosdepth.region.dist.txt` |  | 0 B | a4e7e900 | 2026-05-23 |  |  |
+| `F475-P001-100m_548702171.mosdepth.summary.txt` |  | 0 B | 88834c92 | 2026-05-23 |  |  |
+| `F475-P002-100m_548702160.mosdepth.global.dist.txt` |  | 0 B | d347c448 | 2026-05-23 |  |  |
+| `F475-P002-100m_548702160.mosdepth.region.dist.txt` |  | 0 B | 97651002 | 2026-05-23 |  |  |
+| `F475-P002-100m_548702160.mosdepth.summary.txt` |  | 0 B | 2be56065 | 2026-05-23 |  |  |
+| `F475-P003-100m_548702161.mosdepth.global.dist.txt` |  | 0 B | 6c9ae658 | 2026-05-23 |  |  |
+| `F475-P003-100m_548702161.mosdepth.region.dist.txt` |  | 0 B | ff814776 | 2026-05-23 |  |  |
+| `F475-P003-100m_548702161.mosdepth.summary.txt` |  | 0 B | 063e39f2 | 2026-05-23 |  |  |
+| `F476-P003-100m_548702166.mosdepth.global.dist.txt` |  | 0 B | 9da3fb06 | 2026-05-23 |  |  |
+| `F476-P003-100m_548702166.mosdepth.region.dist.txt` |  | 0 B | 6edf35d8 | 2026-05-23 |  |  |
+| `F476-P003-100m_548702166.mosdepth.summary.txt` |  | 0 B | da12a49f | 2026-05-23 |  |  |
+| `F476-P004-100m_548702155.mosdepth.global.dist.txt` |  | 0 B | 37c92018 | 2026-05-23 |  |  |
+| `F476-P004-100m_548702155.mosdepth.region.dist.txt` |  | 0 B | 4b89901f | 2026-05-23 |  |  |
+| `F476-P004-100m_548702155.mosdepth.summary.txt` |  | 0 B | 8e9b72c6 | 2026-05-23 |  |  |
+| `F481-P001-100m_548702159.mosdepth.global.dist.txt` |  | 0 B | 10538b70 | 2026-05-23 |  |  |
+| `F481-P001-100m_548702159.mosdepth.region.dist.txt` |  | 0 B | 478e2208 | 2026-05-23 |  |  |
+| `F481-P001-100m_548702159.mosdepth.summary.txt` |  | 0 B | e1626e7d | 2026-05-23 |  |  |
+| `F481-P002-100m_548706162.mosdepth.global.dist.txt` |  | 0 B | 7fe8d5ba | 2026-05-23 |  |  |
+| `F481-P002-100m_548706162.mosdepth.region.dist.txt` |  | 0 B | 666edf9c | 2026-05-23 |  |  |
+| `F481-P002-100m_548706162.mosdepth.summary.txt` |  | 0 B | 2f7c6da5 | 2026-05-23 |  |  |
+| `F482-P001-100m_548706164.mosdepth.global.dist.txt` |  | 0 B | a1ab7b4b | 2026-05-23 |  |  |
+| `F482-P001-100m_548706164.mosdepth.region.dist.txt` |  | 0 B | bd587c4d | 2026-05-23 |  |  |
+| `F482-P001-100m_548706164.mosdepth.summary.txt` |  | 0 B | eee135b3 | 2026-05-23 |  |  |
+| `F482-P002-100m_548706163.mosdepth.global.dist.txt` |  | 0 B | 051fc092 | 2026-05-23 |  |  |
+| `F482-P002-100m_548706163.mosdepth.region.dist.txt` |  | 0 B | 652695a7 | 2026-05-23 |  |  |
+| `F482-P002-100m_548706163.mosdepth.summary.txt` |  | 0 B | ed680809 | 2026-05-23 |  |  |
+| `F485-P001-100m_548706172.mosdepth.global.dist.txt` |  | 0 B | 2a76aa7f | 2026-05-23 |  |  |
+| `F485-P001-100m_548706172.mosdepth.region.dist.txt` |  | 0 B | f3f2ee04 | 2026-05-23 |  |  |
+| `F485-P001-100m_548706172.mosdepth.summary.txt` |  | 0 B | 6fdefadc | 2026-05-23 |  |  |
+| `F485-P002-100m_548706169.mosdepth.global.dist.txt` |  | 0 B | 7738766c | 2026-05-23 |  |  |
+| `F485-P002-100m_548706169.mosdepth.region.dist.txt` |  | 0 B | 02efefb5 | 2026-05-23 |  |  |
+| `F485-P002-100m_548706169.mosdepth.summary.txt` |  | 0 B | 7c9ea6e6 | 2026-05-23 |  |  |
+| `F486-P003-100m_548706158.mosdepth.global.dist.txt` |  | 0 B | 6aac6dc0 | 2026-05-23 |  |  |
+| `F486-P003-100m_548706158.mosdepth.region.dist.txt` |  | 0 B | dcad27a3 | 2026-05-23 |  |  |
+| `F486-P003-100m_548706158.mosdepth.summary.txt` |  | 0 B | 251184e0 | 2026-05-23 |  |  |
+| `F488-P001-100m_548706170.mosdepth.global.dist.txt` |  | 0 B | 7eb0fbd0 | 2026-05-23 |  |  |
+| `F488-P001-100m_548706170.mosdepth.region.dist.txt` |  | 0 B | b272f42e | 2026-05-23 |  |  |
+| `F488-P001-100m_548706170.mosdepth.summary.txt` |  | 0 B | 0b354c15 | 2026-05-23 |  |  |
+| `F488-P002-100m_548706161.mosdepth.global.dist.txt` |  | 0 B | 5cd5bbcd | 2026-05-23 |  |  |
+| `F488-P002-100m_548706161.mosdepth.region.dist.txt` |  | 0 B | 3ef5a1d6 | 2026-05-23 |  |  |
+| `F488-P002-100m_548706161.mosdepth.summary.txt` |  | 0 B | 4f257f55 | 2026-05-23 |  |  |
+| `F488-P003-100m_548706173.mosdepth.global.dist.txt` |  | 0 B | c27181cd | 2026-05-23 |  |  |
+| `F488-P003-100m_548706173.mosdepth.region.dist.txt` |  | 0 B | c63903e3 | 2026-05-23 |  |  |
+| `F488-P003-100m_548706173.mosdepth.summary.txt` |  | 0 B | 3e29d6c2 | 2026-05-23 |  |  |
 
 ### `config/`
 
@@ -39,6 +1728,8 @@ tags:
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
+| `coverage_37644.err` |  | 0 B | b20feb95 | 2026-05-23 |  |  |
+| `coverage_37644.out` |  | 0 B | 13c4a34e | 2026-05-23 |  |  |
 | `mini_bam_37086.err` |  | 0 B | d41d8cd9 | 2026-05-20 |  |  |
 | `mini_bam_37086.out` |  | 0 B | 9f2394f8 | 2026-05-20 |  |  |
 | `slurm-29519.out` |  | 0 B | 424180d6 | 2026-05-20 |  |  |
@@ -699,8 +2390,10 @@ tags:
 |------|-----------|------|------|------------|------|--------|
 | `create_drop_samplesheet.sh` |  | 0 B | 02843bec | 2026-05-19 |  |  |
 | `extract_minibam.sh` |  | 0 B | e5be8e24 | 2026-05-20 |  |  |
+| `make_bed.sh` |  | 0 B | 1f559da3 | 2026-05-23 |  |  |
 | `merge_metadata_with_drop.py` |  | 0 B | 173c7e07 | 2026-05-20 |  |  |
 | `merge_omim.py` |  | 0 B | 8cdb5a77 | 2026-05-20 |  |  |
+| `mosdepth.sh` |  | 0 B | 41766a77 | 2026-05-23 |  |  |
 | `outlier_report.py` |  | 0 B | 0e6a6b02 | 2026-05-21 |  |  |
 | `report.py` |  | 0 B | ca39a651 | 2026-05-21 |  |  |
 | `run_drop_tgen_rnaseq.sh` |  | 0 B | 96d31237 | 2026-05-19 |  |  |

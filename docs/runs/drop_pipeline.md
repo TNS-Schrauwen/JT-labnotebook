@@ -1,6 +1,6 @@
 ---
 title: "Pipeline Runs -- DROP_pipeline"
-date: 2026-05-22 02:00
+date: 2026-05-23 02:00
 tags:
   - runs
   - DROP_pipeline
@@ -8,7 +8,7 @@ tags:
 
 # Pipeline Runs: DROP_pipeline
 
-**Last Scanned:** 2026-05-22 02:00
+**Last Scanned:** 2026-05-23 02:00
 
 ---
 
@@ -22,6 +22,8 @@ tags:
 
 | File | Size | Modified |
 |------|------|----------|
+| `logs/slurm/coverage_37644.out` | 19.7 KB | 2026-05-23T01:59 |
+| `logs/slurm/coverage_37644.err` | 8.8 KB | 2026-05-23T00:55 |
 | `results/mini_bams/create_mini_bams.log` | 83.8 KB | 2026-05-20T01:44 |
 | `logs/slurm/mini_bam_37086.out` | 80.0 KB | 2026-05-20T01:44 |
 | `logs/slurm/mini_bam_37086.err` | 0 B | 2026-05-20T01:25 |
