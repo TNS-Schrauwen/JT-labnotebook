@@ -1,6 +1,6 @@
 ---
 title: "Pipeline Runs -- TGen_RNASeq"
-date: 2026-05-27 02:03
+date: 2026-05-28 02:03
 tags:
   - runs
   - TGen_RNASeq
@@ -8,7 +8,7 @@ tags:
 
 # Pipeline Runs: TGen_RNASeq
 
-**Last Scanned:** 2026-05-27 02:03
+**Last Scanned:** 2026-05-28 02:03
 
 ---
 
@@ -16,11 +16,41 @@ tags:
 
 | File | Size | Modified |
 |------|------|----------|
+| `logs/slurm/tgen_rnaseq_run_38482.log` | 265.7 KB | 2026-05-27T22:00 |
+| `results/multiqc/star_salmon/multiqc_report_data/multiqc.log` | 66.4 KB | 2026-05-27T21:57 |
+| `results/star_salmon/rustqc/rseqc/junction_annotation/log/F255P001-100m_524015558.junction_annotation.log` | 607 B | 2026-05-27T21:51 |
+| `results/star_salmon/rustqc/rseqc/junction_annotation/log/F335P002-100m_524026505.junction_annotation.log` | 604 B | 2026-05-27T21:45 |
+| `results/star_salmon/rustqc/rseqc/junction_annotation/log/F109P001-100m_515387894.junction_annotation.log` | 599 B | 2026-05-27T21:39 |
+| `results/star_salmon/deseq2_qc/R_sessionInfo.log` | 2.1 KB | 2026-05-27T21:11 |
+| `results/star_salmon/F109P001-100m_515387894/logs/salmon_quant.log` | 4.2 KB | 2026-05-27T21:05 |
+| `results/star_salmon/log/F109P001-100m_515387894.Log.progress.out` | 1.9 KB | 2026-05-27T21:02 |
+| `results/star_salmon/log/F109P001-100m_515387894.Log.out` | 21.8 KB | 2026-05-27T21:02 |
+| `results/star_salmon/log/F109P001-100m_515387894.Log.final.out` | 2.0 KB | 2026-05-27T21:02 |
+| `results/star_salmon/F335P002-100m_524026505/logs/salmon_quant.log` | 8.7 KB | 2026-05-27T20:56 |
+| `results/star_salmon/F255P001-100m_524015558/logs/salmon_quant.log` | 7.8 KB | 2026-05-27T20:53 |
+| `results/star_salmon/log/F255P001-100m_524015558.Log.out` | 21.8 KB | 2026-05-27T20:50 |
+| `results/star_salmon/log/F335P002-100m_524026505.Log.out` | 21.8 KB | 2026-05-27T20:50 |
+| `results/star_salmon/log/F335P002-100m_524026505.Log.progress.out` | 2.4 KB | 2026-05-27T20:50 |
+| `results/star_salmon/log/F335P002-100m_524026505.Log.final.out` | 2.0 KB | 2026-05-27T20:50 |
+| `results/star_salmon/log/F255P001-100m_524015558.Log.progress.out` | 2.3 KB | 2026-05-27T20:50 |
+| `results/star_salmon/log/F255P001-100m_524015558.Log.final.out` | 2.0 KB | 2026-05-27T20:50 |
+| `results/star_salmon/rustqc/rseqc/junction_annotation/log/F216P002-100m_515387922.junction_annotation.log` | 595 B | 2026-05-27T20:32 |
+| `results/star_salmon/rustqc/rseqc/junction_annotation/log/F396P002-100m_538108575.junction_annotation.log` | 584 B | 2026-05-27T20:23 |
+| `results/star_salmon/F216P002-100m_515387922/logs/salmon_quant.log` | 4.4 KB | 2026-05-27T20:14 |
+| `results/star_salmon/F396P002-100m_538108575/logs/salmon_quant.log` | 3.4 KB | 2026-05-27T20:11 |
+| `results/star_salmon/log/F216P002-100m_515387922.Log.out` | 21.8 KB | 2026-05-27T20:11 |
+| `results/star_salmon/log/F216P002-100m_515387922.Log.progress.out` | 801 B | 2026-05-27T20:11 |
+| `results/star_salmon/log/F216P002-100m_515387922.Log.final.out` | 2.0 KB | 2026-05-27T20:11 |
+| `results/star_salmon/log/F396P002-100m_538108575.Log.final.out` | 2.0 KB | 2026-05-27T19:45 |
+| `results/star_salmon/log/F396P002-100m_538108575.Log.progress.out` | 447 B | 2026-05-27T19:45 |
+| `results/star_salmon/log/F396P002-100m_538108575.Log.out` | 21.8 KB | 2026-05-27T19:45 |
+| `results/genome/index/salmon/pre_indexing.log` | 115 B | 2026-05-27T19:37 |
+| `results/genome/index/salmon/ref_indexing.log` | 12.9 KB | 2026-05-27T19:37 |
+| `results/genome/index/star/Log.out` | 24.9 KB | 2026-05-27T19:33 |
+| `logs/slurm/tgen_rnaseq_run_38482.err` | 87 B | 2026-05-27T19:05 |
 | `logs/slurm/tgen_rnaseq_run_20031.log` | 32.3 MB | 2026-05-07T00:31 |
-| `results/multiqc/star_salmon/multiqc_report_data/multiqc.log` | 253.9 KB | 2026-05-07T00:29 |
 | `results/star_salmon/rustqc/rseqc/junction_annotation/log/F353P001-100m_524015515.junction_annotation.log` | 607 B | 2026-05-07T00:07 |
 | `results/star_salmon/rustqc/rseqc/junction_annotation/log/F635P003-100m_535946411.junction_annotation.log` | 602 B | 2026-05-06T23:37 |
-| `results/star_salmon/deseq2_qc/R_sessionInfo.log` | 2.1 KB | 2026-05-06T23:28 |
 | `results/star_salmon/F353P001-100m_524015515/logs/salmon_quant.log` | 10.5 KB | 2026-05-06T23:13 |
 | `results/star_salmon/log/F353P001-100m_524015515.Log.progress.out` | 9.4 KB | 2026-05-06T23:07 |
 | `results/star_salmon/log/F353P001-100m_524015515.Log.final.out` | 2.0 KB | 2026-05-06T23:07 |
@@ -1850,33 +1880,5 @@ tags:
 | `logs/slurm/tgen_rnaseq_run_19544.log` | 502.5 KB | 2026-04-28T17:56 |
 | `logs/slurm/tgen_rnaseq_run_19544.err` | 0 B | 2026-04-28T16:19 |
 | `logs/slurm/tgen_rnaseq_run_12582.log` | 23.8 MB | 2026-04-28T11:59 |
-| `results/star_salmon/rustqc/rseqc/junction_annotation/log/F396P002-100m_538108575.junction_annotation.log` | 575 B | 2026-04-28T09:52 |
-| `results/star_salmon/F396P002-100m_538108575/logs/salmon_quant.log` | 2.3 KB | 2026-04-28T09:10 |
-| `results/star_salmon/log/F396P002-100m_538108575.Log.progress.out` | 565 B | 2026-04-28T08:49 |
-| `results/star_salmon/log/F396P002-100m_538108575.Log.out` | 21.7 KB | 2026-04-28T08:49 |
-| `results/star_salmon/log/F396P002-100m_538108575.Log.final.out` | 2.0 KB | 2026-04-28T08:49 |
-| `results/star_salmon/rustqc/rseqc/junction_annotation/log/F216P002-100m_515387922.junction_annotation.log` | 582 B | 2026-04-28T07:21 |
-| `results/star_salmon/rustqc/rseqc/junction_annotation/log/F335P002-100m_524026505.junction_annotation.log` | 590 B | 2026-04-28T05:03 |
-| `results/star_salmon/rustqc/rseqc/junction_annotation/log/F109P001-100m_515387894.junction_annotation.log` | 587 B | 2026-04-28T01:19 |
-| `results/star_salmon/F216P002-100m_515387922/logs/salmon_quant.log` | 2.8 KB | 2026-04-27T21:14 |
-| `results/star_salmon/rustqc/rseqc/junction_annotation/log/F255P001-100m_524015558.junction_annotation.log` | 594 B | 2026-04-27T20:11 |
-| `results/star_salmon/log/F216P002-100m_515387922.Log.progress.out` | 919 B | 2026-04-27T05:21 |
-| `results/star_salmon/log/F216P002-100m_515387922.Log.out` | 21.7 KB | 2026-04-27T05:21 |
-| `results/star_salmon/log/F216P002-100m_515387922.Log.final.out` | 2.0 KB | 2026-04-27T05:21 |
-| `results/star_salmon/F109P001-100m_515387894/logs/salmon_quant.log` | 2.9 KB | 2026-04-27T01:45 |
-| `results/star_salmon/F335P002-100m_524026505/logs/salmon_quant.log` | 2.9 KB | 2026-04-26T22:12 |
-| `results/star_salmon/log/F109P001-100m_515387894.Log.final.out` | 2.0 KB | 2026-04-26T20:18 |
-| `results/star_salmon/log/F109P001-100m_515387894.Log.out` | 21.7 KB | 2026-04-26T20:18 |
-| `results/star_salmon/log/F109P001-100m_515387894.Log.progress.out` | 2.5 KB | 2026-04-26T20:18 |
-| `results/star_salmon/log/F335P002-100m_524026505.Log.progress.out` | 2.7 KB | 2026-04-26T17:34 |
-| `results/star_salmon/log/F335P002-100m_524026505.Log.final.out` | 2.0 KB | 2026-04-26T17:34 |
-| `results/star_salmon/log/F335P002-100m_524026505.Log.out` | 21.7 KB | 2026-04-26T17:34 |
-| `results/star_salmon/F255P001-100m_524015558/logs/salmon_quant.log` | 2.9 KB | 2026-04-26T16:01 |
-| `results/star_salmon/log/F255P001-100m_524015558.Log.final.out` | 2.0 KB | 2026-04-25T23:56 |
-| `results/star_salmon/log/F255P001-100m_524015558.Log.progress.out` | 3.8 KB | 2026-04-25T23:56 |
-| `results/star_salmon/log/F255P001-100m_524015558.Log.out` | 21.7 KB | 2026-04-25T23:56 |
 | `logs/slurm/tgen_rnaseq_run_12582.err` | 0 B | 2026-04-25T16:29 |
-| `results/genome/index/salmon/pre_indexing.log` | 115 B | 2026-04-23T07:12 |
-| `results/genome/index/salmon/ref_indexing.log` | 4.1 KB | 2026-04-23T07:12 |
-| `results/genome/index/star/Log.out` | 26.6 KB | 2026-04-22T22:01 |
 

@@ -5,1198 +5,1198 @@
       "mtime": 1778278889.643424,
       "hash": "d42d7f43bc5b3bbce7a2440698002583",
       "first_seen": "2026-05-19T01:28:41.498574",
-      "last_seen": "2026-05-27T02:03:10.997516"
+      "last_seen": "2026-05-28T02:03:08.544808"
     },
     "test_data/truth_set.tsv": {
       "size": 108723,
       "mtime": 1778275768.7420032,
       "hash": "1e3eff41aa5fe5ee4c87dd1e38b39a66",
       "first_seen": "2026-05-19T01:28:41.504210",
-      "last_seen": "2026-05-27T02:03:10.997529"
+      "last_seen": "2026-05-28T02:03:08.544816"
     },
     "test_data/regions_reference.tsv": {
       "size": 2942265,
       "mtime": 1778275766.7660027,
       "hash": "9ce60ebbb6c6e638005a1ae025295062",
       "first_seen": "2026-05-19T01:28:41.523607",
-      "last_seen": "2026-05-27T02:03:10.997538"
+      "last_seen": "2026-05-28T02:03:08.544821"
     },
     "test_data/sample_manifest.tsv": {
       "size": 3324,
       "mtime": 1778275768.9520032,
       "hash": "53360845645a5327392a5bafb555c1e0",
       "first_seen": "2026-05-19T01:28:41.524085",
-      "last_seen": "2026-05-27T02:03:10.997546"
+      "last_seen": "2026-05-28T02:03:08.544826"
     },
     "test_data/output/outlier/SAMPLE_0091_outliers.tsv": {
       "size": 13006769,
       "mtime": 1778867521.8192139,
       "hash": "d4001da28057145602048e6e96b2b32c",
       "first_seen": "2026-05-19T01:28:41.911898",
-      "last_seen": "2026-05-27T02:03:10.997554"
+      "last_seen": "2026-05-28T02:03:08.544831"
     },
     "test_data/output/outlier/SAMPLE_0118_outliers.tsv": {
       "size": 12992687,
       "mtime": 1778869420.137173,
       "hash": "30ce8bd77a40a89c4e2d498097fd8129",
       "first_seen": "2026-05-19T01:28:41.994709",
-      "last_seen": "2026-05-27T02:03:10.997561"
+      "last_seen": "2026-05-28T02:03:08.544835"
     },
     "test_data/output/outlier/SAMPLE_0008_outliers.tsv": {
       "size": 13007671,
       "mtime": 1778861678.997127,
       "hash": "4da1c29f8401f44f2120f96b656389ce",
       "first_seen": "2026-05-19T01:28:42.077551",
-      "last_seen": "2026-05-27T02:03:10.997570"
+      "last_seen": "2026-05-28T02:03:08.544841"
     },
     "test_data/output/outlier/SAMPLE_0038_outliers.tsv": {
       "size": 12946023,
       "mtime": 1778863785.8584688,
       "hash": "611daef31440591d3c6fce8927885968",
       "first_seen": "2026-05-19T01:28:42.160170",
-      "last_seen": "2026-05-27T02:03:10.997578"
+      "last_seen": "2026-05-28T02:03:08.544846"
     },
     "test_data/output/outlier/SAMPLE_0051_outliers.tsv": {
       "size": 13020474,
       "mtime": 1778864708.1867926,
       "hash": "eaf6d1c9c60c97cb87f506e6b42b0b98",
       "first_seen": "2026-05-19T01:28:42.243243",
-      "last_seen": "2026-05-27T02:03:10.997586"
+      "last_seen": "2026-05-28T02:03:08.544851"
     },
     "test_data/output/outlier/SAMPLE_0002_outliers.tsv": {
       "size": 12978383,
       "mtime": 1778861258.3251934,
       "hash": "91b632e47f3d4c05bcae4e530c8d827c",
       "first_seen": "2026-05-19T01:28:42.325906",
-      "last_seen": "2026-05-27T02:03:10.997594"
+      "last_seen": "2026-05-28T02:03:08.544855"
     },
     "test_data/output/outlier/SAMPLE_0010_outliers.tsv": {
       "size": 12963808,
       "mtime": 1778861818.152105,
       "hash": "a50793923f04b70846494a4eb16ada36",
       "first_seen": "2026-05-19T01:28:42.408477",
-      "last_seen": "2026-05-27T02:03:10.997601"
+      "last_seen": "2026-05-28T02:03:08.544860"
     },
     "test_data/output/outlier/SAMPLE_0062_outliers.tsv": {
       "size": 12907828,
       "mtime": 1778865476.3329961,
       "hash": "ba22d654d07b79d0c443e9da97939f44",
       "first_seen": "2026-05-19T01:28:42.490700",
-      "last_seen": "2026-05-27T02:03:10.997610"
+      "last_seen": "2026-05-28T02:03:08.544866"
     },
     "test_data/output/outlier/SAMPLE_0085_outliers.tsv": {
       "size": 12946219,
       "mtime": 1778867099.9811769,
       "hash": "2d68f0c580bfe0ac9e992faca1bca63a",
       "first_seen": "2026-05-19T01:28:42.573187",
-      "last_seen": "2026-05-27T02:03:10.997618"
+      "last_seen": "2026-05-28T02:03:08.544871"
     },
     "test_data/output/outlier/SAMPLE_0054_outliers.tsv": {
       "size": 12960737,
       "mtime": 1778864917.9168508,
       "hash": "36c1acd048b40067d6f2f11dd5f91fdc",
       "first_seen": "2026-05-19T01:28:42.655874",
-      "last_seen": "2026-05-27T02:03:10.997625"
+      "last_seen": "2026-05-28T02:03:08.544876"
     },
     "test_data/output/outlier/SAMPLE_0131_outliers.tsv": {
       "size": 12988888,
       "mtime": 1778870342.0068438,
       "hash": "f142bdcc921345d06c6775ddd9fdfa53",
       "first_seen": "2026-05-19T01:28:42.738696",
-      "last_seen": "2026-05-27T02:03:10.997632"
+      "last_seen": "2026-05-28T02:03:08.544880"
     },
     "test_data/output/outlier/SAMPLE_0080_outliers.tsv": {
       "size": 12956633,
       "mtime": 1778866751.9381795,
       "hash": "66eecfd144c4911cfb5e2ce9676f5bb5",
       "first_seen": "2026-05-19T01:28:42.821356",
-      "last_seen": "2026-05-27T02:03:10.997648"
+      "last_seen": "2026-05-28T02:03:08.544885"
     },
     "test_data/output/outlier/SAMPLE_0134_outliers.tsv": {
       "size": 12980326,
       "mtime": 1778870553.7201395,
       "hash": "be0c94480cac3304fada4e6072f64a2c",
       "first_seen": "2026-05-19T01:28:42.904125",
-      "last_seen": "2026-05-27T02:03:10.997657"
+      "last_seen": "2026-05-28T02:03:08.544890"
     },
     "test_data/output/outlier/SAMPLE_0109_outliers.tsv": {
       "size": 13011826,
       "mtime": 1778868785.4457536,
       "hash": "94a8c804ae9998aeb997aee669a3cefa",
       "first_seen": "2026-05-19T01:28:42.987194",
-      "last_seen": "2026-05-27T02:03:10.997665"
+      "last_seen": "2026-05-28T02:03:08.544894"
     },
     "test_data/output/outlier/SAMPLE_0117_outliers.tsv": {
       "size": 12957913,
       "mtime": 1778869350.682127,
       "hash": "8355a181296121a7c4866dc76daff950",
       "first_seen": "2026-05-19T01:28:43.069964",
-      "last_seen": "2026-05-27T02:03:10.997673"
+      "last_seen": "2026-05-28T02:03:08.544899"
     },
     "test_data/output/outlier/SAMPLE_0111_outliers.tsv": {
       "size": 12954159,
       "mtime": 1778868928.1228478,
       "hash": "3b0b1e588fe865585b9c66270c8cc032",
       "first_seen": "2026-05-19T01:28:43.152794",
-      "last_seen": "2026-05-27T02:03:10.997680"
+      "last_seen": "2026-05-28T02:03:08.544903"
     },
     "test_data/output/outlier/SAMPLE_0046_outliers.tsv": {
       "size": 12884590,
       "mtime": 1778864347.8176928,
       "hash": "839269dd3a7e04851b486612fc5b1ccd",
       "first_seen": "2026-05-19T01:28:43.235510",
-      "last_seen": "2026-05-27T02:03:10.997687"
+      "last_seen": "2026-05-28T02:03:08.544908"
     },
     "test_data/output/outlier/SAMPLE_0070_outliers.tsv": {
       "size": 12936778,
       "mtime": 1778866042.723114,
       "hash": "e102e95a2cf4190af19ef7a3ca45b34f",
       "first_seen": "2026-05-19T01:28:43.318183",
-      "last_seen": "2026-05-27T02:03:10.997695"
+      "last_seen": "2026-05-28T02:03:08.544913"
     },
     "test_data/output/outlier/SAMPLE_0040_outliers.tsv": {
       "size": 12954733,
       "mtime": 1778863926.0856133,
       "hash": "256d1e42123c9e6093e36728d42bd218",
       "first_seen": "2026-05-19T01:28:43.400901",
-      "last_seen": "2026-05-27T02:03:10.997705"
+      "last_seen": "2026-05-28T02:03:08.544919"
     },
     "test_data/output/outlier/SAMPLE_0140_outliers.tsv": {
       "size": 12944850,
       "mtime": 1778870973.4825382,
       "hash": "1e98dcd9fb4b39d83549d1dbcd137cc9",
       "first_seen": "2026-05-19T01:28:43.483616",
-      "last_seen": "2026-05-27T02:03:10.997712"
+      "last_seen": "2026-05-28T02:03:08.544923"
     },
     "test_data/output/outlier/SAMPLE_0114_outliers.tsv": {
       "size": 12955743,
       "mtime": 1778869138.765987,
       "hash": "bb863fe08c28ad8c6004c57a1a6c9069",
       "first_seen": "2026-05-19T01:28:43.566266",
-      "last_seen": "2026-05-27T02:03:10.997719"
+      "last_seen": "2026-05-28T02:03:08.544928"
     },
     "test_data/output/outlier/SAMPLE_0068_outliers.tsv": {
       "size": 12939362,
       "mtime": 1778865902.8690848,
       "hash": "bbe651a701b90b86197a2595d538cc63",
       "first_seen": "2026-05-19T01:28:43.648807",
-      "last_seen": "2026-05-27T02:03:10.997726"
+      "last_seen": "2026-05-28T02:03:08.544932"
     },
     "test_data/output/outlier/SAMPLE_0101_outliers.tsv": {
       "size": 12996704,
       "mtime": 1778868228.9284515,
       "hash": "b998c809ea2f4d38c1a37706d26d9b74",
       "first_seen": "2026-05-19T01:28:43.731682",
-      "last_seen": "2026-05-27T02:03:10.997734"
+      "last_seen": "2026-05-28T02:03:08.544937"
     },
     "test_data/output/outlier/SAMPLE_0020_outliers.tsv": {
       "size": 12904353,
       "mtime": 1778862517.191011,
       "hash": "59cd4f05452c9e144c3b304651f0db65",
       "first_seen": "2026-05-19T01:28:43.813974",
-      "last_seen": "2026-05-27T02:03:10.997742"
+      "last_seen": "2026-05-28T02:03:08.544942"
     },
     "test_data/output/outlier/SAMPLE_0088_outliers.tsv": {
       "size": 13005937,
       "mtime": 1778867308.4351752,
       "hash": "7075eff5f2698d2e5aeb9b117d1b5da3",
       "first_seen": "2026-05-19T01:28:43.896871",
-      "last_seen": "2026-05-27T02:03:10.997749"
+      "last_seen": "2026-05-28T02:03:08.544947"
     },
     "test_data/output/outlier/SAMPLE_0021_outliers.tsv": {
       "size": 12933037,
       "mtime": 1778862586.689004,
       "hash": "07912073b26b5f183c27f9107c18c972",
       "first_seen": "2026-05-19T01:28:43.979515",
-      "last_seen": "2026-05-27T02:03:10.997757"
+      "last_seen": "2026-05-28T02:03:08.544951"
     },
     "test_data/output/outlier/SAMPLE_0050_outliers.tsv": {
       "size": 12995113,
       "mtime": 1778864634.9887724,
       "hash": "f0140ce29fa713102968baae6fcd5fb0",
       "first_seen": "2026-05-19T01:28:44.062331",
-      "last_seen": "2026-05-27T02:03:10.997765"
+      "last_seen": "2026-05-28T02:03:08.544956"
     },
     "test_data/output/outlier/SAMPLE_0129_outliers.tsv": {
       "size": 12936432,
       "mtime": 1778870196.901738,
       "hash": "5059396828825a540a614eb220b08cea",
       "first_seen": "2026-05-19T01:28:44.144941",
-      "last_seen": "2026-05-27T02:03:10.997772"
+      "last_seen": "2026-05-28T02:03:08.544960"
     },
     "test_data/output/outlier/SAMPLE_0055_outliers.tsv": {
       "size": 13020959,
       "mtime": 1778864987.50587,
       "hash": "cc4d449cdc9926f6177341c5c2c8b603",
       "first_seen": "2026-05-19T01:28:44.228148",
-      "last_seen": "2026-05-27T02:03:10.997779"
+      "last_seen": "2026-05-28T02:03:08.544965"
     },
     "test_data/output/outlier/SAMPLE_0127_outliers.tsv": {
       "size": 13000898,
       "mtime": 1778870050.833631,
       "hash": "aa6e381e17d97713d18176e1b298509d",
       "first_seen": "2026-05-19T01:28:44.311101",
-      "last_seen": "2026-05-27T02:03:10.997786"
+      "last_seen": "2026-05-28T02:03:08.544970"
     },
     "test_data/output/outlier/SAMPLE_0128_outliers.tsv": {
       "size": 13013946,
       "mtime": 1778870123.8136845,
       "hash": "dbc948de4845839d8209d04a1260954d",
       "first_seen": "2026-05-19T01:28:44.394189",
-      "last_seen": "2026-05-27T02:03:10.997793"
+      "last_seen": "2026-05-28T02:03:08.544974"
     },
     "test_data/output/outlier/SAMPLE_0083_outliers.tsv": {
       "size": 12904312,
       "mtime": 1778866960.3891778,
       "hash": "0c4765f6a80a668308f057ad8f89877b",
       "first_seen": "2026-05-19T01:28:44.476494",
-      "last_seen": "2026-05-27T02:03:10.997800"
+      "last_seen": "2026-05-28T02:03:08.544979"
     },
     "test_data/output/outlier/SAMPLE_0115_outliers.tsv": {
       "size": 12965024,
       "mtime": 1778869211.6930351,
       "hash": "0ef61a1a7fc608c61e3deffa43641bd2",
       "first_seen": "2026-05-19T01:28:44.559450",
-      "last_seen": "2026-05-27T02:03:10.997808"
+      "last_seen": "2026-05-28T02:03:08.544983"
     },
     "test_data/output/outlier/SAMPLE_0077_outliers.tsv": {
       "size": 12983774,
       "mtime": 1778866538.0121813,
       "hash": "64ad028625d1cda0e4877480b799a9d0",
       "first_seen": "2026-05-19T01:28:44.642213",
-      "last_seen": "2026-05-27T02:03:10.997815"
+      "last_seen": "2026-05-28T02:03:08.544988"
     },
     "test_data/output/outlier/SAMPLE_0108_outliers.tsv": {
       "size": 12934198,
       "mtime": 1778868715.9247077,
       "hash": "6a125880d2f937d2b031845dfadb3b18",
       "first_seen": "2026-05-19T01:28:44.724659",
-      "last_seen": "2026-05-27T02:03:10.997822"
+      "last_seen": "2026-05-28T02:03:08.544992"
     },
     "test_data/output/outlier/SAMPLE_0144_outliers.tsv": {
       "size": 12932253,
       "mtime": 1778871253.3330498,
       "hash": "ed9c3bcf43667882c71c4d8e15620265",
       "first_seen": "2026-05-19T01:28:44.806932",
-      "last_seen": "2026-05-27T02:03:10.997830"
+      "last_seen": "2026-05-28T02:03:08.544997"
     },
     "test_data/output/outlier/SAMPLE_0016_outliers.tsv": {
       "size": 12976248,
       "mtime": 1778862237.7070396,
       "hash": "c9f709315f6986da653f6f86e9d298ba",
       "first_seen": "2026-05-19T01:28:44.889583",
-      "last_seen": "2026-05-27T02:03:10.997837"
+      "last_seen": "2026-05-28T02:03:08.545001"
     },
     "test_data/output/outlier/SAMPLE_0136_outliers.tsv": {
       "size": 12947588,
       "mtime": 1778870692.3356013,
       "hash": "6a819cb74ddd29baad1f92f95320192e",
       "first_seen": "2026-05-19T01:28:44.971898",
-      "last_seen": "2026-05-27T02:03:10.997844"
+      "last_seen": "2026-05-28T02:03:08.545006"
     },
     "test_data/output/outlier/SAMPLE_0119_outliers.tsv": {
       "size": 12977272,
       "mtime": 1778869489.7742212,
       "hash": "dc1e8a911a2533ae7d27e72ab65e28d5",
       "first_seen": "2026-05-19T01:28:45.054452",
-      "last_seen": "2026-05-27T02:03:10.997851"
+      "last_seen": "2026-05-28T02:03:08.545010"
     },
     "test_data/output/outlier/SAMPLE_0011_outliers.tsv": {
       "size": 12957296,
       "mtime": 1778861887.6960943,
       "hash": "303b2b745954812ee5e5d9641135aef8",
       "first_seen": "2026-05-19T01:28:45.136833",
-      "last_seen": "2026-05-27T02:03:10.997862"
+      "last_seen": "2026-05-28T02:03:08.545016"
     },
     "test_data/output/outlier/SAMPLE_0059_outliers.tsv": {
       "size": 12990850,
       "mtime": 1778865265.435947,
       "hash": "9eec6e6d59e68f5645a77a2fdbd36bc4",
       "first_seen": "2026-05-19T01:28:45.219439",
-      "last_seen": "2026-05-27T02:03:10.997870"
+      "last_seen": "2026-05-28T02:03:08.545021"
     },
     "test_data/output/outlier/SAMPLE_0066_outliers.tsv": {
       "size": 12998869,
       "mtime": 1778865760.7180552,
       "hash": "2e8fad1f96cfe5677f4e1a954d91a694",
       "first_seen": "2026-05-19T01:28:45.302193",
-      "last_seen": "2026-05-27T02:03:10.997877"
+      "last_seen": "2026-05-28T02:03:08.545025"
     },
     "test_data/output/outlier/SAMPLE_0097_outliers.tsv": {
       "size": 13011614,
       "mtime": 1778867946.0803564,
       "hash": "3e561a75a131cc83cbc2dc194dbaf86a",
       "first_seen": "2026-05-19T01:28:45.384940",
-      "last_seen": "2026-05-27T02:03:10.997885"
+      "last_seen": "2026-05-28T02:03:08.545029"
     },
     "test_data/output/outlier/SAMPLE_0037_outliers.tsv": {
       "size": 12993065,
       "mtime": 1778863709.9343903,
       "hash": "deff312bdfb2b585e19e6d60730ef24f",
       "first_seen": "2026-05-19T01:28:45.467780",
-      "last_seen": "2026-05-27T02:03:10.997892"
+      "last_seen": "2026-05-28T02:03:08.545034"
     },
     "test_data/output/outlier/SAMPLE_0074_outliers.tsv": {
       "size": 12940747,
       "mtime": 1778866328.0331733,
       "hash": "6bff57510b512614040e7c39ee23f484",
       "first_seen": "2026-05-19T01:28:45.550119",
-      "last_seen": "2026-05-27T02:03:10.997899"
+      "last_seen": "2026-05-28T02:03:08.545038"
     },
     "test_data/output/outlier/SAMPLE_0004_outliers.tsv": {
       "size": 12995539,
       "mtime": 1778861398.7451713,
       "hash": "9acf95aa09b3fd2732176df7c65e8c46",
       "first_seen": "2026-05-19T01:28:45.632823",
-      "last_seen": "2026-05-27T02:03:10.997906"
+      "last_seen": "2026-05-28T02:03:08.545043"
     },
     "test_data/output/outlier/SAMPLE_0143_outliers.tsv": {
       "size": 12932071,
       "mtime": 1778871184.2080166,
       "hash": "2cff8e8847d286c6097a0b45f517d4ba",
       "first_seen": "2026-05-19T01:28:45.715131",
-      "last_seen": "2026-05-27T02:03:10.997914"
+      "last_seen": "2026-05-28T02:03:08.545047"
     },
     "test_data/output/outlier/SAMPLE_0073_outliers.tsv": {
       "size": 12944484,
       "mtime": 1778866256.0541582,
       "hash": "5024140223c19a4b582f0e740329959e",
       "first_seen": "2026-05-19T01:28:45.797615",
-      "last_seen": "2026-05-27T02:03:10.997921"
+      "last_seen": "2026-05-28T02:03:08.545051"
     },
     "test_data/output/outlier/SAMPLE_0071_outliers.tsv": {
       "size": 12951431,
       "mtime": 1778866112.4721284,
       "hash": "0e8c15c55f02dcafd8196118aebfdbff",
       "first_seen": "2026-05-19T01:28:45.880089",
-      "last_seen": "2026-05-27T02:03:10.997928"
+      "last_seen": "2026-05-28T02:03:08.545056"
     },
     "test_data/output/outlier/SAMPLE_0142_outliers.tsv": {
       "size": 12905545,
       "mtime": 1778871115.0459833,
       "hash": "408e52a6df6cf28f85970f453212dd6b",
       "first_seen": "2026-05-19T01:28:45.962290",
-      "last_seen": "2026-05-27T02:03:10.997936"
+      "last_seen": "2026-05-28T02:03:08.545060"
     },
     "test_data/output/outlier/SAMPLE_0064_outliers.tsv": {
       "size": 13024540,
       "mtime": 1778865620.185026,
       "hash": "4f0f67c681c6d1c4aa4df0af246429f3",
       "first_seen": "2026-05-19T01:28:46.045337",
-      "last_seen": "2026-05-27T02:03:10.997943"
+      "last_seen": "2026-05-28T02:03:08.545064"
     },
     "test_data/output/outlier/SAMPLE_0095_outliers.tsv": {
       "size": 12990648,
       "mtime": 1778867805.4303093,
       "hash": "7eaa701dbbfaa0bc883becd2a95cd8c3",
       "first_seen": "2026-05-19T01:28:46.128311",
-      "last_seen": "2026-05-27T02:03:10.997950"
+      "last_seen": "2026-05-28T02:03:08.545069"
     },
     "test_data/output/outlier/SAMPLE_0017_outliers.tsv": {
       "size": 12986969,
       "mtime": 1778862307.3540325,
       "hash": "d34f419844cd5122254102d968ae6656",
       "first_seen": "2026-05-19T01:28:46.211136",
-      "last_seen": "2026-05-27T02:03:10.997957"
+      "last_seen": "2026-05-28T02:03:08.545073"
     },
     "test_data/output/outlier/SAMPLE_0075_outliers.tsv": {
       "size": 12930273,
       "mtime": 1778866397.4861822,
       "hash": "1e31e6b65b8b80ff2c282dd0cefc7d05",
       "first_seen": "2026-05-19T01:28:46.293413",
-      "last_seen": "2026-05-27T02:03:10.997965"
+      "last_seen": "2026-05-28T02:03:08.545077"
     },
     "test_data/output/outlier/SAMPLE_0099_outliers.tsv": {
       "size": 12963681,
       "mtime": 1778868085.9914036,
       "hash": "ddc3d9ea81e9e1d18dd1cf16a2f5adf6",
       "first_seen": "2026-05-19T01:28:46.376107",
-      "last_seen": "2026-05-27T02:03:10.997973"
+      "last_seen": "2026-05-28T02:03:08.545081"
     },
     "test_data/output/outlier/SAMPLE_0086_outliers.tsv": {
       "size": 12930025,
       "mtime": 1778867169.2531762,
       "hash": "5a5f745308c82e84cba48b0ad919baa7",
       "first_seen": "2026-05-19T01:28:46.458663",
-      "last_seen": "2026-05-27T02:03:10.997981"
+      "last_seen": "2026-05-28T02:03:08.545085"
     },
     "test_data/output/outlier/SAMPLE_0001_outliers.tsv": {
       "size": 12996005,
       "mtime": 1778861188.4552047,
       "hash": "ece0d54f456bd037da08f4c6648dc346",
       "first_seen": "2026-05-19T01:28:46.541657",
-      "last_seen": "2026-05-27T02:03:10.997988"
+      "last_seen": "2026-05-28T02:03:08.545090"
     },
     "test_data/output/outlier/SAMPLE_0049_outliers.tsv": {
       "size": 12978061,
       "mtime": 1778864564.3297527,
       "hash": "b6589d99ccaeec81f9f3a16ba098e716",
       "first_seen": "2026-05-19T01:28:46.624596",
-      "last_seen": "2026-05-27T02:03:10.997995"
+      "last_seen": "2026-05-28T02:03:08.545094"
     },
     "test_data/output/outlier/SAMPLE_0147_outliers.tsv": {
       "size": 12996356,
       "mtime": 1778871460.9821491,
       "hash": "f735bb8cc855d419e202306246df3f03",
       "first_seen": "2026-05-19T01:28:46.707347",
-      "last_seen": "2026-05-27T02:03:10.998002"
+      "last_seen": "2026-05-28T02:03:08.545099"
     },
     "test_data/output/outlier/SAMPLE_0148_outliers.tsv": {
       "size": 12998132,
       "mtime": 1778871533.3261883,
       "hash": "8243d3a58f44d2ad13a35a722f45e5f5",
       "first_seen": "2026-05-19T01:28:46.790163",
-      "last_seen": "2026-05-27T02:03:10.998009"
+      "last_seen": "2026-05-28T02:03:08.545103"
     },
     "test_data/output/outlier/SAMPLE_0027_outliers.tsv": {
       "size": 13007911,
       "mtime": 1778863005.1429608,
       "hash": "d3fd778b8f3f790f8f0d24d7206832e1",
       "first_seen": "2026-05-19T01:28:46.873062",
-      "last_seen": "2026-05-27T02:03:10.998016"
+      "last_seen": "2026-05-28T02:03:08.545107"
     },
     "test_data/output/outlier/SAMPLE_0137_outliers.tsv": {
       "size": 12954715,
       "mtime": 1778870762.5168352,
       "hash": "afec8c1d3e89a57747cfadf06091eab9",
       "first_seen": "2026-05-19T01:28:46.955635",
-      "last_seen": "2026-05-27T02:03:10.998023"
+      "last_seen": "2026-05-28T02:03:08.545112"
     },
     "test_data/output/outlier/SAMPLE_0098_outliers.tsv": {
       "size": 12947382,
       "mtime": 1778868016.52638,
       "hash": "e4abadc1b2f814440fe7700b79ddf32d",
       "first_seen": "2026-05-19T01:28:47.038041",
-      "last_seen": "2026-05-27T02:03:10.998031"
+      "last_seen": "2026-05-28T02:03:08.545116"
     },
     "test_data/output/outlier/SAMPLE_0093_outliers.tsv": {
       "size": 12957878,
       "mtime": 1778867665.165262,
       "hash": "5d7e757379538f59c9d883ad236c7283",
       "first_seen": "2026-05-19T01:28:47.120666",
-      "last_seen": "2026-05-27T02:03:10.998038"
+      "last_seen": "2026-05-28T02:03:08.545120"
     },
     "test_data/output/outlier/SAMPLE_0026_outliers.tsv": {
       "size": 12976328,
       "mtime": 1778862935.681968,
       "hash": "3fe8a1c6f56306bbacbeb085149d1735",
       "first_seen": "2026-05-19T01:28:47.203293",
-      "last_seen": "2026-05-27T02:03:10.998045"
+      "last_seen": "2026-05-28T02:03:08.545125"
     },
     "test_data/output/outlier/SAMPLE_0121_outliers.tsv": {
       "size": 12955778,
       "mtime": 1778869628.8013227,
       "hash": "9a787356b53faa7e7fb9407468b40b7e",
       "first_seen": "2026-05-19T01:28:47.286074",
-      "last_seen": "2026-05-27T02:03:10.998052"
+      "last_seen": "2026-05-28T02:03:08.545129"
     },
     "test_data/output/outlier/SAMPLE_0107_outliers.tsv": {
       "size": 12940513,
       "mtime": 1778868646.5266619,
       "hash": "889622d5482b0c45e6ee6956170ca092",
       "first_seen": "2026-05-19T01:28:47.368512",
-      "last_seen": "2026-05-27T02:03:10.998059"
+      "last_seen": "2026-05-28T02:03:08.545134"
     },
     "test_data/output/outlier/SAMPLE_0132_outliers.tsv": {
       "size": 12962576,
       "mtime": 1778870414.484897,
       "hash": "84ed427ebde80dea0ee8eff9f2627f87",
       "first_seen": "2026-05-19T01:28:47.451204",
-      "last_seen": "2026-05-27T02:03:10.998067"
+      "last_seen": "2026-05-28T02:03:08.545138"
     },
     "test_data/output/outlier/SAMPLE_0028_outliers.tsv": {
       "size": 12889841,
       "mtime": 1778863076.0959537,
       "hash": "3b4be129178f4352524ae5d600e6344d",
       "first_seen": "2026-05-19T01:28:47.533123",
-      "last_seen": "2026-05-27T02:03:10.998074"
+      "last_seen": "2026-05-28T02:03:08.545142"
     },
     "test_data/output/outlier/SAMPLE_0076_outliers.tsv": {
       "size": 12887126,
       "mtime": 1778866468.5661817,
       "hash": "c5e7a52e2ad323b3946ead393fc3b366",
       "first_seen": "2026-05-19T01:28:47.615164",
-      "last_seen": "2026-05-27T02:03:10.998081"
+      "last_seen": "2026-05-28T02:03:08.545147"
     },
     "test_data/output/outlier/SAMPLE_0078_outliers.tsv": {
       "size": 12962816,
       "mtime": 1778866610.0351806,
       "hash": "0ea8cdc6bcf65c2616b4062824cd8027",
       "first_seen": "2026-05-19T01:28:47.697864",
-      "last_seen": "2026-05-27T02:03:10.998088"
+      "last_seen": "2026-05-28T02:03:08.545151"
     },
     "test_data/output/outlier/SAMPLE_0112_outliers.tsv": {
       "size": 13015091,
       "mtime": 1778868998.049894,
       "hash": "860faa58024ab955cd0254ebfeee7437",
       "first_seen": "2026-05-19T01:28:47.780911",
-      "last_seen": "2026-05-27T02:03:10.998095"
+      "last_seen": "2026-05-28T02:03:08.545155"
     },
     "test_data/output/outlier/SAMPLE_0079_outliers.tsv": {
       "size": 13022609,
       "mtime": 1778866682.46418,
       "hash": "3b1773edf31acac5aa5b98865f626053",
       "first_seen": "2026-05-19T01:28:47.864009",
-      "last_seen": "2026-05-27T02:03:10.998102"
+      "last_seen": "2026-05-28T02:03:08.545160"
     },
     "test_data/output/outlier/SAMPLE_0034_outliers.tsv": {
       "size": 12938297,
       "mtime": 1778863496.9871707,
       "hash": "27e4d9f40c04903fda5ec520dccd3ef1",
       "first_seen": "2026-05-19T01:28:47.946640",
-      "last_seen": "2026-05-27T02:03:10.998109"
+      "last_seen": "2026-05-28T02:03:08.545164"
     },
     "test_data/output/outlier/SAMPLE_0138_outliers.tsv": {
       "size": 12945144,
       "mtime": 1778870831.729066,
       "hash": "34372a4884968f80cc67c37134429560",
       "first_seen": "2026-05-19T01:28:48.029327",
-      "last_seen": "2026-05-27T02:03:10.998117"
+      "last_seen": "2026-05-28T02:03:08.545168"
     },
     "test_data/output/outlier/SAMPLE_0036_outliers.tsv": {
       "size": 12963821,
       "mtime": 1778863639.1493175,
       "hash": "e0e37cb5de7a5a782567692e3a9fabee",
       "first_seen": "2026-05-19T01:28:48.112265",
-      "last_seen": "2026-05-27T02:03:10.998124"
+      "last_seen": "2026-05-28T02:03:08.545173"
     },
     "test_data/output/outlier/SAMPLE_0082_outliers.tsv": {
       "size": 12975930,
       "mtime": 1778866890.5781784,
       "hash": "42af5cef29d54d4329c5c5baae451060",
       "first_seen": "2026-05-19T01:28:48.194961",
-      "last_seen": "2026-05-27T02:03:10.998131"
+      "last_seen": "2026-05-28T02:03:08.545177"
     },
     "test_data/output/outlier/SAMPLE_0048_outliers.tsv": {
       "size": 12971360,
       "mtime": 1778864492.3827329,
       "hash": "691c1c566ef13976b4e74143ab03d448",
       "first_seen": "2026-05-19T01:28:48.277617",
-      "last_seen": "2026-05-27T02:03:10.998138"
+      "last_seen": "2026-05-28T02:03:08.545182"
     },
     "test_data/output/outlier/SAMPLE_0052_outliers.tsv": {
       "size": 12988166,
       "mtime": 1778864779.2598124,
       "hash": "e0a974f0579abf58fc6bdd93bfafb2a4",
       "first_seen": "2026-05-19T01:28:48.360326",
-      "last_seen": "2026-05-27T02:03:10.998146"
+      "last_seen": "2026-05-28T02:03:08.545186"
     },
     "test_data/output/outlier/SAMPLE_0139_outliers.tsv": {
       "size": 12944739,
       "mtime": 1778870900.9972968,
       "hash": "c049c1058e0e0a5f264204de473577bf",
       "first_seen": "2026-05-19T01:28:48.442919",
-      "last_seen": "2026-05-27T02:03:10.998153"
+      "last_seen": "2026-05-28T02:03:08.545190"
     },
     "test_data/output/outlier/SAMPLE_0022_outliers.tsv": {
       "size": 12965740,
       "mtime": 1778862656.2149968,
       "hash": "4c5daf471f3af15ac981fe91acc4a6a6",
       "first_seen": "2026-05-19T01:28:48.525588",
-      "last_seen": "2026-05-27T02:03:10.998160"
+      "last_seen": "2026-05-28T02:03:08.545195"
     },
     "test_data/output/outlier/SAMPLE_0146_outliers.tsv": {
       "size": 12931357,
       "mtime": 1778871391.874116,
       "hash": "35189578b1132443707a8295e56e1514",
       "first_seen": "2026-05-19T01:28:48.608012",
-      "last_seen": "2026-05-27T02:03:10.998167"
+      "last_seen": "2026-05-28T02:03:08.545199"
     },
     "test_data/output/outlier/SAMPLE_0124_outliers.tsv": {
       "size": 12952660,
       "mtime": 1778869840.9774778,
       "hash": "f6c1982ef16531963d75f548a3fa906c",
       "first_seen": "2026-05-19T01:28:48.690591",
-      "last_seen": "2026-05-27T02:03:10.998179"
+      "last_seen": "2026-05-28T02:03:08.545205"
     },
     "test_data/output/outlier/SAMPLE_0120_outliers.tsv": {
       "size": 13020128,
       "mtime": 1778869559.182272,
       "hash": "3f775c0543bbf4ce1cbf13568bd90aa1",
       "first_seen": "2026-05-19T01:28:48.773693",
-      "last_seen": "2026-05-27T02:03:10.998186"
+      "last_seen": "2026-05-28T02:03:08.545209"
     },
     "test_data/output/outlier/SAMPLE_0106_outliers.tsv": {
       "size": 12933610,
       "mtime": 1778868576.7746158,
       "hash": "c24ffe3fb3bddce2ea6c6ec965a3765a",
       "first_seen": "2026-05-19T01:28:48.856238",
-      "last_seen": "2026-05-27T02:03:10.998194"
+      "last_seen": "2026-05-28T02:03:08.545214"
     },
     "test_data/output/outlier/SAMPLE_0126_outliers.tsv": {
       "size": 12980898,
       "mtime": 1778869981.5625806,
       "hash": "aa020de19d46ddc325c857877a9bae5e",
       "first_seen": "2026-05-19T01:28:48.939078",
-      "last_seen": "2026-05-27T02:03:10.998202"
+      "last_seen": "2026-05-28T02:03:08.545219"
     },
     "test_data/output/outlier/SAMPLE_0084_outliers.tsv": {
       "size": 12981254,
       "mtime": 1778867030.1471772,
       "hash": "74cc26d9b8cdb5fc83a7273b2836e86d",
       "first_seen": "2026-05-19T01:28:49.021813",
-      "last_seen": "2026-05-27T02:03:10.998209"
+      "last_seen": "2026-05-28T02:03:08.545223"
     },
     "test_data/output/outlier/SAMPLE_0035_outliers.tsv": {
       "size": 12983421,
       "mtime": 1778863569.5642457,
       "hash": "d5da309da65fccb4b772074e5d922416",
       "first_seen": "2026-05-19T01:28:49.104558",
-      "last_seen": "2026-05-27T02:03:10.998217"
+      "last_seen": "2026-05-28T02:03:08.545227"
     },
     "test_data/output/outlier/SAMPLE_0045_outliers.tsv": {
       "size": 12906856,
       "mtime": 1778864276.770684,
       "hash": "2f4934e5e8c03a8b2754d6807cd82dda",
       "first_seen": "2026-05-19T01:28:49.186869",
-      "last_seen": "2026-05-27T02:03:10.998224"
+      "last_seen": "2026-05-28T02:03:08.545231"
     },
     "test_data/output/outlier/SAMPLE_0015_outliers.tsv": {
       "size": 13017947,
       "mtime": 1778862168.18605,
       "hash": "938d8eef01760baef27a88696545b596",
       "first_seen": "2026-05-19T01:28:49.269986",
-      "last_seen": "2026-05-27T02:03:10.998231"
+      "last_seen": "2026-05-28T02:03:08.545236"
     },
     "test_data/output/outlier/SAMPLE_0125_outliers.tsv": {
       "size": 12955451,
       "mtime": 1778869910.3195283,
       "hash": "0c290919a18a72f9ba4774911e6955ab",
       "first_seen": "2026-05-19T01:28:49.352530",
-      "last_seen": "2026-05-27T02:03:10.998238"
+      "last_seen": "2026-05-28T02:03:08.545240"
     },
     "test_data/output/outlier/SAMPLE_0024_outliers.tsv": {
       "size": 12952899,
       "mtime": 1778862796.8879824,
       "hash": "5f2e7a75f8078d2eb70fc28be1b771ab",
       "first_seen": "2026-05-19T01:28:49.435148",
-      "last_seen": "2026-05-27T02:03:10.998245"
+      "last_seen": "2026-05-28T02:03:08.545244"
     },
     "test_data/output/outlier/SAMPLE_0096_outliers.tsv": {
       "size": 12973435,
       "mtime": 1778867876.5193331,
       "hash": "a7c992fc53ebed7d02eb32e3ce79ca7d",
       "first_seen": "2026-05-19T01:28:49.518017",
-      "last_seen": "2026-05-27T02:03:10.998253"
+      "last_seen": "2026-05-28T02:03:08.545248"
     },
     "test_data/output/outlier/SAMPLE_0025_outliers.tsv": {
       "size": 12896284,
       "mtime": 1778862866.178975,
       "hash": "ef18c5280082bc8960acc1191963c6f5",
       "first_seen": "2026-05-19T01:28:49.600140",
-      "last_seen": "2026-05-27T02:03:10.998261"
+      "last_seen": "2026-05-28T02:03:08.545253"
     },
     "test_data/output/outlier/SAMPLE_0133_outliers.tsv": {
       "size": 13017840,
       "mtime": 1778870484.487948,
       "hash": "cf7202bee88845906022dedf32ac1f3c",
       "first_seen": "2026-05-19T01:28:49.683257",
-      "last_seen": "2026-05-27T02:03:10.998268"
+      "last_seen": "2026-05-28T02:03:08.545257"
     },
     "test_data/output/outlier/SAMPLE_0072_outliers.tsv": {
       "size": 13023692,
       "mtime": 1778866185.0761435,
       "hash": "49da87d2ebad2e01aa60f589c6807a1b",
       "first_seen": "2026-05-19T01:28:49.766167",
-      "last_seen": "2026-05-27T02:03:10.998275"
+      "last_seen": "2026-05-28T02:03:08.545262"
     },
     "test_data/output/outlier/SAMPLE_0018_outliers.tsv": {
       "size": 12947676,
       "mtime": 1778862376.8200254,
       "hash": "8efa7ccdb53703615fb367ae6a9cb6c7",
       "first_seen": "2026-05-19T01:28:49.848726",
-      "last_seen": "2026-05-27T02:03:10.998282"
+      "last_seen": "2026-05-28T02:03:08.545266"
     },
     "test_data/output/outlier/SAMPLE_0060_outliers.tsv": {
       "size": 12915315,
       "mtime": 1778865334.6609662,
       "hash": "5037f2dba456f1f34135159890556c32",
       "first_seen": "2026-05-19T01:28:49.931289",
-      "last_seen": "2026-05-27T02:03:10.998289"
+      "last_seen": "2026-05-28T02:03:08.545270"
     },
     "test_data/output/outlier/SAMPLE_0116_outliers.tsv": {
       "size": 13022226,
       "mtime": 1778869281.1500812,
       "hash": "cfe5931cf404d02461aafadd92c07f9b",
       "first_seen": "2026-05-19T01:28:50.014513",
-      "last_seen": "2026-05-27T02:03:10.998297"
+      "last_seen": "2026-05-28T02:03:08.545275"
     },
     "test_data/output/outlier/SAMPLE_0005_outliers.tsv": {
       "size": 12978147,
       "mtime": 1778861468.3141603,
       "hash": "8c0d2c7ce4953d678bdbe860759740db",
       "first_seen": "2026-05-19T01:28:50.097355",
-      "last_seen": "2026-05-27T02:03:10.998304"
+      "last_seen": "2026-05-28T02:03:08.545279"
     },
     "test_data/output/outlier/SAMPLE_0069_outliers.tsv": {
       "size": 13017520,
       "mtime": 1778865972.6590993,
       "hash": "853bdce35a2e495f4b5a2e059b0758b2",
       "first_seen": "2026-05-19T01:28:50.180711",
-      "last_seen": "2026-05-27T02:03:10.998311"
+      "last_seen": "2026-05-28T02:03:08.545283"
     },
     "test_data/output/outlier/SAMPLE_0003_outliers.tsv": {
       "size": 12975002,
       "mtime": 1778861329.0151823,
       "hash": "a80fa07a240e5107c0a830e418a3c639",
       "first_seen": "2026-05-19T01:28:50.263535",
-      "last_seen": "2026-05-27T02:03:10.998318"
+      "last_seen": "2026-05-28T02:03:08.545288"
     },
     "test_data/output/outlier/SAMPLE_0053_outliers.tsv": {
       "size": 12976651,
       "mtime": 1778864848.6358316,
       "hash": "35bf1359526ede04030133bad95b5920",
       "first_seen": "2026-05-19T01:28:50.346397",
-      "last_seen": "2026-05-27T02:03:10.998326"
+      "last_seen": "2026-05-28T02:03:08.545292"
     },
     "test_data/output/outlier/SAMPLE_0089_outliers.tsv": {
       "size": 12885005,
       "mtime": 1778867379.8691747,
       "hash": "62fe5e463f861e0f0b35ae703c4f7296",
       "first_seen": "2026-05-19T01:28:50.428549",
-      "last_seen": "2026-05-27T02:03:10.998334"
+      "last_seen": "2026-05-28T02:03:08.545297"
     },
     "test_data/output/outlier/SAMPLE_0042_outliers.tsv": {
       "size": 13009163,
       "mtime": 1778864066.7267132,
       "hash": "a6f279b32ec4ffb6cbf271a0c2d2585e",
       "first_seen": "2026-05-19T01:28:50.511615",
-      "last_seen": "2026-05-27T02:03:10.998342"
+      "last_seen": "2026-05-28T02:03:08.545301"
     },
     "test_data/output/outlier/SAMPLE_0061_outliers.tsv": {
       "size": 12886738,
       "mtime": 1778865406.9619815,
       "hash": "b3c2e60db32f5a07bac15f4fa327cbd2",
       "first_seen": "2026-05-19T01:28:50.593868",
-      "last_seen": "2026-05-27T02:03:10.998349"
+      "last_seen": "2026-05-28T02:03:08.545306"
     },
     "test_data/output/outlier/SAMPLE_0103_outliers.tsv": {
       "size": 13022736,
       "mtime": 1778868368.1504984,
       "hash": "65c6c430a49d50eb0888ba504bd045b5",
       "first_seen": "2026-05-19T01:28:50.677092",
-      "last_seen": "2026-05-27T02:03:10.998357"
+      "last_seen": "2026-05-28T02:03:08.545310"
     },
     "test_data/output/outlier/SAMPLE_0032_outliers.tsv": {
       "size": 12948163,
       "mtime": 1778863358.0360274,
       "hash": "132b4c1548ddc5692cf43fb241bce252",
       "first_seen": "2026-05-19T01:28:50.759677",
-      "last_seen": "2026-05-27T02:03:10.998364"
+      "last_seen": "2026-05-28T02:03:08.545314"
     },
     "test_data/output/outlier/SAMPLE_0105_outliers.tsv": {
       "size": 12883190,
       "mtime": 1778868507.21557,
       "hash": "fc13863ef99055de6f6d697e8a2b87b7",
       "first_seen": "2026-05-19T01:28:50.841740",
-      "last_seen": "2026-05-27T02:03:10.998371"
+      "last_seen": "2026-05-28T02:03:08.545319"
     },
     "test_data/output/outlier/SAMPLE_0067_outliers.tsv": {
       "size": 13017984,
       "mtime": 1778865831.78107,
       "hash": "f664db0313627fa75b5206c42de3a9cc",
       "first_seen": "2026-05-19T01:28:50.924597",
-      "last_seen": "2026-05-27T02:03:10.998379"
+      "last_seen": "2026-05-28T02:03:08.545323"
     },
     "test_data/output/outlier/SAMPLE_0123_outliers.tsv": {
       "size": 13011818,
       "mtime": 1778869771.6494272,
       "hash": "7baad198d6826183e64692f21b506a11",
       "first_seen": "2026-05-19T01:28:51.007454",
-      "last_seen": "2026-05-27T02:03:10.998386"
+      "last_seen": "2026-05-28T02:03:08.545328"
     },
     "test_data/output/outlier/SAMPLE_0019_outliers.tsv": {
       "size": 13021521,
       "mtime": 1778862447.5280182,
       "hash": "9a0c4546f34c498c70585ca7c06c5f29",
       "first_seen": "2026-05-19T01:28:51.090396",
-      "last_seen": "2026-05-27T02:03:10.998393"
+      "last_seen": "2026-05-28T02:03:08.545333"
     },
     "test_data/output/outlier/SAMPLE_0102_outliers.tsv": {
       "size": 12983916,
       "mtime": 1778868298.605475,
       "hash": "c28ef453041649357afa5dd6655735a5",
       "first_seen": "2026-05-19T01:28:51.173224",
-      "last_seen": "2026-05-27T02:03:10.998400"
+      "last_seen": "2026-05-28T02:03:08.545337"
     },
     "test_data/output/outlier/SAMPLE_0033_outliers.tsv": {
       "size": 13010129,
       "mtime": 1778863427.5850992,
       "hash": "ffb0e7ac88e05388551f9a266e7f3405",
       "first_seen": "2026-05-19T01:28:51.256133",
-      "last_seen": "2026-05-27T02:03:10.998407"
+      "last_seen": "2026-05-28T02:03:08.545341"
     },
     "test_data/output/outlier/SAMPLE_0087_outliers.tsv": {
       "size": 12987510,
       "mtime": 1778867238.8071756,
       "hash": "8514988e7ba84195de82daa8b5d57c7d",
       "first_seen": "2026-05-19T01:28:51.338857",
-      "last_seen": "2026-05-27T02:03:10.998414"
+      "last_seen": "2026-05-28T02:03:08.545345"
     },
     "test_data/output/outlier/SAMPLE_0094_outliers.tsv": {
       "size": 12999827,
       "mtime": 1778867735.2542856,
       "hash": "29d2e918929cfe36d278fa65a5160612",
       "first_seen": "2026-05-19T01:28:51.421727",
-      "last_seen": "2026-05-27T02:03:10.998421"
+      "last_seen": "2026-05-28T02:03:08.545349"
     },
     "test_data/output/outlier/SAMPLE_0006_outliers.tsv": {
       "size": 12969108,
       "mtime": 1778861539.3801491,
       "hash": "d785f8f844312ced254e91a3bac343c5",
       "first_seen": "2026-05-19T01:28:51.504444",
-      "last_seen": "2026-05-27T02:03:10.998428"
+      "last_seen": "2026-05-28T02:03:08.545354"
     },
     "test_data/output/outlier/SAMPLE_0150_outliers.tsv": {
       "size": 13004842,
       "mtime": 1778871671.889457,
       "hash": "4ef2c73f9cda899db8e12db76e95c5d7",
       "first_seen": "2026-05-19T01:28:51.587273",
-      "last_seen": "2026-05-27T02:03:10.998435"
+      "last_seen": "2026-05-28T02:03:08.545358"
     },
     "test_data/output/outlier/SAMPLE_0014_outliers.tsv": {
       "size": 12948872,
       "mtime": 1778862098.824061,
       "hash": "e5403e969734f28a03e1f779eb199a4f",
       "first_seen": "2026-05-19T01:28:51.670131",
-      "last_seen": "2026-05-27T02:03:10.998442"
+      "last_seen": "2026-05-28T02:03:08.545363"
     },
     "test_data/output/outlier/SAMPLE_0031_outliers.tsv": {
       "size": 13012646,
       "mtime": 1778863288.5989559,
       "hash": "ef051704e1949a21abfd00d159835ebc",
       "first_seen": "2026-05-19T01:28:51.753008",
-      "last_seen": "2026-05-27T02:03:10.998449"
+      "last_seen": "2026-05-28T02:03:08.545367"
     },
     "test_data/output/outlier/SAMPLE_0058_outliers.tsv": {
       "size": 13011886,
       "mtime": 1778865196.1369278,
       "hash": "6e6a0384f4ceef2531656097e3076bc2",
       "first_seen": "2026-05-19T01:28:51.836116",
-      "last_seen": "2026-05-27T02:03:10.998457"
+      "last_seen": "2026-05-28T02:03:08.545372"
     },
     "test_data/output/outlier/SAMPLE_0149_outliers.tsv": {
       "size": 13023178,
       "mtime": 1778871602.6223228,
       "hash": "1f3ccba5d306aa6b4939fee6913965a4",
       "first_seen": "2026-05-19T01:28:51.919003",
-      "last_seen": "2026-05-27T02:03:10.998464"
+      "last_seen": "2026-05-28T02:03:08.545376"
     },
     "test_data/output/outlier/SAMPLE_0029_outliers.tsv": {
       "size": 13012954,
       "mtime": 1778863147.5029461,
       "hash": "c18a654a946871156d10e129f720e286",
       "first_seen": "2026-05-19T01:28:52.001990",
-      "last_seen": "2026-05-27T02:03:10.998471"
+      "last_seen": "2026-05-28T02:03:08.545380"
     },
     "test_data/output/outlier/SAMPLE_0039_outliers.tsv": {
       "size": 12998836,
       "mtime": 1778863856.1485412,
       "hash": "701d67408672a857193afee00f80031d",
       "first_seen": "2026-05-19T01:28:52.085099",
-      "last_seen": "2026-05-27T02:03:10.998479"
+      "last_seen": "2026-05-28T02:03:08.545385"
     },
     "test_data/output/outlier/SAMPLE_0065_outliers.tsv": {
       "size": 12938026,
       "mtime": 1778865691.317041,
       "hash": "f59805a3b3ec410ca5f7635d6057559c",
       "first_seen": "2026-05-19T01:28:52.167856",
-      "last_seen": "2026-05-27T02:03:10.998486"
+      "last_seen": "2026-05-28T02:03:08.545389"
     },
     "test_data/output/outlier/SAMPLE_0092_outliers.tsv": {
       "size": 12986804,
       "mtime": 1778867591.2692373,
       "hash": "7615876682014757f5a7bad4d9d1aaf4",
       "first_seen": "2026-05-19T01:28:52.250718",
-      "last_seen": "2026-05-27T02:03:10.998493"
+      "last_seen": "2026-05-28T02:03:08.545394"
     },
     "test_data/output/outlier/SAMPLE_0007_outliers.tsv": {
       "size": 12935805,
       "mtime": 1778861609.148138,
       "hash": "109720fe4e3e1910c6b7a55fa9d0b009",
       "first_seen": "2026-05-19T01:28:52.333325",
-      "last_seen": "2026-05-27T02:03:10.998500"
+      "last_seen": "2026-05-28T02:03:08.545398"
     },
     "test_data/output/outlier/SAMPLE_0130_outliers.tsv": {
       "size": 13014049,
       "mtime": 1778870270.0597913,
       "hash": "f7e688efbf79b760d4319bc97965b6e0",
       "first_seen": "2026-05-19T01:28:52.416206",
-      "last_seen": "2026-05-27T02:03:10.998507"
+      "last_seen": "2026-05-28T02:03:08.545403"
     },
     "test_data/output/outlier/SAMPLE_0057_outliers.tsv": {
       "size": 12967483,
       "mtime": 1778865126.1489084,
       "hash": "1907e7ee67d9cadb9f96976fd0c3be11",
       "first_seen": "2026-05-19T01:28:52.498972",
-      "last_seen": "2026-05-27T02:03:10.998515"
+      "last_seen": "2026-05-28T02:03:08.545407"
     },
     "test_data/output/outlier/SAMPLE_0145_outliers.tsv": {
       "size": 12890027,
       "mtime": 1778871322.6730828,
       "hash": "48de00b24c2851d71317edbf8d579705",
       "first_seen": "2026-05-19T01:28:52.581201",
-      "last_seen": "2026-05-27T02:03:10.998522"
+      "last_seen": "2026-05-28T02:03:08.545411"
     },
     "test_data/output/outlier/SAMPLE_0090_outliers.tsv": {
       "size": 13013353,
       "mtime": 1778867449.5731897,
       "hash": "bdf5c35baa4f9cae9b1eeac95509f8a2",
       "first_seen": "2026-05-19T01:28:52.664125",
-      "last_seen": "2026-05-27T02:03:10.998529"
+      "last_seen": "2026-05-28T02:03:08.545415"
     },
     "test_data/output/outlier/SAMPLE_0056_outliers.tsv": {
       "size": 12975006,
       "mtime": 1778865056.9708893,
       "hash": "1c92caaba1ccd81698203caac3289c4c",
       "first_seen": "2026-05-19T01:28:52.746908",
-      "last_seen": "2026-05-27T02:03:10.998536"
+      "last_seen": "2026-05-28T02:03:08.545420"
     },
     "test_data/output/outlier/SAMPLE_0041_outliers.tsv": {
       "size": 13018655,
       "mtime": 1778863996.6576862,
       "hash": "b59d16e6ee0b0c5af3e23a7ff8f68a68",
       "first_seen": "2026-05-19T01:28:52.829785",
-      "last_seen": "2026-05-27T02:03:10.998543"
+      "last_seen": "2026-05-28T02:03:08.545424"
     },
     "test_data/output/outlier/SAMPLE_0141_outliers.tsv": {
       "size": 12991790,
       "mtime": 1778871042.7907693,
       "hash": "aef8e01e47467b7971df0319bfa4b259",
       "first_seen": "2026-05-19T01:28:52.912517",
-      "last_seen": "2026-05-27T02:03:10.998550"
+      "last_seen": "2026-05-28T02:03:08.545428"
     },
     "test_data/output/outlier/SAMPLE_0030_outliers.tsv": {
       "size": 12900441,
       "mtime": 1778863216.945939,
       "hash": "d895b5a5006ddaacc1ae04f804947ae3",
       "first_seen": "2026-05-19T01:28:52.994741",
-      "last_seen": "2026-05-27T02:03:10.998557"
+      "last_seen": "2026-05-28T02:03:08.545433"
     },
     "test_data/output/outlier/SAMPLE_0100_outliers.tsv": {
       "size": 12993388,
       "mtime": 1778868159.383428,
       "hash": "d40036863903f4daad6e9cd6b1fc3169",
       "first_seen": "2026-05-19T01:28:53.077545",
-      "last_seen": "2026-05-27T02:03:10.998565"
+      "last_seen": "2026-05-28T02:03:08.545437"
     },
     "test_data/output/outlier/SAMPLE_0047_outliers.tsv": {
       "size": 12987212,
       "mtime": 1778864417.587712,
       "hash": "6386772cd29b9b9e9e63020bff8bfe3b",
       "first_seen": "2026-05-19T01:28:53.160450",
-      "last_seen": "2026-05-27T02:03:10.998572"
+      "last_seen": "2026-05-28T02:03:08.545441"
     },
     "test_data/output/outlier/SAMPLE_0122_outliers.tsv": {
       "size": 12956495,
       "mtime": 1778869701.8983762,
       "hash": "bffa4bcccf87888d2922911fc68b5b03",
       "first_seen": "2026-05-19T01:28:53.243227",
-      "last_seen": "2026-05-27T02:03:10.998579"
+      "last_seen": "2026-05-28T02:03:08.545446"
     },
     "test_data/output/outlier/SAMPLE_0013_outliers.tsv": {
       "size": 12973474,
       "mtime": 1778862029.3880718,
       "hash": "fc80348d6f7029c1df584fc57391e5cc",
       "first_seen": "2026-05-19T01:28:53.326107",
-      "last_seen": "2026-05-27T02:03:10.998587"
+      "last_seen": "2026-05-28T02:03:08.545450"
     },
     "test_data/output/outlier/SAMPLE_0135_outliers.tsv": {
       "size": 12937640,
       "mtime": 1778870622.9823704,
       "hash": "5b2fc3847b119e5aa36c9ddccaf2f934",
       "first_seen": "2026-05-19T01:28:53.408751",
-      "last_seen": "2026-05-27T02:03:10.998594"
+      "last_seen": "2026-05-28T02:03:08.545454"
     },
     "test_data/output/outlier/SAMPLE_0104_outliers.tsv": {
       "size": 13023484,
       "mtime": 1778868437.702524,
       "hash": "8242f9a334d08e0a4e3426168e49354d",
       "first_seen": "2026-05-19T01:28:53.492031",
-      "last_seen": "2026-05-27T02:03:10.998601"
+      "last_seen": "2026-05-28T02:03:08.545458"
     },
     "test_data/output/outlier/SAMPLE_0044_outliers.tsv": {
       "size": 12951043,
       "mtime": 1778864206.6376936,
       "hash": "31004ed64a084f582185c25bdac36ab0",
       "first_seen": "2026-05-19T01:28:53.574785",
-      "last_seen": "2026-05-27T02:03:10.998609"
+      "last_seen": "2026-05-28T02:03:08.545463"
     },
     "test_data/output/outlier/SAMPLE_0113_outliers.tsv": {
       "size": 13023956,
       "mtime": 1778869068.2259405,
       "hash": "9232770d05ff48dec04fcd5a191543f0",
       "first_seen": "2026-05-19T01:28:53.657952",
-      "last_seen": "2026-05-27T02:03:10.998616"
+      "last_seen": "2026-05-28T02:03:08.545467"
     },
     "test_data/output/outlier/SAMPLE_0009_outliers.tsv": {
       "size": 12884289,
       "mtime": 1778861748.5481162,
       "hash": "70296c26b45e67682ac7666707681c25",
       "first_seen": "2026-05-19T01:28:53.740079",
-      "last_seen": "2026-05-27T02:03:10.998623"
+      "last_seen": "2026-05-28T02:03:08.545471"
     },
     "test_data/output/outlier/SAMPLE_0012_outliers.tsv": {
       "size": 12982176,
       "mtime": 1778861959.9440827,
       "hash": "548b3fa59c184e5af95b575f4e61ea4c",
       "first_seen": "2026-05-19T01:28:53.822869",
-      "last_seen": "2026-05-27T02:03:10.998630"
+      "last_seen": "2026-05-28T02:03:08.545476"
     },
     "test_data/output/outlier/SAMPLE_0110_outliers.tsv": {
       "size": 12989669,
       "mtime": 1778868858.806802,
       "hash": "31eee6bb0b24c78acca7d2d6d9502651",
       "first_seen": "2026-05-19T01:28:53.905695",
-      "last_seen": "2026-05-27T02:03:10.998645"
+      "last_seen": "2026-05-28T02:03:08.545480"
     },
     "test_data/output/outlier/SAMPLE_0081_outliers.tsv": {
       "size": 12934056,
       "mtime": 1778866821.2331789,
       "hash": "b7bfa28ff0019f6d627b4e68b419befe",
       "first_seen": "2026-05-19T01:28:53.988173",
-      "last_seen": "2026-05-27T02:03:10.998653"
+      "last_seen": "2026-05-28T02:03:08.545484"
     },
     "test_data/output/outlier/SAMPLE_0063_outliers.tsv": {
       "size": 13001528,
       "mtime": 1778865545.8740106,
       "hash": "760ce744a061ce19c7cd553a4528d5ab",
       "first_seen": "2026-05-19T01:28:54.071227",
-      "last_seen": "2026-05-27T02:03:10.998660"
+      "last_seen": "2026-05-28T02:03:08.545489"
     },
     "test_data/output/outlier/SAMPLE_0043_outliers.tsv": {
       "size": 12895420,
       "mtime": 1778864136.5197034,
       "hash": "4c6c004a78ac884d8d4f2be2cca41394",
       "first_seen": "2026-05-19T01:28:54.153706",
-      "last_seen": "2026-05-27T02:03:10.998668"
+      "last_seen": "2026-05-28T02:03:08.545493"
     },
     "test_data/output/outlier/SAMPLE_0023_outliers.tsv": {
       "size": 12961811,
       "mtime": 1778862725.6069896,
       "hash": "74838f17af2d7be970780faab287eb16",
       "first_seen": "2026-05-19T01:28:54.236542",
-      "last_seen": "2026-05-27T02:03:10.998675"
+      "last_seen": "2026-05-28T02:03:08.545498"
     },
     "synth_methdata/README.md": {
       "size": 10459,
       "mtime": 1778612714.6752906,
       "hash": "5e29d433fe0cfb62c68a5007d7af4296",
       "first_seen": "2026-05-19T01:28:41.502503",
-      "last_seen": "2026-05-27T02:03:10.998682"
+      "last_seen": "2026-05-28T02:03:08.545502"
     },
     "synth_methdata/Cargo.toml": {
       "size": 937,
       "mtime": 1778611064.1891682,
       "hash": "d2da278f96bdcc5bf1e9fee71475b32b",
       "first_seen": "2026-05-19T01:28:41.502977",
-      "last_seen": "2026-05-27T02:03:10.998690"
+      "last_seen": "2026-05-28T02:03:08.545507"
     },
     "logs/5mc_simulation_29400.out": {
       "size": 2849,
       "mtime": 1778388122.0601337,
       "hash": "5afee39d6fcdd1e2677b3ceb19d9d8e4",
       "first_seen": "2026-05-19T01:28:41.501393",
-      "last_seen": "2026-05-27T02:03:10.998697"
+      "last_seen": "2026-05-28T02:03:08.545511"
     },
     "logs/5mc_simulation_29400.err": {
       "size": 144,
       "mtime": 1778388122.1881337,
       "hash": "44a39e09a56b7b964d0810474a629ac4",
       "first_seen": "2026-05-19T01:28:41.501846",
-      "last_seen": "2026-05-27T02:03:10.998705"
+      "last_seen": "2026-05-28T02:03:08.545516"
     },
     "scripts/run_beta_agg_enhancer.sh": {
       "size": 846,
       "mtime": 1778783890.413954,
       "hash": "5b16f79f42158c6ba1f1d416b9e75c5d",
       "first_seen": "2026-05-19T01:28:41.499296",
-      "last_seen": "2026-05-27T02:03:10.998714"
+      "last_seen": "2026-05-28T02:03:08.545521"
     },
     "scripts/bayesian_outlier.py": {
       "size": 7295,
       "mtime": 1778815537.4696198,
       "hash": "e03cc6ea10a8db11eba6a7a689a9df7f",
       "first_seen": "2026-05-19T01:28:41.499828",
-      "last_seen": "2026-05-27T02:03:10.998721"
+      "last_seen": "2026-05-28T02:03:08.545525"
     },
     "scripts/run_bayesian_outlier.sh": {
       "size": 1460,
       "mtime": 1778816253.9751427,
       "hash": "3c974381b5d104d4f9f770548874d3b1",
       "first_seen": "2026-05-19T01:28:41.500393",
-      "last_seen": "2026-05-27T02:03:10.998729"
+      "last_seen": "2026-05-28T02:03:08.545530"
     },
     "scripts/beta_agg_enhancer.py": {
       "size": 4440,
       "mtime": 1778793140.9919908,
       "hash": "b90241905c794cfdea0759f487e051c1",
       "first_seen": "2026-05-19T01:28:41.500864",
-      "last_seen": "2026-05-27T02:03:10.998737"
+      "last_seen": "2026-05-28T02:03:08.545535"
     },
     "scripts/simulator/test_data_generation_pipeline.sh": {
       "size": 2872,
       "mtime": 1778275869.5060282,
       "hash": "b3366c580f7bf6c84f0035af3e26b95d",
       "first_seen": "2026-05-19T01:28:41.527246",
-      "last_seen": "2026-05-27T02:03:10.998745"
+      "last_seen": "2026-05-28T02:03:08.545539"
     },
     "scripts/simulator/validate_test_data.py": {
       "size": 11154,
       "mtime": 1778275055.750774,
       "hash": "d8cff50e8b31962fbe6a46301632df4f",
       "first_seen": "2026-05-19T01:28:41.527769",
-      "last_seen": "2026-05-27T02:03:10.998752"
+      "last_seen": "2026-05-28T02:03:08.545544"
     },
     "scripts/simulator/generate_truth_set.py": {
       "size": 7453,
       "mtime": 1778274352.9565275,
       "hash": "b66233c65fcc810fd61dbea8fc3ef3d5",
       "first_seen": "2026-05-19T01:28:41.528275",
-      "last_seen": "2026-05-27T02:03:10.998759"
+      "last_seen": "2026-05-28T02:03:08.545548"
     },
     "scripts/simulator/generate_regions.py": {
       "size": 4546,
       "mtime": 1778275306.4318616,
       "hash": "8004cc0b5aeca6276770e81ca3e4c3e8",
       "first_seen": "2026-05-19T01:28:41.528751",
-      "last_seen": "2026-05-27T02:03:10.998767"
+      "last_seen": "2026-05-28T02:03:08.545553"
     },
     "scripts/simulator/generate_methylation_bed.py": {
       "size": 18630,
       "mtime": 1778274925.2517283,
       "hash": "702fae75b40c1f187633d1a83dd4fe46",
       "first_seen": "2026-05-19T01:28:41.529314",
-      "last_seen": "2026-05-27T02:03:10.998774"
+      "last_seen": "2026-05-28T02:03:08.545557"
     },
     "scripts/logs/bayesian_outlier_34486.err": {
       "size": 0,
       "mtime": 1778861109.1332219,
       "hash": "d41d8cd98f00b204e9800998ecf8427e",
       "first_seen": "2026-05-19T01:28:41.524765",
-      "last_seen": "2026-05-27T02:03:10.998782"
+      "last_seen": "2026-05-28T02:03:08.545562"
     },
     "scripts/logs/beta_agg_enhancer33671.err": {
       "size": 185,
       "mtime": 1778796912.9468632,
       "hash": "bc7c3ed2d76053af0d88e0c95eae2343",
       "first_seen": "2026-05-19T01:28:41.525229",
-      "last_seen": "2026-05-27T02:03:10.998789"
+      "last_seen": "2026-05-28T02:03:08.545566"
     },
     "scripts/logs/bayesian_outlier_34486.out": {
       "size": 58835,
       "mtime": 1778871672.4124582,
       "hash": "d3468d3f6f92242570a0565290380832",
       "first_seen": "2026-05-19T01:28:41.526052",
-      "last_seen": "2026-05-27T02:03:10.998797"
+      "last_seen": "2026-05-28T02:03:08.545571"
     },
     "scripts/logs/beta_agg_enhancer33671.out": {
       "size": 24604,
       "mtime": 1778797256.7230036,
       "hash": "9af77751e7492dbec497c7f91e131d1d",
       "first_seen": "2026-05-19T01:28:41.526664",
-      "last_seen": "2026-05-27T02:03:10.998805"
+      "last_seen": "2026-05-28T02:03:08.545576"
     }
   },
-  "last_scan": "2026-05-27T02:03:10.998872"
+  "last_scan": "2026-05-28T02:03:08.545619"
 }

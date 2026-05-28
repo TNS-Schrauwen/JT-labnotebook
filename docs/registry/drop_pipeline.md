@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- DROP_pipeline"
-date: 2026-05-27 02:00
+date: 2026-05-28 02:00
 tags:
   - registry
   - DROP_pipeline
@@ -8,9 +8,9 @@ tags:
 
 # File Registry: DROP_pipeline
 
-**Scan Date:** 2026-05-27 02:00
-**Total Tracked Files:** 1633
-**New Since Last Scan:** 6
+**Scan Date:** 2026-05-28 02:00
+**Total Tracked Files:** 1642
+**New Since Last Scan:** 9
 **Modified Since Last Scan:** 1
 **Deleted Since Last Scan:** 0
 
@@ -22,12 +22,15 @@ tags:
 
 | File | Type | Size | Modified |
 |------|------|------|----------|
-| `analysis/gene_coverage_matrix.tsv` |  | 0 B |  |
-| `analysis/gene_coverage_matrix_outlier_genes.tsv` |  | 0 B |  |
-| `results/mini_bams/CLN3/CLN3_region.bed` |  | 0 B |  |
-| `results/mini_bams/CWC27/CWC27_region.bed` |  | 0 B |  |
-| `results/mini_bams/PHF8/PHF8_region.bed` |  | 0 B |  |
-| `scripts/merge_mosdepth.py` |  | 0 B |  |
+| `results/mini_bams/ARHGEF18/ARHGEF18_region.bed` |  | 0 B |  |
+| `results/mini_bams/ATP6V0A1/ATP6V0A1_region.bed` |  | 0 B |  |
+| `results/mini_bams/CHR/CHR_region.bed` |  | 0 B |  |
+| `results/mini_bams/HPRT1/HPRT1_region.bed` |  | 0 B |  |
+| `results/mini_bams/HPS4/HPS4_region.bed` |  | 0 B |  |
+| `results/mini_bams/PAR1/PAR1_region.bed` |  | 0 B |  |
+| `results/mini_bams/PAR1Y/PAR1Y_region.bed` |  | 0 B |  |
+| `results/mini_bams/PIK3R1/PIK3R1_region.bed` |  | 0 B |  |
+| `results/mini_bams/WDR36/WDR36_region.bed` |  | 0 B |  |
 
 ### Modified Files
 
@@ -1191,6 +1194,24 @@ tags:
 |------|-----------|------|------|------------|------|--------|
 | `create_mini_bams.log` |  | 0 B | 20c511c0 | 2026-05-20 |  |  |
 
+### `results/mini_bams/ARHGEF18/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `ARHGEF18_region.bed` |  | 0 B | e6a73cef | 2026-05-28 |  |  |
+
+### `results/mini_bams/ATP6V0A1/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `ATP6V0A1_region.bed` |  | 0 B | 2378f0ff | 2026-05-28 |  |  |
+
+### `results/mini_bams/CHR/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `CHR_region.bed` |  | 0 B | 1b40c4fb | 2026-05-28 |  |  |
+
 ### `results/mini_bams/CLN3/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
@@ -1203,11 +1224,47 @@ tags:
 |------|-----------|------|------|------------|------|--------|
 | `CWC27_region.bed` |  | 0 B | a7b9f787 | 2026-05-27 |  |  |
 
+### `results/mini_bams/HPRT1/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `HPRT1_region.bed` |  | 0 B | 185da753 | 2026-05-28 |  |  |
+
+### `results/mini_bams/HPS4/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `HPS4_region.bed` |  | 0 B | e9559a5a | 2026-05-28 |  |  |
+
+### `results/mini_bams/PAR1/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `PAR1_region.bed` |  | 0 B | 17613e0a | 2026-05-28 |  |  |
+
+### `results/mini_bams/PAR1Y/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `PAR1Y_region.bed` |  | 0 B | 19d77a9e | 2026-05-28 |  |  |
+
 ### `results/mini_bams/PHF8/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
 | `PHF8_region.bed` |  | 0 B | e2be4b3d | 2026-05-27 |  |  |
+
+### `results/mini_bams/PIK3R1/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `PIK3R1_region.bed` |  | 0 B | c29290c9 | 2026-05-28 |  |  |
+
+### `results/mini_bams/WDR36/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `WDR36_region.bed` |  | 0 B | 011d3659 | 2026-05-28 |  |  |
 
 ### `results/mini_bams/bed_files/`
 
@@ -1852,7 +1909,7 @@ tags:
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
 | `create_drop_samplesheet.sh` |  | 0 B | 02843bec | 2026-05-19 |  |  |
-| `extract_minibam.sh` |  | 0 B | 54415865 | 2026-05-20 |  |  |
+| `extract_minibam.sh` |  | 0 B | 0ef77345 | 2026-05-20 |  |  |
 | `make_bed.sh` |  | 0 B | 1f559da3 | 2026-05-23 |  |  |
 | `merge_metadata_with_drop.py` |  | 0 B | 173c7e07 | 2026-05-20 |  |  |
 | `merge_mosdepth.py` |  | 0 B | 75f595a1 | 2026-05-27 |  |  |
