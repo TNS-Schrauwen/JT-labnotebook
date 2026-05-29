@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- DROP_pipeline"
-date: 2026-05-28 02:00
+date: 2026-05-29 02:00
 tags:
   - registry
   - DROP_pipeline
@@ -8,35 +8,13 @@ tags:
 
 # File Registry: DROP_pipeline
 
-**Scan Date:** 2026-05-28 02:00
+**Scan Date:** 2026-05-29 02:00
 **Total Tracked Files:** 1642
-**New Since Last Scan:** 9
-**Modified Since Last Scan:** 1
+**New Since Last Scan:** 0
+**Modified Since Last Scan:** 0
 **Deleted Since Last Scan:** 0
 
 ---
-
-## Changes Detected
-
-### New Files
-
-| File | Type | Size | Modified |
-|------|------|------|----------|
-| `results/mini_bams/ARHGEF18/ARHGEF18_region.bed` |  | 0 B |  |
-| `results/mini_bams/ATP6V0A1/ATP6V0A1_region.bed` |  | 0 B |  |
-| `results/mini_bams/CHR/CHR_region.bed` |  | 0 B |  |
-| `results/mini_bams/HPRT1/HPRT1_region.bed` |  | 0 B |  |
-| `results/mini_bams/HPS4/HPS4_region.bed` |  | 0 B |  |
-| `results/mini_bams/PAR1/PAR1_region.bed` |  | 0 B |  |
-| `results/mini_bams/PAR1Y/PAR1Y_region.bed` |  | 0 B |  |
-| `results/mini_bams/PIK3R1/PIK3R1_region.bed` |  | 0 B |  |
-| `results/mini_bams/WDR36/WDR36_region.bed` |  | 0 B |  |
-
-### Modified Files
-
-| File | Type | Size | Modified |
-|------|------|------|----------|
-| `scripts/extract_minibam.sh` |  | 0 B |  |
 
 ---
 
