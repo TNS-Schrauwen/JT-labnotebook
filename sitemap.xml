@@ -2,126 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/annotations/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/dashboard/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/tags/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/datasets/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/experiments/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/notes/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/notes/debugging/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/notes/debugging/2026-05-18_testing-my-first-note/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/notes/general/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/notes/ideas/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/notes/observations/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/notes/todo/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/projects/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/projects/pacbio-5mc-outlier-analysis/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/projects/popqc/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/projects/tgen-splicing-outlier-analysis/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/registry/5mc_outlier/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/registry/5mc_simulator/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/registry/drop_pipeline/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/registry/popqc/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/registry/tgen_rnaseq/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/5mc_outlier/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/5mc_simulator/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/drop_pipeline/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/popqc/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/tgen_rnaseq/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/nextflow/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/slurm/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
     <url>
          <loc>https://tns-schrauwen.github.io/JT-labnotebook/runs/slurm/2026-05-18_job-36200/</loc>
-         <lastmod>2026-05-29</lastmod>
+         <lastmod>2026-05-30</lastmod>
     </url>
 </urlset>
