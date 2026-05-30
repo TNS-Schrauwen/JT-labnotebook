@@ -1,6 +1,6 @@
 ---
 title: "Pipeline Runs -- DROP_pipeline"
-date: 2026-05-29 02:00
+date: 2026-05-30 02:00
 tags:
   - runs
   - DROP_pipeline
@@ -8,7 +8,7 @@ tags:
 
 # Pipeline Runs: DROP_pipeline
 
-**Last Scanned:** 2026-05-29 02:00
+**Last Scanned:** 2026-05-30 02:00
 
 ---
 
@@ -22,6 +22,8 @@ tags:
 
 | File | Size | Modified |
 |------|------|----------|
+| `rapidrna/logs/rapidrna_run_38633.err` | 10.5 KB | 2026-05-29T23:53 |
+| `rapidrna/logs/rapidrna_run_38633.log` | 1.9 KB | 2026-05-29T23:53 |
 | `logs/slurm/coverage_37644.out` | 26.3 KB | 2026-05-23T05:02 |
 | `logs/slurm/coverage_37644.err` | 8.8 KB | 2026-05-23T00:55 |
 | `results/mini_bams/create_mini_bams.log` | 83.8 KB | 2026-05-20T01:44 |
