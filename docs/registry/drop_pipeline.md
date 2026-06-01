@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- DROP_pipeline"
-date: 2026-05-30 02:00
+date: 2026-06-01 20:00
 tags:
   - registry
   - DROP_pipeline
@@ -8,41 +8,35 @@ tags:
 
 # File Registry: DROP_pipeline
 
-**Scan Date:** 2026-05-30 02:00
-**Total Tracked Files:** 1657
-**New Since Last Scan:** 15
-**Modified Since Last Scan:** 1
-**Deleted Since Last Scan:** 0
+**Scan Date:** 2026-06-01 20:00
+**Total Tracked Files:** 1642
+**New Since Last Scan:** 0
+**Modified Since Last Scan:** 0
+**Deleted Since Last Scan:** 15
 
 ---
 
 ## Changes Detected
 
-### New Files
+### Deleted Files
 
-| File | Type | Size | Modified |
-|------|------|------|----------|
-| `rapidrna/geneCounts.tsv` |  | 0 B |  |
-| `rapidrna/junction_annotation.tsv` |  | 0 B |  |
-| `rapidrna/logs/rapidrna_run_38633.err` |  | 0 B |  |
-| `rapidrna/logs/rapidrna_run_38633.log` |  | 0 B |  |
-| `rapidrna/metadata.tsv` |  | 0 B |  |
-| `rapidrna/nonsplit_counts.tsv` |  | 0 B |  |
-| `rapidrna/results/expression/expression_all_results.tsv` |  | 0 B |  |
-| `rapidrna/results/expression/expression_significant.tsv` |  | 0 B |  |
-| `rapidrna/results/expression/expression_summary.tsv` |  | 0 B |  |
-| `rapidrna/scripts/metadata.py` |  | 0 B |  |
-| `rapidrna/scripts/rapidrna.py` |  | 0 B |  |
-| `rapidrna/scripts/rapidrna_expression.py` |  | 0 B |  |
-| `rapidrna/scripts/rapidrna_splicing.py` |  | 0 B |  |
-| `rapidrna/scripts/run_rapidrna.sh` |  | 0 B |  |
-| `rapidrna/split_counts.tsv` |  | 0 B |  |
-
-### Modified Files
-
-| File | Type | Size | Modified |
-|------|------|------|----------|
-| `samplesheets/sample_metadata.tsv` |  | 0 B |  |
+| File |
+|------|
+| `rapidrna/geneCounts.tsv` |
+| `rapidrna/junction_annotation.tsv` |
+| `rapidrna/logs/rapidrna_run_38633.err` |
+| `rapidrna/logs/rapidrna_run_38633.log` |
+| `rapidrna/metadata.tsv` |
+| `rapidrna/nonsplit_counts.tsv` |
+| `rapidrna/results/expression/expression_all_results.tsv` |
+| `rapidrna/results/expression/expression_significant.tsv` |
+| `rapidrna/results/expression/expression_summary.tsv` |
+| `rapidrna/scripts/metadata.py` |
+| `rapidrna/scripts/rapidrna.py` |
+| `rapidrna/scripts/rapidrna_expression.py` |
+| `rapidrna/scripts/rapidrna_splicing.py` |
+| `rapidrna/scripts/run_rapidrna.sh` |
+| `rapidrna/split_counts.tsv` |
 
 ---
 
@@ -1193,41 +1187,6 @@ tags:
 | `tgen_drop_35150.out` |  | 0 B | f1731a4e | 2026-05-19 |  |  |
 | `tgen_drop_36200.err` |  | 0 B | ea2075e5 | 2026-05-19 |  |  |
 | `tgen_drop_36200.out` |  | 0 B | 8c89f148 | 2026-05-19 |  |  |
-
-### `rapidrna/`
-
-| File | Extension | Size | Hash | First Seen | Tags | Context |
-|------|-----------|------|------|------------|------|--------|
-| `geneCounts.tsv` |  | 0 B | 278038de | 2026-05-30 |  |  |
-| `junction_annotation.tsv` |  | 0 B | 53e841ff | 2026-05-30 |  |  |
-| `metadata.tsv` |  | 0 B | 39cb2b55 | 2026-05-30 |  |  |
-| `nonsplit_counts.tsv` |  | 0 B | 97330032 | 2026-05-30 |  |  |
-| `split_counts.tsv` |  | 0 B | 8a5bda4b | 2026-05-30 |  |  |
-
-### `rapidrna/logs/`
-
-| File | Extension | Size | Hash | First Seen | Tags | Context |
-|------|-----------|------|------|------------|------|--------|
-| `rapidrna_run_38633.err` |  | 0 B | 626ca0cd | 2026-05-30 |  |  |
-| `rapidrna_run_38633.log` |  | 0 B | 23c983b0 | 2026-05-30 |  |  |
-
-### `rapidrna/results/expression/`
-
-| File | Extension | Size | Hash | First Seen | Tags | Context |
-|------|-----------|------|------|------------|------|--------|
-| `expression_all_results.tsv` |  | 0 B | ee0f1bbe | 2026-05-30 |  |  |
-| `expression_significant.tsv` |  | 0 B | ce7e11fb | 2026-05-30 |  |  |
-| `expression_summary.tsv` |  | 0 B | abdc629e | 2026-05-30 |  |  |
-
-### `rapidrna/scripts/`
-
-| File | Extension | Size | Hash | First Seen | Tags | Context |
-|------|-----------|------|------|------------|------|--------|
-| `metadata.py` |  | 0 B | a39c522e | 2026-05-30 |  |  |
-| `rapidrna.py` |  | 0 B | 336e1cb3 | 2026-05-30 |  |  |
-| `rapidrna_expression.py` |  | 0 B | e5b01f71 | 2026-05-30 |  |  |
-| `rapidrna_splicing.py` |  | 0 B | b9c3f1aa | 2026-05-30 |  |  |
-| `run_rapidrna.sh` |  | 0 B | 1f308819 | 2026-05-30 |  |  |
 
 ### `results/mini_bams/`
 
