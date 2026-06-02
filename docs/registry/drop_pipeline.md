@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- DROP_pipeline"
-date: 2026-06-01 20:00
+date: 2026-06-02 20:00
 tags:
   - registry
   - DROP_pipeline
@@ -8,35 +8,13 @@ tags:
 
 # File Registry: DROP_pipeline
 
-**Scan Date:** 2026-06-01 20:00
+**Scan Date:** 2026-06-02 20:00
 **Total Tracked Files:** 1642
 **New Since Last Scan:** 0
 **Modified Since Last Scan:** 0
-**Deleted Since Last Scan:** 15
+**Deleted Since Last Scan:** 0
 
 ---
-
-## Changes Detected
-
-### Deleted Files
-
-| File |
-|------|
-| `rapidrna/geneCounts.tsv` |
-| `rapidrna/junction_annotation.tsv` |
-| `rapidrna/logs/rapidrna_run_38633.err` |
-| `rapidrna/logs/rapidrna_run_38633.log` |
-| `rapidrna/metadata.tsv` |
-| `rapidrna/nonsplit_counts.tsv` |
-| `rapidrna/results/expression/expression_all_results.tsv` |
-| `rapidrna/results/expression/expression_significant.tsv` |
-| `rapidrna/results/expression/expression_summary.tsv` |
-| `rapidrna/scripts/metadata.py` |
-| `rapidrna/scripts/rapidrna.py` |
-| `rapidrna/scripts/rapidrna_expression.py` |
-| `rapidrna/scripts/rapidrna_splicing.py` |
-| `rapidrna/scripts/run_rapidrna.sh` |
-| `rapidrna/split_counts.tsv` |
 
 ---
 
