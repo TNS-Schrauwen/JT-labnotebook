@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- DROP_pipeline"
-date: 2026-06-02 20:00
+date: 2026-06-04 20:00
 tags:
   - registry
   - DROP_pipeline
@@ -8,13 +8,28 @@ tags:
 
 # File Registry: DROP_pipeline
 
-**Scan Date:** 2026-06-02 20:00
-**Total Tracked Files:** 1642
-**New Since Last Scan:** 0
-**Modified Since Last Scan:** 0
+**Scan Date:** 2026-06-04 20:00
+**Total Tracked Files:** 1644
+**New Since Last Scan:** 2
+**Modified Since Last Scan:** 1
 **Deleted Since Last Scan:** 0
 
 ---
+
+## Changes Detected
+
+### New Files
+
+| File | Type | Size | Modified |
+|------|------|------|----------|
+| `results/mini_bams/NDST1/NDST1_region.bed` |  | 0 B |  |
+| `results/mini_bams/PI4KA/PI4KA_region.bed` |  | 0 B |  |
+
+### Modified Files
+
+| File | Type | Size | Modified |
+|------|------|------|----------|
+| `scripts/extract_minibam.sh` |  | 0 B |  |
 
 ---
 
@@ -1214,6 +1229,12 @@ tags:
 |------|-----------|------|------|------------|------|--------|
 | `HPS4_region.bed` |  | 0 B | e9559a5a | 2026-05-28 |  |  |
 
+### `results/mini_bams/NDST1/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `NDST1_region.bed` |  | 0 B | c4d7f19f | 2026-06-04 |  |  |
+
 ### `results/mini_bams/PAR1/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
@@ -1231,6 +1252,12 @@ tags:
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
 | `PHF8_region.bed` |  | 0 B | e2be4b3d | 2026-05-27 |  |  |
+
+### `results/mini_bams/PI4KA/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `PI4KA_region.bed` |  | 0 B | 4be019a7 | 2026-06-04 |  |  |
 
 ### `results/mini_bams/PIK3R1/`
 
@@ -1887,7 +1914,7 @@ tags:
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
 | `create_drop_samplesheet.sh` |  | 0 B | 02843bec | 2026-05-19 |  |  |
-| `extract_minibam.sh` |  | 0 B | 0ef77345 | 2026-05-20 |  |  |
+| `extract_minibam.sh` |  | 0 B | bb26d5bd | 2026-05-20 |  |  |
 | `make_bed.sh` |  | 0 B | 1f559da3 | 2026-05-23 |  |  |
 | `merge_metadata_with_drop.py` |  | 0 B | 173c7e07 | 2026-05-20 |  |  |
 | `merge_mosdepth.py` |  | 0 B | 75f595a1 | 2026-05-27 |  |  |
