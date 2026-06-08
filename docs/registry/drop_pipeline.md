@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- DROP_pipeline"
-date: 2026-06-04 20:00
+date: 2026-06-08 20:00
 tags:
   - registry
   - DROP_pipeline
@@ -8,28 +8,13 @@ tags:
 
 # File Registry: DROP_pipeline
 
-**Scan Date:** 2026-06-04 20:00
+**Scan Date:** 2026-06-08 20:00
 **Total Tracked Files:** 1644
-**New Since Last Scan:** 2
-**Modified Since Last Scan:** 1
+**New Since Last Scan:** 0
+**Modified Since Last Scan:** 0
 **Deleted Since Last Scan:** 0
 
 ---
-
-## Changes Detected
-
-### New Files
-
-| File | Type | Size | Modified |
-|------|------|------|----------|
-| `results/mini_bams/NDST1/NDST1_region.bed` |  | 0 B |  |
-| `results/mini_bams/PI4KA/PI4KA_region.bed` |  | 0 B |  |
-
-### Modified Files
-
-| File | Type | Size | Modified |
-|------|------|------|----------|
-| `scripts/extract_minibam.sh` |  | 0 B |  |
 
 ---
 
