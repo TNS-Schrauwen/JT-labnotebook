@@ -728,3 +728,56 @@ To github.com:TNS-Schrauwen/JT-labnotebook.git
 [2026-06-09 20:02:48]   Scan complete. Run 'biolab build' to compile the site.
 [2026-06-09 20:02:48] Scan completed in 159 seconds
 [2026-06-09 20:02:48] Changes detected, committing...
+[main 8e0d859] auto-sync 2026-06-09 20:02 | +0 ~18 -0
+ 18 files changed, 32705 insertions(+), 32652 deletions(-)
+[2026-06-09 20:02:49] Pushing to GitHub...
+To github.com:TNS-Schrauwen/JT-labnotebook.git
+   9baf207..8e0d859  main -> main
+[2026-06-09 20:02:54] Push successful
+[2026-06-09 20:02:54] === Sync complete ===
+[2026-06-11 20:00:02] === Starting automated sync ===
+[2026-06-11 20:00:10] Running scan...
+[2026-06-11 20:00:11]     Scanning: 5mc_outlier
+[2026-06-11 20:00:11]       Tracked: 1581 files
+[2026-06-11 20:00:11]       New: 0
+[2026-06-11 20:00:11]       Modified: 0
+[2026-06-11 20:00:11]       Deleted: 0
+[2026-06-11 20:00:14]       Nextflow runs: 0
+[2026-06-11 20:00:14]       SLURM jobs: 0
+[2026-06-11 20:00:14]       Log files: 706
+[2026-06-11 20:00:14]     Scanning: DROP_pipeline
+[2026-06-11 20:00:14]       Tracked: 1644 files
+[2026-06-11 20:00:14]       New: 0
+[2026-06-11 20:00:14]       Modified: 0
+[2026-06-11 20:00:14]       Deleted: 0
+[2026-06-11 20:00:34]       Nextflow runs: 0
+[2026-06-11 20:00:34]       SLURM jobs: 1
+[2026-06-11 20:00:34]       Log files: 21
+[2026-06-11 20:00:34]     Scanning: TGen_RNASeq
+[2026-06-11 20:00:40]       Tracked: 29198 files
+[2026-06-11 20:00:40]       New: 0
+[2026-06-11 20:00:40]       Modified: 0
+[2026-06-11 20:00:40]       Deleted: 0
+[2026-06-11 20:03:09]       Nextflow runs: 0
+[2026-06-11 20:03:09]       SLURM jobs: 0
+[2026-06-11 20:03:09]       Log files: 1865
+[2026-06-11 20:03:09]     Scanning: 5mc_simulator
+[2026-06-11 20:03:10]       Tracked: 171 files
+[2026-06-11 20:03:10]       New: 0
+[2026-06-11 20:03:10]       Modified: 0
+[2026-06-11 20:03:10]       Deleted: 0
+[2026-06-11 20:03:10]       Nextflow runs: 0
+[2026-06-11 20:03:10]       SLURM jobs: 0
+[2026-06-11 20:03:10]       Log files: 6
+[2026-06-11 20:03:10]     Scanning: popqc
+[2026-06-11 20:03:11]       Tracked: 30 files
+[2026-06-11 20:03:11]       New: 0
+[2026-06-11 20:03:11]       Modified: 0
+[2026-06-11 20:03:11]       Deleted: 0
+[2026-06-11 20:03:13]       Nextflow runs: 0
+[2026-06-11 20:03:13]       SLURM jobs: 0
+[2026-06-11 20:03:13]       Log files: 0
+[2026-06-11 20:03:13]   
+[2026-06-11 20:03:13]   Scan complete. Run 'biolab build' to compile the site.
+[2026-06-11 20:03:13] Scan completed in 183 seconds
+[2026-06-11 20:03:14] Changes detected, committing...
