@@ -850,3 +850,16 @@ To github.com:TNS-Schrauwen/JT-labnotebook.git
 [2026-06-15 20:00:26]   Scan complete. Run 'biolab build' to compile the site.
 [2026-06-15 20:00:27] Scan completed in 25 seconds
 [2026-06-15 20:00:27] Changes detected, committing...
+[main 0b3bfdc] auto-sync 2026-06-15 20:00 | +6 ~18 -0
+ 24 files changed, 33552 insertions(+), 32654 deletions(-)
+ create mode 100644 .biolab/state/5mc outlier model rust binary_state.json
+ create mode 100644 .biolab/state/Bibb Lab rTBI snRNASeq_state.json
+ create mode 100644 docs/registry/5mc-outlier-model-rust-binary.md
+ create mode 100644 docs/registry/bibb-lab-rtbi-snrnaseq.md
+ create mode 100644 docs/runs/5mc-outlier-model-rust-binary.md
+ create mode 100644 docs/runs/bibb-lab-rtbi-snrnaseq.md
+[2026-06-15 20:00:28] Pushing to GitHub...
+To github.com:TNS-Schrauwen/JT-labnotebook.git
+   4bb84a2..0b3bfdc  main -> main
+[2026-06-15 20:00:31] Push successful
+[2026-06-15 20:00:31] === Sync complete ===

@@ -1,1 +1,19 @@
-{}
+{
+  "/home/jtrivedi@BLUECAT.arizona.edu/projects/rTBI/results": {
+    "tags": [
+      "output",
+      "snRNASeq",
+      "bibb_lab"
+    ],
+    "context": "Output from snRNASeq analyis for Bibb Lab rTBI project",
+    "annotated_at": "2026-06-15T20:05:57.449561"
+  },
+  "/home/jtrivedi@BLUECAT.arizona.edu/projects/phoenix": {
+    "tags": [
+      "binary compilation",
+      "tool_dev"
+    ],
+    "context": "Binary compiled for beta aggregation and bayesan outlier model.",
+    "annotated_at": "2026-06-15T20:10:29.246432"
+  }
+}
