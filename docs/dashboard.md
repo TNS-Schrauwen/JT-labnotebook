@@ -1,11 +1,11 @@
 ---
 title: "Dashboard"
-date: 2026-06-11 20:03
+date: 2026-06-15 20:00
 ---
 
 # Project Intelligence Dashboard
 
-**Last Updated:** 2026-06-11 20:03
+**Last Updated:** 2026-06-15 20:00
 
 ---
 
@@ -18,6 +18,8 @@ date: 2026-06-11 20:03
 | [TGen_RNASeq](registry/tgen_rnaseq.md) | `/icebox/schrauwenLab/jtrivedi/projects/tgen_rnaseq` | 29198 | 0 | 0 | Active |
 | [5mc_simulator](registry/5mc_simulator.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/5mc/test_data` | 171 | 0 | 0 | Active |
 | [popqc](registry/popqc.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/popqc` | 30 | 0 | 0 | Active |
+| [Bibb Lab rTBI snRNASeq](registry/bibb-lab-rtbi-snrnaseq.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/rTBI` | 74 | 0 | 0 | Active |
+| [5mc outlier model rust binary](registry/5mc-outlier-model-rust-binary.md) | `/home/jtrivedi@BLUECAT.arizona.edu/projects/phoenix` | 10 | 0 | 0 | Active |
 
 ---
 
@@ -25,11 +27,11 @@ date: 2026-06-11 20:03
 
 | Metric | Value |
 |--------|-------|
-| Total Tracked Files | 32624 |
+| Total Tracked Files | 32708 |
 | New Files (this scan) | 0 |
 | Modified Files (this scan) | 0 |
 | Deleted Files (this scan) | 0 |
-| Projects | 5 |
+| Projects | 7 |
 
 ---
 
