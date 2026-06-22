@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- 5mc outlier model rust binary"
-date: 2026-06-18 20:03
+date: 2026-06-22 20:03
 tags:
   - registry
   - 5mc outlier model rust binary
@@ -8,106 +8,21 @@ tags:
 
 # File Registry: 5mc outlier model rust binary
 
-**Scan Date:** 2026-06-18 20:03
+**Scan Date:** 2026-06-22 20:03
 **Total Tracked Files:** 86
-**New Since Last Scan:** 76
-**Modified Since Last Scan:** 5
+**New Since Last Scan:** 0
+**Modified Since Last Scan:** 1
 **Deleted Since Last Scan:** 0
 
 ---
 
 ## Changes Detected
 
-### New Files
-
-| File | Type | Size | Modified |
-|------|------|------|----------|
-| `README.md` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/expected_outputs/expected_outliers.tsv` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/expected_outputs/test_params.tsv` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/metadata.tsv` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/regions.tsv` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_001/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_001/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_001/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_002/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_002/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_002/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_003/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_003/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_003/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_004/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_004/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_004/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_005/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_005/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_005/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_006/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_006/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_006/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_007/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_007/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_007/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_008/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_008/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_008/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_009/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_009/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_009/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_010/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_010/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_010/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_011/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_011/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_011/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_012/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_012/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_012/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_013/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_013/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_013/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_014/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_014/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_014/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_015/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_015/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_015/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_016/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_016/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_016/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_017/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_017/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_017/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_018/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_018/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_018/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_019/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_019/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_019/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_020/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_020/hap1.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_020/hap2.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_021/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_022/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_023/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_024/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_025/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_026/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_027/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_028/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_029/combined.bed` |  | 0 B |  |
-| `crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_030/combined.bed` |  | 0 B |  |
-| `scripts/generate_test_data.sh` |  | 0 B |  |
-
 ### Modified Files
 
 | File | Type | Size | Modified |
 |------|------|------|----------|
-| `Cargo.toml` |  | 0 B |  |
-| `crates/phoenix-cli/Cargo.toml` |  | 0 B |  |
-| `crates/phoenix-io/Cargo.toml` |  | 0 B |  |
-| `crates/phoenix-schema/Cargo.toml` |  | 0 B |  |
-| `rust-toolchain.toml` |  | 0 B |  |
+| `README.md` |  | 0 B |  |
 
 ---
 
@@ -118,7 +33,7 @@ tags:
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
 | `Cargo.toml` |  | 0 B | 273f1d99 | 2026-06-15 |  |  |
-| `README.md` |  | 0 B | 752ab340 | 2026-06-18 |  |  |
+| `README.md` |  | 0 B | 980e3216 | 2026-06-18 |  |  |
 | `rust-toolchain.toml` |  | 0 B | 2350b3e7 | 2026-06-15 |  |  |
 
 ### `crates/phoenix-cli/`
