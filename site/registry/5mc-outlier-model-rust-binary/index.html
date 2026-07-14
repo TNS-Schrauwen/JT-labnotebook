@@ -1,0 +1,2762 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Automated Project Intelligence Tracker">
+      
+      
+      
+        <link rel="canonical" href="https://tns-schrauwen.github.io/JT-labnotebook/registry/5mc-outlier-model-rust-binary/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>File Registry -- 5mc outlier model rust binary - JT Lab Notebook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#file-registry-5mc-outlier-model-rust-binary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="JT Lab Notebook" class="md-header__button md-logo" aria-label="JT Lab Notebook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            JT Lab Notebook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              File Registry -- 5mc outlier model rust binary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TNS-Schrauwen/JT-labnotebook" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    JT-labnotebook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dashboard/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Dashboard
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  File Registry
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../runs/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Pipeline Runs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../annotations/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Annotations
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../notes/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="JT Lab Notebook" class="md-nav__button md-logo" aria-label="JT Lab Notebook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    JT Lab Notebook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TNS-Schrauwen/JT-labnotebook" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    JT-labnotebook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    File Registry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../runs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline Runs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../annotations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Annotations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#changes-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changes Detected
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changes Detected">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modified-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modified Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complete-file-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complete File Inventory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complete File Inventory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ./
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-annotate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-annotate/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohort" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortexpected_outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/expected_outputs/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_001" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_001/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_002" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_002/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_003" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_003/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_004" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_004/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_005" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_005/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_006" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_006/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_007" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_007/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_008" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_008/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_009" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_009/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_010" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_010/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_011" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_011/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_012" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_012/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_013" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_013/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_014" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_014/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_015" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_015/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_016" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_016/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_017" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_017/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_018" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_018/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_019" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_019/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_020" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_020/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_021" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_021/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_022" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_022/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_023" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_023/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_024" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_024/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_025/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_026/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_027" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_027/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_028" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_028/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_029" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_029/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_030" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_030/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-core/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-io" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-io/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-regions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-regions/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-schema/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cratesphoenix-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        crates/phoenix-stats/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resourceshg38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        resources/hg38/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resourcesomim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        resources/omim/
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        scripts/
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/TNS-Schrauwen/JT-labnotebook/edit/main/docs/registry/5mc-outlier-model-rust-binary.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/TNS-Schrauwen/JT-labnotebook/raw/main/docs/registry/5mc-outlier-model-rust-binary.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="file-registry-5mc-outlier-model-rust-binary">File Registry: 5mc outlier model rust binary<a class="headerlink" href="#file-registry-5mc-outlier-model-rust-binary" title="Permanent link">&para;</a></h1>
+<p><strong>Scan Date:</strong> 2026-07-14 02:52
+<strong>Total Tracked Files:</strong> 90
+<strong>New Since Last Scan:</strong> 4
+<strong>Modified Since Last Scan:</strong> 3
+<strong>Deleted Since Last Scan:</strong> 0</p>
+<hr />
+<h2 id="changes-detected">Changes Detected<a class="headerlink" href="#changes-detected" title="Permanent link">&para;</a></h2>
+<h3 id="new-files">New Files<a class="headerlink" href="#new-files" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Type</th>
+<th>Size</th>
+<th>Modified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>crates/phoenix-annotate/Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td></td>
+</tr>
+<tr>
+<td><code>resources/omim/README.md</code></td>
+<td></td>
+<td>0 B</td>
+<td></td>
+</tr>
+<tr>
+<td><code>resources/omim/omim_gene.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td></td>
+</tr>
+<tr>
+<td><code>resources/omim/omim_genemap2.txt</code></td>
+<td></td>
+<td>0 B</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="modified-files">Modified Files<a class="headerlink" href="#modified-files" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Type</th>
+<th>Size</th>
+<th>Modified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td></td>
+</tr>
+<tr>
+<td><code>README.md</code></td>
+<td></td>
+<td>0 B</td>
+<td></td>
+</tr>
+<tr>
+<td><code>crates/phoenix-cli/Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="complete-file-inventory">Complete File Inventory<a class="headerlink" href="#complete-file-inventory" title="Permanent link">&para;</a></h2>
+<h3 id="_1"><code>./</code><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td>d46ecc88</td>
+<td>2026-06-15</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>README.md</code></td>
+<td></td>
+<td>0 B</td>
+<td>fd2feabd</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>rust-toolchain.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td>2350b3e7</td>
+<td>2026-06-15</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-annotate"><code>crates/phoenix-annotate/</code><a class="headerlink" href="#cratesphoenix-annotate" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td>8f3dc39d</td>
+<td>2026-07-14</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-cli"><code>crates/phoenix-cli/</code><a class="headerlink" href="#cratesphoenix-cli" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td>3241412f</td>
+<td>2026-06-15</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohort"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohort" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>metadata.tsv</code></td>
+<td></td>
+<td>0 B</td>
+<td>3358b287</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>regions.tsv</code></td>
+<td></td>
+<td>0 B</td>
+<td>7864be5c</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortexpected_outputs"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/expected_outputs/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortexpected_outputs" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>expected_outliers.tsv</code></td>
+<td></td>
+<td>0 B</td>
+<td>dc78f7bd</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>test_params.tsv</code></td>
+<td></td>
+<td>0 B</td>
+<td>e407c676</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_001"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_001/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_001" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>4827a500</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>ea992dd8</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>e82e9f76</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_002"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_002/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_002" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>3c77a46f</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>79f3ec6e</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>47b383aa</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_003"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_003/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_003" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>3b1d54d7</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>173c792c</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>c9a74468</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_004"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_004/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_004" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>350761ef</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>ac8a01bb</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>aaf44ff2</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_005"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_005/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_005" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>50e30be0</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>3676d1df</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>14ee0c20</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_006"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_006/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_006" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>e44e7c10</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>715c22fd</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>f31785e8</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_007"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_007/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_007" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>73960351</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>4a7e76bc</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>42f21662</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_008"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_008/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_008" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>0d91f263</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>ead59c58</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>8847009f</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_009"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_009/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_009" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>9433f90d</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>cfd83c39</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>38d81e01</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_010"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_010/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_010" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>0ce3ed22</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>b859fb5b</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>b46d575a</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_011"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_011/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_011" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>bb436b7c</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>654fe566</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>9ba78d74</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_012"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_012/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_012" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>5db730b0</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>c4e01ef2</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>c82924f6</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_013"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_013/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_013" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>57e1b415</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>7850fb40</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>b4dd3645</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_014"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_014/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_014" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>4186a6d0</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>4ad9d12e</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>353089a6</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_015"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_015/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_015" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>cd525fbe</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>401b6317</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>b4af35d4</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_016"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_016/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_016" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>635b724c</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>3a6c929d</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>2d07b5f3</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_017"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_017/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_017" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>4674d705</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>61cf9814</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>deeb89fd</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_018"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_018/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_018" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>228c250e</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>b022250f</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>8c2422d8</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_019"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_019/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_019" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>6822bc5f</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>5f8a3d43</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>16cb6642</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_020"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_020/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_020" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>67b456a9</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap1.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>05a4513a</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>hap2.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>927db73d</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_021"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_021/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_021" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>464f0053</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_022"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_022/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_022" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>0fbdec9a</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_023"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_023/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_023" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>cc8318c0</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_024"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_024/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_024" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>91ccfa67</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_025"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_025/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_025" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>ca1dd56a</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_026"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_026/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_026" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>63239e5a</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_027"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_027/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_027" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>f3bfde2e</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_028"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_028/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_028" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>91a905e3</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_029"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_029/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_029" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>eb8f4a36</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_030"><code>crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_030/</code><a class="headerlink" href="#cratesphoenix-clitestsfixturessynthetic_cohortsamplessample_030" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>combined.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>54e2fdf9</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-core"><code>crates/phoenix-core/</code><a class="headerlink" href="#cratesphoenix-core" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td>ad375a50</td>
+<td>2026-06-15</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-io"><code>crates/phoenix-io/</code><a class="headerlink" href="#cratesphoenix-io" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td>3f8ef29c</td>
+<td>2026-06-15</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-regions"><code>crates/phoenix-regions/</code><a class="headerlink" href="#cratesphoenix-regions" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td>9c020c40</td>
+<td>2026-06-15</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-schema"><code>crates/phoenix-schema/</code><a class="headerlink" href="#cratesphoenix-schema" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td>deb8dab8</td>
+<td>2026-06-15</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cratesphoenix-stats"><code>crates/phoenix-stats/</code><a class="headerlink" href="#cratesphoenix-stats" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Cargo.toml</code></td>
+<td></td>
+<td>0 B</td>
+<td>f893a965</td>
+<td>2026-06-15</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="resourceshg38"><code>resources/hg38/</code><a class="headerlink" href="#resourceshg38" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cpg.tsv</code></td>
+<td></td>
+<td>0 B</td>
+<td>2aa405ac</td>
+<td>2026-06-15</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>enhancer.tsv</code></td>
+<td></td>
+<td>0 B</td>
+<td>119bc68a</td>
+<td>2026-06-15</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="resourcesomim"><code>resources/omim/</code><a class="headerlink" href="#resourcesomim" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>README.md</code></td>
+<td></td>
+<td>0 B</td>
+<td>042ae127</td>
+<td>2026-07-14</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>omim_gene.bed</code></td>
+<td></td>
+<td>0 B</td>
+<td>779ee7b8</td>
+<td>2026-07-14</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>omim_genemap2.txt</code></td>
+<td></td>
+<td>0 B</td>
+<td>9e715ee9</td>
+<td>2026-07-14</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="scripts"><code>scripts/</code><a class="headerlink" href="#scripts" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Extension</th>
+<th>Size</th>
+<th>Hash</th>
+<th>First Seen</th>
+<th>Tags</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>generate_test_data.sh</code></td>
+<td></td>
+<td>0 B</td>
+<td>2ae34c19</td>
+<td>2026-06-18</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.edit", "content.action.view", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

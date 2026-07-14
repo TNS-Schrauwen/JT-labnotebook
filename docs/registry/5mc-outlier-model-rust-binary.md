@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- 5mc outlier model rust binary"
-date: 2026-06-23 20:03
+date: 2026-07-14 02:52
 tags:
   - registry
   - 5mc outlier model rust binary
@@ -8,13 +8,32 @@ tags:
 
 # File Registry: 5mc outlier model rust binary
 
-**Scan Date:** 2026-06-23 20:03
-**Total Tracked Files:** 86
-**New Since Last Scan:** 0
-**Modified Since Last Scan:** 0
+**Scan Date:** 2026-07-14 02:52
+**Total Tracked Files:** 90
+**New Since Last Scan:** 4
+**Modified Since Last Scan:** 3
 **Deleted Since Last Scan:** 0
 
 ---
+
+## Changes Detected
+
+### New Files
+
+| File | Type | Size | Modified |
+|------|------|------|----------|
+| `crates/phoenix-annotate/Cargo.toml` |  | 0 B |  |
+| `resources/omim/README.md` |  | 0 B |  |
+| `resources/omim/omim_gene.bed` |  | 0 B |  |
+| `resources/omim/omim_genemap2.txt` |  | 0 B |  |
+
+### Modified Files
+
+| File | Type | Size | Modified |
+|------|------|------|----------|
+| `Cargo.toml` |  | 0 B |  |
+| `README.md` |  | 0 B |  |
+| `crates/phoenix-cli/Cargo.toml` |  | 0 B |  |
 
 ---
 
@@ -24,15 +43,21 @@ tags:
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `Cargo.toml` |  | 0 B | 273f1d99 | 2026-06-15 |  |  |
-| `README.md` |  | 0 B | 980e3216 | 2026-06-18 |  |  |
+| `Cargo.toml` |  | 0 B | d46ecc88 | 2026-06-15 |  |  |
+| `README.md` |  | 0 B | fd2feabd | 2026-06-18 |  |  |
 | `rust-toolchain.toml` |  | 0 B | 2350b3e7 | 2026-06-15 |  |  |
+
+### `crates/phoenix-annotate/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `Cargo.toml` |  | 0 B | 8f3dc39d | 2026-07-14 |  |  |
 
 ### `crates/phoenix-cli/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `Cargo.toml` |  | 0 B | 9b6954f3 | 2026-06-15 |  |  |
+| `Cargo.toml` |  | 0 B | 3241412f | 2026-06-15 |  |  |
 
 ### `crates/phoenix-cli/tests/fixtures/synthetic_cohort/`
 
@@ -304,6 +329,14 @@ tags:
 |------|-----------|------|------|------------|------|--------|
 | `cpg.tsv` |  | 0 B | 2aa405ac | 2026-06-15 |  |  |
 | `enhancer.tsv` |  | 0 B | 119bc68a | 2026-06-15 |  |  |
+
+### `resources/omim/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `README.md` |  | 0 B | 042ae127 | 2026-07-14 |  |  |
+| `omim_gene.bed` |  | 0 B | 779ee7b8 | 2026-07-14 |  |  |
+| `omim_genemap2.txt` |  | 0 B | 9e715ee9 | 2026-07-14 |  |  |
 
 ### `scripts/`
 
