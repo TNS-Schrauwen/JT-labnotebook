@@ -1,635 +1,635 @@
 {
   "files": {
     "README.md": {
-      "size": 6298,
-      "mtime": 1783997234.5799572,
-      "hash": "fd2feabd0355d46e34436ab133de3f45",
+      "size": 6299,
+      "mtime": 1784237189.9152207,
+      "hash": "6286be99138fc09a9fa4e51bb7fbf8e7",
       "first_seen": "2026-06-18T20:03:06.547239",
-      "last_seen": "2026-07-16T21:11:48.918631"
+      "last_seen": "2026-07-23T19:30:35.607511"
     },
     "Cargo.toml": {
       "size": 1049,
       "mtime": 1782327426.846328,
       "hash": "d46ecc88389f41f7cfbccb2f89b7c1c0",
       "first_seen": "2026-06-15T19:55:52.947354",
-      "last_seen": "2026-07-16T21:11:48.918645"
+      "last_seen": "2026-07-23T19:30:35.607524"
     },
     "rust-toolchain.toml": {
       "size": 65,
       "mtime": 1781737840.6197484,
       "hash": "2350b3e75c0dc1e67cb131dc7a93b9b3",
       "first_seen": "2026-06-15T19:55:52.947390",
-      "last_seen": "2026-07-16T21:11:48.918654"
+      "last_seen": "2026-07-23T19:30:35.607533"
     },
     "resources/omim/omim_genemap2.txt": {
       "size": 3450126,
       "mtime": 1782329409.3784232,
       "hash": "9e715ee9423e219d2bcbe4db0a75cf98",
       "first_seen": "2026-07-14T02:52:52.704435",
-      "last_seen": "2026-07-16T21:11:48.918662"
+      "last_seen": "2026-07-23T19:30:35.607542"
     },
     "resources/omim/README.md": {
       "size": 614,
       "mtime": 1782329373.2484221,
       "hash": "042ae127c2372fe0ea81d632bddce351",
       "first_seen": "2026-07-14T02:52:52.704447",
-      "last_seen": "2026-07-16T21:11:48.918670"
+      "last_seen": "2026-07-23T19:30:35.607550"
     },
     "resources/omim/omim_gene.bed": {
       "size": 1341082,
       "mtime": 1782329409.3684232,
       "hash": "779ee7b88bb7b93e0f3538c8c662303e",
       "first_seen": "2026-07-14T02:52:52.704456",
-      "last_seen": "2026-07-16T21:11:48.918678"
+      "last_seen": "2026-07-23T19:30:35.607558"
     },
     "resources/hg38/enhancer.tsv": {
       "size": 44541332,
       "mtime": 1781044006.2894735,
       "hash": "119bc68a453d7ea7e8d9afb88d7af51e",
       "first_seen": "2026-06-15T19:55:52.947401",
-      "last_seen": "2026-07-16T21:11:48.918688"
+      "last_seen": "2026-07-23T19:30:35.607567"
     },
     "resources/hg38/cpg.tsv": {
       "size": 2036198,
       "mtime": 1781043936.5784652,
       "hash": "2aa405ac78cd88467237efa932fb96fd",
       "first_seen": "2026-06-15T19:55:52.947409",
-      "last_seen": "2026-07-16T21:11:48.918695"
+      "last_seen": "2026-07-23T19:30:35.607575"
     },
     "scripts/generate_test_data.sh": {
       "size": 9231,
       "mtime": 1781738354.0198612,
       "hash": "2ae34c1915688877d3162142ceec7c84",
       "first_seen": "2026-06-18T20:03:06.547315",
-      "last_seen": "2026-07-16T21:11:48.918704"
+      "last_seen": "2026-07-23T19:30:35.607582"
     },
     "crates/phoenix-schema/Cargo.toml": {
       "size": 234,
       "mtime": 1781754731.6901486,
       "hash": "deb8dab8616e4555cbaabba72de9aa59",
       "first_seen": "2026-06-15T19:55:52.947417",
-      "last_seen": "2026-07-16T21:11:48.918712"
+      "last_seen": "2026-07-23T19:30:35.607590"
     },
     "crates/phoenix-stats/Cargo.toml": {
       "size": 270,
       "mtime": 1781040733.4520702,
       "hash": "f893a9656a5743c0fb2db63966e08930",
       "first_seen": "2026-06-15T19:55:52.947425",
-      "last_seen": "2026-07-16T21:11:48.918721"
+      "last_seen": "2026-07-23T19:30:35.607597"
     },
     "crates/phoenix-cli/Cargo.toml": {
       "size": 757,
       "mtime": 1782327474.1023333,
       "hash": "3241412f92bd5d9428799404ff13e7e5",
       "first_seen": "2026-06-15T19:55:52.947433",
-      "last_seen": "2026-07-16T21:11:48.918731"
+      "last_seen": "2026-07-23T19:30:35.607606"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/metadata.tsv": {
       "size": 1233,
       "mtime": 1781733426.0522025,
       "hash": "3358b287614ea15b986140bbb7a640c7",
       "first_seen": "2026-06-18T20:03:06.547351",
-      "last_seen": "2026-07-16T21:11:48.918739"
+      "last_seen": "2026-07-23T19:30:35.607614"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/regions.tsv": {
       "size": 4695,
       "mtime": 1781733426.0502024,
       "hash": "7864be5c25a6813aad39008d4c1542b4",
       "first_seen": "2026-06-18T20:03:06.547359",
-      "last_seen": "2026-07-16T21:11:48.918746"
+      "last_seen": "2026-07-23T19:30:35.607622"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_018/hap1.bed": {
       "size": 91414,
       "mtime": 1781733425.9822023,
       "hash": "b022250f6aed65192f566d63928fe9b6",
       "first_seen": "2026-06-18T20:03:06.547368",
-      "last_seen": "2026-07-16T21:11:48.918754"
+      "last_seen": "2026-07-23T19:30:35.607629"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_018/hap2.bed": {
       "size": 91401,
       "mtime": 1781733425.9842024,
       "hash": "8c2422d8a6da9a2e2c0b25634ed58851",
       "first_seen": "2026-06-18T20:03:06.547384",
-      "last_seen": "2026-07-16T21:11:48.918761"
+      "last_seen": "2026-07-23T19:30:35.607637"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_018/combined.bed": {
       "size": 92652,
       "mtime": 1781733425.9812024,
       "hash": "228c250e95a7843e0d3e70334c345981",
       "first_seen": "2026-06-18T20:03:06.547392",
-      "last_seen": "2026-07-16T21:11:48.918768"
+      "last_seen": "2026-07-23T19:30:35.607644"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_007/hap1.bed": {
       "size": 87448,
       "mtime": 1781733425.9042022,
       "hash": "4a7e76bc563a8abcccabd2c3345b15e2",
       "first_seen": "2026-06-18T20:03:06.547399",
-      "last_seen": "2026-07-16T21:11:48.918776"
+      "last_seen": "2026-07-23T19:30:35.607651"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_007/hap2.bed": {
       "size": 87437,
       "mtime": 1781733425.9052022,
       "hash": "42f2166272b037384d86ddaaf63f25e0",
       "first_seen": "2026-06-18T20:03:06.547407",
-      "last_seen": "2026-07-16T21:11:48.918783"
+      "last_seen": "2026-07-23T19:30:35.607660"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_007/combined.bed": {
       "size": 88700,
       "mtime": 1781733425.9022024,
       "hash": "7396035191eae4fd96d7f150eb64e1ec",
       "first_seen": "2026-06-18T20:03:06.547414",
-      "last_seen": "2026-07-16T21:11:48.918791"
+      "last_seen": "2026-07-23T19:30:35.607669"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_009/hap1.bed": {
       "size": 89960,
       "mtime": 1781733425.9182022,
       "hash": "cfd83c3959f785fefcc9fdcca4d275b9",
       "first_seen": "2026-06-18T20:03:06.547421",
-      "last_seen": "2026-07-16T21:11:48.918798"
+      "last_seen": "2026-07-23T19:30:35.607676"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_009/hap2.bed": {
       "size": 89969,
       "mtime": 1781733425.9202023,
       "hash": "38d81e011b1a238051f8947110a01e7b",
       "first_seen": "2026-06-18T20:03:06.547429",
-      "last_seen": "2026-07-16T21:11:48.918805"
+      "last_seen": "2026-07-23T19:30:35.607686"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_009/combined.bed": {
       "size": 91175,
       "mtime": 1781733425.9172022,
       "hash": "9433f90d77d3b16612988207078937f3",
       "first_seen": "2026-06-18T20:03:06.547436",
-      "last_seen": "2026-07-16T21:11:48.918815"
+      "last_seen": "2026-07-23T19:30:35.607695"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_027/combined.bed": {
       "size": 93078,
       "mtime": 1781733426.0302024,
       "hash": "f3bfde2e601a0b1f70a67d332017fcdf",
       "first_seen": "2026-06-18T20:03:06.547444",
-      "last_seen": "2026-07-16T21:11:48.918822"
+      "last_seen": "2026-07-23T19:30:35.607702"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_026/combined.bed": {
       "size": 91467,
       "mtime": 1781733426.0252023,
       "hash": "63239e5affc7c5bcf510ed8c258c2f10",
       "first_seen": "2026-06-18T20:03:06.547450",
-      "last_seen": "2026-07-16T21:11:48.918829"
+      "last_seen": "2026-07-23T19:30:35.607710"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_022/combined.bed": {
       "size": 94992,
       "mtime": 1781733426.0072024,
       "hash": "0fbdec9a83a5c615cf40ba552db65453",
       "first_seen": "2026-06-18T20:03:06.547459",
-      "last_seen": "2026-07-16T21:11:48.918837"
+      "last_seen": "2026-07-23T19:30:35.607717"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_006/hap1.bed": {
       "size": 93222,
       "mtime": 1781733425.8972023,
       "hash": "715c22fdcb494817c951f407b6911a3e",
       "first_seen": "2026-06-18T20:03:06.547466",
-      "last_seen": "2026-07-16T21:11:48.918844"
+      "last_seen": "2026-07-23T19:30:35.607725"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_006/hap2.bed": {
       "size": 93199,
       "mtime": 1781733425.8982022,
       "hash": "f31785e8f9d7f68de8e2c6f8022b5b0f",
       "first_seen": "2026-06-18T20:03:06.547473",
-      "last_seen": "2026-07-16T21:11:48.918851"
+      "last_seen": "2026-07-23T19:30:35.607732"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_006/combined.bed": {
       "size": 94437,
       "mtime": 1781733425.8952022,
       "hash": "e44e7c1093ee1af563bf285f0bd55baf",
       "first_seen": "2026-06-18T20:03:06.547480",
-      "last_seen": "2026-07-16T21:11:48.918858"
+      "last_seen": "2026-07-23T19:30:35.607739"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_010/hap1.bed": {
       "size": 88990,
       "mtime": 1781733425.9252024,
       "hash": "b859fb5b75d0abb47376ba8cb99cf46c",
       "first_seen": "2026-06-18T20:03:06.547487",
-      "last_seen": "2026-07-16T21:11:48.918865"
+      "last_seen": "2026-07-23T19:30:35.607746"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_010/hap2.bed": {
       "size": 88978,
       "mtime": 1781733425.9262023,
       "hash": "b46d575a95de723b1cd03310566a80e0",
       "first_seen": "2026-06-18T20:03:06.547494",
-      "last_seen": "2026-07-16T21:11:48.918873"
+      "last_seen": "2026-07-23T19:30:35.607754"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_010/combined.bed": {
       "size": 90268,
       "mtime": 1781733425.9232023,
       "hash": "0ce3ed22f7371862c85ceeed541bb58b",
       "first_seen": "2026-06-18T20:03:06.547502",
-      "last_seen": "2026-07-16T21:11:48.918880"
+      "last_seen": "2026-07-23T19:30:35.607761"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_024/combined.bed": {
       "size": 85338,
       "mtime": 1781733426.0162024,
       "hash": "91ccfa6774095ec213809b6106b03e15",
       "first_seen": "2026-06-18T20:03:06.547509",
-      "last_seen": "2026-07-16T21:11:48.918888"
+      "last_seen": "2026-07-23T19:30:35.607768"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_019/hap1.bed": {
       "size": 91103,
       "mtime": 1781733425.9902024,
       "hash": "5f8a3d4333dc536a95903fb60615f4da",
       "first_seen": "2026-06-18T20:03:06.547515",
-      "last_seen": "2026-07-16T21:11:48.918895"
+      "last_seen": "2026-07-23T19:30:35.607776"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_019/hap2.bed": {
       "size": 91090,
       "mtime": 1781733425.9922023,
       "hash": "16cb6642fabcf5f3a4e607033d87b462",
       "first_seen": "2026-06-18T20:03:06.547523",
-      "last_seen": "2026-07-16T21:11:48.918903"
+      "last_seen": "2026-07-23T19:30:35.607783"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_019/combined.bed": {
       "size": 92344,
       "mtime": 1781733425.9882023,
       "hash": "6822bc5fa24c22f16e331978c81dc396",
       "first_seen": "2026-06-18T20:03:06.547530",
-      "last_seen": "2026-07-16T21:11:48.918910"
+      "last_seen": "2026-07-23T19:30:35.607790"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_014/hap1.bed": {
       "size": 90944,
       "mtime": 1781733425.9502022,
       "hash": "4ad9d12e058e4b9b533f997b5535a47c",
       "first_seen": "2026-06-18T20:03:06.547537",
-      "last_seen": "2026-07-16T21:11:48.918917"
+      "last_seen": "2026-07-23T19:30:35.607798"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_014/hap2.bed": {
       "size": 90978,
       "mtime": 1781733425.9522023,
       "hash": "353089a6e2c12bc004947c4c3f0dd07c",
       "first_seen": "2026-06-18T20:03:06.547545",
-      "last_seen": "2026-07-16T21:11:48.918925"
+      "last_seen": "2026-07-23T19:30:35.607805"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_014/combined.bed": {
       "size": 92233,
       "mtime": 1781733425.9492023,
       "hash": "4186a6d0d88d6acb2bff83e6028c535f",
       "first_seen": "2026-06-18T20:03:06.547552",
-      "last_seen": "2026-07-16T21:11:48.918932"
+      "last_seen": "2026-07-23T19:30:35.607812"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_030/combined.bed": {
       "size": 12789,
       "mtime": 1781733426.0432024,
       "hash": "54e2fdf92953a9fbefde6e85873708fb",
       "first_seen": "2026-06-18T20:03:06.547559",
-      "last_seen": "2026-07-16T21:11:48.918940"
+      "last_seen": "2026-07-23T19:30:35.607819"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_012/hap1.bed": {
       "size": 90201,
       "mtime": 1781733425.9372022,
       "hash": "c4e01ef22d0d7a1c206808edc4c48f6c",
       "first_seen": "2026-06-18T20:03:06.547567",
-      "last_seen": "2026-07-16T21:11:48.918947"
+      "last_seen": "2026-07-23T19:30:35.607826"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_012/hap2.bed": {
       "size": 90211,
       "mtime": 1781733425.9392023,
       "hash": "c82924f6efd9898234f1111102ca9b24",
       "first_seen": "2026-06-18T20:03:06.547574",
-      "last_seen": "2026-07-16T21:11:48.918955"
+      "last_seen": "2026-07-23T19:30:35.607835"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_012/combined.bed": {
       "size": 91397,
       "mtime": 1781733425.9362023,
       "hash": "5db730b0b6ba1858c1e8cffdf109c933",
       "first_seen": "2026-06-18T20:03:06.547581",
-      "last_seen": "2026-07-16T21:11:48.918962"
+      "last_seen": "2026-07-23T19:30:35.607842"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_021/combined.bed": {
       "size": 94165,
       "mtime": 1781733426.0042024,
       "hash": "464f0053ba03fe75d900f0b8606c3237",
       "first_seen": "2026-06-18T20:03:06.547588",
-      "last_seen": "2026-07-16T21:11:48.918972"
+      "last_seen": "2026-07-23T19:30:35.607852"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_003/hap1.bed": {
       "size": 85099,
       "mtime": 1781733425.8752022,
       "hash": "173c792c801fc86fb1344981ee59f200",
       "first_seen": "2026-06-18T20:03:06.547595",
-      "last_seen": "2026-07-16T21:11:48.918980"
+      "last_seen": "2026-07-23T19:30:35.607859"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_003/hap2.bed": {
       "size": 85118,
       "mtime": 1781733425.8772023,
       "hash": "c9a744684953884bdaa25922144cd3f5",
       "first_seen": "2026-06-18T20:03:06.547602",
-      "last_seen": "2026-07-16T21:11:48.918988"
+      "last_seen": "2026-07-23T19:30:35.607867"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_003/combined.bed": {
       "size": 86364,
       "mtime": 1781733425.8732023,
       "hash": "3b1d54d7bfd7b3fdce1812f228994594",
       "first_seen": "2026-06-18T20:03:06.547612",
-      "last_seen": "2026-07-16T21:11:48.918995"
+      "last_seen": "2026-07-23T19:30:35.607874"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_015/hap1.bed": {
       "size": 96021,
       "mtime": 1781733425.9572022,
       "hash": "401b631737c895f58319c5391a9f0793",
       "first_seen": "2026-06-18T20:03:06.547619",
-      "last_seen": "2026-07-16T21:11:48.919003"
+      "last_seen": "2026-07-23T19:30:35.607881"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_015/hap2.bed": {
       "size": 95966,
       "mtime": 1781733425.9592023,
       "hash": "b4af35d4853f56a6f3ff0fc2f43c1194",
       "first_seen": "2026-06-18T20:03:06.547626",
-      "last_seen": "2026-07-16T21:11:48.919011"
+      "last_seen": "2026-07-23T19:30:35.607889"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_015/combined.bed": {
       "size": 97230,
       "mtime": 1781733425.9562023,
       "hash": "cd525fbe58ad6e6f5fea2022b9c60a2e",
       "first_seen": "2026-06-18T20:03:06.547633",
-      "last_seen": "2026-07-16T21:11:48.919018"
+      "last_seen": "2026-07-23T19:30:35.607896"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_029/combined.bed": {
       "size": 91461,
       "mtime": 1781733426.0382023,
       "hash": "eb8f4a36ab73c25fccf64566e5e34b48",
       "first_seen": "2026-06-18T20:03:06.547640",
-      "last_seen": "2026-07-16T21:11:48.919026"
+      "last_seen": "2026-07-23T19:30:35.607903"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_004/hap1.bed": {
       "size": 92275,
       "mtime": 1781733425.8822021,
       "hash": "ac8a01bbf1ec91de0698a20469165eff",
       "first_seen": "2026-06-18T20:03:06.547647",
-      "last_seen": "2026-07-16T21:11:48.919033"
+      "last_seen": "2026-07-23T19:30:35.607911"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_004/hap2.bed": {
       "size": 92352,
       "mtime": 1781733425.8842022,
       "hash": "aaf44ff220d0b7d080cb8c4d4aee1113",
       "first_seen": "2026-06-18T20:03:06.547654",
-      "last_seen": "2026-07-16T21:11:48.919040"
+      "last_seen": "2026-07-23T19:30:35.607918"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_004/combined.bed": {
       "size": 93535,
       "mtime": 1781733425.8812022,
       "hash": "350761ef954011e2618c3123b0bcf79d",
       "first_seen": "2026-06-18T20:03:06.547661",
-      "last_seen": "2026-07-16T21:11:48.919047"
+      "last_seen": "2026-07-23T19:30:35.607925"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_017/hap1.bed": {
       "size": 91398,
       "mtime": 1781733425.9742024,
       "hash": "61cf9814fb13d0dc3513b27166f041e5",
       "first_seen": "2026-06-18T20:03:06.547668",
-      "last_seen": "2026-07-16T21:11:48.919054"
+      "last_seen": "2026-07-23T19:30:35.607933"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_017/hap2.bed": {
       "size": 91349,
       "mtime": 1781733425.9762022,
       "hash": "deeb89fdd00470cf56c5506ec1905929",
       "first_seen": "2026-06-18T20:03:06.547675",
-      "last_seen": "2026-07-16T21:11:48.919061"
+      "last_seen": "2026-07-23T19:30:35.607940"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_017/combined.bed": {
       "size": 92679,
       "mtime": 1781733425.9722023,
       "hash": "4674d705a9a76e0962e043fb218961ff",
       "first_seen": "2026-06-18T20:03:06.547682",
-      "last_seen": "2026-07-16T21:11:48.919068"
+      "last_seen": "2026-07-23T19:30:35.607947"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_020/hap1.bed": {
       "size": 91433,
       "mtime": 1781733425.9982023,
       "hash": "05a4513a9e4ce52c577d7220190de496",
       "first_seen": "2026-06-18T20:03:06.547689",
-      "last_seen": "2026-07-16T21:11:48.919076"
+      "last_seen": "2026-07-23T19:30:35.607954"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_020/hap2.bed": {
       "size": 91463,
       "mtime": 1781733426.0002024,
       "hash": "927db73df4268420d1f152f247d95297",
       "first_seen": "2026-06-18T20:03:06.547696",
-      "last_seen": "2026-07-16T21:11:48.919083"
+      "last_seen": "2026-07-23T19:30:35.607962"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_020/combined.bed": {
       "size": 92707,
       "mtime": 1781733425.9972024,
       "hash": "67b456a923c9c79bb8d4a60f073239b3",
       "first_seen": "2026-06-18T20:03:06.547703",
-      "last_seen": "2026-07-16T21:11:48.919090"
+      "last_seen": "2026-07-23T19:30:35.607969"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_005/hap1.bed": {
       "size": 96777,
       "mtime": 1781733425.8892024,
       "hash": "3676d1df763868685ff39b687040d549",
       "first_seen": "2026-06-18T20:03:06.547710",
-      "last_seen": "2026-07-16T21:11:48.919097"
+      "last_seen": "2026-07-23T19:30:35.607976"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_005/hap2.bed": {
       "size": 96801,
       "mtime": 1781733425.8912022,
       "hash": "14ee0c20c5c4eb46eeb02527ba7c25c9",
       "first_seen": "2026-06-18T20:03:06.547717",
-      "last_seen": "2026-07-16T21:11:48.919105"
+      "last_seen": "2026-07-23T19:30:35.607984"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_005/combined.bed": {
       "size": 98053,
       "mtime": 1781733425.8882022,
       "hash": "50e30be05aa8d46a90e2f0c6a142f3ed",
       "first_seen": "2026-06-18T20:03:06.547724",
-      "last_seen": "2026-07-16T21:11:48.919113"
+      "last_seen": "2026-07-23T19:30:35.607991"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_025/combined.bed": {
       "size": 92673,
       "mtime": 1781733426.0212023,
       "hash": "ca1dd56a30e7b0ed2cfcedbdafadd377",
       "first_seen": "2026-06-18T20:03:06.547731",
-      "last_seen": "2026-07-16T21:11:48.919120"
+      "last_seen": "2026-07-23T19:30:35.607998"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_013/hap1.bed": {
       "size": 94114,
       "mtime": 1781733425.9452024,
       "hash": "7850fb401123ed2091f6126492077ae0",
       "first_seen": "2026-06-18T20:03:06.547738",
-      "last_seen": "2026-07-16T21:11:48.919128"
+      "last_seen": "2026-07-23T19:30:35.608007"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_013/hap2.bed": {
       "size": 94112,
       "mtime": 1781733425.9462023,
       "hash": "b4dd3645b41feffa1bbf98b838ca4c20",
       "first_seen": "2026-06-18T20:03:06.547745",
-      "last_seen": "2026-07-16T21:11:48.919135"
+      "last_seen": "2026-07-23T19:30:35.608014"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_013/combined.bed": {
       "size": 95297,
       "mtime": 1781733425.9432023,
       "hash": "57e1b41556c4146d95eaa62b27994d0c",
       "first_seen": "2026-06-18T20:03:06.547751",
-      "last_seen": "2026-07-16T21:11:48.919142"
+      "last_seen": "2026-07-23T19:30:35.608022"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_008/hap1.bed": {
       "size": 86731,
       "mtime": 1781733425.9112022,
       "hash": "ead59c5853b2d439780b1ce1a77034d1",
       "first_seen": "2026-06-18T20:03:06.547758",
-      "last_seen": "2026-07-16T21:11:48.919149"
+      "last_seen": "2026-07-23T19:30:35.608029"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_008/hap2.bed": {
       "size": 86772,
       "mtime": 1781733425.9132023,
       "hash": "8847009fea17654bb5c472b5d2cb5982",
       "first_seen": "2026-06-18T20:03:06.547766",
-      "last_seen": "2026-07-16T21:11:48.919156"
+      "last_seen": "2026-07-23T19:30:35.608036"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_008/combined.bed": {
       "size": 87804,
       "mtime": 1781733425.9102023,
       "hash": "0d91f26376fb6b665e44c193f9721645",
       "first_seen": "2026-06-18T20:03:06.547773",
-      "last_seen": "2026-07-16T21:11:48.919164"
+      "last_seen": "2026-07-23T19:30:35.608044"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_002/hap1.bed": {
       "size": 96318,
       "mtime": 1781733425.8682022,
       "hash": "79f3ec6eedb6c42d9f790b52ad42c1a1",
       "first_seen": "2026-06-18T20:03:06.547780",
-      "last_seen": "2026-07-16T21:11:48.919171"
+      "last_seen": "2026-07-23T19:30:35.608051"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_002/hap2.bed": {
       "size": 96291,
       "mtime": 1781733425.8702023,
       "hash": "47b383aa4d0afc2ce082a89f4067953c",
       "first_seen": "2026-06-18T20:03:06.547788",
-      "last_seen": "2026-07-16T21:11:48.919179"
+      "last_seen": "2026-07-23T19:30:35.608059"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_002/combined.bed": {
       "size": 97645,
       "mtime": 1781733425.8672023,
       "hash": "3c77a46f3a3ad7dd22bde8147406434a",
       "first_seen": "2026-06-18T20:03:06.547795",
-      "last_seen": "2026-07-16T21:11:48.919186"
+      "last_seen": "2026-07-23T19:30:35.608066"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_016/hap1.bed": {
       "size": 86659,
       "mtime": 1781733425.9662023,
       "hash": "3a6c929d9106367b87f4e9db97acf643",
       "first_seen": "2026-06-18T20:03:06.547802",
-      "last_seen": "2026-07-16T21:11:48.919193"
+      "last_seen": "2026-07-23T19:30:35.608073"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_016/hap2.bed": {
       "size": 86621,
       "mtime": 1781733425.9682024,
       "hash": "2d07b5f3b405efdfa43f769f861812bd",
       "first_seen": "2026-06-18T20:03:06.547809",
-      "last_seen": "2026-07-16T21:11:48.919200"
+      "last_seen": "2026-07-23T19:30:35.608081"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_016/combined.bed": {
       "size": 87794,
       "mtime": 1781733425.9642024,
       "hash": "635b724c2308e975f3e93ec5b6f929d7",
       "first_seen": "2026-06-18T20:03:06.547816",
-      "last_seen": "2026-07-16T21:11:48.919208"
+      "last_seen": "2026-07-23T19:30:35.608088"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_001/hap1.bed": {
       "size": 88588,
       "mtime": 1781733425.8622022,
       "hash": "ea992dd8518c1d6f14dd174e9944b1da",
       "first_seen": "2026-06-18T20:03:06.547823",
-      "last_seen": "2026-07-16T21:11:48.919215"
+      "last_seen": "2026-07-23T19:30:35.608096"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_001/hap2.bed": {
       "size": 88584,
       "mtime": 1781733425.8632023,
       "hash": "e82e9f76f44b90c5a96b7b88656ae890",
       "first_seen": "2026-06-18T20:03:06.547830",
-      "last_seen": "2026-07-16T21:11:48.919222"
+      "last_seen": "2026-07-23T19:30:35.608104"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_001/combined.bed": {
       "size": 89753,
       "mtime": 1781733425.8602023,
       "hash": "4827a5006b6188ead7b78041a4ddda6a",
       "first_seen": "2026-06-18T20:03:06.547837",
-      "last_seen": "2026-07-16T21:11:48.919230"
+      "last_seen": "2026-07-23T19:30:35.608111"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_023/combined.bed": {
       "size": 90514,
       "mtime": 1781733426.0112023,
       "hash": "cc8318c0d64b04963c4a42e0950ea258",
       "first_seen": "2026-06-18T20:03:06.547844",
-      "last_seen": "2026-07-16T21:11:48.919237"
+      "last_seen": "2026-07-23T19:30:35.608119"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_011/hap1.bed": {
       "size": 90393,
       "mtime": 1781733425.9312022,
       "hash": "654fe5666c9b7bcb6e9265ad5bd9add0",
       "first_seen": "2026-06-18T20:03:06.547851",
-      "last_seen": "2026-07-16T21:11:48.919244"
+      "last_seen": "2026-07-23T19:30:35.608126"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_011/hap2.bed": {
       "size": 90359,
       "mtime": 1781733425.9332023,
       "hash": "9ba78d740f5e2e83c49e6ae9430fccbf",
       "first_seen": "2026-06-18T20:03:06.547859",
-      "last_seen": "2026-07-16T21:11:48.919251"
+      "last_seen": "2026-07-23T19:30:35.608133"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_011/combined.bed": {
       "size": 91529,
       "mtime": 1781733425.9302022,
       "hash": "bb436b7cdbdbb8d88b1a15fe07cbebda",
       "first_seen": "2026-06-18T20:03:06.547867",
-      "last_seen": "2026-07-16T21:11:48.919259"
+      "last_seen": "2026-07-23T19:30:35.608141"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/samples/SAMPLE_028/combined.bed": {
       "size": 91753,
       "mtime": 1781733426.0342023,
       "hash": "91a905e3023a2550f8abcd8accbf06d2",
       "first_seen": "2026-06-18T20:03:06.547873",
-      "last_seen": "2026-07-16T21:11:48.919266"
+      "last_seen": "2026-07-23T19:30:35.608148"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/expected_outputs/expected_outliers.tsv": {
       "size": 561,
       "mtime": 1781733426.0472023,
       "hash": "dc78f7bda252f644115f5e9d72664f30",
       "first_seen": "2026-06-18T20:03:06.547880",
-      "last_seen": "2026-07-16T21:11:48.919274"
+      "last_seen": "2026-07-23T19:30:35.608156"
     },
     "crates/phoenix-cli/tests/fixtures/synthetic_cohort/expected_outputs/test_params.tsv": {
       "size": 146,
       "mtime": 1781733426.0482023,
       "hash": "e407c676a87852cb7a1d39d8e3025b12",
       "first_seen": "2026-06-18T20:03:06.547888",
-      "last_seen": "2026-07-16T21:11:48.919282"
+      "last_seen": "2026-07-23T19:30:35.608163"
     },
     "crates/phoenix-regions/Cargo.toml": {
       "size": 232,
       "mtime": 1781040625.843054,
       "hash": "9c020c401031afbf24d644826b41824c",
       "first_seen": "2026-06-15T19:55:52.947441",
-      "last_seen": "2026-07-16T21:11:48.919294"
+      "last_seen": "2026-07-23T19:30:35.608175"
     },
     "crates/phoenix-annotate/Cargo.toml": {
       "size": 422,
       "mtime": 1782329872.7264354,
       "hash": "8f3dc39d239a22a41483289d530cb3a3",
       "first_seen": "2026-07-14T02:52:52.705095",
-      "last_seen": "2026-07-16T21:11:48.919302"
+      "last_seen": "2026-07-23T19:30:35.608184"
     },
     "crates/phoenix-core/Cargo.toml": {
       "size": 217,
       "mtime": 1781041450.6491683,
       "hash": "ad375a503db4122d6c95babd0bfeeb95",
       "first_seen": "2026-06-15T19:55:52.947449",
-      "last_seen": "2026-07-16T21:11:48.919310"
+      "last_seen": "2026-07-23T19:30:35.608192"
     },
     "crates/phoenix-io/Cargo.toml": {
       "size": 382,
       "mtime": 1781804360.1975079,
       "hash": "3f8ef29cc30f9242a3be98835b22fce0",
       "first_seen": "2026-06-15T19:55:52.947456",
-      "last_seen": "2026-07-16T21:11:48.919317"
+      "last_seen": "2026-07-23T19:30:35.608200"
     }
   },
-  "last_scan": "2026-07-16T21:11:48.919366"
+  "last_scan": "2026-07-23T19:30:35.608250"
 }

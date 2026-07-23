@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- 5mc outlier model rust binary"
-date: 2026-07-16 21:11
+date: 2026-07-23 19:30
 tags:
   - registry
   - 5mc outlier model rust binary
@@ -8,7 +8,7 @@ tags:
 
 # File Registry: 5mc outlier model rust binary
 
-**Scan Date:** 2026-07-16 21:11
+**Scan Date:** 2026-07-23 19:30
 **Total Tracked Files:** 90
 **New Since Last Scan:** 0
 **Modified Since Last Scan:** 0
@@ -25,7 +25,7 @@ tags:
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
 | `Cargo.toml` |  | 0 B | d46ecc88 | 2026-06-15 |  |  |
-| `README.md` |  | 0 B | fd2feabd | 2026-06-18 |  |  |
+| `README.md` |  | 0 B | 6286be99 | 2026-06-18 |  |  |
 | `rust-toolchain.toml` |  | 0 B | 2350b3e7 | 2026-06-15 |  |  |
 
 ### `crates/phoenix-annotate/`

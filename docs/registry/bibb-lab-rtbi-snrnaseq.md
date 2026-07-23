@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- Bibb Lab rTBI snRNASeq"
-date: 2026-07-16 21:11
+date: 2026-07-23 19:30
 tags:
   - registry
   - Bibb Lab rTBI snRNASeq
@@ -8,8 +8,8 @@ tags:
 
 # File Registry: Bibb Lab rTBI snRNASeq
 
-**Scan Date:** 2026-07-16 21:11
-**Total Tracked Files:** 781
+**Scan Date:** 2026-07-23 19:30
+**Total Tracked Files:** 928
 **New Since Last Scan:** 0
 **Modified Since Last Scan:** 0
 **Deleted Since Last Scan:** 0
@@ -19,6 +19,16 @@ tags:
 ---
 
 ## Complete File Inventory
+
+### `./`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `Common_Significant_Genes_Bulk_vs_snRNA.pdf` |  | 0 B | 4ae1bd60 | 2026-07-23 |  |  |
+| `DEA.R` |  | 0 B | d3409684 | 2026-07-23 |  |  |
+| `OA_plots.R` |  | 0 B | b63adbaa | 2026-07-23 |  |  |
+| `bulkrna_significant.csv` |  | 0 B | 61d50d7f | 2026-07-23 |  |  |
+| `snrnaseq_significant.csv` |  | 0 B | d7216006 | 2026-07-23 |  |  |
 
 ### `Bibb_Rat_Omics/`
 
@@ -515,6 +525,40 @@ tags:
 |------|-----------|------|------|------------|------|--------|
 | `scrna_analysis.R` |  | 0 B | 3b5b18f9 | 2026-07-16 |  |  |
 
+### `results/Bulk_vs_snRNA/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `all_genes_comparison_bar.pdf` |  | 0 B | ec54dcac | 2026-07-23 |  |  |
+| `all_genes_comparison_bar.png` |  | 0 B | ecc38e7a | 2026-07-23 |  |  |
+| `comparison_Blnk.pdf` |  | 0 B | a001bdc4 | 2026-07-23 |  |  |
+| `comparison_Blnk.png` |  | 0 B | dc787487 | 2026-07-23 |  |  |
+| `comparison_C1qa.pdf` |  | 0 B | 5f613f11 | 2026-07-23 |  |  |
+| `comparison_C1qa.png` |  | 0 B | 119ac5b9 | 2026-07-23 |  |  |
+| `comparison_C1qc.pdf` |  | 0 B | 669f3123 | 2026-07-23 |  |  |
+| `comparison_C1qc.png` |  | 0 B | 10aa5536 | 2026-07-23 |  |  |
+| `comparison_C3.pdf` |  | 0 B | 7e89abbd | 2026-07-23 |  |  |
+| `comparison_C3.png` |  | 0 B | e6d0bcf8 | 2026-07-23 |  |  |
+| `comparison_Cd74.pdf` |  | 0 B | e904c5f6 | 2026-07-23 |  |  |
+| `comparison_Cd74.png` |  | 0 B | 757b66d3 | 2026-07-23 |  |  |
+| `comparison_Fcer1g.pdf` |  | 0 B | 7f3dd4f3 | 2026-07-23 |  |  |
+| `comparison_Fcer1g.png` |  | 0 B | 7ddf4084 | 2026-07-23 |  |  |
+| `comparison_Itgal.pdf` |  | 0 B | 1b106b57 | 2026-07-23 |  |  |
+| `comparison_Itgal.png` |  | 0 B | 6c1eb998 | 2026-07-23 |  |  |
+| `comparison_Itgb6.pdf` |  | 0 B | 76a3be9b | 2026-07-23 |  |  |
+| `comparison_Itgb6.png` |  | 0 B | ab78710e | 2026-07-23 |  |  |
+| `comparison_Ly86.pdf` |  | 0 B | 4d3fafb9 | 2026-07-23 |  |  |
+| `comparison_Ly86.png` |  | 0 B | d4474cc1 | 2026-07-23 |  |  |
+| `comparison_Sfrp4.pdf` |  | 0 B | 8448ab37 | 2026-07-23 |  |  |
+| `comparison_Sfrp4.png` |  | 0 B | 5090c75a | 2026-07-23 |  |  |
+| `comparison_Tmem176a.pdf` |  | 0 B | 1bd35771 | 2026-07-23 |  |  |
+| `comparison_Tmem176a.png` |  | 0 B | ffbbd990 | 2026-07-23 |  |  |
+| `comparison_summary_table.csv` |  | 0 B | 66332e46 | 2026-07-23 |  |  |
+| `heatmap_log2FC_comparison.pdf` |  | 0 B | e34bb814 | 2026-07-23 |  |  |
+| `heatmap_log2FC_comparison.png` |  | 0 B | e1baa171 | 2026-07-23 |  |  |
+| `scatter_concordance.pdf` |  | 0 B | f70c630a | 2026-07-23 |  |  |
+| `scatter_concordance.png` |  | 0 B | bf19c123 | 2026-07-23 |  |  |
+
 ### `results/CellType_Annotation/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
@@ -526,44 +570,44 @@ tags:
 | `FeaturePlot_batch1.pdf` |  | 0 B | 3f26453b | 2026-06-15 |  |  |
 | `FeaturePlot_batch1.png` |  | 0 B | bc2fc8f2 | 2026-06-15 |  |  |
 | `FeaturePlot_batch2.pdf` |  | 0 B | e11bff60 | 2026-06-15 |  |  |
-| `FeaturePlot_batch2.png` |  | 0 B | 2bdd823c | 2026-06-15 |  |  |
+| `FeaturePlot_batch2.png` |  | 0 B | 5267a86a | 2026-06-15 |  |  |
 | `FeaturePlot_batch3.pdf` |  | 0 B | 51e7d3f0 | 2026-06-15 |  |  |
-| `FeaturePlot_batch3.png` |  | 0 B | 46179637 | 2026-06-15 |  |  |
+| `FeaturePlot_batch3.png` |  | 0 B | eb1e8596 | 2026-06-15 |  |  |
 | `FeaturePlot_batch4.pdf` |  | 0 B | cd6f6ace | 2026-06-15 |  |  |
-| `FeaturePlot_batch4.png` |  | 0 B | 9c40d77b | 2026-06-15 |  |  |
-| `FeaturePlot_batch5.png` |  | 0 B | f26039d6 | 2026-07-14 |  |  |
+| `FeaturePlot_batch4.png` |  | 0 B | a37168c5 | 2026-06-15 |  |  |
+| `FeaturePlot_batch5.png` |  | 0 B | bfe0f36f | 2026-07-14 |  |  |
 | `UMAP_celltype.pdf` |  | 0 B | 11c8141c | 2026-06-15 |  |  |
-| `UMAP_celltype.png` |  | 0 B | 70c8350c | 2026-06-15 |  |  |
+| `UMAP_celltype.png` |  | 0 B | 23d853a7 | 2026-06-15 |  |  |
 | `UMAP_split_condition.pdf` |  | 0 B | 93c464fe | 2026-06-15 |  |  |
 | `UMAP_split_condition.png` |  | 0 B | 493d39fa | 2026-06-15 |  |  |
 | `UMAP_split_group.pdf` |  | 0 B | 7376a1fd | 2026-07-16 |  |  |
-| `UMAP_split_group.png` |  | 0 B | ce385bda | 2026-07-16 |  |  |
+| `UMAP_split_group.png` |  | 0 B | 6dfbdf84 | 2026-07-16 |  |  |
 | `all_DE_markers.csv` |  | 0 B | 2d1df52a | 2026-06-15 |  |  |
-| `celltype_summary.csv` |  | 0 B | 34886189 | 2026-07-16 |  |  |
+| `celltype_summary.csv` |  | 0 B | 73bb78a0 | 2026-07-16 |  |  |
 | `celltype_summary_merged.csv` |  | 0 B | 24b330d9 | 2026-06-15 |  |  |
-| `cluster_annotation_map.csv` |  | 0 B | bc037a62 | 2026-06-15 |  |  |
+| `cluster_annotation_map.csv` |  | 0 B | d3de0f28 | 2026-06-15 |  |  |
 | `dotplot_by_celltype.pdf` |  | 0 B | eb47b88a | 2026-06-15 |  |  |
 | `dotplot_by_celltype.png` |  | 0 B | 4479d8b8 | 2026-06-15 |  |  |
-| `dotplot_celltype.png` |  | 0 B | 5aa37b27 | 2026-06-15 |  |  |
+| `dotplot_celltype.png` |  | 0 B | 9c463d6a | 2026-06-15 |  |  |
 | `dotplot_markers_by_cluster.pdf` |  | 0 B | ec9ebd91 | 2026-06-15 |  |  |
 | `dotplot_markers_by_cluster.png` |  | 0 B | 01865b05 | 2026-06-15 |  |  |
 | `dotplot_top3_DE.pdf` |  | 0 B | fb882273 | 2026-06-15 |  |  |
 | `dotplot_top3_DE.png` |  | 0 B | 4a45694e | 2026-06-15 |  |  |
 | `heatmap_top5_DE.pdf` |  | 0 B | addfebab | 2026-06-15 |  |  |
 | `heatmap_top5_DE.png` |  | 0 B | 7441b1a7 | 2026-06-15 |  |  |
-| `module_score_heatmap.pdf` |  | 0 B | 51a94494 | 2026-06-15 |  |  |
-| `module_score_heatmap.png` |  | 0 B | 9e295d5d | 2026-06-15 |  |  |
+| `module_score_heatmap.pdf` |  | 0 B | 6b293cb8 | 2026-06-15 |  |  |
+| `module_score_heatmap.png` |  | 0 B | 3ad9a798 | 2026-06-15 |  |  |
 | `module_score_heatmap_annotated.pdf` |  | 0 B | a9d219b3 | 2026-06-15 |  |  |
 | `module_scores_UMAP.pdf` |  | 0 B | ba453ee7 | 2026-06-15 |  |  |
-| `module_scores_UMAP.png` |  | 0 B | 50785dbd | 2026-06-15 |  |  |
-| `proportions.png` |  | 0 B | 8522428b | 2026-06-15 |  |  |
+| `module_scores_UMAP.png` |  | 0 B | ae882634 | 2026-06-15 |  |  |
+| `proportions.png` |  | 0 B | d19c4218 | 2026-06-15 |  |  |
 | `proportions_by_condition.pdf` |  | 0 B | abedea54 | 2026-06-15 |  |  |
 | `proportions_by_condition.png` |  | 0 B | 1e22f6d8 | 2026-06-15 |  |  |
-| `proportions_by_group.png` |  | 0 B | 1aa42187 | 2026-07-16 |  |  |
+| `proportions_by_group.png` |  | 0 B | 670180d5 | 2026-07-16 |  |  |
 | `proportions_by_sample.pdf` |  | 0 B | 1de0c791 | 2026-06-15 |  |  |
-| `proportions_by_sample.png` |  | 0 B | 89d90a6e | 2026-06-15 |  |  |
+| `proportions_by_sample.png` |  | 0 B | fee3eb37 | 2026-06-15 |  |  |
 | `stacked_violin.pdf` |  | 0 B | 1546a3ec | 2026-06-15 |  |  |
-| `stacked_violin.png` |  | 0 B | 745e6446 | 2026-06-15 |  |  |
+| `stacked_violin.png` |  | 0 B | 24ee4a45 | 2026-06-15 |  |  |
 | `top10_markers.csv` |  | 0 B | 99820f65 | 2026-06-15 |  |  |
 
 ### `results/Clustering/`
@@ -571,96 +615,115 @@ tags:
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
 | `UMAP_final_clusters.pdf` |  | 0 B | f242fa68 | 2026-06-15 |  |  |
-| `UMAP_final_clusters.png` |  | 0 B | aa40fd99 | 2026-06-15 |  |  |
+| `UMAP_final_clusters.png` |  | 0 B | 097c5c11 | 2026-06-15 |  |  |
 | `UMAP_multi_resolution.pdf` |  | 0 B | 884c62bd | 2026-06-15 |  |  |
 | `UMAP_multi_resolution.png` |  | 0 B | a824beff | 2026-06-15 |  |  |
 | `cells_per_cluster.pdf` |  | 0 B | 2092bf32 | 2026-06-15 |  |  |
-| `cells_per_cluster.png` |  | 0 B | 6638ed2b | 2026-06-15 |  |  |
+| `cells_per_cluster.png` |  | 0 B | 49fbab78 | 2026-06-15 |  |  |
 | `cluster_composition.pdf` |  | 0 B | 56db77ff | 2026-06-15 |  |  |
-| `cluster_composition.png` |  | 0 B | 5a7ec4cf | 2026-06-15 |  |  |
+| `cluster_composition.png` |  | 0 B | e593c390 | 2026-06-15 |  |  |
 | `clustree.pdf` |  | 0 B | c8d8cfd4 | 2026-06-15 |  |  |
 | `clustree.png` |  | 0 B | 85896da1 | 2026-06-15 |  |  |
+
+### `results/DAM_Expression/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `01_raw_counts_violin_per_sample.png` |  | 0 B | e88b5673 | 2026-07-23 |  |  |
+| `02_normalized_violin_per_sample.png` |  | 0 B | 7a5b31b7 | 2026-07-23 |  |  |
+| `03_raw_vs_normalized_combined.png` |  | 0 B | ec9b9f70 | 2026-07-23 |  |  |
+| `04_mean_expression_barplot.png` |  | 0 B | 0b2cebfa | 2026-07-23 |  |  |
+| `05_percent_expressing_per_sample.png` |  | 0 B | 886303a1 | 2026-07-23 |  |  |
+| `06_seurat_vlnplot_raw_counts.png` |  | 0 B | 989e8278 | 2026-07-23 |  |  |
+| `06b_seurat_vlnplot_raw_counts_2.png` |  | 0 B | 4b628f9a | 2026-07-23 |  |  |
+| `07_seurat_vlnplot_normalized.png` |  | 0 B | 6c71c146 | 2026-07-23 |  |  |
+| `07b_seurat_vlnplot_normalized_2.png` |  | 0 B | fd73eccb | 2026-07-23 |  |  |
+| `08_heatmap_mean_expression.png` |  | 0 B | 985503ef | 2026-07-23 |  |  |
+| `expression_summary_table.csv` |  | 0 B | ef0273a0 | 2026-07-23 |  |  |
 
 ### `results/DE_Analysis/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `DE_summary.csv` |  | 0 B | 6bc824c5 | 2026-07-16 |  |  |
-| `all_DE_results.csv` |  | 0 B | 280bae5f | 2026-07-16 |  |  |
+| `DE_summary.csv` |  | 0 B | efd69df8 | 2026-07-16 |  |  |
+| `all_DE_results.csv` |  | 0 B | 24b0c63c | 2026-07-16 |  |  |
 
 ### `results/DE_Analysis/Heatmaps/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `heatmap_Astrocytes.pdf` |  | 0 B | 13c553a1 | 2026-07-16 |  |  |
+| `heatmap_Astrocytes.pdf` |  | 0 B | 5bbab76a | 2026-07-16 |  |  |
 | `heatmap_Astrocytes.png` |  | 0 B | 24599851 | 2026-07-16 |  |  |
 | `heatmap_Disease_Associated_Microglia.pdf` |  | 0 B | 1995763c | 2026-07-16 |  |  |
 | `heatmap_Disease_Associated_Microglia.png` |  | 0 B | f44bc24c | 2026-07-16 |  |  |
-| `heatmap_Drd1-MSN.pdf` |  | 0 B | 0bd75122 | 2026-07-16 |  |  |
+| `heatmap_Drd1-MSN.pdf` |  | 0 B | dffeb852 | 2026-07-16 |  |  |
 | `heatmap_Drd1-MSN.png` |  | 0 B | 6611d5f4 | 2026-07-16 |  |  |
-| `heatmap_Drd2-MSN.pdf` |  | 0 B | e651563a | 2026-07-16 |  |  |
+| `heatmap_Drd2-MSN.pdf` |  | 0 B | f8754e13 | 2026-07-16 |  |  |
 | `heatmap_Drd2-MSN.png` |  | 0 B | 0d0d6aa9 | 2026-07-16 |  |  |
-| `heatmap_Drd3-MSN.pdf` |  | 0 B | 8ec82ec2 | 2026-07-16 |  |  |
+| `heatmap_Drd3-MSN.pdf` |  | 0 B | 4ba23610 | 2026-07-16 |  |  |
 | `heatmap_Drd3-MSN.png` |  | 0 B | 07204214 | 2026-07-16 |  |  |
-| `heatmap_GABA-Neuron-1-GRM8.pdf` |  | 0 B | ddb3cc5e | 2026-07-16 |  |  |
+| `heatmap_GABA-Neuron-1-GRM8.pdf` |  | 0 B | 798c51ce | 2026-07-16 |  |  |
 | `heatmap_GABA-Neuron-1-GRM8.png` |  | 0 B | 09468eb0 | 2026-07-16 |  |  |
-| `heatmap_GABA-Neuron-2.pdf` |  | 0 B | 222dc9bd | 2026-07-16 |  |  |
+| `heatmap_GABA-Neuron-2.pdf` |  | 0 B | 7ce982eb | 2026-07-16 |  |  |
 | `heatmap_GABA-Neuron-2.png` |  | 0 B | a1576c22 | 2026-07-16 |  |  |
-| `heatmap_GRM8-MSN.pdf` |  | 0 B | 6e4c36fe | 2026-07-16 |  |  |
+| `heatmap_GRM8-MSN.pdf` |  | 0 B | 0fa3c65f | 2026-07-16 |  |  |
 | `heatmap_GRM8-MSN.png` |  | 0 B | 410c40c0 | 2026-07-16 |  |  |
-| `heatmap_Glutamatergic-1.pdf` |  | 0 B | d2f56c0f | 2026-07-16 |  |  |
+| `heatmap_Glutamatergic-1.pdf` |  | 0 B | e8f330fc | 2026-07-16 |  |  |
 | `heatmap_Glutamatergic-1.png` |  | 0 B | c06b204a | 2026-07-16 |  |  |
-| `heatmap_Interneuron-Sst-Pvalb.pdf` |  | 0 B | 4c4c9d6f | 2026-07-16 |  |  |
+| `heatmap_Interneuron-Sst-Pvalb.pdf` |  | 0 B | 6b414275 | 2026-07-16 |  |  |
 | `heatmap_Interneuron-Sst-Pvalb.png` |  | 0 B | 67751b95 | 2026-07-16 |  |  |
-| `heatmap_Oligo.pdf` |  | 0 B | 42d70a30 | 2026-07-16 |  |  |
+| `heatmap_Microglia.pdf` |  | 0 B | 68acb9c0 | 2026-07-23 |  |  |
+| `heatmap_Microglia.png` |  | 0 B | a13b6ac7 | 2026-07-23 |  |  |
+| `heatmap_Oligo.pdf` |  | 0 B | a9dfad34 | 2026-07-16 |  |  |
 | `heatmap_Oligo.png` |  | 0 B | 1d9d2d90 | 2026-07-16 |  |  |
-| `heatmap_Polydendrocyte.pdf` |  | 0 B | fd1d41d8 | 2026-07-16 |  |  |
+| `heatmap_Polydendrocyte.pdf` |  | 0 B | b463f3e8 | 2026-07-16 |  |  |
 | `heatmap_Polydendrocyte.png` |  | 0 B | c1a46e05 | 2026-07-16 |  |  |
 
 ### `results/DE_Analysis/Summary/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `DE_count_barplot.png` |  | 0 B | 8d771533 | 2026-07-16 |  |  |
-| `pseudobulk_QC.png` |  | 0 B | c0a8538a | 2026-07-16 |  |  |
+| `DE_count_barplot.png` |  | 0 B | 79c06369 | 2026-07-16 |  |  |
+| `pseudobulk_QC.png` |  | 0 B | 02be47cc | 2026-07-16 |  |  |
 
 ### `results/DE_Analysis/Volcano_Plots/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
 | `volcano_Astrocytes.pdf` |  | 0 B | da48f232 | 2026-07-16 |  |  |
-| `volcano_Astrocytes.png` |  | 0 B | 8f6e0e33 | 2026-07-16 |  |  |
+| `volcano_Astrocytes.png` |  | 0 B | 70a63992 | 2026-07-16 |  |  |
 | `volcano_Disease_Associated_Microglia.pdf` |  | 0 B | 19a0b233 | 2026-07-16 |  |  |
 | `volcano_Disease_Associated_Microglia.png` |  | 0 B | 706892a3 | 2026-07-16 |  |  |
 | `volcano_Drd1-MSN.pdf` |  | 0 B | 57fd1dbf | 2026-07-16 |  |  |
-| `volcano_Drd1-MSN.png` |  | 0 B | a440ceb2 | 2026-07-16 |  |  |
+| `volcano_Drd1-MSN.png` |  | 0 B | cabccaa7 | 2026-07-16 |  |  |
 | `volcano_Drd2-MSN.pdf` |  | 0 B | c2f5f870 | 2026-07-16 |  |  |
-| `volcano_Drd2-MSN.png` |  | 0 B | b577df86 | 2026-07-16 |  |  |
+| `volcano_Drd2-MSN.png` |  | 0 B | bc7050a3 | 2026-07-16 |  |  |
 | `volcano_Drd3-MSN.pdf` |  | 0 B | df762358 | 2026-07-16 |  |  |
-| `volcano_Drd3-MSN.png` |  | 0 B | 433f9299 | 2026-07-16 |  |  |
+| `volcano_Drd3-MSN.png` |  | 0 B | 75b09f84 | 2026-07-16 |  |  |
 | `volcano_GABA-Neuron-1-GRM8.pdf` |  | 0 B | 2c4fbd05 | 2026-07-16 |  |  |
-| `volcano_GABA-Neuron-1-GRM8.png` |  | 0 B | d8e41e58 | 2026-07-16 |  |  |
+| `volcano_GABA-Neuron-1-GRM8.png` |  | 0 B | e57dc8e1 | 2026-07-16 |  |  |
 | `volcano_GABA-Neuron-2.pdf` |  | 0 B | d8c8dc8d | 2026-07-16 |  |  |
-| `volcano_GABA-Neuron-2.png` |  | 0 B | 7d36b08c | 2026-07-16 |  |  |
+| `volcano_GABA-Neuron-2.png` |  | 0 B | f5297603 | 2026-07-16 |  |  |
 | `volcano_GRM8-MSN.pdf` |  | 0 B | eadf006b | 2026-07-16 |  |  |
-| `volcano_GRM8-MSN.png` |  | 0 B | 3d11b947 | 2026-07-16 |  |  |
+| `volcano_GRM8-MSN.png` |  | 0 B | f99aad57 | 2026-07-16 |  |  |
 | `volcano_Glutamatergic-1.pdf` |  | 0 B | 342c34db | 2026-07-16 |  |  |
-| `volcano_Glutamatergic-1.png` |  | 0 B | 8d2f9742 | 2026-07-16 |  |  |
+| `volcano_Glutamatergic-1.png` |  | 0 B | 21b4c84d | 2026-07-16 |  |  |
 | `volcano_Interneuron-Sst-Pvalb.pdf` |  | 0 B | f1adff75 | 2026-07-16 |  |  |
-| `volcano_Interneuron-Sst-Pvalb.png` |  | 0 B | a794eafe | 2026-07-16 |  |  |
+| `volcano_Interneuron-Sst-Pvalb.png` |  | 0 B | 57cb18d9 | 2026-07-16 |  |  |
+| `volcano_Microglia.png` |  | 0 B | 6ff4222e | 2026-07-23 |  |  |
 | `volcano_Oligo.pdf` |  | 0 B | a0439e13 | 2026-07-16 |  |  |
-| `volcano_Oligo.png` |  | 0 B | fc740f43 | 2026-07-16 |  |  |
+| `volcano_Oligo.png` |  | 0 B | b199cb5d | 2026-07-16 |  |  |
 | `volcano_Polydendrocyte.pdf` |  | 0 B | 937a2241 | 2026-07-16 |  |  |
-| `volcano_Polydendrocyte.png` |  | 0 B | e08b2b20 | 2026-07-16 |  |  |
+| `volcano_Polydendrocyte.png` |  | 0 B | d622735f | 2026-07-16 |  |  |
 | `volcano_multi_panel.pdf` |  | 0 B | 95a67ffc | 2026-07-16 |  |  |
-| `volcano_multi_panel.png` |  | 0 B | 697a2093 | 2026-07-16 |  |  |
+| `volcano_multi_panel.png` |  | 0 B | df90d26e | 2026-07-16 |  |  |
 
 ### `results/DE_for_pathway/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `DE_summary.csv` |  | 0 B | 6bc824c5 | 2026-07-16 |  |  |
-| `all_DE_results.csv` |  | 0 B | 280bae5f | 2026-07-16 |  |  |
+| `DE_summary.csv` |  | 0 B | efd69df8 | 2026-07-16 |  |  |
+| `all_DE_results.csv` |  | 0 B | 24b0c63c | 2026-07-16 |  |  |
 | `down_Astrocytes.csv` |  | 0 B | c834e9f1 | 2026-07-16 |  |  |
 | `down_Disease_Associated_Microglia.csv` |  | 0 B | b3ca304d | 2026-07-16 |  |  |
 | `down_Drd1-MSN.csv` |  | 0 B | cf578ad2 | 2026-07-16 |  |  |
@@ -671,6 +734,7 @@ tags:
 | `down_GRM8-MSN.csv` |  | 0 B | 6de5c75a | 2026-07-16 |  |  |
 | `down_Glutamatergic-1.csv` |  | 0 B | 3eeba991 | 2026-07-16 |  |  |
 | `down_Interneuron-Sst-Pvalb.csv` |  | 0 B | cf95faae | 2026-07-16 |  |  |
+| `down_Microglia.csv` |  | 0 B | 84bdfd1b | 2026-07-23 |  |  |
 | `down_Oligo.csv` |  | 0 B | 0834a9c2 | 2026-07-16 |  |  |
 | `down_Polydendrocyte.csv` |  | 0 B | 8890d9ad | 2026-07-16 |  |  |
 | `full_Astrocytes.csv` |  | 0 B | d4cfe638 | 2026-07-16 |  |  |
@@ -683,6 +747,7 @@ tags:
 | `full_GRM8-MSN.csv` |  | 0 B | 675efec3 | 2026-07-16 |  |  |
 | `full_Glutamatergic-1.csv` |  | 0 B | f76bef43 | 2026-07-16 |  |  |
 | `full_Interneuron-Sst-Pvalb.csv` |  | 0 B | fb50a4fa | 2026-07-16 |  |  |
+| `full_Microglia.csv` |  | 0 B | 39043e8d | 2026-07-23 |  |  |
 | `full_Oligo.csv` |  | 0 B | e7bf47af | 2026-07-16 |  |  |
 | `full_Polydendrocyte.csv` |  | 0 B | d531f2da | 2026-07-16 |  |  |
 | `genelist_ALL_Astrocytes.txt` |  | 0 B | 601f461b | 2026-07-16 |  |  |
@@ -695,6 +760,7 @@ tags:
 | `genelist_ALL_GRM8-MSN.txt` |  | 0 B | c7e32eb3 | 2026-07-16 |  |  |
 | `genelist_ALL_Glutamatergic-1.txt` |  | 0 B | 1ec049b8 | 2026-07-16 |  |  |
 | `genelist_ALL_Interneuron-Sst-Pvalb.txt` |  | 0 B | 3cf73839 | 2026-07-16 |  |  |
+| `genelist_ALL_Microglia.txt` |  | 0 B | ca66392c | 2026-07-23 |  |  |
 | `genelist_ALL_Oligo.txt` |  | 0 B | 4853a16b | 2026-07-16 |  |  |
 | `genelist_ALL_Polydendrocyte.txt` |  | 0 B | 42ac9506 | 2026-07-16 |  |  |
 | `genelist_BACKGROUND_Astrocytes.txt` |  | 0 B | a8e39899 | 2026-07-16 |  |  |
@@ -707,6 +773,7 @@ tags:
 | `genelist_BACKGROUND_GRM8-MSN.txt` |  | 0 B | 2ae690eb | 2026-07-16 |  |  |
 | `genelist_BACKGROUND_Glutamatergic-1.txt` |  | 0 B | 7e50c164 | 2026-07-16 |  |  |
 | `genelist_BACKGROUND_Interneuron-Sst-Pvalb.txt` |  | 0 B | d60059c4 | 2026-07-16 |  |  |
+| `genelist_BACKGROUND_Microglia.txt` |  | 0 B | f3311fd7 | 2026-07-23 |  |  |
 | `genelist_BACKGROUND_Oligo.txt` |  | 0 B | b0d57caf | 2026-07-16 |  |  |
 | `genelist_BACKGROUND_Polydendrocyte.txt` |  | 0 B | d2f0fb52 | 2026-07-16 |  |  |
 | `genelist_DOWN_Astrocytes.txt` |  | 0 B | bd3b4beb | 2026-07-16 |  |  |
@@ -719,6 +786,7 @@ tags:
 | `genelist_DOWN_GRM8-MSN.txt` |  | 0 B | c1dee2cb | 2026-07-16 |  |  |
 | `genelist_DOWN_Glutamatergic-1.txt` |  | 0 B | 2c4f1d14 | 2026-07-16 |  |  |
 | `genelist_DOWN_Interneuron-Sst-Pvalb.txt` |  | 0 B | 8ed97861 | 2026-07-16 |  |  |
+| `genelist_DOWN_Microglia.txt` |  | 0 B | 7a5c623e | 2026-07-23 |  |  |
 | `genelist_DOWN_Oligo.txt` |  | 0 B | 1b18c1f7 | 2026-07-16 |  |  |
 | `genelist_DOWN_Polydendrocyte.txt` |  | 0 B | 64a57f6f | 2026-07-16 |  |  |
 | `genelist_UP_Astrocytes.txt` |  | 0 B | c15a8551 | 2026-07-16 |  |  |
@@ -731,6 +799,7 @@ tags:
 | `genelist_UP_GRM8-MSN.txt` |  | 0 B | aed718f8 | 2026-07-16 |  |  |
 | `genelist_UP_Glutamatergic-1.txt` |  | 0 B | 323e1456 | 2026-07-16 |  |  |
 | `genelist_UP_Interneuron-Sst-Pvalb.txt` |  | 0 B | 40b80077 | 2026-07-16 |  |  |
+| `genelist_UP_Microglia.txt` |  | 0 B | 4904c708 | 2026-07-23 |  |  |
 | `genelist_UP_Oligo.txt` |  | 0 B | c6127de4 | 2026-07-16 |  |  |
 | `genelist_UP_Polydendrocyte.txt` |  | 0 B | eb0c1aaf | 2026-07-16 |  |  |
 | `ranked_Astrocytes.csv` |  | 0 B | 97790536 | 2026-07-16 |  |  |
@@ -743,6 +812,7 @@ tags:
 | `ranked_GRM8-MSN.csv` |  | 0 B | de89d1ba | 2026-07-16 |  |  |
 | `ranked_Glutamatergic-1.csv` |  | 0 B | 575c9c33 | 2026-07-16 |  |  |
 | `ranked_Interneuron-Sst-Pvalb.csv` |  | 0 B | f81d6924 | 2026-07-16 |  |  |
+| `ranked_Microglia.csv` |  | 0 B | a36a603b | 2026-07-23 |  |  |
 | `ranked_Oligo.csv` |  | 0 B | 2eaac942 | 2026-07-16 |  |  |
 | `ranked_Polydendrocyte.csv` |  | 0 B | fc8d12b7 | 2026-07-16 |  |  |
 | `sig_Astrocytes.csv` |  | 0 B | 37de8dc6 | 2026-07-16 |  |  |
@@ -755,6 +825,7 @@ tags:
 | `sig_GRM8-MSN.csv` |  | 0 B | d718c965 | 2026-07-16 |  |  |
 | `sig_Glutamatergic-1.csv` |  | 0 B | 5a4eb27e | 2026-07-16 |  |  |
 | `sig_Interneuron-Sst-Pvalb.csv` |  | 0 B | cb7475e6 | 2026-07-16 |  |  |
+| `sig_Microglia.csv` |  | 0 B | e7bf440a | 2026-07-23 |  |  |
 | `sig_Oligo.csv` |  | 0 B | ff885467 | 2026-07-16 |  |  |
 | `sig_Polydendrocyte.csv` |  | 0 B | 06c82a6c | 2026-07-16 |  |  |
 | `up_Astrocytes.csv` |  | 0 B | df7beef8 | 2026-07-16 |  |  |
@@ -767,6 +838,7 @@ tags:
 | `up_GRM8-MSN.csv` |  | 0 B | c0bd247b | 2026-07-16 |  |  |
 | `up_Glutamatergic-1.csv` |  | 0 B | 35502c19 | 2026-07-16 |  |  |
 | `up_Interneuron-Sst-Pvalb.csv` |  | 0 B | 45d47708 | 2026-07-16 |  |  |
+| `up_Microglia.csv` |  | 0 B | 3d7c860c | 2026-07-23 |  |  |
 | `up_Oligo.csv` |  | 0 B | aa12771a | 2026-07-16 |  |  |
 | `up_Polydendrocyte.csv` |  | 0 B | 3f6c54de | 2026-07-16 |  |  |
 
@@ -787,6 +859,82 @@ tags:
 | `scatter_retained_vs_removed.pdf` |  | 0 B | a19ccabb | 2026-06-15 |  |  |
 | `scatter_retained_vs_removed.png` |  | 0 B | e1e04bff | 2026-06-15 |  |  |
 
+### `results/Gene_Expression_Plots/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `UMAP_custom_Blnk.pdf` |  | 0 B | cdbb897b | 2026-07-23 |  |  |
+| `UMAP_custom_Blnk.png` |  | 0 B | b27a196c | 2026-07-23 |  |  |
+| `UMAP_custom_C1qa.pdf` |  | 0 B | e8683399 | 2026-07-23 |  |  |
+| `UMAP_custom_C1qa.png` |  | 0 B | e4779643 | 2026-07-23 |  |  |
+| `UMAP_custom_C1qc.pdf` |  | 0 B | dc756185 | 2026-07-23 |  |  |
+| `UMAP_custom_C1qc.png` |  | 0 B | 56d69898 | 2026-07-23 |  |  |
+| `UMAP_custom_C3.pdf` |  | 0 B | db53e223 | 2026-07-23 |  |  |
+| `UMAP_custom_C3.png` |  | 0 B | 09dd7a1c | 2026-07-23 |  |  |
+| `UMAP_custom_Cd74.pdf` |  | 0 B | 5463ad9d | 2026-07-23 |  |  |
+| `UMAP_custom_Cd74.png` |  | 0 B | b5bb0fd8 | 2026-07-23 |  |  |
+| `UMAP_custom_Fcer1g.pdf` |  | 0 B | b0dbf9e7 | 2026-07-23 |  |  |
+| `UMAP_custom_Fcer1g.png` |  | 0 B | 7b97f89e | 2026-07-23 |  |  |
+| `UMAP_custom_Itgal.pdf` |  | 0 B | c6634849 | 2026-07-23 |  |  |
+| `UMAP_custom_Itgal.png` |  | 0 B | 374df986 | 2026-07-23 |  |  |
+| `UMAP_custom_Itgb6.pdf` |  | 0 B | 3c5062af | 2026-07-23 |  |  |
+| `UMAP_custom_Itgb6.png` |  | 0 B | 882283ba | 2026-07-23 |  |  |
+| `UMAP_custom_Ly86.pdf` |  | 0 B | 208363da | 2026-07-23 |  |  |
+| `UMAP_custom_Ly86.png` |  | 0 B | 43651ea4 | 2026-07-23 |  |  |
+| `UMAP_custom_Sfrp4.pdf` |  | 0 B | be721ac2 | 2026-07-23 |  |  |
+| `UMAP_custom_Sfrp4.png` |  | 0 B | 85a3984e | 2026-07-23 |  |  |
+| `UMAP_custom_Tmem176a.pdf` |  | 0 B | c00dbc81 | 2026-07-23 |  |  |
+| `UMAP_custom_Tmem176a.png` |  | 0 B | a95a0b3c | 2026-07-23 |  |  |
+| `UMAP_multi_genes_split.pdf` |  | 0 B | 6d24c858 | 2026-07-23 |  |  |
+| `UMAP_multi_genes_split.png` |  | 0 B | 549e1257 | 2026-07-23 |  |  |
+| `UMAP_split_Blnk.pdf` |  | 0 B | c7406de1 | 2026-07-23 |  |  |
+| `UMAP_split_Blnk.png` |  | 0 B | cab36eb2 | 2026-07-23 |  |  |
+| `UMAP_split_C1qa.pdf` |  | 0 B | 92f31e1d | 2026-07-23 |  |  |
+| `UMAP_split_C1qa.png` |  | 0 B | 23cc962d | 2026-07-23 |  |  |
+| `UMAP_split_C1qc.pdf` |  | 0 B | ef5c45a8 | 2026-07-23 |  |  |
+| `UMAP_split_C1qc.png` |  | 0 B | cfc7a6f1 | 2026-07-23 |  |  |
+| `UMAP_split_C3.pdf` |  | 0 B | e60de261 | 2026-07-23 |  |  |
+| `UMAP_split_C3.png` |  | 0 B | d74b1164 | 2026-07-23 |  |  |
+| `UMAP_split_Cd74.pdf` |  | 0 B | 9e23aaf1 | 2026-07-23 |  |  |
+| `UMAP_split_Cd74.png` |  | 0 B | ed5e2a21 | 2026-07-23 |  |  |
+| `UMAP_split_Fcer1g.pdf` |  | 0 B | 257bce46 | 2026-07-23 |  |  |
+| `UMAP_split_Fcer1g.png` |  | 0 B | a8d1a442 | 2026-07-23 |  |  |
+| `UMAP_split_Itgal.pdf` |  | 0 B | 2eb55f21 | 2026-07-23 |  |  |
+| `UMAP_split_Itgal.png` |  | 0 B | fdc14c81 | 2026-07-23 |  |  |
+| `UMAP_split_Itgb6.pdf` |  | 0 B | 2e1d8084 | 2026-07-23 |  |  |
+| `UMAP_split_Itgb6.png` |  | 0 B | f9e2a27c | 2026-07-23 |  |  |
+| `UMAP_split_Ly86.pdf` |  | 0 B | fe8af358 | 2026-07-23 |  |  |
+| `UMAP_split_Ly86.png` |  | 0 B | 9e246c6d | 2026-07-23 |  |  |
+| `UMAP_split_Sfrp4.pdf` |  | 0 B | d7445a14 | 2026-07-23 |  |  |
+| `UMAP_split_Sfrp4.png` |  | 0 B | dc9e47c4 | 2026-07-23 |  |  |
+| `UMAP_split_Tmem176a.pdf` |  | 0 B | ba217287 | 2026-07-23 |  |  |
+| `UMAP_split_Tmem176a.png` |  | 0 B | 6ca2ba5a | 2026-07-23 |  |  |
+| `boxplot_Blnk_per_celltype.png` |  | 0 B | 219d521f | 2026-07-23 |  |  |
+| `boxplot_C1qa_per_celltype.png` |  | 0 B | c8ea6418 | 2026-07-23 |  |  |
+| `boxplot_C1qc_per_celltype.png` |  | 0 B | f6aaa8ff | 2026-07-23 |  |  |
+| `boxplot_C3_per_celltype.png` |  | 0 B | 11eec121 | 2026-07-23 |  |  |
+| `boxplot_Cd74_per_celltype.png` |  | 0 B | 050b6ccc | 2026-07-23 |  |  |
+| `boxplot_DAM_upregulated_genes.png` |  | 0 B | 7d422b0c | 2026-07-23 |  |  |
+| `boxplot_Fcer1g_per_celltype.png` |  | 0 B | 0e76570d | 2026-07-23 |  |  |
+| `boxplot_Itgal_per_celltype.png` |  | 0 B | 133a2794 | 2026-07-23 |  |  |
+| `boxplot_Itgb6_per_celltype.png` |  | 0 B | 3512b421 | 2026-07-23 |  |  |
+| `boxplot_Ly86_per_celltype.png` |  | 0 B | 322ecc8d | 2026-07-23 |  |  |
+| `boxplot_Sfrp4_per_celltype.png` |  | 0 B | fcfdfcd4 | 2026-07-23 |  |  |
+| `boxplot_Tmem176a_per_celltype.png` |  | 0 B | b957cdd2 | 2026-07-23 |  |  |
+| `dotplot_split_by_group.png` |  | 0 B | a6a59c47 | 2026-07-23 |  |  |
+| `violin_Blnk_by_group.png` |  | 0 B | 0e8b6f69 | 2026-07-23 |  |  |
+| `violin_C1qa_by_group.png` |  | 0 B | a8e680c1 | 2026-07-23 |  |  |
+| `violin_C1qc_by_group.png` |  | 0 B | 75adf646 | 2026-07-23 |  |  |
+| `violin_C3_by_group.png` |  | 0 B | c2bafcca | 2026-07-23 |  |  |
+| `violin_Cd74_by_group.png` |  | 0 B | eecee5a4 | 2026-07-23 |  |  |
+| `violin_DAM_genes_by_group.png` |  | 0 B | 0dd43b3d | 2026-07-23 |  |  |
+| `violin_Fcer1g_by_group.png` |  | 0 B | d77a323f | 2026-07-23 |  |  |
+| `violin_Itgal_by_group.png` |  | 0 B | 5a21387f | 2026-07-23 |  |  |
+| `violin_Itgb6_by_group.png` |  | 0 B | fc06e465 | 2026-07-23 |  |  |
+| `violin_Ly86_by_group.png` |  | 0 B | 0efbbb50 | 2026-07-23 |  |  |
+| `violin_Sfrp4_by_group.png` |  | 0 B | b42f841d | 2026-07-23 |  |  |
+| `violin_Tmem176a_by_group.png` |  | 0 B | d7b2d5ac | 2026-07-23 |  |  |
+
 ### `results/QC/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
@@ -802,6 +950,31 @@ tags:
 | `UMAP_by_sample.png` |  | 0 B | b947d941 | 2026-06-15 |  |  |
 | `scatter_genes_vs_umi.pdf` |  | 0 B | d82c84ef | 2026-06-15 |  |  |
 | `scatter_genes_vs_umi.png` |  | 0 B | 05bcedbe | 2026-06-15 |  |  |
+
+### `results/Specific_Genes/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `boxplot_DESeq2_normalized.png` |  | 0 B | ff17b0a4 | 2026-07-23 |  |  |
+| `boxplot_DESeq2_normalized_log.png` |  | 0 B | ff17b0a4 | 2026-07-23 |  |  |
+| `boxplot_log2FC.pdf` |  | 0 B | 957ec45c | 2026-07-23 |  |  |
+| `boxplot_log2FC.png` |  | 0 B | a003c672 | 2026-07-23 |  |  |
+| `bubble_significance_effectsize.pdf` |  | 0 B | 6f79d931 | 2026-07-23 |  |  |
+| `bubble_significance_effectsize.png` |  | 0 B | 01c8c6a7 | 2026-07-23 |  |  |
+| `forest_plot.png` |  | 0 B | b36311ce | 2026-07-23 |  |  |
+| `gene_summary_table.csv` |  | 0 B | b4abaeff | 2026-07-23 |  |  |
+| `heatmap_annotated_significance.pdf` |  | 0 B | b3d202dc | 2026-07-23 |  |  |
+| `heatmap_annotated_significance.png` |  | 0 B | 3add0b77 | 2026-07-23 |  |  |
+| `heatmap_log2FC_celltypes.pdf` |  | 0 B | d1d4e1d1 | 2026-07-23 |  |  |
+| `heatmap_log2FC_celltypes.png` |  | 0 B | d1d4e1d1 | 2026-07-23 |  |  |
+| `heatmap_significance.pdf` |  | 0 B | 38e5dd36 | 2026-07-23 |  |  |
+| `heatmap_significance.png` |  | 0 B | 38e5dd36 | 2026-07-23 |  |  |
+| `log2FC_per_celltype.pdf` |  | 0 B | 5f668058 | 2026-07-23 |  |  |
+| `log2FC_per_celltype.png` |  | 0 B | 6b0b6be5 | 2026-07-23 |  |  |
+| `volcano_highlighted_genes.pdf` |  | 0 B | c21163a7 | 2026-07-23 |  |  |
+| `volcano_highlighted_genes.png` |  | 0 B | cb61e4cc | 2026-07-23 |  |  |
+| `volcano_per_celltype.pdf` |  | 0 B | cc0df7ab | 2026-07-23 |  |  |
+| `volcano_per_celltype.png` |  | 0 B | cac32021 | 2026-07-23 |  |  |
 
 ### `results/pathway_results/`
 
@@ -996,7 +1169,6 @@ tags:
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `DEA.R` |  | 0 B | 7f0946d1 | 2026-07-16 |  |  |
 | `PEA.R` |  | 0 B | 17d18d4c | 2026-07-16 |  |  |
 | `analysis.R` |  | 0 B | 362e1e7a | 2026-07-16 |  |  |
 | `report.R` |  | 0 B | db6b4526 | 2026-07-16 |  |  |
