@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- Bibb Lab rTBI snRNASeq"
-date: 2026-07-23 19:30
+date: 2026-07-28 18:11
 tags:
   - registry
   - Bibb Lab rTBI snRNASeq
@@ -8,13 +8,128 @@ tags:
 
 # File Registry: Bibb Lab rTBI snRNASeq
 
-**Scan Date:** 2026-07-23 19:30
-**Total Tracked Files:** 928
-**New Since Last Scan:** 0
-**Modified Since Last Scan:** 0
-**Deleted Since Last Scan:** 0
+**Scan Date:** 2026-07-28 18:11
+**Total Tracked Files:** 888
+**New Since Last Scan:** 10
+**Modified Since Last Scan:** 38
+**Deleted Since Last Scan:** 50
 
 ---
+
+## Changes Detected
+
+### New Files
+
+| File | Type | Size | Modified |
+|------|------|------|----------|
+| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/all_genes_comparison_bar.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/bubble_significance_effectsize.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/heatmap_annotated_significance.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/heatmap_log2FC_comparison.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/multipanel_genes_1_to_6.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/multipanel_genes_7_to_10.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/volcano_highlighted_genes.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/volcano_per_celltype.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/multipanel_genes_1_to_6.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/multipanel_genes_7_to_10.png` |  | 0 B |  |
+
+### Modified Files
+
+| File | Type | Size | Modified |
+|------|------|------|----------|
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/DIAGNOSTIC_cluster10v15.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/DIAGNOSTIC_cluster1v2.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/DIAGNOSTIC_cluster3v13.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/DIAGNOSTIC_verification_dotplot.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/FeaturePlot_batch1.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/FeaturePlot_batch2.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/FeaturePlot_batch3.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/FeaturePlot_batch4.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/FeaturePlot_batch5.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/UMAP_celltype.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/UMAP_split_condition.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/UMAP_split_group.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/dotplot_by_celltype.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/dotplot_celltype.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/dotplot_markers_by_cluster.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/dotplot_top3_DE.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/heatmap_top5_DE.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/module_score_heatmap.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/module_scores_UMAP.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/proportions.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/proportions_by_condition.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/proportions_by_group.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/proportions_by_sample.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/stacked_violin.png` |  | 0 B |  |
+| `OA_plots.R` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/all_genes_comparison_bar.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_Blnk.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_C1qa.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_C1qc.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_C3.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_Cd74.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_Fcer1g.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_Itgal.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_Itgb6.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_Ly86.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_Sfrp4.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/comparison_Tmem176a.png` |  | 0 B |  |
+| `results/Bulk_vs_snRNA/scatter_concordance.png` |  | 0 B |  |
+
+### Deleted Files
+
+| File |
+|------|
+| `results/Bulk_vs_snRNA/all_genes_comparison_bar.pdf` |
+| `results/Bulk_vs_snRNA/comparison_Blnk.pdf` |
+| `results/Bulk_vs_snRNA/comparison_C1qa.pdf` |
+| `results/Bulk_vs_snRNA/comparison_C1qc.pdf` |
+| `results/Bulk_vs_snRNA/comparison_C3.pdf` |
+| `results/Bulk_vs_snRNA/comparison_Cd74.pdf` |
+| `results/Bulk_vs_snRNA/comparison_Fcer1g.pdf` |
+| `results/Bulk_vs_snRNA/comparison_Itgal.pdf` |
+| `results/Bulk_vs_snRNA/comparison_Itgb6.pdf` |
+| `results/Bulk_vs_snRNA/comparison_Ly86.pdf` |
+| `results/Bulk_vs_snRNA/comparison_Sfrp4.pdf` |
+| `results/Bulk_vs_snRNA/comparison_Tmem176a.pdf` |
+| `results/Bulk_vs_snRNA/heatmap_log2FC_comparison.pdf` |
+| `results/Bulk_vs_snRNA/scatter_concordance.pdf` |
+| `results/CellType_Annotation/FeaturePlot_batch1.pdf` |
+| `results/CellType_Annotation/FeaturePlot_batch2.pdf` |
+| `results/CellType_Annotation/FeaturePlot_batch3.pdf` |
+| `results/CellType_Annotation/FeaturePlot_batch4.pdf` |
+| `results/CellType_Annotation/UMAP_celltype.pdf` |
+| `results/CellType_Annotation/UMAP_split_condition.pdf` |
+| `results/CellType_Annotation/UMAP_split_group.pdf` |
+| `results/CellType_Annotation/dotplot_by_celltype.pdf` |
+| `results/CellType_Annotation/dotplot_markers_by_cluster.pdf` |
+| `results/CellType_Annotation/dotplot_top3_DE.pdf` |
+| `results/CellType_Annotation/heatmap_top5_DE.pdf` |
+| `results/CellType_Annotation/module_score_heatmap.pdf` |
+| `results/CellType_Annotation/module_score_heatmap_annotated.pdf` |
+| `results/CellType_Annotation/module_scores_UMAP.pdf` |
+| `results/CellType_Annotation/proportions_by_condition.pdf` |
+| `results/CellType_Annotation/proportions_by_sample.pdf` |
+| `results/CellType_Annotation/stacked_violin.pdf` |
+| `results/DAM_Expression/01_raw_counts_violin_per_sample.png` |
+| `results/DAM_Expression/02_normalized_violin_per_sample.png` |
+| `results/DAM_Expression/03_raw_vs_normalized_combined.png` |
+| `results/DAM_Expression/04_mean_expression_barplot.png` |
+| `results/DAM_Expression/05_percent_expressing_per_sample.png` |
+| `results/DAM_Expression/06_seurat_vlnplot_raw_counts.png` |
+| `results/DAM_Expression/06b_seurat_vlnplot_raw_counts_2.png` |
+| `results/DAM_Expression/07_seurat_vlnplot_normalized.png` |
+| `results/DAM_Expression/07b_seurat_vlnplot_normalized_2.png` |
+| `results/DAM_Expression/08_heatmap_mean_expression.png` |
+| `results/DAM_Expression/expression_summary_table.csv` |
+| `results/Specific_Genes/boxplot_log2FC.pdf` |
+| `results/Specific_Genes/bubble_significance_effectsize.pdf` |
+| `results/Specific_Genes/heatmap_annotated_significance.pdf` |
+| `results/Specific_Genes/heatmap_log2FC_celltypes.pdf` |
+| `results/Specific_Genes/heatmap_significance.pdf` |
+| `results/Specific_Genes/log2FC_per_celltype.pdf` |
+| `results/Specific_Genes/volcano_highlighted_genes.pdf` |
+| `results/Specific_Genes/volcano_per_celltype.pdf` |
 
 ---
 
@@ -26,7 +141,7 @@ tags:
 |------|-----------|------|------|------------|------|--------|
 | `Common_Significant_Genes_Bulk_vs_snRNA.pdf` |  | 0 B | 4ae1bd60 | 2026-07-23 |  |  |
 | `DEA.R` |  | 0 B | d3409684 | 2026-07-23 |  |  |
-| `OA_plots.R` |  | 0 B | b63adbaa | 2026-07-23 |  |  |
+| `OA_plots.R` |  | 0 B | 9bf9b401 | 2026-07-23 |  |  |
 | `bulkrna_significant.csv` |  | 0 B | 61d50d7f | 2026-07-23 |  |  |
 | `snrnaseq_significant.csv` |  | 0 B | d7216006 | 2026-07-23 |  |  |
 
@@ -42,6 +157,19 @@ tags:
 |------|-----------|------|------|------------|------|--------|
 | `snRNAseq_Analysis_Report.html` |  | 0 B | 1c672203 | 2026-07-16 |  |  |
 
+### `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/`
+
+| File | Extension | Size | Hash | First Seen | Tags | Context |
+|------|-----------|------|------|------------|------|--------|
+| `all_genes_comparison_bar.png` |  | 0 B | a33f7a6f | 2026-07-28 |  |  |
+| `bubble_significance_effectsize.png` |  | 0 B | 01c8c6a7 | 2026-07-28 |  |  |
+| `heatmap_annotated_significance.png` |  | 0 B | 3add0b77 | 2026-07-28 |  |  |
+| `heatmap_log2FC_comparison.png` |  | 0 B | e1baa171 | 2026-07-28 |  |  |
+| `multipanel_genes_1_to_6.png` |  | 0 B | 48624fac | 2026-07-28 |  |  |
+| `multipanel_genes_7_to_10.png` |  | 0 B | ae958041 | 2026-07-28 |  |  |
+| `volcano_highlighted_genes.png` |  | 0 B | cb61e4cc | 2026-07-28 |  |  |
+| `volcano_per_celltype.png` |  | 0 B | cac32021 | 2026-07-28 |  |  |
+
 ### `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/`
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
@@ -51,25 +179,25 @@ tags:
 | `DIAGNOSTIC_cluster3v13.png` |  | 0 B | 13135e5a | 2026-07-16 |  |  |
 | `DIAGNOSTIC_verification_dotplot.png` |  | 0 B | 615c2855 | 2026-07-16 |  |  |
 | `FeaturePlot_batch1.png` |  | 0 B | bc2fc8f2 | 2026-07-16 |  |  |
-| `FeaturePlot_batch2.png` |  | 0 B | 2bdd823c | 2026-07-16 |  |  |
-| `FeaturePlot_batch3.png` |  | 0 B | 46179637 | 2026-07-16 |  |  |
-| `FeaturePlot_batch4.png` |  | 0 B | 9c40d77b | 2026-07-16 |  |  |
-| `FeaturePlot_batch5.png` |  | 0 B | f26039d6 | 2026-07-16 |  |  |
-| `UMAP_celltype.png` |  | 0 B | 70c8350c | 2026-07-16 |  |  |
+| `FeaturePlot_batch2.png` |  | 0 B | 5267a86a | 2026-07-16 |  |  |
+| `FeaturePlot_batch3.png` |  | 0 B | eb1e8596 | 2026-07-16 |  |  |
+| `FeaturePlot_batch4.png` |  | 0 B | a37168c5 | 2026-07-16 |  |  |
+| `FeaturePlot_batch5.png` |  | 0 B | bfe0f36f | 2026-07-16 |  |  |
+| `UMAP_celltype.png` |  | 0 B | 23d853a7 | 2026-07-16 |  |  |
 | `UMAP_split_condition.png` |  | 0 B | 493d39fa | 2026-07-16 |  |  |
-| `UMAP_split_group.png` |  | 0 B | ce385bda | 2026-07-16 |  |  |
+| `UMAP_split_group.png` |  | 0 B | 6dfbdf84 | 2026-07-16 |  |  |
 | `dotplot_by_celltype.png` |  | 0 B | 4479d8b8 | 2026-07-16 |  |  |
-| `dotplot_celltype.png` |  | 0 B | 5aa37b27 | 2026-07-16 |  |  |
+| `dotplot_celltype.png` |  | 0 B | 9c463d6a | 2026-07-16 |  |  |
 | `dotplot_markers_by_cluster.png` |  | 0 B | 01865b05 | 2026-07-16 |  |  |
 | `dotplot_top3_DE.png` |  | 0 B | 4a45694e | 2026-07-16 |  |  |
 | `heatmap_top5_DE.png` |  | 0 B | 7441b1a7 | 2026-07-16 |  |  |
-| `module_score_heatmap.png` |  | 0 B | 9e295d5d | 2026-07-16 |  |  |
-| `module_scores_UMAP.png` |  | 0 B | 50785dbd | 2026-07-16 |  |  |
-| `proportions.png` |  | 0 B | 8522428b | 2026-07-16 |  |  |
+| `module_score_heatmap.png` |  | 0 B | 3ad9a798 | 2026-07-16 |  |  |
+| `module_scores_UMAP.png` |  | 0 B | ae882634 | 2026-07-16 |  |  |
+| `proportions.png` |  | 0 B | d19c4218 | 2026-07-16 |  |  |
 | `proportions_by_condition.png` |  | 0 B | 1e22f6d8 | 2026-07-16 |  |  |
-| `proportions_by_group.png` |  | 0 B | 1aa42187 | 2026-07-16 |  |  |
-| `proportions_by_sample.png` |  | 0 B | 89d90a6e | 2026-07-16 |  |  |
-| `stacked_violin.png` |  | 0 B | 745e6446 | 2026-07-16 |  |  |
+| `proportions_by_group.png` |  | 0 B | 670180d5 | 2026-07-16 |  |  |
+| `proportions_by_sample.png` |  | 0 B | fee3eb37 | 2026-07-16 |  |  |
+| `stacked_violin.png` |  | 0 B | 24ee4a45 | 2026-07-16 |  |  |
 
 ### `Bibb_Rat_Omics/SL_reanalysis/plots/Clustering/`
 
@@ -529,35 +657,23 @@ tags:
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `all_genes_comparison_bar.pdf` |  | 0 B | ec54dcac | 2026-07-23 |  |  |
-| `all_genes_comparison_bar.png` |  | 0 B | ecc38e7a | 2026-07-23 |  |  |
-| `comparison_Blnk.pdf` |  | 0 B | a001bdc4 | 2026-07-23 |  |  |
-| `comparison_Blnk.png` |  | 0 B | dc787487 | 2026-07-23 |  |  |
-| `comparison_C1qa.pdf` |  | 0 B | 5f613f11 | 2026-07-23 |  |  |
-| `comparison_C1qa.png` |  | 0 B | 119ac5b9 | 2026-07-23 |  |  |
-| `comparison_C1qc.pdf` |  | 0 B | 669f3123 | 2026-07-23 |  |  |
-| `comparison_C1qc.png` |  | 0 B | 10aa5536 | 2026-07-23 |  |  |
-| `comparison_C3.pdf` |  | 0 B | 7e89abbd | 2026-07-23 |  |  |
-| `comparison_C3.png` |  | 0 B | e6d0bcf8 | 2026-07-23 |  |  |
-| `comparison_Cd74.pdf` |  | 0 B | e904c5f6 | 2026-07-23 |  |  |
-| `comparison_Cd74.png` |  | 0 B | 757b66d3 | 2026-07-23 |  |  |
-| `comparison_Fcer1g.pdf` |  | 0 B | 7f3dd4f3 | 2026-07-23 |  |  |
-| `comparison_Fcer1g.png` |  | 0 B | 7ddf4084 | 2026-07-23 |  |  |
-| `comparison_Itgal.pdf` |  | 0 B | 1b106b57 | 2026-07-23 |  |  |
-| `comparison_Itgal.png` |  | 0 B | 6c1eb998 | 2026-07-23 |  |  |
-| `comparison_Itgb6.pdf` |  | 0 B | 76a3be9b | 2026-07-23 |  |  |
-| `comparison_Itgb6.png` |  | 0 B | ab78710e | 2026-07-23 |  |  |
-| `comparison_Ly86.pdf` |  | 0 B | 4d3fafb9 | 2026-07-23 |  |  |
-| `comparison_Ly86.png` |  | 0 B | d4474cc1 | 2026-07-23 |  |  |
-| `comparison_Sfrp4.pdf` |  | 0 B | 8448ab37 | 2026-07-23 |  |  |
-| `comparison_Sfrp4.png` |  | 0 B | 5090c75a | 2026-07-23 |  |  |
-| `comparison_Tmem176a.pdf` |  | 0 B | 1bd35771 | 2026-07-23 |  |  |
-| `comparison_Tmem176a.png` |  | 0 B | ffbbd990 | 2026-07-23 |  |  |
+| `all_genes_comparison_bar.png` |  | 0 B | a33f7a6f | 2026-07-23 |  |  |
+| `comparison_Blnk.png` |  | 0 B | a631c955 | 2026-07-23 |  |  |
+| `comparison_C1qa.png` |  | 0 B | dc0b0439 | 2026-07-23 |  |  |
+| `comparison_C1qc.png` |  | 0 B | 6d09f588 | 2026-07-23 |  |  |
+| `comparison_C3.png` |  | 0 B | 2f12914f | 2026-07-23 |  |  |
+| `comparison_Cd74.png` |  | 0 B | 2f781015 | 2026-07-23 |  |  |
+| `comparison_Fcer1g.png` |  | 0 B | f18910c7 | 2026-07-23 |  |  |
+| `comparison_Itgal.png` |  | 0 B | abaafaad | 2026-07-23 |  |  |
+| `comparison_Itgb6.png` |  | 0 B | b0793644 | 2026-07-23 |  |  |
+| `comparison_Ly86.png` |  | 0 B | b3002d32 | 2026-07-23 |  |  |
+| `comparison_Sfrp4.png` |  | 0 B | e8c9ea8e | 2026-07-23 |  |  |
+| `comparison_Tmem176a.png` |  | 0 B | ebd87e97 | 2026-07-23 |  |  |
 | `comparison_summary_table.csv` |  | 0 B | 66332e46 | 2026-07-23 |  |  |
-| `heatmap_log2FC_comparison.pdf` |  | 0 B | e34bb814 | 2026-07-23 |  |  |
 | `heatmap_log2FC_comparison.png` |  | 0 B | e1baa171 | 2026-07-23 |  |  |
-| `scatter_concordance.pdf` |  | 0 B | f70c630a | 2026-07-23 |  |  |
-| `scatter_concordance.png` |  | 0 B | bf19c123 | 2026-07-23 |  |  |
+| `multipanel_genes_1_to_6.png` |  | 0 B | 48624fac | 2026-07-28 |  |  |
+| `multipanel_genes_7_to_10.png` |  | 0 B | ae958041 | 2026-07-28 |  |  |
+| `scatter_concordance.png` |  | 0 B | 8fc4b948 | 2026-07-23 |  |  |
 
 ### `results/CellType_Annotation/`
 
@@ -567,46 +683,29 @@ tags:
 | `DIAGNOSTIC_cluster1v2.png` |  | 0 B | eea12d78 | 2026-06-15 |  |  |
 | `DIAGNOSTIC_cluster3v13.png` |  | 0 B | 13135e5a | 2026-06-15 |  |  |
 | `DIAGNOSTIC_verification_dotplot.png` |  | 0 B | 615c2855 | 2026-06-15 |  |  |
-| `FeaturePlot_batch1.pdf` |  | 0 B | 3f26453b | 2026-06-15 |  |  |
 | `FeaturePlot_batch1.png` |  | 0 B | bc2fc8f2 | 2026-06-15 |  |  |
-| `FeaturePlot_batch2.pdf` |  | 0 B | e11bff60 | 2026-06-15 |  |  |
 | `FeaturePlot_batch2.png` |  | 0 B | 5267a86a | 2026-06-15 |  |  |
-| `FeaturePlot_batch3.pdf` |  | 0 B | 51e7d3f0 | 2026-06-15 |  |  |
 | `FeaturePlot_batch3.png` |  | 0 B | eb1e8596 | 2026-06-15 |  |  |
-| `FeaturePlot_batch4.pdf` |  | 0 B | cd6f6ace | 2026-06-15 |  |  |
 | `FeaturePlot_batch4.png` |  | 0 B | a37168c5 | 2026-06-15 |  |  |
 | `FeaturePlot_batch5.png` |  | 0 B | bfe0f36f | 2026-07-14 |  |  |
-| `UMAP_celltype.pdf` |  | 0 B | 11c8141c | 2026-06-15 |  |  |
 | `UMAP_celltype.png` |  | 0 B | 23d853a7 | 2026-06-15 |  |  |
-| `UMAP_split_condition.pdf` |  | 0 B | 93c464fe | 2026-06-15 |  |  |
 | `UMAP_split_condition.png` |  | 0 B | 493d39fa | 2026-06-15 |  |  |
-| `UMAP_split_group.pdf` |  | 0 B | 7376a1fd | 2026-07-16 |  |  |
 | `UMAP_split_group.png` |  | 0 B | 6dfbdf84 | 2026-07-16 |  |  |
 | `all_DE_markers.csv` |  | 0 B | 2d1df52a | 2026-06-15 |  |  |
 | `celltype_summary.csv` |  | 0 B | 73bb78a0 | 2026-07-16 |  |  |
 | `celltype_summary_merged.csv` |  | 0 B | 24b330d9 | 2026-06-15 |  |  |
 | `cluster_annotation_map.csv` |  | 0 B | d3de0f28 | 2026-06-15 |  |  |
-| `dotplot_by_celltype.pdf` |  | 0 B | eb47b88a | 2026-06-15 |  |  |
 | `dotplot_by_celltype.png` |  | 0 B | 4479d8b8 | 2026-06-15 |  |  |
 | `dotplot_celltype.png` |  | 0 B | 9c463d6a | 2026-06-15 |  |  |
-| `dotplot_markers_by_cluster.pdf` |  | 0 B | ec9ebd91 | 2026-06-15 |  |  |
 | `dotplot_markers_by_cluster.png` |  | 0 B | 01865b05 | 2026-06-15 |  |  |
-| `dotplot_top3_DE.pdf` |  | 0 B | fb882273 | 2026-06-15 |  |  |
 | `dotplot_top3_DE.png` |  | 0 B | 4a45694e | 2026-06-15 |  |  |
-| `heatmap_top5_DE.pdf` |  | 0 B | addfebab | 2026-06-15 |  |  |
 | `heatmap_top5_DE.png` |  | 0 B | 7441b1a7 | 2026-06-15 |  |  |
-| `module_score_heatmap.pdf` |  | 0 B | 6b293cb8 | 2026-06-15 |  |  |
 | `module_score_heatmap.png` |  | 0 B | 3ad9a798 | 2026-06-15 |  |  |
-| `module_score_heatmap_annotated.pdf` |  | 0 B | a9d219b3 | 2026-06-15 |  |  |
-| `module_scores_UMAP.pdf` |  | 0 B | ba453ee7 | 2026-06-15 |  |  |
 | `module_scores_UMAP.png` |  | 0 B | ae882634 | 2026-06-15 |  |  |
 | `proportions.png` |  | 0 B | d19c4218 | 2026-06-15 |  |  |
-| `proportions_by_condition.pdf` |  | 0 B | abedea54 | 2026-06-15 |  |  |
 | `proportions_by_condition.png` |  | 0 B | 1e22f6d8 | 2026-06-15 |  |  |
 | `proportions_by_group.png` |  | 0 B | 670180d5 | 2026-07-16 |  |  |
-| `proportions_by_sample.pdf` |  | 0 B | 1de0c791 | 2026-06-15 |  |  |
 | `proportions_by_sample.png` |  | 0 B | fee3eb37 | 2026-06-15 |  |  |
-| `stacked_violin.pdf` |  | 0 B | 1546a3ec | 2026-06-15 |  |  |
 | `stacked_violin.png` |  | 0 B | 24ee4a45 | 2026-06-15 |  |  |
 | `top10_markers.csv` |  | 0 B | 99820f65 | 2026-06-15 |  |  |
 
@@ -624,22 +723,6 @@ tags:
 | `cluster_composition.png` |  | 0 B | e593c390 | 2026-06-15 |  |  |
 | `clustree.pdf` |  | 0 B | c8d8cfd4 | 2026-06-15 |  |  |
 | `clustree.png` |  | 0 B | 85896da1 | 2026-06-15 |  |  |
-
-### `results/DAM_Expression/`
-
-| File | Extension | Size | Hash | First Seen | Tags | Context |
-|------|-----------|------|------|------------|------|--------|
-| `01_raw_counts_violin_per_sample.png` |  | 0 B | e88b5673 | 2026-07-23 |  |  |
-| `02_normalized_violin_per_sample.png` |  | 0 B | 7a5b31b7 | 2026-07-23 |  |  |
-| `03_raw_vs_normalized_combined.png` |  | 0 B | ec9b9f70 | 2026-07-23 |  |  |
-| `04_mean_expression_barplot.png` |  | 0 B | 0b2cebfa | 2026-07-23 |  |  |
-| `05_percent_expressing_per_sample.png` |  | 0 B | 886303a1 | 2026-07-23 |  |  |
-| `06_seurat_vlnplot_raw_counts.png` |  | 0 B | 989e8278 | 2026-07-23 |  |  |
-| `06b_seurat_vlnplot_raw_counts_2.png` |  | 0 B | 4b628f9a | 2026-07-23 |  |  |
-| `07_seurat_vlnplot_normalized.png` |  | 0 B | 6c71c146 | 2026-07-23 |  |  |
-| `07b_seurat_vlnplot_normalized_2.png` |  | 0 B | fd73eccb | 2026-07-23 |  |  |
-| `08_heatmap_mean_expression.png` |  | 0 B | 985503ef | 2026-07-23 |  |  |
-| `expression_summary_table.csv` |  | 0 B | ef0273a0 | 2026-07-23 |  |  |
 
 ### `results/DE_Analysis/`
 
@@ -957,23 +1040,15 @@ tags:
 |------|-----------|------|------|------------|------|--------|
 | `boxplot_DESeq2_normalized.png` |  | 0 B | ff17b0a4 | 2026-07-23 |  |  |
 | `boxplot_DESeq2_normalized_log.png` |  | 0 B | ff17b0a4 | 2026-07-23 |  |  |
-| `boxplot_log2FC.pdf` |  | 0 B | 957ec45c | 2026-07-23 |  |  |
 | `boxplot_log2FC.png` |  | 0 B | a003c672 | 2026-07-23 |  |  |
-| `bubble_significance_effectsize.pdf` |  | 0 B | 6f79d931 | 2026-07-23 |  |  |
 | `bubble_significance_effectsize.png` |  | 0 B | 01c8c6a7 | 2026-07-23 |  |  |
 | `forest_plot.png` |  | 0 B | b36311ce | 2026-07-23 |  |  |
 | `gene_summary_table.csv` |  | 0 B | b4abaeff | 2026-07-23 |  |  |
-| `heatmap_annotated_significance.pdf` |  | 0 B | b3d202dc | 2026-07-23 |  |  |
 | `heatmap_annotated_significance.png` |  | 0 B | 3add0b77 | 2026-07-23 |  |  |
-| `heatmap_log2FC_celltypes.pdf` |  | 0 B | d1d4e1d1 | 2026-07-23 |  |  |
 | `heatmap_log2FC_celltypes.png` |  | 0 B | d1d4e1d1 | 2026-07-23 |  |  |
-| `heatmap_significance.pdf` |  | 0 B | 38e5dd36 | 2026-07-23 |  |  |
 | `heatmap_significance.png` |  | 0 B | 38e5dd36 | 2026-07-23 |  |  |
-| `log2FC_per_celltype.pdf` |  | 0 B | 5f668058 | 2026-07-23 |  |  |
 | `log2FC_per_celltype.png` |  | 0 B | 6b0b6be5 | 2026-07-23 |  |  |
-| `volcano_highlighted_genes.pdf` |  | 0 B | c21163a7 | 2026-07-23 |  |  |
 | `volcano_highlighted_genes.png` |  | 0 B | cb61e4cc | 2026-07-23 |  |  |
-| `volcano_per_celltype.pdf` |  | 0 B | cc0df7ab | 2026-07-23 |  |  |
 | `volcano_per_celltype.png` |  | 0 B | cac32021 | 2026-07-23 |  |  |
 
 ### `results/pathway_results/`
