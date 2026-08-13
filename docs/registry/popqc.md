@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- popqc"
-date: 2026-07-28 18:11
+date: 2026-08-13 18:51
 tags:
   - registry
   - popqc
@@ -8,7 +8,7 @@ tags:
 
 # File Registry: popqc
 
-**Scan Date:** 2026-07-28 18:11
+**Scan Date:** 2026-08-13 18:51
 **Total Tracked Files:** 30
 **New Since Last Scan:** 0
 **Modified Since Last Scan:** 0

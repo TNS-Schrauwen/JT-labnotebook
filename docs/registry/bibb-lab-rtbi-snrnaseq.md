@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- Bibb Lab rTBI snRNASeq"
-date: 2026-07-28 18:11
+date: 2026-08-13 18:51
 tags:
   - registry
   - Bibb Lab rTBI snRNASeq
@@ -8,11 +8,11 @@ tags:
 
 # File Registry: Bibb Lab rTBI snRNASeq
 
-**Scan Date:** 2026-07-28 18:11
-**Total Tracked Files:** 888
-**New Since Last Scan:** 10
-**Modified Since Last Scan:** 38
-**Deleted Since Last Scan:** 50
+**Scan Date:** 2026-08-13 18:51
+**Total Tracked Files:** 889
+**New Since Last Scan:** 2
+**Modified Since Last Scan:** 2
+**Deleted Since Last Scan:** 1
 
 ---
 
@@ -22,114 +22,21 @@ tags:
 
 | File | Type | Size | Modified |
 |------|------|------|----------|
-| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/all_genes_comparison_bar.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/bubble_significance_effectsize.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/heatmap_annotated_significance.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/heatmap_log2FC_comparison.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/multipanel_genes_1_to_6.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/multipanel_genes_7_to_10.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/volcano_highlighted_genes.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/volcano_per_celltype.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/multipanel_genes_1_to_6.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/multipanel_genes_7_to_10.png` |  | 0 B |  |
+| `Bibb_Rat_Omics/SL_reanalysis/README.md` |  | 0 B |  |
+| `QC_plots.pdf` |  | 0 B |  |
 
 ### Modified Files
 
 | File | Type | Size | Modified |
 |------|------|------|----------|
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/DIAGNOSTIC_cluster10v15.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/DIAGNOSTIC_cluster1v2.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/DIAGNOSTIC_cluster3v13.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/DIAGNOSTIC_verification_dotplot.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/FeaturePlot_batch1.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/FeaturePlot_batch2.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/FeaturePlot_batch3.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/FeaturePlot_batch4.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/FeaturePlot_batch5.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/UMAP_celltype.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/UMAP_split_condition.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/UMAP_split_group.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/dotplot_by_celltype.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/dotplot_celltype.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/dotplot_markers_by_cluster.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/dotplot_top3_DE.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/heatmap_top5_DE.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/module_score_heatmap.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/module_scores_UMAP.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/proportions.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/proportions_by_condition.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/proportions_by_group.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/proportions_by_sample.png` |  | 0 B |  |
-| `Bibb_Rat_Omics/SL_reanalysis/plots/CellType_Annotation/stacked_violin.png` |  | 0 B |  |
+| `DEA.R` |  | 0 B |  |
 | `OA_plots.R` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/all_genes_comparison_bar.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_Blnk.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_C1qa.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_C1qc.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_C3.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_Cd74.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_Fcer1g.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_Itgal.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_Itgb6.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_Ly86.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_Sfrp4.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/comparison_Tmem176a.png` |  | 0 B |  |
-| `results/Bulk_vs_snRNA/scatter_concordance.png` |  | 0 B |  |
 
 ### Deleted Files
 
 | File |
 |------|
-| `results/Bulk_vs_snRNA/all_genes_comparison_bar.pdf` |
-| `results/Bulk_vs_snRNA/comparison_Blnk.pdf` |
-| `results/Bulk_vs_snRNA/comparison_C1qa.pdf` |
-| `results/Bulk_vs_snRNA/comparison_C1qc.pdf` |
-| `results/Bulk_vs_snRNA/comparison_C3.pdf` |
-| `results/Bulk_vs_snRNA/comparison_Cd74.pdf` |
-| `results/Bulk_vs_snRNA/comparison_Fcer1g.pdf` |
-| `results/Bulk_vs_snRNA/comparison_Itgal.pdf` |
-| `results/Bulk_vs_snRNA/comparison_Itgb6.pdf` |
-| `results/Bulk_vs_snRNA/comparison_Ly86.pdf` |
-| `results/Bulk_vs_snRNA/comparison_Sfrp4.pdf` |
-| `results/Bulk_vs_snRNA/comparison_Tmem176a.pdf` |
-| `results/Bulk_vs_snRNA/heatmap_log2FC_comparison.pdf` |
-| `results/Bulk_vs_snRNA/scatter_concordance.pdf` |
-| `results/CellType_Annotation/FeaturePlot_batch1.pdf` |
-| `results/CellType_Annotation/FeaturePlot_batch2.pdf` |
-| `results/CellType_Annotation/FeaturePlot_batch3.pdf` |
-| `results/CellType_Annotation/FeaturePlot_batch4.pdf` |
-| `results/CellType_Annotation/UMAP_celltype.pdf` |
-| `results/CellType_Annotation/UMAP_split_condition.pdf` |
-| `results/CellType_Annotation/UMAP_split_group.pdf` |
-| `results/CellType_Annotation/dotplot_by_celltype.pdf` |
-| `results/CellType_Annotation/dotplot_markers_by_cluster.pdf` |
-| `results/CellType_Annotation/dotplot_top3_DE.pdf` |
-| `results/CellType_Annotation/heatmap_top5_DE.pdf` |
-| `results/CellType_Annotation/module_score_heatmap.pdf` |
-| `results/CellType_Annotation/module_score_heatmap_annotated.pdf` |
-| `results/CellType_Annotation/module_scores_UMAP.pdf` |
-| `results/CellType_Annotation/proportions_by_condition.pdf` |
-| `results/CellType_Annotation/proportions_by_sample.pdf` |
-| `results/CellType_Annotation/stacked_violin.pdf` |
-| `results/DAM_Expression/01_raw_counts_violin_per_sample.png` |
-| `results/DAM_Expression/02_normalized_violin_per_sample.png` |
-| `results/DAM_Expression/03_raw_vs_normalized_combined.png` |
-| `results/DAM_Expression/04_mean_expression_barplot.png` |
-| `results/DAM_Expression/05_percent_expressing_per_sample.png` |
-| `results/DAM_Expression/06_seurat_vlnplot_raw_counts.png` |
-| `results/DAM_Expression/06b_seurat_vlnplot_raw_counts_2.png` |
-| `results/DAM_Expression/07_seurat_vlnplot_normalized.png` |
-| `results/DAM_Expression/07b_seurat_vlnplot_normalized_2.png` |
-| `results/DAM_Expression/08_heatmap_mean_expression.png` |
-| `results/DAM_Expression/expression_summary_table.csv` |
-| `results/Specific_Genes/boxplot_log2FC.pdf` |
-| `results/Specific_Genes/bubble_significance_effectsize.pdf` |
-| `results/Specific_Genes/heatmap_annotated_significance.pdf` |
-| `results/Specific_Genes/heatmap_log2FC_celltypes.pdf` |
-| `results/Specific_Genes/heatmap_significance.pdf` |
-| `results/Specific_Genes/log2FC_per_celltype.pdf` |
-| `results/Specific_Genes/volcano_highlighted_genes.pdf` |
-| `results/Specific_Genes/volcano_per_celltype.pdf` |
+| `Bibb_Rat_Omics/SL_reanalysis/snRNAseq_Analysis_Report.html` |
 
 ---
 
@@ -140,8 +47,9 @@ tags:
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
 | `Common_Significant_Genes_Bulk_vs_snRNA.pdf` |  | 0 B | 4ae1bd60 | 2026-07-23 |  |  |
-| `DEA.R` |  | 0 B | d3409684 | 2026-07-23 |  |  |
-| `OA_plots.R` |  | 0 B | 9bf9b401 | 2026-07-23 |  |  |
+| `DEA.R` |  | 0 B | ce89514c | 2026-07-23 |  |  |
+| `OA_plots.R` |  | 0 B | 55fa0a96 | 2026-07-23 |  |  |
+| `QC_plots.pdf` |  | 0 B | 179842ec | 2026-08-13 |  |  |
 | `bulkrna_significant.csv` |  | 0 B | 61d50d7f | 2026-07-23 |  |  |
 | `snrnaseq_significant.csv` |  | 0 B | d7216006 | 2026-07-23 |  |  |
 
@@ -155,7 +63,7 @@ tags:
 
 | File | Extension | Size | Hash | First Seen | Tags | Context |
 |------|-----------|------|------|------------|------|--------|
-| `snRNAseq_Analysis_Report.html` |  | 0 B | 1c672203 | 2026-07-16 |  |  |
+| `README.md` |  | 0 B | 7fd4d79f | 2026-08-13 |  |  |
 
 ### `Bibb_Rat_Omics/SL_reanalysis/plots/Bulk_vs_snRNAseq/`
 
