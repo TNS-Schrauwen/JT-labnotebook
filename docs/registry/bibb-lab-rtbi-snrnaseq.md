@@ -1,6 +1,6 @@
 ---
 title: "File Registry -- Bibb Lab rTBI snRNASeq"
-date: 2026-08-13 18:51
+date: 2026-08-13 18:52
 tags:
   - registry
   - Bibb Lab rTBI snRNASeq
@@ -8,35 +8,13 @@ tags:
 
 # File Registry: Bibb Lab rTBI snRNASeq
 
-**Scan Date:** 2026-08-13 18:51
+**Scan Date:** 2026-08-13 18:52
 **Total Tracked Files:** 889
-**New Since Last Scan:** 2
-**Modified Since Last Scan:** 2
-**Deleted Since Last Scan:** 1
+**New Since Last Scan:** 0
+**Modified Since Last Scan:** 0
+**Deleted Since Last Scan:** 0
 
 ---
-
-## Changes Detected
-
-### New Files
-
-| File | Type | Size | Modified |
-|------|------|------|----------|
-| `Bibb_Rat_Omics/SL_reanalysis/README.md` |  | 0 B |  |
-| `QC_plots.pdf` |  | 0 B |  |
-
-### Modified Files
-
-| File | Type | Size | Modified |
-|------|------|------|----------|
-| `DEA.R` |  | 0 B |  |
-| `OA_plots.R` |  | 0 B |  |
-
-### Deleted Files
-
-| File |
-|------|
-| `Bibb_Rat_Omics/SL_reanalysis/snRNAseq_Analysis_Report.html` |
 
 ---
 

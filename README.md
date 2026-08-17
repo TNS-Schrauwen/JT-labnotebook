@@ -2,6 +2,6 @@
 
 Personal Bioinformatics Lab Notebook & Project Intelligence System.
 
-### Dashboard
+## Dashboard
 
 [JT Lab Notebook Dashboard](https://tns-schrauwen.github.io/JT-labnotebook/)
