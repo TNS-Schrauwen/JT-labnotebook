@@ -1,6 +1,6 @@
 ---
 title: "Pipeline Runs -- DROP_pipeline"
-date: 2026-08-13 18:52
+date: 2026-08-18 21:46
 tags:
   - runs
   - DROP_pipeline
@@ -8,7 +8,7 @@ tags:
 
 # Pipeline Runs: DROP_pipeline
 
-**Last Scanned:** 2026-08-13 18:52
+**Last Scanned:** 2026-08-18 21:46
 
 ---
 
@@ -16,7 +16,7 @@ tags:
 
 | Job ID | Name | Status | Elapsed | CPUs | Partition | Exit |
 |--------|------|--------|---------|------|-----------|------|
-| 29519 |  |  |  |  |  |  |
+| 29519 | create_drop_samplesheet.sh | completed | 00:00:01 | 2 | compute | 0:0 |
 
 ## Log Files
 

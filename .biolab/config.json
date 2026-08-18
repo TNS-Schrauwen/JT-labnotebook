@@ -29,6 +29,14 @@
     "5mc outlier model rust binary": {
       "path": "/home/jtrivedi@BLUECAT.arizona.edu/projects/phoenix",
       "registered_at": "2026-06-15T19:54:53.225173"
+    },
+    "omics_data": {
+      "path": "/icebox/schrauwenLab/omics_data",
+      "registered_at": "2026-08-18T21:31:19.159287"
+    },
+    "C4RCD_DNA": {
+      "path": "/icebox/schrauwenLab/tgen/C4RCD_DNA",
+      "registered_at": "2026-08-18T21:45:33.871665"
     }
   },
   "last_scan": "2026-08-13T18:52:19.298556"
