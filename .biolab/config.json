@@ -37,6 +37,10 @@
     "C4RCD_DNA": {
       "path": "/icebox/schrauwenLab/tgen/C4RCD_DNA",
       "registered_at": "2026-08-18T21:45:33.871665"
+    },
+    "gwas": {
+      "path": "/home/jtrivedi@BLUECAT.arizona.edu/projects/gwas",
+      "registered_at": "2026-08-31T19:06:38.078499"
     }
   },
   "last_scan": "2026-08-13T18:52:19.298556"
